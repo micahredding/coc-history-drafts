@@ -121,17 +121,20 @@ We'll return to that next week.
 
 ## Lessons
 
-1. **The break began as hospitality, not doctrine.** Campbell didn't set out to
-   found anything; he extended the Supper to believers the fence-system had
-   orphaned. When the institution's fences and the gospel's welcome conflict, the
-   fences are the thing without divine warrant.
-2. **Non-creedalism is a *protective* move.** From the appeal itself: no human
-   formulation as a test of fellowship — because no one's interpretation is
-   infallible, and the simplest believer must be able to confess Christ and
-   belong. Teach, persuade, argue, disagree — everything except making your
-   reading a barrier.
-3. **A collision of goods.** The Seceders were not villains. Campbell had violated
-   rules he was ordained under; the system he broke was built, sincerely, to
-   protect the table's purity. Order vs. hospitality, both held by serious
-   people — and the man who opened the table genuinely did not want to leave.
-   That's what makes it cost something.
+1. **Thomas Campbell was working for unity in a divided Ireland, and took that work
+   to America.**
+2. **The break began as hospitality, not doctrine.** He didn't set out to found
+   anything, or to divide over doctrine; he extended the Supper's benefits to
+   believers the system had orphaned. When the institution's fences and the
+   gospel's welcome conflict, he held the fences to be the thing without divine
+   warrant.
+3. **Non-creedalism is a protective move.** No human formulation as a test of
+   fellowship — because no one's interpretation is infallible, and the simplest
+   believer must be able to confess Christ and belong.
+4. **Close — the tease.** That fall, the people who'd been following him from
+   farmhouse to grove asked him to write down what they stood for. The first
+   sentence of what he wrote: *"The Church of Christ upon earth is essentially,
+   intentionally, and constitutionally one."* We'll meet that document again. Next
+   session: back to Kentucky — because five years *before* Campbell's break, the
+   men of Cane Ridge faced the same discovery and did something even stranger with
+   it. They wrote a will.

@@ -9,98 +9,55 @@ calling them forward to this.
 
 ---
 
-In August of 1801, 20-30,000 people converged on the tiny town of Cane Ridge,
-Kentucky. Wagons clogged the road into town, people backed up for miles. All of
-them heading for what became one of America's first revival camp meetings, the
-launch of a chain of events known as the Second Great Awakening. At this revival,
-people of various denominations and traditions, including Presbyterians, Methodists,
-Baptists, and folks both black and white, came together to listen to vigorous
-proclamation of the gospel. The response was electric, many people breaking out in
-physical agitations, shaking, running, contorting, falling down as if dead, until
-they rose again proclaiming their allegiance to God and Christ. Many people,
-including the preachers, didn't know what to make of these effects, but they seemed
-to be producing genuine repentance and transformation, changing the course of
-people's lives from then on. And something else was being produced: the retreat of
-the "party spirit", and the rise of a sense of unity in Christ. The preachers from
-each of these denominations, who were formally at odds, who were forbidden by their
-own church hierarchies and authorities from participating in communion with each
-other, were suddenly not only preaching together, but at the pinnacle of this event,
-came together to share communion with everyone. Long tables were arranged outdoors
-in the shape of the cross, and all people gathered around, distributing large
-servings of bread and wine to each person.
+In August of 1801, if you had been standing on a road in Bourbon County, Kentucky, you would have seen something no one in America had ever seen. Wagons, carriages, horsemen, people on foot — the roads clogged for miles, everyone converging on a tiny log meetinghouse at a place called Cane Ridge. Barton Stone, who was there, described it simply: "The roads were literally crowded with wagons, carriages, horsemen, and footmen, moving to the solemn camp. The sight was affecting." One participant counted a hundred and thirty-five wagons encamped on the grounds. Another said, "The noise was like the roar of Niagara."
 
-This was the birth of what we know as the Churches of Christ.
+Military men on the ground guessed there were twenty to thirty thousand people. Even the most cautious modern estimates say ten thousand at once — and in a state whose largest towns were villages, that may have been a tenth of Kentucky. The largest gathering anyone in America had ever seen.
 
-This event became a movement for unity, simplicity, and freedom in Christ. A
-movement that opposed all the authorities who divided the body of Christ, all the
-obstacles to shared communion, all the barriers to simple proclamation. It began,
-not with a programmatic initiative, but with the sense that the Spirit was doing
-something, and calling people into the recognition of our already-existing freedom
-and unity in Christ. It began, too, with the sense that the kingdom of God was
-breaking into the world, and that the job of Christians was to strive to live that
-out, "on earth as it is in heaven".
+And what were they all converging on? Hold that question. We'll come back to it.
 
-At the epicenter of this event, and eventually this movement, diligently observing
-and documenting everything that he could, was a young Presbyterian minister named
-Barton W. Stone. He was the preacher for the Cane Ridge church, newly ordained,
-newly married, but already an experienced traveler through America's frontier. And
-what he was seeing would not allow him to toe the party line. He could not exclude
-those he was being told to exclude, he could not refuse those he was being told to
-refuse, he could not preach a convoluted message of Westminster-approved
-metaphysics, when Christ Jesus' simple invitation to "come" was changing lives, and
-bringing people to repentance and transformation. Before this moment, he wrote,
-religious practice had all but died in this region of country. After this moment,
-even the secular rationalists and deists were falling down at Jesus' feet. This
-compelled him to be willing to challenge everything he knew, and to follow the
-evidence wherever it would lead.
+For nearly a week, the preaching never stopped. Four or five preachers spoke at the same time in different parts of the encampment — "without confusion," Stone said. And they were not preachers of one church: Presbyterians, Methodists, and Baptists, folks both black and white, preachers who were formally at odds, forbidden by their own hierarchies from sharing communion with each other — and here they were, in Stone's words, "cordially united… of one mind and one soul… We all engaged in singing the same songs of praise — all united in prayer — all preached the same things — free salvation urged upon all."
 
-That's going to lead us to our next session, where we see just how much he, and
-others with him, were willing to sacrifice for the sake of Jesus' simple call to
-freedom and unity.
+And then there was something stranger — something you need to know about going in, because nothing in our experience prepares us for it. People began to fall. Stone described it: "Many, very many fell down, as men slain in battle, and continued for hours together in an apparently breathless and motionless state" — then revived with a groan, or a shriek, or a prayer, and rose proclaiming deliverance. The fallen were carried out of the crowd, and little circles gathered around them to pray and sing. One of the oldest ministers in the state tried to keep a count, and gave up somewhere around three thousand. Nobody fully understood what was happening — not even the preachers. But what they could see was the fruit: genuine repentance, genuine transformation, lives changed from then on. And something else: the retreat of what they called the "party spirit," and the rise of a sense of unity in Christ.
 
-But I want to draw out a couple of points right here at the beginning.
+So — what was all this? What had tens of thousands of people clogged the roads of Kentucky to attend? Here is the thing that the word "revival" hides from us. This was a communion service. Cane Ridge was a scheduled sacramental occasion in the old Scottish tradition — four days: preparation on Friday and Saturday, the Lord's Supper on Sunday, thanksgiving on Monday. It wasn't the first camp meeting, but it became the one that fixed the camp meeting in America's memory — and at the center of it, the thing all those wagons were driving toward, was a table. Tens of thousands of people came through the mud of frontier Kentucky to get to the Lord's Supper.
 
-First, the defining ideas of this movement--ideas like unity and freedom; free
-investigation of truth and a resistance to every authority who would attempt to
-divide the body of Christ; the significance of eschatology; the simplicity of
-communion and baptism and scripture and singing; decentralized authority and the
-priesthood of all believers--all of these ideas are connected and arise from the
-experience of the young American church on the frontier, watching and witnessing
-the work of the Spirit.
+Sunday, the day of the Supper, it poured rain. Inside the log meetinghouse — a building made to hold four hundred — long tables were set up in the aisles, and communicants filed in around a hundred at a time, sitting after sitting, on into the late afternoon. Eight hundred to eleven hundred people took the Lord's Supper that day, including perhaps two hundred Methodists — at a Presbyterian table, in an age when that was simply not done.
 
-Second, that if you come from another tradition, whether Presbyterian or Methodist
-or Baptist or Anglican or Catholic or whatever it may be, then in a sense, we do
-too. In a very real way, our tradition arose when people of many other traditions
-came together, following scripture and the Spirit, in pursuit of a greater
-realization of unity. And as they came together, they brought the riches of their
-traditions with them, and sought to hold onto whatever was good from wherever it
-came. So wherever you come from--if you grew up Church of Christ, or came to it
-later, if you married into it, or if you are Catholic or Baptist or Methodist or
-anything else--then in a real way, all of us together are doing what our spiritual
-predecessors were doing, coming together for a deeper sense of unity and freedom in
-Christ, bringing the riches of our traditions together and placing them at Jesus'
-feet. That is the tradition we'll be exploring in this class, and the tradition
-behind Otter Creek itself. I invite you to continue the exploration of this story
-with us.
+And it almost didn't happen. On Sunday morning, some of the Presbyterians balked at communing with Methodists. Under their pressure, the host pastor asked the Methodist preacher, William Burke, to publicly explain Methodist doctrine before the sacrament could go forward — a doctrinal toll-booth at the door of the table. Burke took it as the insult it was, and challenged him to make the Presbyterians do the same. And the pastor withdrew the request. The table opened. Burke climbed a fallen tree a hundred feet east of the meetinghouse and preached anyway, a friend holding an umbrella lashed to a pole over his head, and the crowd fell around him. The united table nearly cracked on Sunday morning — and the recovery is part of the miracle.
+
+We should be honest that the unity had limits. The table was administered only by Presbyterian ministers. The Baptists mostly would not commune. A Black congregation was preached to separately, at the edge of the camp, in a slave state. This was unity under strain, not unity accomplished — and that is exactly why it marked the people who tasted it for the rest of their lives.
+
+The host pastor — the man who had spent that summer promoting this gathering as a "united sacrament," the man who blinked first on Sunday morning and let the table open — was a young Presbyterian minister named Barton W. Stone. Twenty-eight years old, newly ordained, five weeks married, and standing at the epicenter of it all, watching everything, documenting everything. He was no fanatic: he freely granted there was "much fanaticism in this excitement," and he personally debunked some of the wilder legends. But he refused to mock what he had seen. To the end of his life he said: "I am always hurt to hear people speak lightly of this work. I always think they speak of what they know nothing about." What he saw would not allow him to toe the party line — he could not exclude those he was being told to exclude, could not refuse those he was being told to refuse — and it compelled him to challenge everything he knew, and follow the evidence wherever it would lead.
+
+He never got over that week. He spent the next forty years trying to build a church that felt like it.
+
+So: what were they converging on? For one week, on a ridge in Kentucky, it looked like the age to come — the divided church at one table. That's the seed of everything this class will explore. Next session: what it cost the people who couldn't forget it.
 
 ---
 
 ## Lessons
 
-1. **If you come from another tradition — in a sense, we do too.** Our tradition
-   begins with people of different Christian streams coming together across
-   denominational lines, bringing the riches of their traditions with them.
+1. **If you come from another tradition — in a sense, we do too.** In a very real
+   way, our tradition arose when people of many other traditions came together,
+   following scripture and the Spirit, in pursuit of a greater realization of
+   unity. And as they came together, they brought the riches of their traditions
+   with them, and sought to hold onto whatever was good from wherever it came. So
+   wherever you come from — if you grew up Church of Christ, or came to it later,
+   if you married into it, or if you are Catholic or Baptist or Methodist or
+   anything else — then in a real way, all of us together are doing what our
+   spiritual predecessors were doing: bringing the riches of our traditions
+   together and placing them at Jesus' feet. That is the tradition behind Otter
+   Creek itself.
 2. **The central practice of that unity was a shared table** — a table opened
-   beyond the limits authority had placed on it. We'll explore this more in
-   subsequent weeks, when we come to Thomas Campbell's story — and it lands at
-   home: our weekly open communion is Cane Ridge carried forward, the frontier
-   field become a Table set every Sunday.
+   beyond the limits authority had placed on it. The demand withdrawn at Cane
+   Ridge is the very demand a presbytery would enforce six years later — next
+   week's story. And it lands at home: our weekly open communion is Cane Ridge
+   carried forward, the frontier field become a Table set every Sunday.
 3. **Wildness and rationality.** The ecstatic experiences open a thread we'll
-   return to. Stone models the stance: neither credulity nor mockery — he granted
+   return to. Stone models the stance — neither credulity nor mockery: he granted
    "much fanaticism," yet said, "I am always hurt to hear people speak lightly of
    this work."
-4. **Bigger than us.** Cane Ridge was significant far beyond the Stone-Campbell
-   movement — participants carried the work to Ohio and as far as North Carolina,
-   and the camp meeting became the signature institution of the era's revivalism.
-   The wildness escaped in every direction; Cane Ridge belongs to American
-   Christianity, not just to us.
+4. **Bigger than us.** Participants carried the work to Ohio and as far as North
+   Carolina; the camp meeting became the signature institution of the era's
+   revivalism. The wildness escaped in every direction, for good and ill — Cane
+   Ridge belongs to American Christianity, not just to us.
