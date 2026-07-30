@@ -1,4 +1,4 @@
-# Week 2 — Thomas Campbell's Break (1807–1809)
+# Week 2 — Thomas Campbell's Heresy Trial (1807–1809)
 
 [← All weeks](.)
 
