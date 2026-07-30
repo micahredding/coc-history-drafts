@@ -2,11 +2,6 @@
 
 **Working story drafts — Fall 2026 class**
 
-This site holds the current working drafts of the opening story for each week of
-the class. Everything here is a draft: facts are being checked against primary
-sources as we go, and the tellings will keep evolving. Feedback welcome — bring it
-to Micah directly.
-
 ## Weeks
 
 - [Week 1 — Cane Ridge (August 1801)](week1)
