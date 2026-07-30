@@ -1,4 +1,4 @@
-# Week 1 — Cane Ridge (August 1801)
+# Week 1 — Cane Ridge Communion (August 1801)
 
 [← All weeks](.)
 
@@ -30,8 +30,6 @@ This was a communion service. Cane Ridge was a scheduled sacramental occasion in
 Sunday, the day of the Supper, it poured rain. Inside the log meetinghouse — a building made to hold four hundred — long tables were set up in the aisles, and communicants filed in around a hundred at a time, sitting after sitting, on into the late afternoon. Eight hundred to eleven hundred people took the Lord's Supper that day, including perhaps two hundred Methodists — at a Presbyterian table, in an age when that was simply not done.
 
 And it almost didn't happen. Stone had called for a united communion. But on Sunday morning, some of the Presbyterians balked at communing with Methodists. Under their pressure, Barton Stone asked the Methodist preacher, William Burke, to publicly explain Methodist doctrine before the sacrament could go forward — a doctrinal test at the door of the table. Burke took it as an insult, and challenged him to make the Presbyterians do the same. Stone withdrew the request. The table opened. Burke climbed a fallen tree a hundred feet east of the meetinghouse and preached anyway, a friend holding an umbrella lashed to a pole over his head; the crowd fell around him, and the communion service continued.
-
-%% We should be honest that the unity had limits. The table was administered only by Presbyterian ministers. The Baptists mostly would not commune. A Black congregation was preached to separately, at the edge of the camp. This was unity under strain, not unity accomplished. But it left people with a taste for unity that they would pursue for the rest of their lives. %%
 
 Barton Stone never got over that week. He spent the next forty years trying to build a church that felt like it.
 
