@@ -61,3 +61,15 @@ What were they converging on? The divided church united at one table. That's the
    Carolina; the camp meeting became the signature institution of the era's
    revivalism. The wildness escaped in every direction, for good and ill — Cane
    Ridge belongs to American Christianity, not just to us.
+
+---
+
+## Future
+
+*What is beautiful here? How do we carry this forward?*
+
+**What is beautiful here?** For one week, the divided church was actually one — not by merger committee or negotiated agreement, but by recognition. Unity was experienced before it was theorized: eaten at a table, sung in shared songs, before anyone wrote a doctrine of it. And the people who tasted it spent the rest of their lives trying to build a church that kept the promise of that week.
+
+**How do we carry this forward?** A fragmented world visibly needs unity, and no creed, institution, or authority looks likely to deliver it. Maybe the world needs a tradition that has wrestled with unity and freedom for two hundred years and knows the difficulty and the stakes. And we are positioned for it in a way our predecessors would recognize: our congregation is mixed-tradition — exactly what the movement was at its birth. There is a place here for everyone's riches. Every Sunday, the open table is Cane Ridge carried forward.
+
+*For discussion: Where have you experienced unity before you could explain it? What would it mean for our congregation to be a "united sacrament" for the traditions in this room?*
