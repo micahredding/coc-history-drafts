@@ -124,10 +124,10 @@ We'll return to that next week.
 
 ## Future
 
-*What is beautiful here? How do we carry this forward?*
+*What is beautiful here? What do we carry forward?*
 
-**What is beautiful here?** A man who refused to un-church anyone — who opened a table to orphaned believers at real cost, defended himself with "I have no confidence in my own infallibility or in that of others," and, when the courts stripped away everything they had authority to remove, discovered it touched almost nothing that mattered. The gospel kept moving from a maple grove.
+<!-- **What is beautiful here?** A man who refused to un-church anyone — who opened a table to orphaned believers at real cost, defended himself with "I have no confidence in my own infallibility or in that of others," and, when the courts stripped away everything they had authority to remove, discovered it touched almost nothing that mattered. The gospel kept moving from a maple grove.
 
 **How do we carry this forward?** We live in an age of purity tests — left and right, inside and outside the church — where movements demand assent to formulations before they extend welcome. A people practiced at holding full conviction *without* weaponizing it has something this moment needs. The question Campbell's story hands us: where are our own fences without divine warrant? Who around us has gone years without being invited to the table?
 
-*For discussion: What "testimonies" — written or unwritten — do we treat as terms of fellowship today? What does conviction-without-coercion look like in practice?*
+*For discussion: What "testimonies" — written or unwritten — do we treat as terms of fellowship today? What does conviction-without-coercion look like in practice?* //-->

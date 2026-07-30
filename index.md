@@ -9,5 +9,8 @@
 - Week 5 — Wherever two or three are gathered: Brush Run Ordination
 - Week 6 — Living into God's Future: The Millennial Harbinger
 - Week 7 — The Stone-Campbell Merger
-- 
-
+- Week 8 — Eschatology and Non-Conformity: Lipscomb & the Civil War
+- Week 9 — The Story of Believer's Baptism
+- Week 10 — The Story of Congregational Singing
+- Week 11 — The Story of Studying Scripture
+- Week 12 — The Story of Governance
