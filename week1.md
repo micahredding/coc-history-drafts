@@ -82,3 +82,25 @@ Christ, bringing the riches of our traditions together and placing them at Jesus
 feet. That is the tradition we'll be exploring in this class, and the tradition
 behind Otter Creek itself. I invite you to continue the exploration of this story
 with us.
+
+---
+
+## Lessons
+
+1. **If you come from another tradition — in a sense, we do too.** Our tradition
+   begins with people of different Christian streams coming together across
+   denominational lines, bringing the riches of their traditions with them.
+2. **The central practice of that unity was a shared table** — a table opened
+   beyond the limits authority had placed on it. We'll explore this more in
+   subsequent weeks, when we come to Thomas Campbell's story — and it lands at
+   home: our weekly open communion is Cane Ridge carried forward, the frontier
+   field become a Table set every Sunday.
+3. **Wildness and rationality.** The ecstatic experiences open a thread we'll
+   return to. Stone models the stance: neither credulity nor mockery — he granted
+   "much fanaticism," yet said, "I am always hurt to hear people speak lightly of
+   this work."
+4. **Bigger than us.** Cane Ridge was significant far beyond the Stone-Campbell
+   movement — participants carried the work to Ohio and as far as North Carolina,
+   and the camp meeting became the signature institution of the era's revivalism.
+   The wildness escaped in every direction; Cane Ridge belongs to American
+   Christianity, not just to us.
