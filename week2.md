@@ -2,12 +2,9 @@
 
 [← All weeks](.)
 
-**Central theme:** The break did not begin as a doctrine; it began as hospitality.
-When the institution's fences and the gospel's welcome conflict, the fences are the
-thing without divine warrant — and the man who opened the table genuinely did not
-want to leave.
+**Central theme:** The movement did not begin with a doctrine; it began with communion hospitality, and a desire to overcome division. When the institution's fences and the gospel's welcome conflict, the fences were held to be without divine warrant.
 
-**Companion week to Week 1:** both weeks turn on a communion table someone tried to
+**Companion week to Week 1:** both weeks are about a communion table someone tried to
 fence. At Cane Ridge the gatekeepers backed down and the table opened; here the
 fence fights back.
 
@@ -31,17 +28,14 @@ Christians.
 
 In Ireland, he had been immersed in an incredibly divided and violent culture—where
 the tensions between Catholics and Protestants had led to violent gangs roaming the
-countryside, killing and plundering. At one point, Thomas Campbell was leading a
-Sunday church service when a mounted force broke in, thinking they had surprised a
-secret rebellion, and threatening violence; he immediately began praying from the
-Psalms, and the leader stopped in his tracks, bowed his head, and then turned around
+countryside, killing and plundering—and just as violent crackdowns. At one point, Thomas Campbell was leading a Sunday church service when a mounted force broke in, threatening violence, thinking they had surprised a secret rebellion; Campbell immediately began praying from the Psalms, and the leader stopped in his tracks, bowed his head, and then turned around
 and left.
 
 In Ireland, Thomas Campbell had fought to bridge the sectarian divides, trying to
 broker a unity between the Burgher and the anti-Burgher Presbyterians, seeing as
 their point of dispute was not even about something in Ireland, but about
 disagreement on a political matter involving a few towns in Scotland, a whole
-country away. This effort had gained a lot of traction, before ultimately being shut
+country away. This unity effort had gained a lot of traction, before ultimately being shut
 down by the higher levels of the Presbyterian church hierarchy.
 
 Now in America, Campbell found a country mercifully free of sectarian violence, and
@@ -59,7 +53,7 @@ One of Campbell's travel companions had privately looked on at this process with
 disapproval, and once they had returned, he reported to the church hierarchy, and
 Thomas Campbell was brought up on a heresy trial.
 
-The charges brought against him included the claim that he had allegedly:
+The charges brought against him included claims that he had:
 
 - Said it was okay to occasionally listen to a sermon from a Presbyterian of a
   different sect
@@ -78,13 +72,7 @@ and read:
 > "Honored Brethren: Before you come to a final issue… let me entreat you to pause a
 > moment…"
 
-> "To refuse any one his just privilege, is it not to oppress and injure? In
-> proportion to the magnitude and importance of the privilege withheld, is not the
-> injustice done in withholding it to be estimated? If so, how great the injustice,
-> how highly aggravated the injury will appear, to thrust out from communion a
-> Christian brother…for saying and doing none other things than those which our
-> Divine Lord and his holy apostles have taught and enjoined to be spoken and
-> done…"?
+> "To refuse any one his just privilege, is it not to oppress and injure? In proportion to the magnitude and importance of the privilege withheld, is not the injustice done in withholding it to be estimated? If so, how great the injustice, how highly aggravated the injury will appear, to thrust out from communion a Christian brother…for saying and doing none other things than those which our Divine Lord and his holy apostles have taught and enjoined to be spoken and done…"?
 
 > "It is…because I have no confidence, either in my own infallibility or in that of
 > others, that I absolutely refuse…to acknowledge as obligatory…or to impose upon
@@ -113,7 +101,7 @@ church, and then a movement. And this movement took as one of its rallying cries
 line from Thomas Campbell's Declaration and Address, written shortly after:
 
 "The Church of Christ upon earth is essentially, intentionally, and constitutionally
-one."
+one; consisting of all those in every place that profess their faith in Christ..."
 
 We'll return to that next week.
 
@@ -121,20 +109,13 @@ We'll return to that next week.
 
 ## Lessons
 
-1. **Thomas Campbell was working for unity in a divided Ireland, and took that work
-   to America.**
-2. **The break began as hospitality, not doctrine.** He didn't set out to found
-   anything, or to divide over doctrine; he extended the Supper's benefits to
+1. **The Unity Movement did not begin in America**. Thomas Campbell was working for unity in a divided Ireland, and took that work to America.
+2. **They Divided over Hospitality, not doctrine.** He didn't set out to found
+   anything, or to dispute a doctrine; he extended the Supper's benefits to
    believers the system had orphaned. When the institution's fences and the
    gospel's welcome conflict, he held the fences to be the thing without divine
    warrant.
 3. **Non-creedalism is a protective move.** No human formulation as a test of
    fellowship — because no one's interpretation is infallible, and the simplest
    believer must be able to confess Christ and belong.
-4. **Close — the tease.** That fall, the people who'd been following him from
-   farmhouse to grove asked him to write down what they stood for. The first
-   sentence of what he wrote: *"The Church of Christ upon earth is essentially,
-   intentionally, and constitutionally one."* We'll meet that document again. Next
-   session: back to Kentucky — because five years *before* Campbell's break, the
-   men of Cane Ridge faced the same discovery and did something even stranger with
-   it. They wrote a will.
+4. **They stood for the universal church**. That fall, the people who'd been following him from  farmhouse to grove asked him to write down what they stood for. The first sentence of what he wrote: *"The Church of Christ upon earth is essentially, intentionally, and constitutionally one."* We'll meet that document again.
