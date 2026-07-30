@@ -2,6 +2,13 @@
 
 [← All weeks](.)
 
+**Central theme:** A wild experience of unity, which changed the participants — and
+was left standing as a profound symbol of how the church needed to come together
+across denominational and authoritative lines, and evidence that the Spirit was
+calling them forward to this.
+
+---
+
 In August of 1801, 20-30,000 people converged on the tiny town of Cane Ridge,
 Kentucky. Wagons clogged the road into town, people backed up for miles. All of
 them heading for what became one of America's first revival camp meetings, the

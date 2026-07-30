@@ -2,6 +2,17 @@
 
 [← All weeks](.)
 
+**Central theme:** The break did not begin as a doctrine; it began as hospitality.
+When the institution's fences and the gospel's welcome conflict, the fences are the
+thing without divine warrant — and the man who opened the table genuinely did not
+want to leave.
+
+**Companion week to Week 1:** both weeks turn on a communion table someone tried to
+fence. At Cane Ridge the gatekeepers backed down and the table opened; here the
+fence fights back.
+
+---
+
 In 1807 in the rural regions of Appalachia, 70 miles outside of Pittsburgh,
 immigrant families are scattered among the nooks and crannies of the Appalachian
 frontier. Many of them are faithful Presbyterians, who have not received communion
