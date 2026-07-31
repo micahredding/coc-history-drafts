@@ -2,19 +2,103 @@
 ---
 @import "jekyll-theme-primer";
 
+/* ——— Our Wild Democracy: reading-first styling ——— */
+
+$serif: "Charter", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+$sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$ink: #2b2620;
+$paper: #faf8f4;
+$accent: #7c2f2f;
+$muted: #8a8177;
+
+body {
+  background: $paper;
+}
+
 .container-lg {
-  max-width: 44rem !important;
+  max-width: 42rem !important;
 }
 
 .markdown-body {
-  font-size: 1.25rem;
-  line-height: 1.7;
+  font-family: $serif;
+  font-size: 1.3rem;
+  line-height: 1.75;
+  color: $ink;
+
+  h1, h2, h3 {
+    font-family: $sans;
+    color: $ink;
+    border-bottom: none;
+    letter-spacing: -0.01em;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $accent;
+    margin-top: 2.5rem;
+  }
+
+  a {
+    color: $accent;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  /* the "← All weeks" line and the italic Future question */
+  h1 + p a {
+    font-family: $sans;
+    font-size: 0.85rem;
+    color: $muted;
+  }
+
+  blockquote {
+    font-size: 1.25rem;
+    color: #4d453c;
+    border-left: 3px solid $accent;
+    padding-left: 1.1em;
+    font-style: italic;
+
+    em, strong {
+      font-style: normal;
+    }
+  }
+
+  hr {
+    height: 0;
+    background: none;
+    border: none;
+    border-top: 1px solid #ddd5c8;
+    max-width: 10rem;
+    margin: 2.5rem auto;
+  }
+
+  ul, ol {
+    padding-left: 1.4em;
+
+    li {
+      margin-bottom: 0.6em;
+    }
+  }
+
+  /* index week list: roomier, ToC-like */
+  > ul li {
+    margin-bottom: 0.4em;
+  }
 }
 
-.markdown-body h1 {
-  font-size: 1.9rem;
-}
-
-.markdown-body blockquote {
-  font-size: 1.2rem;
+@media (max-width: 544px) {
+  .markdown-body {
+    font-size: 1.15rem;
+  }
 }
