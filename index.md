@@ -2,15 +2,15 @@
 
 ## Weeks
 
-- [Week 1 — Cane Ridge Communion (August 1801)](week1)
-- [Week 2 — Thomas Campbell's Heresy Trial (1807–1809)](week2)
-- Week 3 — Declaration & Address
-- Week 4 — The Rise and Fall of the Springfield Presbytery
-- [Week 5 — Wherever two or three are gathered: Brush Run Ordination](week5)
-- Week 6 — Living into God's Future: The Millennial Harbinger
-- Week 7 — The Stone-Campbell Merger
-- Week 8 — Eschatology and Non-Conformity: Lipscomb & the Civil War
-- Week 9 — The Story of Believer's Baptism
-- Week 10 — The Story of Congregational Singing
-- Week 11 — The Story of Studying Scripture
-- Week 12 — The Story of Governance
+- [Week 1 — Cane Ridge Communion](week1)
+- [Week 2 — Thomas Campbell's Heresy Trial](week2)
+- [Week 3 — Declaration & Address](week3)
+- [Week 4 — Rise and Fall of the Springfield Presbytery](week4)
+- [Week 5 — Where two or three gather: Brush Run Ordination](week5)
+- [Week 6 — Living into God's Future: Millennial Harbinger](week6)
+- [Week 7 — The Stone-Campbell Merger](week7)
+- [Week 8 — Eschatology & Non-Conformity: Lipscomb & Civil War](week8)
+- [Week 9 — The Story of Believer's Baptism](week9)
+- [Week 10 — The Story of Congregational Singing](week10)
+- [Week 11 — The Story of Studying Scripture](week11)
+- [Week 12 — The Story of Governance](week12)
