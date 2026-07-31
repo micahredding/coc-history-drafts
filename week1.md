@@ -2,7 +2,7 @@
 
 [← All weeks](.)
 
-**Central theme:** A wild experience of unity, which changed the participants — and
+**The Story:** A wild experience of unity, which changed the participants — and
 left a profound impression of the Spirit calling the church to come together across human-imposed lines.
 
 ---
@@ -37,7 +37,7 @@ What were they converging on? The divided church united at one table. That's the
 
 ---
 
-## Lessons
+## Ideas
 
 1. **If you come from another tradition — in a sense, we do too.** In a very real
    way, our tradition arose when people of many other traditions came together,

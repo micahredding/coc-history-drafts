@@ -6,7 +6,7 @@
 - [Week 2 — Thomas Campbell's Heresy Trial (1807–1809)](week2)
 - Week 3 — Declaration & Address
 - Week 4 — The Rise and Fall of the Springfield Presbytery
-- Week 5 — Wherever two or three are gathered: Brush Run Ordination
+- [Week 5 — Wherever two or three are gathered: Brush Run Ordination](week5)
 - Week 6 — Living into God's Future: The Millennial Harbinger
 - Week 7 — The Stone-Campbell Merger
 - Week 8 — Eschatology and Non-Conformity: Lipscomb & the Civil War

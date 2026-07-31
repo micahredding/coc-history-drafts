@@ -2,7 +2,7 @@
 
 [← All weeks](.)
 
-**Central theme:** The movement did not begin with a doctrine; it began with communion hospitality, and a desire to overcome division. When the institution's fences and the gospel's welcome conflict, the fences were held to be without divine warrant.
+**The Story:** The movement began with open communion, and a desire to overcome division. This openness led to a heresy trial, which led to the realization that the Gospel was bigger than petty human hierarchies.
 
 **Companion week to Week 1:** both weeks are about a communion table someone tried to
 fence. At Cane Ridge the gatekeepers backed down and the table opened; here the
@@ -107,7 +107,7 @@ We'll return to that next week.
 
 ---
 
-## Lessons
+## Ideas
 
 1. **The Unity Movement did not begin in America**. Thomas Campbell was working for unity in a divided Ireland, and took that work to America.
 2. **They Divided over Hospitality, not doctrine.** He didn't set out to found
