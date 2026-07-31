@@ -2,7 +2,9 @@
 
 [← All weeks](.)
 
-**The Story:**
+**The Story:** Our movement's eschatology and non-institutional impulses led to bold non-conformity. That could look very different in different contexts.
+
+**The Idea**: Our movement has the DNA to resist the tide.
 
 ---
 

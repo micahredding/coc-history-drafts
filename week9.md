@@ -2,9 +2,9 @@
 
 [← All weeks](.)
 
-**The Story:** On the frontier, thousands sat in agony at the mourner's bench, waiting for a feeling that would prove they were saved. Scott discovered an answer: a gospel you could respond to *today*. This was a liberation. God has provided a path of assurance — you can act, and in acting, know that God is assuring you of your forgiveness.
+**The Story:** On the frontier, thousands sat in agony at the mourner's bench, waiting for a feeling that would prove they were saved. Walter Scott discovered an answer: a gospel you could respond to *today*. This was a liberation. God had provided a path of assurance — you can act, and in acting, know that God has forgiven you.
 
-The Idea: Believer's Baptism embodies the Priesthood of All Believers right at the start. God empowers our own agency as the medium to express the assurance of salvation.
+**The Idea**: Believer's Baptism embodies the Priesthood of All Believers right at the start. God empowers our own agency as the medium to express the assurance of salvation.
 
 **Connections:**
 - Back to Cane Ridge: the ecstatic experience of Week 1 has hardened into a boundary — the required experience as a new fence. Stone overcame the Presbyterian boundary by calling sinners simply to "come"; now that same overcoming is needed again, at the water.
