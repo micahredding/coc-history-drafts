@@ -2,6 +2,7 @@
 
 ## Weeks
 
+- [Week 0 — Overview / Introduction](week0)
 - [Week 1 — Cane Ridge Communion](week1)
 - [Week 2 — Thomas Campbell's Heresy Trial](week2)
 - [Week 3 — Declaration & Address](week3)
