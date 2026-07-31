@@ -2,7 +2,9 @@
 
 [← All weeks](.)
 
-**The Story:** The movement began with open communion, and a desire to overcome division. This openness led to a heresy trial, which led to the realization that the Gospel was bigger than petty human hierarchies.
+**The Story:** Thomas Campbell was a Presbyterian minister seeking unity in a violent and divided Ireland. In America, he found sectarianism leaving Christians without communion, and opened the table to include them. For this, he was given a heresy trial and condemned. But the unity movement kept growing.
+
+**The Idea**: Our movement began with open communion, and a desire to overcome division. Human hierarchy is wrong when it wrongly divides the body of Christ.
 
 **Companion week to Week 1:** both weeks are about a communion table someone tried to
 fence. At Cane Ridge the gatekeepers backed down and the table opened; here the

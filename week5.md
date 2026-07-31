@@ -4,6 +4,8 @@
 
 **The Story:** The fledging unity movement seeks to join with local Presbyterians, is rebuffed. They must now ordain their own ministers and deacons, prompting a recognition that in the New Testament, authority inheres in congregations and in every believer. The priesthood of all believers is the root of Alexander Campbell's ministry.
 
+**The Idea**: The Priesthood of All Believers points to real authority, inhering in every Christian, and conferred in baptism. Our movement embraces this deeply.
+
 **Connections:** 
 - The Springfield Presbytery recognized the authority of the congregation to ordain its own ministers, as recognition of the work of the Spirit. Brush Run recognizes the same authority inhering in the congregation. 
 - Alexander Campbell says in his first sermon that Communion is a taste of the Millennial Church. This connects with the Communion theme throughout, and the Millennial Harbinger.

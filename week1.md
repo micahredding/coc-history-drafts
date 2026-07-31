@@ -2,8 +2,9 @@
 
 [← All weeks](.)
 
-**The Story:** A wild experience of unity, which changed the participants — and
-left a profound impression of the Spirit calling the church to come together across human-imposed lines.
+**The Story:** Thousands came together in wild experience of unity, centered on open communion. This changed the participants — and left a profound impression of the Spirit calling the church to come together across human-imposed lines.
+
+**The Idea**: Our movement began with open communion. A wild and deep expression of the true identity of the church.
 
 ---
 

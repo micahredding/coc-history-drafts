@@ -2,10 +2,12 @@
 
 [← All weeks](.)
 
-**The Story:** The movement's charter document is not a doctrinal distinctive but a protest against division itself: the church is *already* one — the sects are the innovation. And the honest counterweight arrives in the same room: the rule that opens the table also hands you a razor.
+**The Story:** A few decades after the American Declaration of Independence, Thomas Campbell pens a declaration of Christian unity. The body of Christ is already one, and ought not be divided by the arrogance of human opinions. 
+
+**The Idea**: Our movement is a testimony to the freedom and unity of the universal church. Any attempt to impose another mechanism of unity—a creed or ecclesiastical hierarchy—cannot achieve the actual substance of unity in Christ.
 
 **Connections:**
-- Cashes Week 2's closing line directly — the class has now heard the document's first sentence twice; this week they meet the room it came from, the man who wrote it, and the son who read the proof-sheets.
+- Week 2's closing line leads into the document's first sentence.
 - Alexander Campbell enters the story here, reading the proof-sheets in wet ink — the handoff to Brush Run (Week 5).
 
 ---

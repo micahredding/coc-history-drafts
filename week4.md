@@ -2,10 +2,12 @@
 
 [← All weeks](.)
 
-**The Story:** Conscience over jurisdiction, completed by institutional self-sacrifice. The five ministers refused to un-church the men who were un-churching them — and when their own movement started becoming a sect, they killed it. A governing body that died so the churches could live.
+**The Story:** Barton W Stone and minister friends are brought up on trial. They withdrew, but refused to un-church the men who were un-churching them. When their own movement started becoming a sect, they killed it. In the process, they ascribed all religious authority to the gathered body of believers.
+
+**The Idea**: Our movement is built on institutional self-sacrifice, and the willingness to lay down every obstacle to unity and freedom. And to relentlessly embrace the priesthood of all believers.
 
 **Connections:**
-- Week 2's echo in the other founding stream: the same heresy machinery, five years earlier, with a different ending — Campbell walked alone; the five walked together, built something, and then laid it down.
+- Week 2's echo in the other founding stream: the same heresy machinery, five years earlier, with a different ending — the five walked together, built something, and then laid it down.
 - Returns the class to the very room of Week 1: the Last Will was signed in the Cane Ridge meetinghouse, where the communion tables stood three years before.
 
 ---
