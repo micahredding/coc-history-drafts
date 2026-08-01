@@ -56,9 +56,10 @@ What were they converging on? The divided church united at one table. That's the
    Ridge is the very demand a presbytery would enforce six years later — next
    week's story. And it lands at home: If you've heard Josh or one of the other ministers saying that all are welcome to participate—that didn't begin here. That is Cane Ridge
    carried forward. That is a practice embraced on the frontier, and continued every Sunday.
-3. **Wildness and rationality.** The ecstatic experiences open a thread we'll
+3. **The table asks two questions, and this movement answered both the same way.** *Who may come?* — that is hospitality, and it is the question Cane Ridge answers when the doctrinal test at the door is withdrawn. *Who may preside?* — that is priesthood, and it is the question the rest of this class answers. In the Catholic tradition the priest is defined precisely by his power at the altar; to say every believer is a priest and then reserve the table to a class of men is to say it without meaning it. Our movement meant it. The same fence gets removed twice: once from the door of the table, once from the head of it. Watch for the second removal — it is the whole second half of the class. And notice it is already in this story: the moment the test at the door is dropped, William Burke climbs a fallen tree with an umbrella lashed over his head and preaches without anyone's authorization, and the thing works.
+4. **Wildness and rationality.** The ecstatic experiences open a thread we'll
    return to. Stone models the stance — neither credulity nor mockery. He was an empiricist: he granted "much fanaticism," yet found himself convinced by the evidence of changed lives. He said, "I am always hurt to hear people speak lightly of this work."
-4. **Bigger than us.** Participants carried the work to Ohio and as far as North
+5. **Bigger than us.** Participants carried the work to Ohio and as far as North
    Carolina; the camp meeting became the signature institution of the era's
    revivalism. The wildness escaped in every direction, for good and ill — Cane
    Ridge belongs to American Christianity, not just to us.

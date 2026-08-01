@@ -6,6 +6,8 @@
 
 **The Idea**: Congregrational singing is an embodied expression of the priesthood of all believers. All members have a voice.
 
+**The Thread — the practice that *voices*:** Singing is where the mutual witness becomes audible. A choir or an organ can carry the worship on your behalf; congregational singing structurally cannot. And the binding is in your ears: you cannot sing without hearing that every person in the room has a voice, and without knowing they are hearing yours. This is common knowledge in the strictest sense — not merely that each of us has standing, but that all of us know it about each other, out loud, every week.
+
 ---
 
 Narrative…
