@@ -1,6 +1,6 @@
 # Our Wild Democracy: The Story, Promise, and Future of the Churches of Christ
 
-A movement drawn together from radicals, farmers, clergy, and laypeople of many traditions took root on the American frontier — and helped reshape the Christian imagination of millions. We explore that story to discover what is genuinely beautiful, and what is worth carrying forward with vision and imagination.
+A movement drawn together from reformers, farmers, clergy, and laypeople of many traditions took root on the American frontier — and helped reshape the Christian imagination of millions. We explore that story to discover what is genuinely beautiful, and what is worth carrying forward with vision and imagination.
 
 ## Weeks
 
