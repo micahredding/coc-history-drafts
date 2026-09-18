@@ -111,37 +111,41 @@ A('<section class="slide"><h2>It was well received.</h2>'
 # ---------- 4 THE TRIAL ----------
 A(C('The Trial', 'Five minutes belong to the room.'))
 
-A('<section class="slide room"><h2>You are the court.</h2>'
-  '<div class=sub>Seven charges. Then: guilty, or not guilty?</div>'
-  '<aside class=notes>~minute 20. Hand it over. Co-teacher reads the charges.</aside></section>')
-
 A('<section class="slide"><h2>The Libel <span class=dim>&middot; January 1808</span></h2>'
   '<div class=days>'
-  '<div class="d frag"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span></div>'
-  '<div class="d frag"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span></div>'
-  '<div class="d frag"><span class=dn>3</span><span>that ruling elders may pray and exhort publicly in vacant congregations</span></div>'
-  '<div class="d frag"><span class=dn>4</span><span>that our people may hear ministers in stated opposition to our testimony</span></div>'
-  '<div class="d frag"><span class=dn>5</span><span>that Christ was not subject to the precept of the law, as well as its penalty, for his people</span></div>'
-  '<div class="d frag"><span class=dn>6</span><span>that a man may live without sin in this life</span></div>'
-  '<div class="d frag"><span class=dn>7</span><span>that he preached in another minister&rsquo;s bounds without appointment</span></div>'
+  '<div class="d"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span></div>'
+  '<div class="d"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span></div>'
+  '<div class="d"><span class=dn>3</span><span>that ruling elders may pray and exhort publicly in vacant congregations</span></div>'
+  '<div class="d"><span class=dn>4</span><span>that our people may hear ministers in stated opposition to our testimony</span></div>'
+  '<div class="d"><span class=dn>5</span><span>that Christ was not subject to the precept of the law, as well as its penalty, for his people</span></div>'
+  '<div class="d"><span class=dn>6</span><span>that a man may live without sin in this life</span></div>'
+  '<div class="d"><span class=dn>7</span><span>that he preached in another minister&rsquo;s bounds without appointment</span></div>'
   '</div>'
-  '<aside class=notes>Hanna, ch. II, from the Chartiers minutes. Read them plain. <b>Then take the vote.</b></aside></section>')
+  '<aside class=notes>Hanna, ch. II, from the Chartiers minutes. Read them plain.</aside></section>')
+
+A('<section class="slide room"><h2>You are the court.</h2>'
+  '<div class=sub>Guilty, or not guilty?</div>'
+  '<aside class=notes>~minute 20. Hand it over. Co-teacher reads the charges.</aside></section>')
 
 A('<section class="slide hard"><h2>The Verdict <span class=dim>&middot; February 1808</span></h2>'
-  '<div class=days>'
-  '<div class="d"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span><span class="verdict frag v-red" data-o=1>guilty</span></div>'
-  '<div class="d"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span><span class="verdict frag v-red" data-o=1>guilty</span></div>'
-  '<div class="d"><span class=dn>3</span><span>that ruling elders may pray and exhort publicly in vacant congregations</span><span class="verdict frag v-red" data-o=1>guilty</span></div>'
-  '<div class="d"><span class=dn>4</span><span>that our people may hear ministers in stated opposition to our testimony</span><span class="verdict frag v-red" data-o=1>guilty</span></div>'
-  '<div class="d"><span class=dn>7</span><span>that he preached in another minister&rsquo;s bounds without appointment</span><span class="verdict frag v-red" data-o=1>guilty</span></div>'
+  '<div class="days verdictlist">'
+  '<div class="d"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
+  '<div class="d"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
+  '<div class="d"><span class=dn>3</span><span>that ruling elders may pray and exhort publicly in vacant congregations</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
+  '<div class="d"><span class=dn>4</span><span>that our people may hear ministers in stated opposition to our testimony</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
+  '<div class="d"><span class=dn>7</span><span>that he preached in another minister&rsquo;s bounds without appointment</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
   '</div>'
   '<aside class=notes>Minutes, 12 Feb 1808: 1 and 2 &ldquo;clearly proved&rdquo;; 3, 4 and 7 &ldquo;acknowledged&hellip; and still adhered to by him.&rdquo; Charges 5 and 6 fell away: his answers were accepted (5 &ldquo;not sufficiently proved&rdquo;; 6 approved except &ldquo;or&rdquo; for &ldquo;and&rdquo;). Click through the five verdicts.</aside></section>')
 
-A(Q('&ldquo;It is, therefore, because I have <b>no confidence, either in my own infallibility or in that of others</b>, that I absolutely refuse, as inadmissible and schismatic, the introduction of human opinions and human inventions into the faith and worship of the Church.&rdquo;', 'Richardson, <i>Memoirs</i> 1:227', 'May 1808 &middot; his appeal, read standing before the Synod') +
+A(C('The Appeal', 'May 1808. He appealed the presbytery&rsquo;s verdict to the Associate Synod at Philadelphia and read his appeal aloud before it.'))
+
+A(Q('&ldquo;For what error or immorality ought I to be rejected, except it be that I refuse to acknowledge as obligatory upon myself, or to impose upon others, anything as of Divine obligation for which I cannot produce a <b>&lsquo;Thus saith the Lord?&rsquo;</b>&rdquo;', 'Richardson, <i>Memoirs</i> 1:227', 'May 1808 &middot; his appeal, read standing before the Synod at Philadelphia') +
+  '<aside class=notes>A separate sentence, two pages on in the appeal.</aside></section>')
+
+A(Q('&ldquo;It is, therefore, because I have <b>no confidence, either in my own infallibility or in that of others</b>, that I absolutely refuse, as inadmissible and schismatic, the introduction of human opinions and human inventions into the faith and worship of the Church.&rdquo;', 'Richardson, <i>Memoirs</i> 1:227') +
   '<aside class=notes>He opened by asking them to &ldquo;pause a moment.&rdquo;</aside></section>')
 
-A(Q('&ldquo;For what error or immorality ought I to be rejected, except it be that I refuse to acknowledge as obligatory upon myself, or to impose upon others, anything as of Divine obligation for which I cannot produce a <b>&lsquo;Thus saith the Lord?&rsquo;</b>&rdquo;', 'Richardson, <i>Memoirs</i> 1:227') +
-  '<aside class=notes>A separate sentence, two pages on in the appeal.</aside></section>')
+A(C('The Judgment', 'The Synod set the presbytery&rsquo;s judgment aside for &ldquo;informalities&rdquo; &mdash; then found his answers on the same articles &ldquo;so evasive and unsatisfactory, and highly equivocal&hellip; sufficient grounds to infer censure.&rdquo;'))
 
 A(Q('&ldquo;It is erroneous&hellip; to assert that a church has <b>no divine warrant for holding Confessions of Faith as terms of communion</b>.&rdquo;', '', '<span style="color:var(--gold)">Communion</span> &middot; Article 2', 'slide hard') +
   '<aside class=notes>The question of the class. &ldquo;But you, the Rev&rsquo;d Thomas Campbell, taught this error at Conemaugh and Buffaloe.&rdquo;<br>&rarr; Who may come to the table, and on whose terms.</aside></section>')
@@ -247,4 +251,6 @@ A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
   '<aside class=notes>~minute 40.</aside></section>')
 
 A(W1_SITESLIDE)
+
+
 
