@@ -17,10 +17,11 @@ css=open('decks/src/week2/engine.css').read()
 css+= ('\n  /* ---- Week 2 bleeds ---- */\n'
        '  .bgimg.wreckbg{background-image:url("%s")}\n'
        '  .bgimg.indaalbg{background-image:url("%s")}\n'
+       '  .bgimg.shipbg{background-image:url("%s")}\n'
        '  .litany{line-height:1.5;font-size:clamp(20px,3.6vmin,44px)}\n'
        '  .days{font-family:"IM Fell English SC","IM Fell English",Georgia,serif;'
        'font-size:clamp(13px,2.05vmin,21px);color:var(--bone-dim);line-height:2.1;max-width:52em;letter-spacing:.02em}\n'
-       % (b64(IMG+'wreck.jpg'), b64(IMG+'indaal.jpg')))
+       % (b64(IMG+'wreck.jpg'), b64(IMG+'indaal.jpg'), b64(IMG+'ship.jpg')))
 
 js=open('decks/src/week2/engine.js').read()
 js=js.replace("'w1cur'","'w2cur'").replace("'w1mode'","'w2mode'").replace("'w1strip'","'w2strip'")
