@@ -117,15 +117,15 @@ A('<section class="slide room"><h2>You are the court.</h2>'
 
 A('<section class="slide"><div class=eyebrow>The libel &middot; January 1808</div>'
   '<div class=days>'
-  '<div class="d frag"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span></div>'
-  '<div class="d frag"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span></div>'
-  '<div class="d frag"><span class=dn>3</span><span>that ruling elders may pray and exhort publicly in vacant congregations</span></div>'
-  '<div class="d frag"><span class=dn>4</span><span>that our people may hear ministers in stated opposition to our testimony</span></div>'
-  '<div class="d frag"><span class=dn>5</span><span>that Christ was not subject to the precept of the law, as well as its penalty, for his people</span></div>'
-  '<div class="d frag"><span class=dn>6</span><span>that a man may live without sin in this life</span></div>'
-  '<div class="d frag"><span class=dn>7</span><span>that he preached in another minister&rsquo;s bounds without appointment</span></div>'
+  '<div class="d frag"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span><span class="verdict frag v-red" data-o=1>guilty</span></div>'
+  '<div class="d frag"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span><span class="verdict frag v-red" data-o=1>guilty</span></div>'
+  '<div class="d frag"><span class=dn>3</span><span>that ruling elders may pray and exhort publicly in vacant congregations</span><span class="verdict frag v-yellow" data-o=1>admitted</span></div>'
+  '<div class="d frag"><span class=dn>4</span><span>that our people may hear ministers in stated opposition to our testimony</span><span class="verdict frag v-yellow" data-o=1>admitted</span></div>'
+  '<div class="d frag"><span class=dn>5</span><span>that Christ was not subject to the precept of the law, as well as its penalty, for his people</span><span class="verdict frag v-green" data-o=1>not guilty</span></div>'
+  '<div class="d frag"><span class=dn>6</span><span>that a man may live without sin in this life</span><span class="verdict frag v-green" data-o=1>not guilty</span></div>'
+  '<div class="d frag"><span class=dn>7</span><span>that he preached in another minister&rsquo;s bounds without appointment</span><span class="verdict frag v-yellow" data-o=1>admitted</span></div>'
   '</div>'
-  '<aside class=notes>Hanna, ch. II, from the Chartiers minutes. Read them plain. Then take the vote.</aside></section>')
+  '<aside class=notes>Hanna, ch. II, from the Chartiers minutes. Read them plain. <b>Take the vote.</b> Then keep clicking: the presbytery&rsquo;s own verdict, February 1808 &mdash; 1 and 2 &ldquo;clearly proved&rdquo;; 3, 4 and 7 &ldquo;acknowledged&hellip; and still adhered to by him&rdquo;; 5 satisfactory; 6 approved except a quibble over &ldquo;or&rdquo; versus &ldquo;and.&rdquo;</aside></section>')
 
 A(Q('&ldquo;It is erroneous&hellip; to assert that a church has <b>no divine warrant for holding Confessions of Faith as terms of communion</b>.&rdquo;', '', '<span style="color:var(--gold)">Communion</span> &middot; Article 2', 'slide hard') +
   '<aside class=notes>The question of the class. &ldquo;But you, the Rev&rsquo;d Thomas Campbell, taught this error at Conemaugh and Buffaloe.&rdquo;<br>&rarr; Who may come to the table, and on whose terms.</aside></section>')

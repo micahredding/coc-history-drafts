@@ -20,7 +20,7 @@
   if(isPrev||isPres)LS.set=function(){};  /* only the main window owns the shared state */
   var cur=0,interacted=false;
   function isPresent(){return document.body.classList.contains('present')}
-  function fragsOf(i){return [].slice.call(slides[i].querySelectorAll('.frag')).filter(function(f){return !f.classList.contains('wp')&&!(isPresent()&&f.classList.contains('nt'))})}
+  function fragsOf(i){var a=[].slice.call(slides[i].querySelectorAll('.frag')).filter(function(f){return !f.classList.contains('wp')&&!(isPresent()&&f.classList.contains('nt'))});a.sort(function(x,y){return (+(x.getAttribute('data-o')||0))-(+(y.getAttribute('data-o')||0))});return a}
   /* a .wp element (an attribution) is never its own step — it reveals with the frag above it */
   function syncWP(i){[].slice.call(slides[i].querySelectorAll('.wp')).forEach(function(w){
     var p=w.previousElementSibling,t=null;
