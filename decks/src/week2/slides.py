@@ -15,18 +15,11 @@ A('<section class="slide"><h2 class=nt>Ireland. The summer of 1798.</h2>'
   '<aside class=notes><b>Black screen. No title, no date card, no preamble.</b> Put us in the room first.'
   '<span class=narr>[MR &mdash; the opening line. Job: put us inside a church service in Ireland in the summer of 1798 before anyone knows whose church it is.]</span></aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">The United Irishmen</div>'
-  '<h2>Catholics, Anglicans and Presbyterians &mdash; <span style="color:var(--gold)">together</span>.</h2>'
-  '<div class="sub frag">Against British rule. It failed, and the reprisals were running.</div>'
-  '<div class="small frag">Which is why a Presbyterian meeting house was under suspicion: <b>a great many Presbyterians had been in it.</b></div>'
-  '<aside class=notes><b>This is the correction to the page.</b> The site currently frames the Irish violence as Catholic-vs-Protestant gangs. That is the <i>Armagh</i> conflict &mdash; Peep O&rsquo;Day Boys and Defenders &mdash; and it is a different story. Keep it for the addendum.'
-  '<span class=narr>[MR &mdash; two sentences. The rising was cross-confessional; the reprisal was British; his congregation was suspect <i>because</i> Presbyterians had joined it.]</span></aside></section>')
-
 A('<section class="slide"><div class="eyebrow quiet">Probably Ahorey &middot; eight miles from Armagh</div>'
   '<h2>A troop of Welsh cavalry surrounded the building.</h2>'
   '<div class="sub frag">Notorious, Foster says, for indiscriminate execution of old men, boys and women.</div>'
   '<div class="sub frag">The captain dismounted and walked in <b>alone</b>.</div>'
-  '<aside class=notes>Stationed at Newry. He comes in by himself &mdash; that is what makes it frightening rather than chaotic.'
+  '<aside class=notes>Why a Presbyterian meeting house was suspect: the failed rising of 1798 was the <b>United Irishmen</b> &mdash; Catholics, Anglicans and Presbyterians together, against British rule &mdash; and a great many Presbyterians had been in it. The reprisals were running. (Not the Catholic-vs-Protestant Armagh gangs the site page describes; that is a different story.) One clause, if any.<br>Stationed at Newry. He comes in by himself &mdash; that is what makes it frightening rather than chaotic.'
   '<span class=narr>[MR &mdash; the arrival, and the captain walking up the aisle &ldquo;casting fierce glances upon all sides.&rdquo;]</span></aside></section>')
 
 A('<section class="slide"><p class=bigquote><span class=q>&ldquo;Pray, sir!&rdquo;</span></p>'
@@ -67,12 +60,28 @@ A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Week 2<
 A(C('Division After Division','A divided world, and a man who kept trying to mend it.',
     '&#9733; <b>Perform a subtraction; do not teach Scottish church history.</b> Say the designation once, peel it, then two tries at unity in two slides. Under three minutes.'))
 
-A('<section class="slide"><div class="eyebrow quiet">His full designation in 1807</div>'
+A('<section class="slide"><div class="eyebrow quiet">His full designation in Ireland</div>'
   '<h2 class=litany>Old Light &middot; Anti-Burgher &middot; Seceder &middot; Presbyterian<br>'
-  '<span class=dim>of the Associate Synod of North America</span></h2>'
+  '<span class=dim>of the Anti-Burgher Synod of Ulster &mdash; under the General Associate Synod in Scotland</span></h2>'
   '<div class="sub frag">Every one of those words is a division from other Christians.</div>'
   '<aside class=notes>Say it whole, once, at speed. Then take it apart &mdash; Seceder, Anti-Burgher, and one clause for <b>Old Light</b>: the Anti-Burghers split <i>again</i> in 1806 over whether magistrates may suppress heresy, and Campbell landed on the conservative side, Foster says, &ldquo;not so much because of strong convictions&hellip; but because of personal relationships.&rdquo; One clause; no slide.'
   '<span class=narr>[MR &mdash; &ldquo;each of those terms designating a division from another group of Christians&rdquo; is already your sentence on the site. Use it here.]</span></aside></section>')
+
+A('<section class="slide"><div class=eyebrow>Old Light &middot; 1806</div>'
+  '<h2>Division over whether the <span style="color:var(--gold)">magistrate</span> may enforce religion.</h2>'
+  '<div class="sub frag">The Anti-Burghers split again. He landed with the Old Lights &mdash; by friendship, Foster says, more than conviction.</div>'
+  '<aside class=notes>The newest split, the year before he sailed. &ldquo;Not so much because of strong convictions&hellip; but because of personal relationships.&rdquo; One breath.</aside></section>')
+
+A('<section class="slide"><div class=eyebrow>Anti-Burgher &middot; 1747</div>'
+  '<h2>Division over an <span style="color:var(--gold)">oath</span>.</h2>'
+  '<div class="sub frag">Could a Seceder swear to &ldquo;the true religion presently professed within this realm&rdquo;? Burghers: yes, it only means <i>not Catholic</i>. Anti-Burghers: no, it blesses the church we just left.</div>'
+  '<aside class=notes>The burgess oath, required of city officials in Glasgow, Edinburgh and Perth after the 1745 rising. Hold the geography for two slides.</aside></section>')
+
+A('<section class="slide"><div class=eyebrow>Seceder &middot; 1733</div>'
+  '<h2>Division over <span style="color:var(--gold)">who appoints the minister</span>.</h2>'
+  '<div class="sub frag">Lay patrons were placing ministers over congregations that had not called them. The dissenting presbyteries walked out of the Church of Scotland.</div>'
+  '<div class="sub frag" style="color:var(--gold)">His tradition began as a protest against imposed authority.</div>'
+  '<aside class=notes>&#9733; <b>Plant this and leave it.</b> The body founded to resist imposed authority is about to impose it on him.</aside></section>')
 
 A('<section class="slide hard"><h2>Two years later the Anti-Burghers <span style="color:var(--brick)">excommunicated every Burgher minister.</span></h2>'
   '<div class="sub frag">&ldquo;Mutual condemnation and <b>mutual forbidding of intermingling</b>.&rdquo;</div>'
@@ -80,7 +89,6 @@ A('<section class="slide hard"><h2>Two years later the Anti-Burghers <span style
   '<aside class=notes>&#9733; <b>This is the rule Conemaugh breaks.</b> Plant it now and the open table costs nothing to set up.</aside></section>')
 
 A('<section class="slide hard"><h2 class=nt>And the oath?</h2>'
-  '<div class="small nt">Anti-Burghers, 1747: a split over whether city officials might swear to &ldquo;the true religion presently professed within this realm.&rdquo;</div>'
   '<p class=bigquote><span class=q>It applied in three Scottish cities.</span></p>'
   '<div class="sub frag" style="color:var(--gold)">It had never been required in Ireland at all.</div>'
   '<aside class=notes>&#9733; <b>The punchline of the beat.</b> His congregation was divided over an oath not one of them would ever be asked to take.'
@@ -319,6 +327,10 @@ A('<section class="slide hard"><div class="eyebrow quiet">Richardson&rsquo;s wor
   '<div class="small frag">Ewing, Mitchel at Anderston, Balford at George&rsquo;s Square, Wall at the Salt Market. <b>Every week.</b></div>'
   '<aside class=notes>&#9733;&#9733; <b>Nobody has put these two facts next to each other.</b> Thomas is on trial in Pennsylvania partly for saying occasional hearing is permissible. Alexander is in Glasgow doing it, weekly, while it happens.</aside></section>')
 
+A('<section class="slide"><p class=bigquote><span class=q>&ldquo;&hellip;an effect which was, doubtless, facilitated by the fact that <b>his revered father, to whose religious sentiments he was accustomed to pay the utmost deference, was now separated from him by the wide Atlantic</b>.&rdquo;</span></p>'
+  '<div class=cite>Richardson, on why Alexander changed</div>'
+  '<aside class=notes>&#9733; The son drifts partly <i>because the father is not there</i> &mdash; while the father, unknown to him, is breaking too.<br>This is the emotional engine of the last beat. Do not rush it.</aside></section>')
+
 A('<section class="slide"><div class="eyebrow quiet">Then the communion season came round</div>'
   '<div class=body style="text-align:left;max-width:46em">He could not decide. He had no letter from Ahorey, so the session <b>examined him &mdash; and gave him the token.</b><br><br>'
   'The hour of the Supper <b>&ldquo;found him still undecided.&rdquo;</b> Eight hundred communicants; eight or nine tables served in turn.<br><br>'
@@ -366,12 +378,22 @@ A('<section class="slide ideasmap"><div class=eyebrow>What this week touched</di
   '<div class=small>Bright: the spine of this week. Dim: touched in passing. Unlit: still ahead of us.</div>'
   '<aside class=notes>Same board as Week 1, lit for this week. Running it weekly is what makes twelve stories feel like one argument accumulating.<br>New light since last week: <b>Freedom of Conscience</b> and <b>Christ Alone</b> move to the spine; <b>Priesthood</b> (the elder who said &ldquo;Pray, sir&rdquo;) and <b>Minimalism</b> (&ldquo;Thus saith the Lord&rdquo;) come on dim.</aside></section>')
 
-A('<section class="slide idea room"><div class="eyebrow quiet">The idea</div>'
+A('<section class="slide idea room"><div class="eyebrow quiet">Idea 1 of 3</div>'
+  '<h2>Non-creedalism is <span style="color:var(--gold)">a protective move.</span></h2>'
+  '<div class="body nt">No human formulation as a test of fellowship &mdash; because no one&rsquo;s interpretation is infallible, and the simplest believer must be able to confess Christ and belong. <i>No confidence, either in my own infallibility or in that of others.</i></div>'
+  '<aside class=notes>Not scepticism. A fence-removal justified by humility about our own readings.<br>The two ideas that used to precede this &mdash; <i>the unity movement did not begin in America</i>, and <i>they divided over hospitality, not doctrine</i> &mdash; can be collected in a sentence here if you want them; do not re-argue.</aside></section>')
+
+A('<section class="slide idea room"><div class="eyebrow quiet">Idea 2 of 3</div>'
   '<h2>Why a table was worth all this.</h2>'
   '<div class="body nt" style="color:var(--gold)">[MR &mdash; this one is yours and it is the one the class most needs.]</div>'
   '<aside class=notes>&#9733;&#9733; <b>UNWRITTEN. This is the spine&rsquo;s step 3.</b><br>'
   'Week 1 established the table as the age to come arriving early. Without that claim here, Week 2 argues for tolerance &mdash; rather than arguing that someone put a gate in front of God&rsquo;s future.<br>'
   'The spine lists it as a claim-note still to be authored. Nothing is drafted for you here on purpose.</aside></section>')
+
+A('<section class="slide idea room"><div class="eyebrow quiet">Idea 3 of 3</div>'
+  '<h2>It cost him everything they could reach &mdash; <span style="color:var(--gold)">and he did not want to leave.</span></h2>'
+  '<div class="body nt">Two years. Three courts. His appointments, his income, his standing. A rebuke to his face. Fifty dollars sent back. He appealed, he submitted, he deferred, and he spent two years trying to stay. The break was the last thing he tried, not the first.</div>'
+  '<aside class=notes>This is what makes the grove cost something.</aside></section>')
 
 A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
   '<h2>What is beautiful here? What do we carry forward?</h2>'
@@ -381,6 +403,7 @@ A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
   '<aside class=notes><b>~minute 43.</b> These are already drafted in the HTML comments on week2.md &mdash; this promotes them to the screen.</aside></section>')
 
 A(W1_SITESLIDE)
+
 
 
 
