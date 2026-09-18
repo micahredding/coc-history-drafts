@@ -26,6 +26,7 @@ css+= ('\n  /* ---- Week 2 bleeds ---- */\n'
 js=open('decks/src/week2/engine.js').read()
 js=js.replace("'w1cur'","'w2cur'").replace("'w1mode'","'w2mode'").replace("'w1strip'","'w2strip'")
 js=js.replace("'w1presenter'","'w2presenter'")
+js=js.replace("||'read')","||'present')")  # one deck: present mode by default
 
 html=('<!doctype html><html><head><meta charset=utf8>'
  '<meta name=viewport content="width=device-width,initial-scale=1">'

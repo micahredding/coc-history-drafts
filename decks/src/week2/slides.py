@@ -1,410 +1,244 @@
 # -*- coding: utf-8 -*-
-# Week 2 deck content. S = list of (html) slides.
-def C(name, gloss, note):   # chapter card
+# Week 2 deck content — minimal cut, 2026-09-18. One idea per slide. S = list of slide html.
+# Notes are a cue card: fact / source / your line. "→" marks a line that is Micah's to say.
+def C(name, note):   # chapter card: the name only
     return ('<section class="slide breath sect"><h2>%s</h2><div class=table-line></div>'
-            '<div class="sub nt">%s</div><aside class=notes>%s</aside></section>' % (name, gloss, note))
+            '<aside class=notes>%s</aside></section>' % (name, note))
+def Q(quote, cite='', eyebrow='', cls='slide', sub=''):   # a quotation alone
+    e = '<div class=eyebrow>%s</div>' % eyebrow if eyebrow else ''
+    c = '<div class=cite>%s</div>' % cite if cite else ''
+    return '<section class="%s">%s<p class=bigquote><span class=q>%s</span></p>%s%s' % (cls, e, quote, sub, c)
 
 S = []
 A = S.append
 W1_SITESLIDE = open(__file__.rsplit('/',1)[0]+'/w1_siteslide.html').read()
 
 # ---------- 1 THE CAVALRY (cold open) ----------
-# ---------- 1 THE CAVALRY (cold open) ----------
-A('<section class="slide"><h2 class=nt>Ireland. The summer of 1798.</h2>'
-  '<div class="sub frag nt">A rebellion had just failed &mdash; and it was not the rebellion you would expect.</div>'
-  '<aside class=notes><b>Black screen. No title, no date card, no preamble.</b> Put us in the room first.'
-  '<span class=narr>[MR &mdash; the opening line. Job: put us inside a church service in Ireland in the summer of 1798 before anyone knows whose church it is.]</span></aside></section>')
+A('<section class="slide"><aside class=notes>Black. No title, no date.<br>&rarr; Put us inside a church service in Ireland, summer 1798, before anyone knows whose church it is.</aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">Probably Ahorey &middot; eight miles from Armagh</div>'
-  '<h2>A troop of Welsh cavalry surrounded the building.</h2>'
-  '<div class="sub frag">Notorious, Foster says, for indiscriminate execution of old men, boys and women.</div>'
-  '<div class="sub frag">The captain dismounted and walked in <b>alone</b>.</div>'
-  '<aside class=notes>Why a Presbyterian meeting house was suspect: the failed rising of 1798 was the <b>United Irishmen</b> &mdash; Catholics, Anglicans and Presbyterians together, against British rule &mdash; and a great many Presbyterians had been in it. The reprisals were running. (Not the Catholic-vs-Protestant Armagh gangs the site page describes; that is a different story.) One clause, if any.<br>Stationed at Newry. He comes in by himself &mdash; that is what makes it frightening rather than chaotic.'
-  '<span class=narr>[MR &mdash; the arrival, and the captain walking up the aisle &ldquo;casting fierce glances upon all sides.&rdquo;]</span></aside></section>')
+A('<section class="slide"><div class=eyebrow>Ireland &middot; summer 1798</div>'
+  '<h2>A troop of cavalry surrounded the church.</h2>'
+  '<aside class=notes>Probably Ahorey, near Armagh. Welsh horse from Newry, feared for reprisals after the failed rising (the United Irishmen &mdash; Presbyterians had joined it). The captain dismounted and walked in alone.<br>&rarr; The captain up the aisle.</aside></section>')
 
-A('<section class="slide"><p class=bigquote><span class=q>&ldquo;Pray, sir!&rdquo;</span></p>'
-  '<div class=cite>a venerable elder, sitting near Mr. Campbell<span class=loc>Richardson, <i>Memoirs</i> 1:44</span></div>'
-  '<aside class=notes>&#9733; <b>The best detail in the scene, and the page does not have it.</b> Campbell does not think of it himself. An elder tells him to pray.<br>'
-  'It is also the first time in this class that <b>a layman decides what happens in a room</b> &mdash; which is the whole argument of the twelve weeks.'
-  '<span class=narr>[MR &mdash; one line setting up the elder, then let the two words stand.]</span></aside></section>')
+A(Q('&ldquo;Pray, sir!&rdquo;', 'a venerable elder, sitting near Mr. Campbell &middot; Richardson, <i>Memoirs</i> 1:44') +
+  '<aside class=notes>An elder tells him to pray. He does not think of it himself.</aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">He began in the language of the forty-sixth Psalm</div>'
-  '<p class=bigquote><span class=q>&ldquo;Thou, O God, art our refuge and strength, a very present help in trouble.</span></p>'
-  '<p class="bigquote frag"><span class=q>Therefore will not we fear, though the earth be removed and though the mountains be carried into the midst of the sea.&rdquo;</span></p>'
-  '<aside class=notes>&ldquo;in a deep, unfaltering voice.&rdquo; Let the whole thing be read; do not summarise it.</aside></section>')
+A(Q('&ldquo;Thou, O God, art our refuge and strength, a very present help in trouble. Therefore will not we fear, though the earth be removed and though the mountains be carried into the midst of the sea.&rdquo;', '', 'He began in the words of the forty-sixth Psalm') +
+  '<aside class=notes>&ldquo;in a deep, unfaltering voice.&rdquo; Read the whole thing.</aside></section>')
 
-A('<section class="slide"><h2>The captain paused, bent his head, and listened to the close.</h2>'
-  '<div class="sub frag">Then he bowed, retraced his steps, mounted his horse, <b>and dashed away with the entire troop.</b></div>'
-  '<div class="small frag nt">Foster gives the whole scene &ldquo;according to the story.&rdquo; It is family tradition, not a document. Say so in a clause and move.</div>'
-  '<aside class=notes><b>The hedging clause is not optional</b> &mdash; this is the least-evidenced scene in the hour and it is first, in a class that has taught the room to expect counted evidence. One clause. The addendum carries the rest.'
-  '<span class=narr>[MR &mdash; the landing line. Job: <i>nothing was taken from him that day.</i>]</span></aside></section>')
+A('<section class="slide"><h2>The captain listened to the end, bowed, and rode away with his troop.</h2>'
+  '<aside class=notes>Family tradition, via Richardson &mdash; say &ldquo;as the story goes.&rdquo;<br>&rarr; Nothing was taken from him that day.</aside></section>')
 
-A('<section class="slide plateslide tight"><div class="eyebrow quiet">The minister who prayed</div>'
-  '<figure class="plate short"><img src="IMG_TCAMPBELL" alt="" style="max-height:62vh"><figcaption>Thomas Campbell, 1763&ndash;1854</figcaption></figure>'
-  '<aside class=notes>Name him now, for the first time. Forty-four years old in 1807 when this story reaches America; the engraving is later.'
-  '<span class=narr>[MR &mdash; one sentence: who this was, before the title comes up.]</span></aside></section>')
+A('<section class="slide plateslide tight"><figure class="plate short"><img src="IMG_TCAMPBELL" alt="" style="max-height:62vh"><figcaption>Thomas Campbell, 1763&ndash;1854</figcaption></figure>'
+  '<aside class=notes>&rarr; Name him. One sentence.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Week 2</div>'
   '<h1>Thomas Campbell&rsquo;s Break</h1><div class=table-line></div>'
   '<div class=sub>Ireland 1798 &mdash; Pennsylvania 1810</div>'
-  '<aside class=notes><b>The title comes up only now, after the cavalry has ridden off.</b> Cold open done; say the class name once and go to the next card.'
-  '<span class=cast><i>EVERYONE QUOTED IN THIS DECK</i><br>'
-  '<i>Thomas Campbell</i> &mdash; 44 in 1807. The defendant.<br>'
-  '<i>William Wilson</i> &mdash; the younger minister assigned to assist him; the complainant.<br>'
-  '<i>John Anderson</i> (1748&ndash;1830) &mdash; senior minister, professor of theology, Wilson&rsquo;s old teacher; the prosecutor.<br>'
-  '<i>Robert Richardson</i> &mdash; Alexander Campbell&rsquo;s biographer, 1868. The family&rsquo;s account.<br>'
-  '<i>W. H. Hanna</i> &mdash; 1935; transcribed the Chartiers Presbytery minute book.</span>'
-  'Budget: ~40 min for 62 slides. Two room turns: the court at <b>~20</b>, discussion at <b>~40</b>. Nine sections: cavalry &middot; division and two tries at unity &middot; voyage and Conemaugh &middot; trial &middot; break &middot; grove &middot; Alexander &middot; reunion &middot; teaser.</aside></section>')
+  '<aside class=notes>Say the title once and go. ~40 min; the room takes the court at ~20 and discussion at ~40.</aside></section>')
 
-# ---------- 2 DIVISION AFTER DIVISION — and two tries at unity ----------
-A(C('Division After Division','A divided world, and a man who kept trying to mend it.',
-    '&#9733; <b>Perform a subtraction; do not teach Scottish church history.</b> Say the designation once, peel it, then two tries at unity in two slides. Under three minutes.'))
+# ---------- 2 DIVISION AFTER DIVISION ----------
+A(C('Division After Division', 'Say the designation once, then peel it, outside in. Under three minutes for the section.'))
 
-A('<section class="slide"><div class="eyebrow quiet">His full designation in Ireland</div>'
+A('<section class="slide"><div class=eyebrow>His designation in Ireland</div>'
   '<h2 class=litany>Old Light &middot; Anti-Burgher &middot; Seceder &middot; Presbyterian<br>'
   '<span class=dim>of the Anti-Burgher Synod of Ulster &mdash; under the General Associate Synod in Scotland</span></h2>'
-  '<div class="sub frag">Every one of those words is a division from other Christians.</div>'
-  '<aside class=notes>Say it whole, once, at speed. Then take it apart &mdash; Seceder, Anti-Burgher, and one clause for <b>Old Light</b>: the Anti-Burghers split <i>again</i> in 1806 over whether magistrates may suppress heresy, and Campbell landed on the conservative side, Foster says, &ldquo;not so much because of strong convictions&hellip; but because of personal relationships.&rdquo; One clause; no slide.'
-  '<span class=narr>[MR &mdash; &ldquo;each of those terms designating a division from another group of Christians&rdquo; is already your sentence on the site. Use it here.]</span></aside></section>')
+  '<aside class=notes>Every word is a division from other Christians. Say it whole, then take it apart.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Old Light &middot; 1806</div>'
   '<h2>Division over whether the <span style="color:var(--gold)">magistrate</span> may enforce religion.</h2>'
-  '<div class="sub frag">The Anti-Burghers split again. He landed with the Old Lights &mdash; by friendship, Foster says, more than conviction.</div>'
-  '<aside class=notes>The newest split, the year before he sailed. &ldquo;Not so much because of strong convictions&hellip; but because of personal relationships.&rdquo; One breath.</aside></section>')
+  '<aside class=notes>The Anti-Burghers split again the year before he sailed. He sided with the Old Lights by friendship more than conviction (Foster).</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Anti-Burgher &middot; 1747</div>'
   '<h2>Division over an <span style="color:var(--gold)">oath</span>.</h2>'
-  '<div class="sub frag">Could a Seceder swear to &ldquo;the true religion presently professed within this realm&rdquo;? Burghers: yes, it only means <i>not Catholic</i>. Anti-Burghers: no, it blesses the church we just left.</div>'
-  '<aside class=notes>The burgess oath, required of city officials in Glasgow, Edinburgh and Perth after the 1745 rising. Hold the geography for two slides.</aside></section>')
+  '<div class=sub>After it, Burghers and Anti-Burghers could no longer take communion together.</div>'
+  '<aside class=notes>Whether a Seceder could swear to &ldquo;the true religion presently professed within this realm.&rdquo; Burghers: it only means not Catholic. Anti-Burghers: it blesses the church we left. Within two years, mutual excommunication &mdash; &ldquo;mutual forbidding of intermingling.&rdquo; This is the rule Conemaugh breaks.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Seceder &middot; 1733</div>'
   '<h2>Division over <span style="color:var(--gold)">who appoints the minister</span>.</h2>'
-  '<div class="sub frag">Lay patrons were placing ministers over congregations that had not called them. The dissenting presbyteries walked out of the Church of Scotland.</div>'
-  '<div class="sub frag" style="color:var(--gold)">His tradition began as a protest against imposed authority.</div>'
-  '<aside class=notes>&#9733; <b>Plant this and leave it.</b> The body founded to resist imposed authority is about to impose it on him.</aside></section>')
+  '<div class=sub>They walked out of the Church of Scotland.</div>'
+  '<aside class=notes>Lay patrons placing ministers over congregations that had not called them. His tradition began as a protest against imposed authority.</aside></section>')
 
-A('<section class="slide hard"><h2>Two years later the Anti-Burghers <span style="color:var(--brick)">excommunicated every Burgher minister.</span></h2>'
-  '<div class="sub frag">&ldquo;Mutual condemnation and <b>mutual forbidding of intermingling</b>.&rdquo;</div>'
-  '<div class="small frag nt">Hold that phrase. In seventy pages of this story it is the reason a family goes years without the Lord&rsquo;s Supper.</div>'
-  '<aside class=notes>&#9733; <b>This is the rule Conemaugh breaks.</b> Plant it now and the open table costs nothing to set up.</aside></section>')
+A('<section class="slide hard"><h2>The oath applied in three Scottish cities. <span style="color:var(--gold)">It had never been required in Ireland.</span></h2>'
+  '<aside class=notes>Glasgow, Edinburgh, Perth. His congregation was divided over an oath none of them would ever be asked to take.</aside></section>')
 
-A('<section class="slide hard"><h2 class=nt>And the oath?</h2>'
-  '<p class=bigquote><span class=q>It applied in three Scottish cities.</span></p>'
-  '<div class="sub frag" style="color:var(--gold)">It had never been required in Ireland at all.</div>'
-  '<aside class=notes>&#9733; <b>The punchline of the beat.</b> His congregation was divided over an oath not one of them would ever be asked to take.'
-  '<span class=narr>[MR &mdash; your site sentence says the dispute was &ldquo;a whole country away.&rdquo; It is stronger than that: it did not apply to them.]</span></aside></section>')
+A('<section class="slide"><div class=eyebrow>1798</div>'
+  '<h2>He helped found a missionary society open to every denomination.</h2>'
+  '<div class="sub frag">His synod voted it inconsistent with the Secession Testimony. He gave it up.</div>'
+  '<aside class=notes>Evangelical Society of Ulster &mdash; &ldquo;regardless of their denomination.&rdquo; Synod of Ulster, Aug 1799: the vote came at the same meeting that seated him. Three elders asked whether he would submit; he agreed to &ldquo;try to see eye to eye.&rdquo;<br>&rarr; The one that could make him yield was never the one with the horses.</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>October 1798 &middot; the first try</div>'
-  '<h2>He helped found the Evangelical Society of Ulster.</h2>'
-  '<div class=body>Cross-denominational &mdash; supporting missionaries <b>&ldquo;regardless of their denomination.&rdquo;</b></div>'
-  '<p class="bigquote frag"><span class=q>&ldquo;Is the Evangelical Society of Ulster constituted on principles consistent with the Secession Testimony?&rdquo;</span></p>'
-  '<div class="sub frag">His synod voted <b>no</b> &mdash; at the same meeting that seated him. Three elders were sent to ask whether he would submit. He agreed to &ldquo;try to see eye to eye.&rdquo;</div>'
-  '<aside class=notes>Seated and disciplined in one sitting (Synod of Ulster minutes, 30 July&ndash;1 Aug 1799). He gave up his role and was out of the society by 1800.<br>Nobody accused him. There was no enemy. A body enforced its own boundary &mdash; and the man who had not moved for the cavalry moved for three of his own elders.'
-  '<span class=narr>[MR &mdash; one line: <i>the one that could make him yield was never the one with the horses.</i>]</span></aside></section>')
-
-A('<section class="slide hard"><div class=eyebrow>October 1804 &middot; the second try</div>'
-  '<h2>He proposed reuniting Burghers and Anti-Burghers in Ireland &mdash; where the oath had never applied.</h2>'
-  '<div class="sub frag">The Irish synod <b>&ldquo;favorably received&rdquo;</b> it. Then Scotland heard about it.</div>'
-  '<p class="bigquote frag"><span class=q>The synod &ldquo;allowed him to argue his case but <b>refused to allow the proposition to come to a vote</b>.&rdquo;</span></p>'
-  '<div class=cite>Foster, on the General Associate Synod at Glasgow</div>'
-  '<aside class=notes>Sent to Glasgow to ask that the Irish churches decide for themselves. Not defeated &mdash; never permitted to be decided. Twice now he has tried, and twice a court above him has closed it.</aside></section>')
+A('<section class="slide"><div class=eyebrow>1804</div>'
+  '<h2>He proposed reuniting Burghers and Anti-Burghers in Ireland.</h2>'
+  '<div class="sub frag">Glasgow &ldquo;allowed him to argue his case but <b>refused to allow the proposition to come to a vote</b>.&rdquo;</div>'
+  '<aside class=notes>The Irish synod received it favourably; the General Associate Synod in Scotland would not let it be decided (Foster). Twice he tried; twice a court above him closed it.</aside></section>')
 
 # ---------- 3 SEA VOYAGE → COMMUNION AT CONEMAUGH ----------
 A('<section class="slide bleed sect"><div class=bg><div class="bgimg shipbg"></div></div>'
   '<div class=credit>Robert Salmon, <i>British Merchantman in the River Mersey off Liverpool</i>, 1809<br>A ship of the kind, not the <i>Brutus</i></div>'
   '<h2>Sea Voyage</h2><div class=table-line></div>'
-  '<aside class=notes>Chapter card. Keep this beat short: it moves him across the Atlantic and <b>plants Alexander</b> in one clause.<br>&#9888; Caption honestly: a merchant ship of the period, painted two years after his crossing. Not his ship.</aside></section>')
+  '<aside class=notes>Card.</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>8 April 1807 &middot; Londonderry</div>'
-  '<h2>His doctor told him the only remedy was to get out from under it.</h2>'
-  '<div class=body>The prescription was <b>a sea voyage</b>. Thirty-five days on the <i>Brutus</i>; Philadelphia in May.</div>'
-  '<div class="sub frag">He left his eighteen-year-old son in charge of the family and the school. <b>His name was Alexander.</b></div>'
-  '<aside class=notes>Teaching, pastoring Ahorey, and synod work had produced a debilitating illness. He is also leaving because he lost both campaigns.<br>&#9733; Alexander: one clause. It germinates in the last two chapters.</aside></section>')
+A('<section class="slide"><div class=eyebrow>April 1807 &middot; Londonderry</div>'
+  '<h2>His doctor prescribed a sea voyage.</h2>'
+  '<div class=sub>He left his eighteen-year-old son, <b>Alexander</b>, in charge of the family and the school.</div>'
+  '<aside class=notes>Illness from overwork; thirty-five days on the <i>Brutus</i>; Philadelphia in May. Assigned to the Presbytery of Chartiers, western Pennsylvania. Alexander: one clause; he returns in the last two chapters.</aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">He landed to find his own synod in session</div>'
-  '<h2>Assigned to the Presbytery of Chartiers &mdash; western Pennsylvania, among old neighbours from Ireland.</h2>'
-  '<div class=body>He settled near <b>Washington</b>, thirty miles south-west of Pittsburgh, with preaching stations in <b>four counties</b>.</div>'
-  '<div class="sub frag">And here the quarrel in his sect&rsquo;s name was already over: the American synod <b>had merged Burghers and Anti-Burghers</b>. There were no burgesses.</div>'
-  '<aside class=notes>Beaver, Allegheny, Indiana, Washington. The four counties are why, in six weeks, he is seventy miles from home.<br>The oath that split his church had never applied in Ireland and did not exist in America.</aside></section>')
+A(C('Communion at Conemaugh', ''))
 
-A(C('Communion at Conemaugh','August 1807. Seventy miles from home.',
-    '&#9733; The Week 1 restatement lives at the top of this beat now &mdash; <b>two minutes before the fence is broken instead of forty.</b>'))
+A('<section class="slide plateslide tight"><div class=eyebrow>August 1807 &middot; seventy miles from home</div>'
+  '<figure class="plate wide"><img src="IMG_MAP" alt=""><figcaption>Reading Howell, <i>A Map of the State of Pennsylvania</i>, 1792 &middot; Library of Congress</figcaption></figure>'
+  '<aside class=notes>Washington, his home, south-west of Pittsburgh. Conemaugh Township, later Indiana County, the far edge of a four-county circuit. Cannamaugh Church, an Associate congregation founded 1798.</aside></section>')
 
-A('<section class="slide plateslide tokenslide"><div class=eyebrow>You remember what a Scottish communion was</div>'
+A('<section class="slide plateslide tokenslide"><div class=eyebrow>The token</div>'
   '<figure class="plate short"><img src="IMG_TOKEN" alt=""><figcaption>A Scottish communion token, 1750</figcaption></figure>'
-  '<div class=body>The multi-day season. The fencing sermon. And the <b>token</b> &mdash; you were examined beforehand, and if you passed you were handed a small lead ticket to surrender at the table.</div>'
-  '<aside class=notes><b>Re-run the Week 1 slide deliberately.</b> Same object, same image. Running it again <i>is</i> the recap &mdash; it costs no exposition.<br>'
-  'And now add the rule from the Anti-Burgher slide to it: <b>mutual forbidding of intermingling.</b>'
-  '<span class=narr>[MR &mdash; one sentence tying the token to the rule: this is the machinery, and this is who it kept out.]</span></aside></section>')
+  '<div class=sub>Examined beforehand. Handed a lead ticket. Surrendered at the table.</div>'
+  '<aside class=notes>Same object as Week 1. The fence, in metal.</aside></section>')
 
-A('<section class="slide"><h2 class=nt>Faithful Presbyterians who had not received communion in years.</h2>'
-  '<div class="sub frag">Not for lack of a minister.</div>'
-  '<div class="sub frag" style="color:var(--gold)">For lack of a minister <b>of their own sub-sect</b>.</div>'
-  '<aside class=notes>This is your sentence from the site, verbatim. It now lands as the <i>consequence</i> of the rule you planted at &ldquo;mutual forbidding of intermingling,&rdquo; instead of as an opening fact the room has no frame for.</aside></section>')
+A('<section class="slide"><h2>Faithful Presbyterians who had not received communion in years.</h2>'
+  '<div class="sub frag">Not for lack of a minister. For lack of a minister <b>of their own sub-sect</b>.</div>'
+  '<aside class=notes>Your sentence from the site.</aside></section>')
 
-A('<section class="slide plateslide tight"><div class=eyebrow>Seventy miles from home</div>'
-  '<figure class="plate wide"><img src="IMG_MAP" alt=""><figcaption>Reading Howell, <i>A Map of the State of Pennsylvania</i>, 1792 &middot; Library of Congress. The ring on the right marks the district, not a building &mdash; on this sheet it is still Westmoreland.</figcaption></figure>'
-  '<div class="sub frag"><b>Washington</b>, his home, south-west of Pittsburgh. <b>Conemaugh</b>, the other way &mdash; the far edge of a four-county circuit.</div>'
-  '<aside class=notes>Cannamaugh Church, Conemaugh Township, an Associate congregation founded 1798; Hanna finds it spelled <b>Cannamagh, Cannamaugh and Conemaugh</b> in one minute book, which is why two published histories put it in two different places. Ten seconds on that if you like &mdash; it shows the room how the record behaves.'
-  '<br>&#9733; The point of the slide: <b>the open table was not his home ground.</b> It happened once, on a trip.</aside></section>')
+A(Q('&hellip;that all his pious hearers, &ldquo;who felt so disposed and duly prepared, should, <b>without respect to party differences</b>, enjoy the benefits of the communion season then providentially afforded them.&rdquo;', 'Richardson, <i>Memoirs</i> 1:224', 'He did not fence the table') +
+  '<aside class=notes>Wilson&rsquo;s deposition: he &ldquo;would not go over the commands&rdquo; &mdash; to require assent to the terms particularly would be to demand &ldquo;implicit faith.&rdquo;</aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">The minister sent to assist him</div>'
-  '<h2>William Wilson.</h2>'
-  '<div class=body>Younger. Glasgow-educated. And already, Foster says, <b>&ldquo;upset by some of the religious views Campbell had formed in Ireland&rdquo;</b> &mdash; his opposition to subscription to creeds, and his openness to Christians outside the body.</div>'
-  '<div class="sub frag" style="color:var(--gold)">He was troubled before the table. Not by it.</div>'
-  '<aside class=notes>This matters for fairness: Wilson is not scandalised by one act of hospitality. He had been uneasy for the whole journey.</aside></section>')
+A(Q('&ldquo;&hellip;the Lord&rsquo;s Supper, <b>that great ordinance of unity and love</b>.&rdquo;', '<i>Declaration and Address</i>, 1809', 'Two years later, in his own words') +
+  '<aside class=notes>1809, not 1807 &mdash; say &ldquo;two years later he put it this way.&rdquo;</aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">Fencing the table, he declined to do the usual thing</div>'
-  '<h2>He &ldquo;would not go over the commands.&rdquo;</h2>'
-  '<div class=body>He offered terms of communion <b>generally</b> &mdash; not particularly. Because to require assent to them <i>particularly</i>, he said, would be to demand&hellip;</div>'
-  '<p class="bigquote frag"><span class=q>&ldquo;implicit faith.&rdquo;</span></p>'
-  '<aside class=notes>&#9733; <b>The sharpest idea in the file.</b> <i>Implicit faith</i> is the Protestant term of abuse for Roman submission to the church&rsquo;s teaching without personal understanding.<br>'
-  'He is standing in front of a room of Seceders telling them <b>their fence is functionally Roman.</b> Say that.<br>'
-  '<i>Source: Wilson&rsquo;s own deposition, in the trial record.</i></aside></section>')
+A('<section class="slide"><h2>It was well received.</h2>'
+  '<div class="sub frag">The young minister assisting him, <b>William Wilson</b>, reported it to the presbytery.</div>'
+  '<aside class=notes>Nobody objected in the room. Wilson took it to his old teacher John Anderson, professor of theology; Anderson refused to keep a preaching appointment with Campbell.</aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">And then the invitation</div>'
-  '<p class=bigquote><span class=q>&hellip;that all his pious hearers, &ldquo;who felt so disposed and duly prepared, should, <b>without respect to party differences</b>, enjoy the benefits of the communion season then providentially afforded them.&rdquo;</span></p>'
-  '<div class=cite>Richardson, <i>Memoirs</i> 1:224</div>'
-  '<aside class=notes>The act itself, in the only words we have for it. Nine words are doing the work: <i>without respect to party differences.</i></aside></section>')
+# ---------- 4 THE TRIAL ----------
+A(C('The Trial', 'Five minutes belong to the room.'))
 
-A('<section class="slide"><div class="eyebrow quiet">Two years later he wrote down why it mattered</div>'
-  '<p class=bigquote><span class=q>&ldquo;&hellip;the dispensations of the Lord&rsquo;s Supper, <b>that great ordinance of unity and love</b>.&rdquo;</span></p>'
-  '<div class="sub frag">&ldquo;&hellip;the great fundamental law of unity and love ought not to be violated to make way for <b>exalting human opinions to an equality with express revelation, by making them articles of faith and terms of communion</b>.&rdquo;</div>'
-  '<div class=cite><i>Declaration and Address</i>, 1809</div>'
-  '<aside class=notes>&#9888; <b>Say &ldquo;two years later he put it this way.&rdquo;</b> These are 1809, not 1807. Do not let the room hear them as what he said at the table.'
-  '<br>But they are the best statement he ever made of why a table was worth this, and the beat needs his own voice, not a summary.</aside></section>')
-
-A('<section class="slide"><h2 class=nt>It was well received.</h2>'
-  '<div class="sub frag">He was heartened about the possibilities for the growth of Christian brotherhood.</div>'
-  '<div class="sub frag" style="color:var(--brick)">But back in Pittsburgh, things did not go so well.</div>'
-  '<aside class=notes>Your sentences, verbatim from the site.<br><b>Nobody objected in the room.</b> The complaint travels afterward &mdash; and that is the difference from Cane Ridge, where the objection came first and Stone answered it on the spot.</aside></section>')
-
-# ---------- 4 THE TRIAL — communion, priesthood, conscience ----------
-A(C('The Trial','Three of the seven charges are this class.',
-    'Card. ~10 minutes, of which <b>five belong to the room</b>. Communion (Article 2), priesthood (Article 3), freedom of conscience (Article 4).'))
-
-A('<section class="slide"><div class="eyebrow quiet">Wilson reported it &mdash; to his own old schoolmaster</div>'
-  '<h2>John Anderson, 1748&ndash;1830.</h2>'
-  '<div class=body>He taught Wilson at his log seminary and was professor of theology for the churches of the Chartiers Presbytery. He refused to keep a preaching appointment with Campbell at Buffaloe.</div>'
-  '<div class="sub frag">His stated reason: doctrines <b>&ldquo;inconsistent with some articles of our testimony.&rdquo;</b></div>'
-  '<aside class=notes>&#9733; <b>The mechanism, and it is not a conspiracy.</b> Wilson complained to the man who trained him. The investigating committee was Anderson plus <b>three of his own former students</b> &mdash; Wilson, Allison, Ramsay &mdash; and an elder.<br>'
-  'A small frontier seminary&rsquo;s alumni network, sitting as a court.<br>'
-  'The only portrait in circulation is unsourced and shows a man of about thirty; Anderson was fifty-nine. It is not in the deck. (The authenticated image of him is the title page of his 1793 book on saving faith &mdash; in the research database if wanted.)</aside></section>')
-
-A('<section class="slide room"><div class=eyebrow>&#9670; the room</div>'
-  '<h2>You are the court.</h2>'
-  '<div class=body>Seven charges, read as they were written. No commentary.</div>'
-  '<div class="sub frag">Then: guilty, or not guilty?</div>'
-  '<aside class=notes><b>~minute 24. Six minutes. Hand it over.</b><br>'
-  'Co-teacher reads the charges, or takes the vote &mdash; this works far better with two voices.<br>'
-  'Read the seven from the next slide, one reveal each. Do not gloss. Do not signal the answer. Then vote.</aside></section>')
+A('<section class="slide room"><h2>You are the court.</h2>'
+  '<div class=sub>Seven charges. Then: guilty, or not guilty?</div>'
+  '<aside class=notes>~minute 20. Hand it over. Co-teacher reads the charges.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>The libel &middot; January 1808</div>'
   '<div class=days>'
-  '<div class="d frag"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does <b>not belong to the essence of saving faith</b></span></div>'
-  '<div class="d frag"><span class=dn>2</span><span>that a church has <b>no divine warrant for holding Confessions of Faith as terms of communion</b></span></div>'
-  '<div class="d frag"><span class=dn>3</span><span>that ruling elders may <b>pray and exhort publicly</b> in vacant congregations</span></div>'
-  '<div class="d frag"><span class=dn>4</span><span>that our people may <b>hear ministers</b> in stated opposition to our testimony</span></div>'
-  '<div class="d frag"><span class=dn>5</span><span>that Christ was <b>not subject to the precept</b> of the law, as well as its penalty, for his people</span></div>'
-  '<div class="d frag"><span class=dn>6</span><span>that a man may <b>live without sin</b> in this life</span></div>'
-  '<div class="d frag"><span class=dn>7</span><span>that he <b>preached in another minister&rsquo;s bounds</b> without appointment</span></div>'
+  '<div class="d frag"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span></div>'
+  '<div class="d frag"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span></div>'
+  '<div class="d frag"><span class=dn>3</span><span>that ruling elders may pray and exhort publicly in vacant congregations</span></div>'
+  '<div class="d frag"><span class=dn>4</span><span>that our people may hear ministers in stated opposition to our testimony</span></div>'
+  '<div class="d frag"><span class=dn>5</span><span>that Christ was not subject to the precept of the law, as well as its penalty, for his people</span></div>'
+  '<div class="d frag"><span class=dn>6</span><span>that a man may live without sin in this life</span></div>'
+  '<div class="d frag"><span class=dn>7</span><span>that he preached in another minister&rsquo;s bounds without appointment</span></div>'
   '</div>'
-  '<aside class=notes>Each is &ldquo;erroneous or contrary to the Holy Scriptures and our subordinate standards,&rdquo; with proof-texts and a Confession citation. Hanna prints the libel in full from the Chartiers minutes (ch. II).<br>'
-  'Precisions: 3 is <i>vacant</i> congregations &mdash; no settled minister at all. 4 reaches past Presbyterians: anyone &ldquo;in a stated opposition to our testimony.&rdquo; 7 is Ramsay&rsquo;s bounds, and Ramsay sat on the drafting committee.<br>'
-  '<b>NOW TAKE THE VOTE.</b> Guilty, or not guilty &mdash; on the whole, or charge by charge if the room wants it.</aside></section>')
+  '<aside class=notes>Hanna, ch. II, from the Chartiers minutes. Read them plain. Then take the vote.</aside></section>')
 
-A('<section class="slide hard"><h2 class=nt>Which of the seven is this class about?</h2>'
-  '<div class=eyebrow>Article 2</div>'
-  '<p class=bigquote><span class=q>&ldquo;It is erroneous&hellip; to assert that a church has <b>no divine warrant for holding Confessions of Faith as terms of communion</b>.&rdquo;</span></p>'
-  '<div class="sub frag">&ldquo;But you, the Rev&rsquo;d Thomas Campbell, taught this error <b>at Conemaugh</b> and Buffaloe.&rdquo;</div>'
-  '<aside class=notes>&#9733;&#9733; <b>This is the question of the class.</b> Who may come to the table, and on what terms? He said a human confession may not be the gate. The court said it must be. Everything in the twelve weeks turns on this sentence.<br>'
-  '<i>Terms of communion</i> is church fellowship whole &mdash; membership and the Supper together. The table is where it is enforced, and the libel itself names Conemaugh.'
-  '<span class=narr>[MR &mdash; the line that lands the turn. Job: they did not indict the invitation; they indicted the belief that the fence had no warrant.]</span></aside></section>')
+A(Q('&ldquo;It is erroneous&hellip; to assert that a church has <b>no divine warrant for holding Confessions of Faith as terms of communion</b>.&rdquo;', '', '<span style="color:var(--gold)">Communion</span> &middot; Article 2', 'slide hard') +
+  '<aside class=notes>The question of the class. &ldquo;But you, the Rev&rsquo;d Thomas Campbell, taught this error at Conemaugh and Buffaloe.&rdquo;<br>&rarr; Who may come to the table, and on whose terms.</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>Article 3</div>'
-  '<p class=bigquote><span class=q>&ldquo;It is erroneous&hellip; to assert that it is <b>the duty of ruling elders to pray and exhort publickly</b> in vacant congregations.&rdquo;</span></p>'
-  '<aside class=notes>Laymen leading worship where there is no minister. Taught &ldquo;at Buffaloe.&rdquo;<br>&#9733; Tie it back to the cold open: the first person in this hour to decide what happened in a room was <b>an elder</b> &mdash; &ldquo;Pray, sir.&rdquo; The court is now charging him for saying elders may do exactly that. This is the <i>Priesthood</i> thread on the board.</aside></section>')
+A(Q('&ldquo;It is erroneous&hellip; to assert that it is <b>the duty of ruling elders to pray and exhort publickly</b> in vacant congregations.&rdquo;', '', '<span style="color:var(--gold)">Priesthood</span> &middot; Article 3', 'slide hard') +
+  '<aside class=notes>Laymen leading worship where there is no minister. The first person to decide what happened in a room this hour was an elder: &ldquo;Pray, sir.&rdquo;</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>Article 4</div>'
-  '<p class=bigquote><span class=q>&ldquo;It is erroneous&hellip; to assert that it is warrantable for the people of our communion to <b>hear ministers that are in a stated opposition to our testimony</b>.&rdquo;</span></p>'
-  '<div class="sub frag nt">Remember this one.</div>'
-  '<aside class=notes>&#9733; <b>&ldquo;Occasional hearing.&rdquo;</b> Flag it lightly. In the last beat his own son will be doing it every week in Glasgow.</aside></section>')
+A(Q('&ldquo;It is erroneous&hellip; to assert that it is warrantable for the people of our communion to <b>hear ministers that are in a stated opposition to our testimony</b>.&rdquo;', '', '<span style="color:var(--gold)">Freedom of Conscience</span> &middot; Article 4', 'slide hard') +
+  '<aside class=notes>&ldquo;Occasional hearing.&rdquo; Hold it: his son will be doing this every week in Glasgow.</aside></section>')
 
-# ---------- 5 THE BREAK — his words, and theirs ----------
-A(C('The Break','He appealed, he submitted, he deferred &mdash; and then he stopped.',
-    'Card. Accuracy matters here: the break is <b>September 1808</b>, three weeks before his family sailed.'))
+# ---------- 5 THE BREAK ----------
+A(C('The Break', 'Accuracy: the break is September 1808, three weeks before his family sailed.'))
 
-A('<section class="slide"><div class=eyebrow>12 February 1808 &middot; the verdict</div>'
-  '<p class=bigquote><span class=q>&ldquo;&hellip;judged the <b>1 &amp; 2 clearly proved</b>&rdquo;</span></p>'
-  '<div class="sub frag">3, 4 and 7 &mdash; <b>&ldquo;acknowledged&hellip; and still adhered to by him.&rdquo;</b> He admitted them and would not back down.</div>'
-  '<div class="sub frag">6 approved &mdash; <b>except a quibble over &ldquo;or&rdquo; versus &ldquo;and.&rdquo;</b></div>'
-  '<aside class=notes>Read it as a scoreboard, fast.<br>&#9733; <b>The &ldquo;or/and&rdquo; line is the whole institution in four words. Do not explain it. Let it sit.</b><br>If asked about the court: Article 7 charges him with preaching in <b>Ramsay&rsquo;s</b> bounds, and Ramsay sat on the committee that drafted it; the minute book has a page cut out at p. 129 and the February minutes rewritten on sewn-in pages &mdash; Hanna: &ldquo;a mysterious transaction, which will probably never be revealed.&rdquo; Say what is there; do not overclaim.</aside></section>')
+A('<section class="slide hard"><div class=eyebrow>February 1808 &middot; the verdict</div>'
+  '<h2>Guilty on Articles 1 and 2.</h2>'
+  '<div class=sub>Articles 3 and 4 he admitted &mdash; and would not retract.</div>'
+  '<aside class=notes>Minutes: 1 &amp; 2 &ldquo;clearly proved&rdquo;; 3, 4, 7 &ldquo;acknowledged&hellip; and still adhered to by him.&rdquo; Censured and suspended; in March three men made the suspension indefinite after the meeting had closed. He appealed to the Synod at Philadelphia.</aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">Then two years, in one line</div>'
-  '<div class=days>'
-  '<div class="d"><span class=dn>Aug 1807</span> the table</div>'
-  '<div class="d"><span class=dn>Oct 1807</span> he walks out of presbytery</div>'
-  '<div class="d"><span class=dn>Jan 1808</span> the libel &middot; seven charges</div>'
-  '<div class="d"><span class=dn>Feb 1808</span> censure, suspension</div>'
-  '<div class="d"><span class=dn>Mar 1808</span> suspension made indefinite &mdash; by three men, after the meeting closed</div>'
-  '<div class="d now"><span class=dn>May 1808</span> the appeal, Philadelphia</div>'
-  '<div class="d"><span class=dn>Sept 1808</span> he declines their authority</div>'
-  '<div class="d"><span class=dn>May 1809</span> the last letter</div>'
-  '</div>'
-  '<aside class=notes>&#9733; <b>The compression fix. Sixty seconds. Do not narrate it beat by beat.</b><br>'
-  'The room already understands the pattern from beats 2&ndash;4; it does not need the procedure. Then stop on exactly two moments and nothing else.</aside></section>')
+A(Q('&ldquo;It is, therefore, because I have <b>no confidence, either in my own infallibility or in that of others</b>, that I absolutely refuse, as inadmissible and schismatic, the introduction of human opinions and human inventions into the faith and worship of the Church.&rdquo;', 'Richardson, <i>Memoirs</i> 1:227', 'May 1808 &middot; his appeal, read standing before the Synod') +
+  '<aside class=notes>He opened by asking them to &ldquo;pause a moment.&rdquo;</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>May 1808 &middot; read aloud, standing, to the Synod at Philadelphia</div>'
-  '<div class="small nt">&ldquo;Honored Brethren: Before you come to a final issue in the present business, let me entreat you to <b>pause a moment</b>&hellip;&rdquo;</div>'
-  '<p class=bigquote><span class=q>&ldquo;It is, therefore, because I have <b>no confidence, either in my own infallibility or in that of others</b>, that I absolutely refuse, as inadmissible and schismatic, the introduction of human opinions and human inventions into the faith and worship of the Church.&rdquo;</span></p>'
-  '<div class=cite>Richardson, <i>Memoirs</i> 1:227</div>'
-  '<aside class=notes>Dwell one. He opened by asking them to <i>pause a moment</i>; then this.<br>&#9888; <b>The next slide is a separate sentence, two pages later in the appeal.</b> The site page currently splices them with ellipses. Do not stage them as one.</aside></section>')
+A(Q('&ldquo;For what error or immorality ought I to be rejected, except it be that I refuse to acknowledge as obligatory upon myself, or to impose upon others, anything as of Divine obligation for which I cannot produce a <b>&lsquo;Thus saith the Lord?&rsquo;</b>&rdquo;', 'Richardson, <i>Memoirs</i> 1:227') +
+  '<aside class=notes>A separate sentence, two pages on in the appeal.</aside></section>')
 
-A('<section class="slide"><p class=bigquote><span class=q>&ldquo;For what error or immorality ought I to be rejected, except it be that I refuse to acknowledge as obligatory upon myself, or to impose upon others, anything as of Divine obligation for which I cannot produce a <b>&lsquo;Thus saith the Lord?&rsquo;</b>&rdquo;</span></p>'
-  '<div class=cite>Richardson, <i>Memoirs</i> 1:227</div>'
-  '<aside class=notes>The rule he will live by, stated to the court that is about to censure him for it.</aside></section>')
+A(Q('&ldquo;he was accordingly <b>rebuked and admonished by the Mod&rsquo;r</b>&rdquo;', 'Minutes of the Associate Synod, May 1808', 'The Synod&rsquo;s answer', 'slide hard',
+    '<div class=sub>He submitted &mdash; as &ldquo;no more&hellip; than an act of deference to the judgment of the court.&rdquo;</div>') +
+  '<aside class=notes>Presbytery&rsquo;s judgment set aside for &ldquo;informalities&rdquo;; his answers found &ldquo;so evasive and unsatisfactory, and highly equivocal&hellip; sufficient grounds to infer censure.&rdquo; Rebuked to his face before the assembled Synod.</aside></section>')
 
-A('<section class="slide hard"><div class=eyebrow>May 1808 &middot; what the Synod did with it</div>'
-  '<div class=body>It set the Presbytery&rsquo;s judgment aside for <b>&ldquo;informalities&rdquo;</b> &mdash; then found his answers <b>&ldquo;so evasive and unsatisfactory, and highly equivocal&hellip; sufficient grounds to infer censure.&rdquo;</b></div>'
-  '<p class="bigquote frag"><span class=q>&ldquo;he was accordingly <b>rebuked and admonished by the Mod&rsquo;r</b>&rdquo;</span></p>'
-  '<div class="sub frag">He submitted &mdash; under a signed declaration that this meant <b>&ldquo;no more&hellip; than an act of deference to the judgment of the court.&rdquo;</b></div>'
-  '<aside class=notes>Overturned on procedure, re-censured on substance, rebuked to his face in front of the assembled Synod. Deference, not agreement.<br>At that same meeting he offered a letter declining their authority &mdash; and withdrew it.</aside></section>')
-
-A('<section class="slide"><div class=eyebrow>13&ndash;14 September 1808 &middot; Burgettstown</div>'
-  '<h2>He sent the same letter again. This time he did not withdraw it.</h2>'
-  '<p class=bigquote><span class=q>&ldquo;&hellip;not being able to point out a single error in the former, and declaring themselves satisfied with the latter&hellip; <b>yet proceeded to find me guilty of evasion and equivocation</b>&hellip;&rdquo;</span></p>'
-  '<div class="sub frag nt">&ldquo;&hellip;their manifest breach of faith and avowed dissimulation, (<b>I might add treachery</b>,) can not be innocent and unrebukable conduct.&rdquo;</div>'
-  '<div class="sub frag" style="color:var(--gold)">&ldquo;Of the justness and propriety of this, <b>let the world judge</b>.&rdquo;</div>'
-  '<aside class=notes>Hanna, from the minutes: &ldquo;in his own name and in the name of all who adhered to him, he <b>declined the authority of this Presbytery&hellip; and all further communion with them</b>.&rdquo; He had offered this in May and retracted it; by September he &ldquo;had seen cause to adhere to it.&rdquo; &#9888; <b>September 1808 is the break</b> &mdash; the sources confuse this with a later paper.<br>&#9733; He is <b>angry</b>, and the site narration does not show it. Printed by Alexander in the 1861 <i>Memoirs of Elder Thomas Campbell</i>.</aside></section>')
-
-A('<section class="slide"><p class=bigquote><span class=q>&ldquo;It is with <b>sincere reluctance</b>&hellip; that I find myself in duty bound to refuse submission to their decision as unjust and partial; and also finally to decline their authority.&rdquo;</span></p>'
-  '<div class="sub frag">&ldquo;And I hereby do <b>decline all ministerial connection with, or subjection to, the Associate Synod of North America</b>&hellip; and do henceforth hold myself <b>altogether unaffected by their decisions</b>.&rdquo;</div>'
-  '<aside class=notes><i>Sincere reluctance.</i> He did not want to go.<br>'
-  '&#9888; <b>Correction to the site page:</b> he did not resign &ldquo;from the Association.&rdquo; It was the <b>Associate Synod</b>. The <i>Association</i> is the Christian Association of Washington, which he founds in August 1809 &mdash; next week&rsquo;s chapter.</aside></section>')
+A(Q('&ldquo;It is with <b>sincere reluctance</b>&hellip; that I find myself in duty bound to refuse submission to their decision as unjust and partial&hellip; And I hereby do <b>decline all ministerial connection with, or subjection to, the Associate Synod of North America</b>.&rdquo;', 'Thomas Campbell, 13&ndash;14 September 1808 &middot; Chartiers Presbytery, Burgettstown', 'September 1808') +
+  '<aside class=notes>He had offered this letter in May and withdrawn it. In September he sent it again. Printed by Alexander, 1861.</aside></section>')
 
 # ---------- 6 THE GROVE ----------
-A(C('The Grove','They took everything they had the authority to take.',''))
+A(C('The Grove', ''))
 
 A('<section class="slide breath"><h1 style="font-size:clamp(28px,5.4vmin,64px);line-height:1.25">&ldquo;And then Campbell discovered that this meant very little.&rdquo;</h1>'
-  '<aside class=notes>&#9733;&#9733; <b>THE REVEAL. Black screen, this sentence, nothing else. Give it a full breath.</b><br>'
-  'This is your sentence and it currently sits mid-paragraph on the site. It is Week 2&rsquo;s &ldquo;this was a communion service.&rdquo;</aside></section>')
+  '<aside class=notes>Your sentence. Black screen; give it a breath.</aside></section>')
 
-A('<section class="slide"><p class=bigquote><span class=q>&ldquo;Sometimes the deep shade of a <b>maple grove</b> sheltered the assembly from the summer sun. Generally, however, the houses of his old Irish neighbors&hellip; were the places where he had his appointments for preaching, and where he discoursed weekly to <b>all who chose to assemble</b>.&rdquo;</span></p>'
-  '<div class=cite>Richardson, <i>Memoirs</i> 1:231</div>'
-  '<aside class=notes>No pulpit, no salary, no standing &mdash; and no interruption.'
-  '<span class=narr>[MR &mdash; your line: an association, then a church, then a movement.]</span></aside></section>')
+A(Q('&ldquo;Sometimes the deep shade of a <b>maple grove</b> sheltered the assembly from the summer sun. Generally, however, the houses of his old Irish neighbors&hellip; were the places where he had his appointments for preaching, and where he discoursed weekly to <b>all who chose to assemble</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:231') +
+  '<aside class=notes>No pulpit, no salary, no standing &mdash; and no interruption.<br>&rarr; An association, then a church, then a movement.</aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">That fall they asked him to write down what they stood for</div>'
-  '<p class=bigquote><span class=q>&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;</span></p>'
-    '<aside class=notes>&#9733; <b>Close Thomas&rsquo;s half of the hour on his own sentence, before we cross to the son.</b> Written the autumn after the grove, at the request of the Washington association. Read it whole; do not gloss. It comes back once more at the very end, as the handoff to next week.</aside></section>')
+A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;', '<i>Declaration and Address</i>, 1809', 'That fall they asked him to write down what they stood for') +
+  '<aside class=notes>Close his half of the hour on his own sentence. It returns at the end.</aside></section>')
 
 # ---------- 7 ALEXANDER AND THE SHIPWRECK ----------
-A(C('Alexander and the Shipwreck','Three weeks after his father broke, the family sailed.',
-    'Chapter card. The son&rsquo;s story, told while the father&rsquo;s is still open. He does not know what has happened in Pennsylvania.'))
+A(C('Alexander and the Shipwreck', 'The son&rsquo;s story, while the father&rsquo;s is still open. He does not know what has happened in Pennsylvania.'))
 
 A('<section class="slide bleed"><div class=bg><div class="bgimg wreckbg"></div></div>'
-  '<div class=credit>Philippe Jacques de Loutherbourg (1740&ndash;1812), <i>A Shipwreck off a Rocky Coast</i><br>Not the <i>Hibernia</i>, and not Islay</div>'
-  '<h2 class=nt>Three weeks after he broke, his family sailed.</h2>'
-  '<div class="sub frag">1 October 1808. Jane and seven children &mdash; Alexander at twenty, down to two-year-old Alicia.</div>'
-  '<aside class=notes>&#9888; Caption honestly: a period image of what the event looked like, not the event.'
-  '<span class=narr>[MR &mdash; the sailing. Note the order: <b>he had already broken.</b> This is not a man deciding under pressure; it is a man who has decided, about to be given every reason to reconsider.]</span></aside></section>')
+  '<div class=credit>Philippe Jacques de Loutherbourg, <i>A Shipwreck off a Rocky Coast</i><br>Not the <i>Hibernia</i>, and not Islay</div>'
+  '<h2>October 1808. His family sailed &mdash; and were wrecked off Islay.</h2>'
+  '<div class=sub>Everyone survived. They were stranded in Scotland for ten months.</div>'
+  '<aside class=notes>1 October 1808, three weeks after the break. Jane and seven children; Alexander twenty. Loch Indaal. Alexander spent days drying his father&rsquo;s books.</aside></section>')
 
-A('<section class="slide bleed"><div class=bg><div class="bgimg indaalbg"></div></div>'
-  '<div class=credit>The shore of Loch Indaal, Isle of Islay &middot; CC BY-SA 2.0, geograph.org.uk</div>'
-  '<h2>They were wrecked off Islay.</h2>'
-  '<div class="sub frag">Everyone survived. They were stranded in Scotland for <b>ten months</b>.</div>'
-  '<aside class=notes>Loch Indaal, on the south-west of the island. Alexander spent days pulling his father&rsquo;s books out of the water and drying them; some were rebound and ended up in his library in America.<br>If you want Thomas&rsquo;s side in a sentence: he &ldquo;received intelligence of the shipwreck&rdquo; and wrote them a letter &ldquo;full of affectionate solicitude and consolation&rdquo; &mdash; and in May 1809, with no income and his family three thousand miles away, he sent the Synod back the <b>fifty dollars</b> they had advanced him on arrival. He did not walk anything back.</aside></section>')
+A('<section class="slide"><div class=eyebrow>Glasgow &middot; 1808&ndash;09</div>'
+  '<h2>Every week, Alexander went to hear ministers outside his church.</h2>'
+  '<div class="sub frag">Richardson&rsquo;s word for it: <b>&ldquo;occasional hearing.&rdquo;</b> Article 4.</div>'
+  '<aside class=notes>Seceder church in the morning; Greville Ewing&rsquo;s Tabernacle in the evening &mdash; fifteen hundred people in a former circus &mdash; and others. His father is on trial in Pennsylvania partly for saying this is permissible.</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>Meanwhile, in Glasgow</div>'
-  '<h2>Alexander was going to church twice on Sunday.</h2>'
-  '<div class=body>The Seceder church in the morning, under a minister he found <b>&ldquo;a prosy speaker&rdquo;</b> &mdash; whose delivery he sat there taking critical notes on.</div>'
-  '<div class="sub frag">And in the evening, Greville Ewing&rsquo;s Tabernacle. Fifteen hundred people. <b>In a building that had been a circus.</b></div>'
-  '<aside class=notes>Ewing: former establishment minister, co-worker of the Haldanes, had Alexander to dinner and tea repeatedly. Congregationalism &mdash; &ldquo;an entire emancipation from the control of domineering Synods and General Assemblies.&rdquo;</aside></section>')
+A(Q('&ldquo;&hellip;an effect which was, doubtless, facilitated by the fact that <b>his revered father, to whose religious sentiments he was accustomed to pay the utmost deference, was now separated from him by the wide Atlantic</b>.&rdquo;', 'Richardson, on why Alexander changed') +
+  '<aside class=notes>The son drifts partly because the father is not there &mdash; while the father, unknown to him, is breaking too.</aside></section>')
 
-A('<section class="slide hard"><div class="eyebrow quiet">Richardson&rsquo;s word for what Alexander was doing, in his own quotation marks</div>'
-  '<p class=bigquote><span class=q>&ldquo;occasional hearing&rdquo;</span></p>'
-  '<div class="sub frag" style="color:var(--gold)">That is Article 4 of the libel against his father.</div>'
-  '<div class="small frag">Ewing, Mitchel at Anderston, Balford at George&rsquo;s Square, Wall at the Salt Market. <b>Every week.</b></div>'
-  '<aside class=notes>&#9733;&#9733; <b>Nobody has put these two facts next to each other.</b> Thomas is on trial in Pennsylvania partly for saying occasional hearing is permissible. Alexander is in Glasgow doing it, weekly, while it happens.</aside></section>')
+A('<section class="slide"><div class=eyebrow>The communion season</div>'
+  '<h2>He was examined, and given the token.</h2>'
+  '<aside class=notes>No letter from Ahorey, so the session examined him. Eight hundred communicants, eight or nine tables. He waited for the last one, &ldquo;in hopes of being able to overcome his scruples.&rdquo;</aside></section>')
 
-A('<section class="slide"><p class=bigquote><span class=q>&ldquo;&hellip;an effect which was, doubtless, facilitated by the fact that <b>his revered father, to whose religious sentiments he was accustomed to pay the utmost deference, was now separated from him by the wide Atlantic</b>.&rdquo;</span></p>'
-  '<div class=cite>Richardson, on why Alexander changed</div>'
-  '<aside class=notes>&#9733; The son drifts partly <i>because the father is not there</i> &mdash; while the father, unknown to him, is breaking too.<br>This is the emotional engine of the last beat. Do not rush it.</aside></section>')
+A(Q('&ldquo;&hellip;conscientious misgivings as to the propriety of <b>sanctioning any longer, by participation, a religious system which he disapproved</b>.&rdquo;', 'Richardson, <i>Memoirs</i>', 'Why he could not') +
+  '<aside class=notes>Participation is sanction. The father: you may not make this table a test. The son: I will not let this table make me a witness.</aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">Then the communion season came round</div>'
-  '<div class=body style="text-align:left;max-width:46em">He could not decide. He had no letter from Ahorey, so the session <b>examined him &mdash; and gave him the token.</b><br><br>'
-  'The hour of the Supper <b>&ldquo;found him still undecided.&rdquo;</b> Eight hundred communicants; eight or nine tables served in turn.<br><br>'
-  'He <b>waited for the last table</b>, &ldquo;in hopes of being able to overcome his scruples.&rdquo;</div>'
-  '<aside class=notes>&#9733; <b>He nearly went through with it.</b> That is what makes this a scene instead of a gesture &mdash; he is not staging a protest, he is failing to talk himself into it.</aside></section>')
-
-A('<section class="slide"><div class="eyebrow quiet">Why he could not</div>'
-  '<p class=bigquote><span class=q>&ldquo;&hellip;conscientious misgivings as to the propriety of <b>sanctioning any longer, by participation, a religious system which he disapproved</b>.&rdquo;</span></p>'
-  '<div class="sub frag">Against a church &ldquo;<b>to which his father and the family belonged</b>, and in which he had thought it his duty to be a regular communicant.&rdquo;</div>'
-  '<aside class=notes>&#9733;&#9733; <b>This is the answer: participation is sanction.</b><br>'
-  'And it is the mirror of his father. Thomas: <i>you may not make this table a test of fellowship.</i> Alexander: <i>I will not let this table make me a witness for you.</i></aside></section>')
-
-A('<section class="slide hard"><p class=bigquote><span class=q>&ldquo;&hellip;the ring of the token, falling upon the plate, announced the instant at which he renounced Presbyterianism for ever &mdash; <b>the leaden voucher becoming thus a token not of communion but of separation</b>.&rdquo;</span></p>'
-  '<div class=cite>Richardson, <i>Memoirs</i> 1:190</div>'
-  '<aside class=notes>He dropped the token and passed the bread and wine.<br><br>'
-  '&#9888; <b>Do not reach for Luther and the church door.</b> Wrather raises that parallel and kills it: &ldquo;Young Campbell himself certainly saw nothing heroic in his action.&rdquo; He was twenty, he told no one, and &mdash; having complied with every rule &mdash; he collected <b>the usual certificate of good standing</b> on his way out. <b>The understatement is the power of it.</b></aside></section>')
+A(Q('&ldquo;&hellip;the ring of the token, falling upon the plate, announced the instant at which he renounced Presbyterianism for ever &mdash; <b>the leaden voucher becoming thus a token not of communion but of separation</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:190', '', 'slide hard') +
+  '<aside class=notes>He dropped the token and passed the bread and wine. Told no one. Collected his certificate of good standing on the way out.</aside></section>')
 
 # ---------- 8 FAMILY REUNION ----------
-A(C('Family Reunion','Two men on a road, each having walked away from the same table.',''))
+A(C('Family Reunion', ''))
 
 A('<section class="slide"><div class=eyebrow>19 October 1809 &middot; the road into Washington, Pennsylvania</div>'
   '<h2>He rode out to meet them.</h2>'
-  '<div class=body>Two and a half years. Riding back together, Thomas told his son what had happened &mdash; the contumely, the slanders circulated, the unjust proceedings of the Presbytery and the Synod.</div>'
-  '<aside class=notes>Foster: Thomas got word of their arrival a few days after they landed and immediately left with a friend to meet them on the road.</aside></section>')
+  '<div class=sub>Two and a half years.</div>'
+  '<aside class=notes>Riding back together, Thomas told his son what had happened.</aside></section>')
 
-A('<section class="slide hard"><p class=bigquote><span class=q>&ldquo;&hellip;had they possessed the power, he would have suffered martyrdom at their hands, or, as he expressed it, that <b>&lsquo;nothing but the law of the land had kept his head upon his shoulders.&rsquo;</b>&rdquo;</span></p>'
-  '<div class=cite>Richardson, <i>Memoirs</i> 1:219&ndash;220<span class=loc>reported speech &mdash; what his son remembered him saying</span></div>'
-  '<aside class=notes>&#9733;&#9733; <b>The strongest line in the week.</b> Keep Richardson&rsquo;s qualifier &mdash; <i>had they possessed the power</i> &mdash; it is what keeps it honest, and it is also what makes it land.</aside></section>')
+A(Q('&ldquo;&hellip;had they possessed the power, he would have suffered martyrdom at their hands, or, as he expressed it, that <b>&lsquo;nothing but the law of the land had kept his head upon his shoulders.&rsquo;</b>&rdquo;', 'Richardson, <i>Memoirs</i> 1:219&ndash;220', '', 'slide hard') +
+  '<aside class=notes>Reported speech &mdash; what his son remembered him saying. Keep Richardson&rsquo;s qualifier.</aside></section>')
 
-A('<section class="slide"><p class=bigquote><span class=q>&ldquo;Alexander could not but feel indignant at this recital&hellip; <b>He was greatly surprised, however, when informed by his father that the latter had actually dissolved his connection with the Seceders.</b>&rdquo;</span></p>'
-  '<aside class=notes>&#9733; <b>He learned it on the road.</b> And Thomas did not know what his son had done in Glasgow.'
-  '<span class=narr>[MR &mdash; the close. Job: the father invited people who had no token; the son held a valid one and would not use it. Neither knew.]</span></aside></section>')
+A(Q('&ldquo;Alexander could not but feel indignant at this recital&hellip; <b>He was greatly surprised, however, when informed by his father that the latter had actually dissolved his connection with the Seceders.</b>&rdquo;', 'Richardson, <i>Memoirs</i>') +
+  '<aside class=notes>He learned it on the road. Thomas did not know what his son had done in Glasgow.<br>&rarr; The father invited people who had no token; the son held a valid one and would not use it. Neither knew.</aside></section>')
 
-# ---------- 9 TEASER + CLOSE ----------
-A('<section class="slide"><div class="eyebrow quiet">That fall they asked him to write down what they stood for</div>'
-  '<p class=bigquote><span class=q>&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;</span></p>'
-  '<div class="sub frag">Next week: <b>the Declaration and Address</b> &mdash; the document they asked him to write, and the sentence it opens with.</div>'
-  '<aside class=notes>Keep the handoff short. Optional sting, if you want it: <b>the presbytery formally deposed him on 18 April 1810</b> &mdash; seven months after that document was published.</aside></section>')
+# ---------- 9 CLOSE ----------
+A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;', '<i>Declaration and Address</i>, 1809', 'That fall they asked him to write down what they stood for', 'slide',
+    '<div class="sub frag">Next week: <b>the Declaration and Address</b>.</div>') +
+  '<aside class=notes>Optional sting: the presbytery formally deposed him on 18 April 1810 &mdash; seven months after this was published.</aside></section>')
 
 A('<section class="slide ideasmap"><div class=eyebrow>What this week touched</div>'
   '<div class=wmap><div class="r ms-christ"><span class="th key">CHRIST ALONE</span></div>'
-  '<div class="r ms-pri"><span class="th key">UNITY</span><span class="th on">PRIESTHOOD</span><span class="th on">FUTURE</span></div>'
+  '<div class="r ms-pri"><span class="th key">UNITY</span><span class="th key">PRIESTHOOD</span><span class="th on">FUTURE</span></div>'
   '<div class="r ms-sec"><span class="th on">HOMECOMING</span><span class="th on">SELF-SACRIFICE</span><span class="th key">FREEDOM OF CONSCIENCE</span><span class=th>SCIENCE &amp; REASON</span><span class="th on">MINIMALISM</span></div>'
   '<div class="r ms-pra"><span class="th key">the Table</span><span class=th>Baptism</span><span class="th on">Scripture</span><span class=th>Singing</span><span class="th on">Congregation</span></div></div>'
   '<div class=small>Bright: the spine of this week. Dim: touched in passing. Unlit: still ahead of us.</div>'
-  '<aside class=notes>Same board as Week 1, lit for this week. Running it weekly is what makes twelve stories feel like one argument accumulating.<br>New light since last week: <b>Freedom of Conscience</b> and <b>Christ Alone</b> move to the spine; <b>Priesthood</b> (the elder who said &ldquo;Pray, sir&rdquo;) and <b>Minimalism</b> (&ldquo;Thus saith the Lord&rdquo;) come on dim.</aside></section>')
+  '<aside class=notes>Same board as Week 1. New light: Priesthood, Freedom of Conscience, Christ Alone.</aside></section>')
 
 A('<section class="slide idea room"><div class="eyebrow quiet">Idea 1 of 3</div>'
   '<h2>Non-creedalism is <span style="color:var(--gold)">a protective move.</span></h2>'
-  '<div class="body nt">No human formulation as a test of fellowship &mdash; because no one&rsquo;s interpretation is infallible, and the simplest believer must be able to confess Christ and belong. <i>No confidence, either in my own infallibility or in that of others.</i></div>'
-  '<aside class=notes>Not scepticism. A fence-removal justified by humility about our own readings.<br>The two ideas that used to precede this &mdash; <i>the unity movement did not begin in America</i>, and <i>they divided over hospitality, not doctrine</i> &mdash; can be collected in a sentence here if you want them; do not re-argue.</aside></section>')
+  '<aside class=notes>No human formulation as a test of fellowship, because no one&rsquo;s reading is infallible and the simplest believer must be able to confess Christ and belong. His words: <i>no confidence, either in my own infallibility or in that of others.</i></aside></section>')
 
 A('<section class="slide idea room"><div class="eyebrow quiet">Idea 2 of 3</div>'
   '<h2>Why a table was worth all this.</h2>'
-  '<div class="body nt" style="color:var(--gold)">[MR &mdash; this one is yours and it is the one the class most needs.]</div>'
-  '<aside class=notes>&#9733;&#9733; <b>UNWRITTEN. This is the spine&rsquo;s step 3.</b><br>'
-  'Week 1 established the table as the age to come arriving early. Without that claim here, Week 2 argues for tolerance &mdash; rather than arguing that someone put a gate in front of God&rsquo;s future.<br>'
-  'The spine lists it as a claim-note still to be authored. Nothing is drafted for you here on purpose.</aside></section>')
+  '<aside class=notes>&rarr; Yours. The spine&rsquo;s step 3: Week 1 made the table the age to come arriving early; here someone put a gate in front of it. Unwritten on purpose.</aside></section>')
 
 A('<section class="slide idea room"><div class="eyebrow quiet">Idea 3 of 3</div>'
   '<h2>It cost him everything they could reach &mdash; <span style="color:var(--gold)">and he did not want to leave.</span></h2>'
-  '<div class="body nt">Two years. Three courts. His appointments, his income, his standing. A rebuke to his face. Fifty dollars sent back. He appealed, he submitted, he deferred, and he spent two years trying to stay. The break was the last thing he tried, not the first.</div>'
-  '<aside class=notes>This is what makes the grove cost something.</aside></section>')
+  '<aside class=notes>Two years, three courts, his income and standing, a rebuke to his face. He appealed, submitted, deferred. The break was the last thing he tried.</aside></section>')
 
 A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
   '<h2>What is beautiful here? What do we carry forward?</h2>'
   '<div class="sub frag">What &ldquo;testimonies&rdquo; &mdash; written or unwritten &mdash; do we treat as terms of fellowship today?</div>'
-  '<div class="sub frag">What does conviction-without-coercion look like in practice?</div>'
-  '<div class="sub frag" style="color:var(--gold)">Who around us has gone years without being invited to the table?</div>'
-  '<aside class=notes><b>~minute 43.</b> These are already drafted in the HTML comments on week2.md &mdash; this promotes them to the screen.</aside></section>')
+  '<div class="sub frag">Who around us has gone years without being invited to the table?</div>'
+  '<aside class=notes>~minute 40.</aside></section>')
 
 A(W1_SITESLIDE)
-
-
-
-
-
