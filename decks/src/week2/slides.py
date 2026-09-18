@@ -398,6 +398,11 @@ A('<section class="slide"><div class=body style="text-align:left;max-width:46em"
   '<aside class=notes>The collision-of-goods framing is a documented claim, not a charitable one. If you want Anderson himself: his own student, James P. Miller (1839), says &ldquo;meekness and humility might be said to predominate&rdquo; and praises an ear quick &ldquo;to detect a sentiment that accorded not with the oracles of God, or even an expression that varied.&rdquo; Campbell was convicted of being <i>equivocal</i> &mdash; a praised virtue, turned on a colleague. One sentence, or none.'
   '<span class=narr>[MR &mdash; the closing bracket of the honest block.]</span></aside></section>')
 
+# ---------- THOMAS'S CLOSE: THE DECLARATION AND ADDRESS ----------
+A('<section class="slide"><div class="eyebrow quiet">That fall they asked him to write down what they stood for</div>'
+  '<p class=bigquote><span class=q>&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;</span></p>'
+    '<aside class=notes>&#9733; <b>Close Thomas&rsquo;s half of the hour on his own sentence, before we cross to the son.</b> Written the autumn after the grove, at the request of the Washington association. Read it whole; do not gloss. It comes back once more at the very end, as the handoff to next week.</aside></section>')
+
 A(C('Alexander and the Shipwreck','Three weeks after his father broke, the family sailed.',
     'Chapter card. The son&rsquo;s story, told while the father&rsquo;s is still open. He does not know what has happened in Pennsylvania.'))
 
@@ -463,6 +468,12 @@ A('<section class="slide"><p class=bigquote><span class=q>&ldquo;Alexander could
   '<aside class=notes>&#9733; <b>He learned it on the road.</b> And Thomas did not know what his son had done in Glasgow.'
   '<span class=narr>[MR &mdash; the close. Job: the father invited people who had no token; the son held a valid one and would not use it. Neither knew.]</span></aside></section>')
 
+# ---------- CLOSE: THE DECLARATION AND ADDRESS ----------
+A('<section class="slide"><div class="eyebrow quiet">That fall they asked him to write down what they stood for</div>'
+  '<p class=bigquote><span class=q>&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;</span></p>'
+  '<div class="sub frag">Next week: <b>the Declaration and Address</b> &mdash; the document they asked him to write, and the sentence it opens with.</div>'
+  '<aside class=notes>Keep the handoff short. Optional sting, if you want it: <b>the presbytery formally deposed him on 18 April 1810</b> &mdash; seven months after that document was published.</aside></section>')
+
 # ---------- IDEAS ----------
 A('<section class="slide ideasmap"><div class=eyebrow>What this week touched</div>'
   '<div class=wmap><div class="r ms-christ"><span class="th key">CHRIST ALONE</span></div>'
@@ -496,11 +507,6 @@ A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
   '<div class="sub frag" style="color:var(--gold)">Who around us has gone years without being invited to the table?</div>'
   '<aside class=notes><b>~minute 43.</b> These are already drafted in the HTML comments on week2.md &mdash; this promotes them to the screen.</aside></section>')
 
-# ---------- 11 TEASER ----------
-A('<section class="slide"><div class="eyebrow quiet">That fall they asked him to write down what they stood for</div>'
-  '<p class=bigquote><span class=q>&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;</span></p>'
-  '<div class="sub frag">Next week: <b>the Declaration and Address</b> &mdash; the document they asked him to write, and the sentence it opens with.</div>'
-  '<aside class=notes>Keep the handoff short. Optional sting, if you want it: <b>the presbytery formally deposed him on 18 April 1810</b> &mdash; seven months after that document was published.</aside></section>')
-
 A(W1_SITESLIDE)
+
 
