@@ -123,7 +123,7 @@ A('<section class="slide"><h2>The Libel <span class=dim>&middot; January 1808</s
   '</div>'
   '<aside class=notes>Hanna, ch. II, from the Chartiers minutes. Read them plain.</aside></section>')
 
-A('<section class="slide room"><h2>You are the court.</h2>'
+A('<section class="slide room"><h2><span style="color:var(--gold)">YOU</span> are the court.</h2>'
   '<div class=sub>Guilty, or not guilty?</div>'
   '<aside class=notes>~minute 20. Hand it over. Co-teacher reads the charges.</aside></section>')
 
@@ -139,11 +139,11 @@ A('<section class="slide hard"><h2>The Verdict <span class=dim>&middot; February
 
 A(C('The Appeal', 'May 1808. He appealed the presbytery&rsquo;s verdict to the Associate Synod at Philadelphia and read his appeal aloud before it.'))
 
-A(Q('&ldquo;For what error or immorality ought I to be rejected, except it be that I refuse to acknowledge as obligatory upon myself, or to impose upon others, anything as of Divine obligation for which I cannot produce a <b>&lsquo;Thus saith the Lord?&rsquo;</b>&rdquo;', 'Richardson, <i>Memoirs</i> 1:227', 'May 1808 &middot; his appeal, read standing before the Synod at Philadelphia') +
+A(Q('&ldquo;For what error or immorality ought I to be rejected, except it be that I refuse to acknowledge as obligatory upon myself, or to impose upon others, anything as of Divine obligation for which I cannot produce a <b>&lsquo;Thus saith the Lord?&rsquo;</b>&rdquo;', 'Richardson, <i>Memoirs</i> 1:227', 'May 1808 &middot; his appeal to the Synod at Philadelphia') +
   '<aside class=notes>A separate sentence, two pages on in the appeal.</aside></section>')
 
-A(Q('&ldquo;It is, therefore, because I have <b>no confidence, either in my own infallibility or in that of others</b>, that I absolutely refuse, as inadmissible and schismatic, the introduction of human opinions and human inventions into the faith and worship of the Church.&rdquo;', 'Richardson, <i>Memoirs</i> 1:227') +
-  '<aside class=notes>He opened by asking them to &ldquo;pause a moment.&rdquo;</aside></section>')
+A(Q('&ldquo;It is, therefore, because I have <b>no confidence, either in my own infallibility or in that of others</b>, that I absolutely refuse, as inadmissible and schismatic, the introduction of human opinions and human inventions into the faith and worship of the Church.&rdquo;', 'Richardson, <i>Memoirs</i> 1:227', 'May 1808 &middot; his appeal to the Synod at Philadelphia') +
+  '<aside class=notes>Richardson: &ldquo;he addressed an earnest appeal to the Synod when his case came up.&rdquo; The Synod minutes: his reasons of protest and appeal were read, and &ldquo;parties were heard.&rdquo; He opened by asking them to &ldquo;pause a moment.&rdquo;</aside></section>')
 
 A(C('The Judgment', 'The Synod set the presbytery&rsquo;s judgment aside for &ldquo;informalities&rdquo; &mdash; then found his answers on the same articles &ldquo;so evasive and unsatisfactory, and highly equivocal&hellip; sufficient grounds to infer censure.&rdquo;'))
 
