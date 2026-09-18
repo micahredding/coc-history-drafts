@@ -147,14 +147,17 @@ A('<section class="slide"><div class=eyebrow>October 1804 &middot; Rich Hill</di
   '<div class="sub frag">Then Scotland heard about it.</div>'
   '<aside class=notes>The Irish body was willing. This is the closest the Secession came to healing itself in his lifetime.</aside></section>')
 
+A('<section class="slide hard"><div class="eyebrow quiet">Sent to Glasgow to ask that the Irish churches decide for themselves</div>'
+  '<p class=bigquote><span class=q>The synod &ldquo;allowed him to argue his case but <b>refused to allow the proposition to come to a vote</b>.&rdquo;</span></p>'
+  '<div class=cite>Foster, on the General Associate Synod</div>'
+  '<aside class=notes>&#9733; <b>Land on this.</b> Not defeated &mdash; never permitted to be decided. He is heard and then the question is taken away from him.<br>'
+  'Strike two.'
+  '<span class=narr>[MR &mdash; one sentence naming the pattern: twice now he has tried, and twice a court has closed it.]</span></aside></section>')
+
 A('<section class="slide bleed sect"><div class=bg><div class="bgimg shipbg"></div></div>'
   '<div class=credit>Robert Salmon, <i>British Merchantman in the River Mersey off Liverpool</i>, 1809<br>A ship of the kind, not the <i>Brutus</i></div>'
   '<h2>Sea Voyage</h2><div class=table-line></div>'
   '<aside class=notes>Chapter card. Keep this beat short: it moves him across the Atlantic and <b>plants Alexander</b> in one clause.<br>&#9888; Caption honestly: a merchant ship of the period, painted two years after his crossing. Not his ship.</aside></section>')
-
-# ---------- 5 SEA VOYAGE & ALEXANDER ----------
-A(C('Sea Voyage &amp; Alexander','A physician&rsquo;s prescription.',
-    'Keep this short. It exists to move him across the Atlantic and to <b>plant Alexander</b>.'))
 
 A('<section class="slide"><div class=eyebrow>8 April 1807 &middot; Londonderry</div>'
   '<h2>His doctor told him the only remedy was to get out from under it.</h2>'
@@ -293,18 +296,18 @@ A('<section class="slide hard"><h2 class=nt>Which of the seven is this class abo
   '<i>Terms of communion</i> is church fellowship whole &mdash; membership and the Supper together. The table is where it is enforced, and the libel itself names Conemaugh.'
   '<span class=narr>[MR &mdash; the line that lands the turn. Job: they did not indict the invitation; they indicted the belief that the fence had no warrant.]</span></aside></section>')
 
-A('<section class="slide"><div class=eyebrow>Article 1</div>'
-  '<p class=bigquote><span class=q>&ldquo;It is erroneous&hellip; to teach that a person&rsquo;s appropriation of Christ to himself as his own Savior <b>does not belong to the essence of Saving Faith</b>; but only to a high degree of it.&rdquo;</span></p>'
-  '<aside class=notes>In plain terms: <i>you can be saved without feeling certain that you are.</i> Also taught &ldquo;at Conemaugh.&rdquo; Hold it &mdash; the next slide is whose book it comes from.</aside></section>')
+A('<section class="slide"><div class=eyebrow>Article 3</div>'
+  '<p class=bigquote><span class=q>&ldquo;It is erroneous&hellip; to assert that it is <b>the duty of ruling elders to pray and exhort publickly</b> in vacant congregations.&rdquo;</span></p>'
+  '<aside class=notes>Laymen leading worship where there is no minister. Taught &ldquo;at Buffaloe.&rdquo;<br>&#9733; Tie it back forty minutes: the first person in this hour to decide what happened in a room was <b>an elder</b> &mdash; &ldquo;Pray, sir.&rdquo; The court is now charging him for saying elders may do exactly that. This is the <i>Priesthood</i> thread on the board.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Article 4</div>'
   '<p class=bigquote><span class=q>&ldquo;It is erroneous&hellip; to assert that it is warrantable for the people of our communion to <b>hear ministers that are in a stated opposition to our testimony</b>.&rdquo;</span></p>'
   '<div class="sub frag nt">Remember this one.</div>'
   '<aside class=notes>&#9733; <b>&ldquo;Occasional hearing.&rdquo;</b> Flag it lightly. In the last beat his own son will be doing it every week in Glasgow.</aside></section>')
 
-A('<section class="slide plateslide"><div class=eyebrow>And Article 1 prosecutes the thesis of the prosecutor&rsquo;s own book</div>'
+A('<section class="slide plateslide"><div class=eyebrow>Article 1 &mdash; saving faith &mdash; prosecutes the thesis of the prosecutor&rsquo;s own book</div>'
   '<figure class="plate short"><img src="IMG_ANDERSONTITLE" alt=""><figcaption>John Anderson, <i>The Scripture Doctrine of the Appropriation which is in the Nature of Saving Faith</i><br>Philadelphia, 1793 &middot; 1797 Edinburgh reprint shown</figcaption></figure>'
-  '<div class="small frag">Its epigraph is <b>Acts 15:11</b> &mdash; one of the proof-texts cited in Article 1.</div>'
+  '<div class="small frag">Article 1: that appropriating Christ as one&rsquo;s own Savior <b>does not belong to the essence of saving faith</b>. The book&rsquo;s epigraph is <b>Acts 15:11</b> &mdash; one of the proof-texts the article cites.</div>'
   '<aside class=notes>&#9733; <b>No commentary needed. Put it up and wait.</b><br>'
   'The title page also identifies him without a caption: &ldquo;Minister of the Gospel, in the Associate Congregations of Mill-Creek, Kings-Creek, and Racoon, <b>near Pittsburgh</b>.&rdquo;<br>'
   'And there is a second: <b>Article 4 is the subject of his 1794 <i>Sermon on Occasional Hearing</i>.</b> Two of the seven charges sit on this one man&rsquo;s published theology.<br>'
@@ -395,9 +398,10 @@ A('<section class="slide"><div class=body style="text-align:left;max-width:46em"
   '<aside class=notes>The collision-of-goods framing is a documented claim, not a charitable one. If you want Anderson himself: his own student, James P. Miller (1839), says &ldquo;meekness and humility might be said to predominate&rdquo; and praises an ear quick &ldquo;to detect a sentiment that accorded not with the oracles of God, or even an expression that varied.&rdquo; Campbell was convicted of being <i>equivocal</i> &mdash; a praised virtue, turned on a colleague. One sentence, or none.'
   '<span class=narr>[MR &mdash; the closing bracket of the honest block.]</span></aside></section>')
 
-# ---------- 10 FAMILY REUNION ----------
-A(C('Family Reunion','Two men on a road, each having walked away from the same table.',''))
+A(C('Alexander and the Shipwreck','Three weeks after his father broke, the family sailed.',
+    'Chapter card. The son&rsquo;s story, told while the father&rsquo;s is still open. He does not know what has happened in Pennsylvania.'))
 
+# ---------- 10 FAMILY REUNION ----------
 A('<section class="slide bleed"><div class=bg><div class="bgimg wreckbg"></div></div>'
   '<div class=credit>Philippe Jacques de Loutherbourg (1740&ndash;1812), <i>A Shipwreck off a Rocky Coast</i><br>Not the <i>Hibernia</i>, and not Islay</div>'
   '<h2 class=nt>Three weeks after he broke, his family sailed.</h2>'
@@ -409,13 +413,7 @@ A('<section class="slide bleed"><div class=bg><div class="bgimg indaalbg"></div>
   '<div class=credit>The shore of Loch Indaal, Isle of Islay &middot; CC BY-SA 2.0, geograph.org.uk</div>'
   '<h2>They were wrecked off Islay.</h2>'
   '<div class="sub frag">Everyone survived. They were stranded in Scotland for <b>ten months</b>.</div>'
-  '<aside class=notes>Loch Indaal, on the south-west of the island. Alexander spent days pulling his father&rsquo;s books out of the water and drying them; some were rebound and ended up in his library in America.</aside></section>')
-
-A('<section class="slide"><h2 class=nt>He found out. And he did not walk anything back.</h2>'
-  '<div class="sub frag">Richardson: he &ldquo;received intelligence of the shipwreck, and the consequent delay of the family at Glasgow,&rdquo; and wrote them a letter <b>&ldquo;full of affectionate solicitude and consolation.&rdquo;</b></div>'
-  '<div class="sub frag">In May he sent the Synod a formal notice &mdash; and four days later, <b>a letter enclosing a fifty-dollar note</b>, refunding the sum they had advanced him on his arrival.</div>'
-  '<aside class=notes>&#9733; No income. No standing. Wife and seven children three thousand miles away after nearly drowning.<br><b>He sent the money back.</b><br>'
-  'Fifty dollars &mdash; at four dollars for a Sabbath, about twelve Sundays&rsquo; preaching.</aside></section>')
+  '<aside class=notes>Loch Indaal, on the south-west of the island. Alexander spent days pulling his father&rsquo;s books out of the water and drying them; some were rebound and ended up in his library in America.<br>If you want Thomas&rsquo;s side in a sentence: he &ldquo;received intelligence of the shipwreck&rdquo; and wrote them a letter &ldquo;full of affectionate solicitude and consolation&rdquo; &mdash; and in May 1809, with no income and his family three thousand miles away, he sent the Synod back the <b>fifty dollars</b> they had advanced him on arrival. He did not walk anything back.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Meanwhile, in Glasgow</div>'
   '<h2>Alexander was going to church twice on Sunday.</h2>'
@@ -449,6 +447,8 @@ A('<section class="slide hard"><p class=bigquote><span class=q>&ldquo;&hellip;th
   '<div class=cite>Richardson, <i>Memoirs</i> 1:190</div>'
   '<aside class=notes>He dropped the token and passed the bread and wine.<br><br>'
   '&#9888; <b>Do not reach for Luther and the church door.</b> Wrather raises that parallel and kills it: &ldquo;Young Campbell himself certainly saw nothing heroic in his action.&rdquo; He was twenty, he told no one, and &mdash; having complied with every rule &mdash; he collected <b>the usual certificate of good standing</b> on his way out. <b>The understatement is the power of it.</b></aside></section>')
+
+A(C('Family Reunion','Two men on a road, each having walked away from the same table.',''))
 
 A('<section class="slide"><div class=eyebrow>19 October 1809 &middot; the road into Washington, Pennsylvania</div>'
   '<h2>He rode out to meet them.</h2>'
@@ -503,3 +503,4 @@ A('<section class="slide"><div class="eyebrow quiet">That fall they asked him to
   '<aside class=notes>Keep the handoff short. Optional sting, if you want it: <b>the presbytery formally deposed him on 18 April 1810</b> &mdash; seven months after that document was published.</aside></section>')
 
 A(W1_SITESLIDE)
+
