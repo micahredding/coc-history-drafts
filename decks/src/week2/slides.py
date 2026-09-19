@@ -41,13 +41,19 @@ A('<section class="slide"><h2>The captain listened to the end, bowed, and rode a
 A('<section class="slide plateslide tight"><figure class="plate short"><img src="IMG_TCAMPBELL" alt="" style="max-height:62vh"><figcaption>Thomas Campbell, 1763&ndash;1854</figcaption></figure>'
   '<aside class=notes>&rarr; Name him. One sentence.</aside></section>')
 
+A('<section class="slide"><div class=eyebrow>His designation in Ireland</div>'
+  '<div class=litany>'
+  '<div class=frag>Old Light</div>'
+  '<div class=frag>Anti-Burgher</div>'
+  '<div class=frag>Seceder</div>'
+  '<div class=frag>Presbyterian</div>'
+  '<div class="frag dim">of the Anti-Burgher Synod of Ulster</div>'
+  '<div class="frag dim">under the General Associate Synod in Scotland</div>'
+  '</div>'
+  '<aside class=notes>Every word is a division from other Christians. Build it one line at a time, then take it apart.</aside></section>')
+
 # ---------- 2 DIVISION AFTER DIVISION ----------
 A(C('Division After Division', 'Say the designation once, then peel it, outside in. Under three minutes for the section.'))
-
-A('<section class="slide"><div class=eyebrow>His designation in Ireland</div>'
-  '<h2 class=litany>Old Light &middot; Anti-Burgher &middot; Seceder &middot; Presbyterian<br>'
-  '<span class=dim>of the Anti-Burgher Synod of Ulster &mdash; under the General Associate Synod in Scotland</span></h2>'
-  '<aside class=notes>Every word is a division from other Christians. Say it whole, then take it apart.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Old Light &middot; 1806</div>'
   '<h2>Division over whether the <span style="color:var(--gold)">magistrate</span> may enforce religion.</h2>'
@@ -56,15 +62,14 @@ A('<section class="slide"><div class=eyebrow>Old Light &middot; 1806</div>'
 A('<section class="slide"><div class=eyebrow>Anti-Burgher &middot; 1747</div>'
   '<h2>Division over an <span style="color:var(--gold)">oath</span>.</h2>'
   '<div class=sub>After it, Burghers and Anti-Burghers could no longer take communion together.</div>'
-  '<aside class=notes>Whether a Seceder could swear to &ldquo;the true religion presently professed within this realm.&rdquo; Burghers: it only means not Catholic. Anti-Burghers: it blesses the church we left. Within two years, mutual excommunication &mdash; &ldquo;mutual forbidding of intermingling.&rdquo; This is the rule Conemaugh breaks.</aside></section>')
+  '<aside class=notes>Whether a Seceder could swear to &ldquo;the true religion presently professed within this realm.&rdquo; Burghers: it only means not Catholic. Anti-Burghers: it blesses the church we left. Within two years, mutual excommunication &mdash; &ldquo;mutual forbidding of intermingling.&rdquo; The oath applied in three Scottish cities and had never been required in Ireland at all. This is the rule Conemaugh breaks.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Seceder &middot; 1733</div>'
   '<h2>Division over <span style="color:var(--gold)">who appoints the minister</span>.</h2>'
   '<div class=sub>They walked out of the Church of Scotland.</div>'
   '<aside class=notes>Lay patrons placing ministers over congregations that had not called them. His tradition began as a protest against imposed authority.</aside></section>')
 
-A('<section class="slide hard"><h2>The oath applied in three Scottish cities. <span style="color:var(--gold)">It had never been required in Ireland.</span></h2>'
-  '<aside class=notes>Glasgow, Edinburgh, Perth. His congregation was divided over an oath none of them would ever be asked to take.</aside></section>')
+A(C('Worked for Unity', 'Two tries, two slides.'))
 
 A('<section class="slide"><div class=eyebrow>1798</div>'
   '<h2>He helped found a missionary society open to every denomination.</h2>'
@@ -76,13 +81,16 @@ A('<section class="slide"><div class=eyebrow>1804</div>'
   '<div class="sub frag">Glasgow &ldquo;allowed him to argue his case but <b>refused to allow the proposition to come to a vote</b>.&rdquo;</div>'
   '<aside class=notes>The Irish synod received it favourably; the General Associate Synod in Scotland would not let it be decided (Foster). Twice he tried; twice a court above him closed it.</aside></section>')
 
+A(C('Unity Failed', 'Card. Then the ship.'))
+
 # ---------- 3 SEA VOYAGE → COMMUNION AT CONEMAUGH ----------
 A('<section class="slide bleed sect"><div class=bg><div class="bgimg shipbg"></div></div>'
   '<div class=credit>Robert Salmon, <i>British Merchantman in the River Mersey off Liverpool</i>, 1809<br>A ship of the kind, not the <i>Brutus</i></div>'
   '<h2>Sea Voyage</h2><div class=table-line></div>'
   '<aside class=notes>Card.</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>April 1807 &middot; Londonderry</div>'
+A('<section class="slide bleed"><div class=bg><div class="bgimg shipbg"></div></div>'
+  '<div class=eyebrow>April 1807 &middot; Londonderry</div>'
   '<h2>His doctor prescribed a sea voyage.</h2>'
   '<div class=sub>He left his eighteen-year-old son, <b>Alexander</b>, in charge of the family and the school.</div>'
   '<aside class=notes>Illness from overwork; thirty-five days on the <i>Brutus</i>; Philadelphia in May. Assigned to the Presbytery of Chartiers, western Pennsylvania. Alexander: one clause; he returns in the last two chapters.</aside></section>')
@@ -170,14 +178,19 @@ A(C('The Break', 'Accuracy: the break is September 1808, three weeks before his 
 A(Q('&ldquo;It is with <b>sincere reluctance</b>&hellip; that I find myself in duty bound to refuse submission to their decision as unjust and partial&hellip; And I hereby do <b>decline all ministerial connection with, or subjection to, the Associate Synod of North America</b>.&rdquo;', 'Thomas Campbell, 13&ndash;14 September 1808 &middot; Chartiers Presbytery, Burgettstown', 'September 1808') +
   '<aside class=notes>He had offered this letter in May and withdrawn it. In September he sent it again. Printed by Alexander, 1861.</aside></section>')
 
+A(Q('&ldquo;&hellip;had they possessed the power, he would have suffered martyrdom at their hands, or, as he expressed it, that <b>&lsquo;nothing but the law of the land had kept his head upon his shoulders.&rsquo;</b>&rdquo;', 'Richardson, <i>Memoirs</i> 1:219&ndash;220', '', 'slide hard') +
+  '<aside class=notes>His own summary of the two years &mdash; said to Alexander on the road a year later, as Richardson reports it. Keep the qualifier: <i>had they possessed the power</i>.</aside></section>')
+
 # ---------- 6 THE GROVE ----------
 A(C('The Grove', ''))
 
-A('<section class="slide breath"><h1 style="font-size:clamp(28px,5.4vmin,64px);line-height:1.25">&ldquo;And then Campbell discovered that this meant very little.&rdquo;</h1>'
+A('<section class="slide breath"><h1 style="font-size:clamp(28px,5.4vmin,64px);line-height:1.25">And then Campbell discovered that this meant very little.</h1>'
   '<aside class=notes>Your sentence. Black screen; give it a breath.</aside></section>')
 
 A(Q('&ldquo;Sometimes the deep shade of a <b>maple grove</b> sheltered the assembly from the summer sun. Generally, however, the houses of his old Irish neighbors&hellip; were the places where he had his appointments for preaching, and where he discoursed weekly to <b>all who chose to assemble</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:231') +
   '<aside class=notes>No pulpit, no salary, no standing &mdash; and no interruption.<br>&rarr; An association, then a church, then a movement.</aside></section>')
+
+A(C('What did they stand for?', ''))
 
 A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;', '<i>Declaration and Address</i>, 1809', 'That fall they asked him to write down what they stood for') +
   '<aside class=notes>Close his half of the hour on his own sentence. It returns at the end.</aside></section>')
@@ -217,9 +230,6 @@ A('<section class="slide"><div class=eyebrow>19 October 1809 &middot; the road i
   '<div class=sub>Two and a half years.</div>'
   '<aside class=notes>Riding back together, Thomas told his son what had happened.</aside></section>')
 
-A(Q('&ldquo;&hellip;had they possessed the power, he would have suffered martyrdom at their hands, or, as he expressed it, that <b>&lsquo;nothing but the law of the land had kept his head upon his shoulders.&rsquo;</b>&rdquo;', 'Richardson, <i>Memoirs</i> 1:219&ndash;220', '', 'slide hard') +
-  '<aside class=notes>Reported speech &mdash; what his son remembered him saying. Keep Richardson&rsquo;s qualifier.</aside></section>')
-
 A(Q('&ldquo;Alexander could not but feel indignant at this recital&hellip; <b>He was greatly surprised, however, when informed by his father that the latter had actually dissolved his connection with the Seceders.</b>&rdquo;', 'Richardson, <i>Memoirs</i>') +
   '<aside class=notes>He learned it on the road. Thomas did not know what his son had done in Glasgow.<br>&rarr; The father invited people who had no token; the son held a valid one and would not use it. Neither knew.</aside></section>')
 
@@ -255,6 +265,7 @@ A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
   '<aside class=notes>~minute 40.</aside></section>')
 
 A(W1_SITESLIDE)
+
 
 
 
