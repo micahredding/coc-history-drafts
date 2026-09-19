@@ -11,9 +11,70 @@ def Q(quote, cite='', eyebrow='', cls='slide', sub=''):   # a quotation alone
 
 S = []
 A = S.append
-W1_SITESLIDE = open(__file__.rsplit('/',1)[0]+'/w1_siteslide.html').read()
+_D = __file__.rsplit('/',1)[0]
+W1_SITESLIDE = open(_D+'/w1_siteslide.html').read()
+RECAP_VT = open(_D+'/recap_vt.html').read()
+RECAP_VO = open(_D+'/recap_vo.html').read()
 
 # ---------- 1 THE CAVALRY (cold open) ----------
+# ---------- 0 RECAP — the class, then last week ----------
+A('<section class="slide"><div class="eyebrow quiet">Otter Creek Church of Christ &nbsp;&middot;&nbsp; Fall 2026</div>'
+  '<h1>Our Wild<br>Democracy</h1>'
+  '<p class=sub>The Story, Promise, and Future<br>of the Churches of Christ</p>'
+  '<aside class=notes>Recap, five minutes: the class, then last week. Same slides as Week 0 where possible.</aside></section>')
+
+A('<section class="slide ideasmap"><div class=eyebrow>The ideas</div>'
+  '<div class="wmap all"><div class="r ms-christ"><span class="th key">CHRIST ALONE</span></div>'
+  '<div class="r ms-pri"><span class=th>UNITY</span><span class=th>PRIESTHOOD</span><span class=th>FUTURE</span></div>'
+  '<div class="r ms-sec"><span class=th>HOMECOMING</span><span class=th>SELF-SACRIFICE</span><span class=th>FREEDOM OF CONSCIENCE</span><span class=th>SCIENCE &amp; REASON</span><span class=th>MINIMALISM</span></div>'
+  '<div class="r ms-pra"><span class=th>the Table</span><span class=th>Baptism</span><span class=th>Scripture</span><span class=th>Singing</span><span class=th>Congregation</span></div></div>'
+  '<aside class=notes>The board from Week 0. Christ alone at the centre; three primary ideas; five secondary; five practices.</aside></section>')
+
+A(RECAP_VO)
+
+A(RECAP_VT)
+
+A('<section class="slide"><div class=eyebrow>How each week works</div>'
+  '<div class=shape><span class=step>Story</span><span class=sep>&rarr;</span><span class=step>Idea</span><span class=sep>&rarr;</span><span class=step>Future</span></div>'
+  '<aside class=notes>One of us tells a story from our history. Another cross-examines it. Then the questions are yours.</aside></section>')
+
+A('<section class="slide"><p class=bigquote style="font-size:clamp(27px,5.15vmin,60px)"><span class=q>What is beautiful here?<br>What do we carry forward?</span></p>'
+  '<aside class=notes>The class question. It closes every week.</aside></section>')
+
+A(C('Last week &middot; Cane Ridge, 1801', 'Four beats, one slide each.'))
+
+A('<section class="slide"><h2>Tens of thousands gathered.</h2>'
+  '<div class=sub>One man counted 12,000. Military men on the ground guessed twenty to thirty thousand.</div>'
+  '<aside class=notes>Patterson, counting, September 1801; the whole state held 220,955 people.</aside></section>')
+
+A(Q('&ldquo;cordially united&hellip; of one mind and one soul&hellip; all engaged in singing the same songs of praise &mdash; all united in prayer &mdash; all preached the same things.&rdquo;', 'Barton W. Stone, of Cane Ridge, August 1801', 'They experienced a profound unity') +
+  '<aside class=notes>Presbyterians, Methodists, Baptists; Black and white; seven preachers at once.</aside></section>')
+
+A(Q('&ldquo;Many, very many fell down, <b>as men slain in battle</b>, and continued for hours together in an apparently breathless and motionless state.&rdquo;', 'Barton W. Stone', 'They witnessed the work of the Spirit') +
+  '<aside class=notes>The falling &mdash; the part that made it famous, and made it suspect.</aside></section>')
+
+A('<section class="slide"><div class=eyebrow>And they came together</div><h1>This was a<br><span style="color:var(--gold)">communion service.</span></h1>'
+  '<aside class=notes>Methodists at a Presbyterian table. Stone dropped the doctrinal test at the door.</aside></section>')
+
+A(Q('&ldquo;Together, in sweetest, holiest, symbolic communion, <b>they sat down at the one table of the one Lord</b>&hellip; many good people thought assuredly, <b>the millennium had begun to dawn upon the world.</b>&rdquo;', 'William Rogers, of Cane Ridge &middot; who was there', 'A foretaste of the future') +
+  '<aside class=notes>The table as the age to come, arriving early. Hold this: today someone puts a gate in front of it.</aside></section>')
+
+A('<section class="slide"><div class="eyebrow quiet">Where the movement lives today</div>'
+  '<div class=selfname><span class=big>Churches of Christ</span><span class=gl>that&rsquo;s us</span></div>'
+  '<div class=selfname><span class=big>Christian Churches</span><span class=gl>the independent congregations</span></div>'
+  '<div class=selfname><span class=big>Disciples of Christ</span><span class=gl>the organized denomination</span></div>'
+  '<aside class=notes>One movement, three families. This class is the family story, told from our branch.</aside></section>')
+
+A('<section class="slide"><div class=eyebrow>Three founders</div>'
+  '<div class=faces>'
+  '<div class=face><img src="IMG_STONE" alt=""><span class=nm>Barton W. Stone</span><span class=rl>Cane Ridge, Kentucky. Last week.</span></div>'
+  '<div class=face><img src="IMG_TCAMPBELL" alt=""><span class=nm>Thomas Campbell</span><span class=rl>Ireland, then Pennsylvania. Today.</span></div>'
+  '<div class=face><img src="IMG_ACAMPBELL" alt=""><span class=nm>Alexander Campbell</span><span class=rl>His son. Today, and most weeks after.</span></div>'
+  '</div>'
+  '<div class=facecred>Stone: memorial portrait at the Cane Ridge shrine, a later painting (photo Chris Light, CC BY-SA 4.0). Alexander Campbell at about 65.</div>'
+  '<aside class=notes>Stone and the Campbells do not meet until 1824; their movements merge in 1832 (Week 7).</aside></section>')
+
+# ---------- TITLE ----------
 A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Week 2</div>'
   '<h1>Thomas Campbell&rsquo;s Heresy Trial</h1><div class=table-line></div>'
   '<div class=sub>Ireland 1798 &mdash; Pennsylvania 1810</div>'

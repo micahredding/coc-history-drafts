@@ -7,7 +7,7 @@ def b64(p):
 
 IMG='decks/src/week2/'
 imgs={'IMG_TOKEN':'token.jpg','IMG_MAP':'map_marked.jpg','IMG_ANDERSON':'anderson_face.jpg',
-      'IMG_ANDERSONTITLE':'anderson_title.jpg','IMG_TCAMPBELL':'tcampbell.jpg'}
+      'IMG_ANDERSONTITLE':'anderson_title.jpg','IMG_TCAMPBELL':'tcampbell.jpg','IMG_STONE':'stone.jpg','IMG_ACAMPBELL':'acampbell.jpg'}
 body='\n\n'.join(S)
 for k,v in sorted(imgs.items(), key=lambda kv:-len(kv[0])):  # longest key first: IMG_ANDERSON is a prefix of IMG_ANDERSONTITLE
     if k in body: body=body.replace(k, b64(IMG+v))
@@ -23,6 +23,10 @@ css+= ('\n  /* ---- Week 2 bleeds ---- */\n'
 '  .days.verdictlist{gap:2.6vmin;max-width:82vw;width:82vw}.days.verdictlist .d{font-size:clamp(18px,3.1vmin,32px);line-height:1.3;align-items:baseline}.days.verdictlist .d span:nth-child(2){flex:1}.days.verdictlist .dn{flex:0 0 3em}\n'
        '  .days.verdictlist .verdict{font-size:clamp(24px,4.4vmin,48px);letter-spacing:.1em}.verdictlist .verdict.v-red{color:#ff5a3c;text-shadow:0 0 1.2vmin rgba(255,90,60,.35)}\n'
        '  .litany .frag{display:block}.litany .dim{font-size:.62em;color:var(--bone-dim);margin-top:.4em}\n'
+       '  .shape{display:flex;gap:4vmin;align-items:center;margin:4.5vmin 0;flex-wrap:wrap;justify-content:center}.shape .step{font-family:"IM Fell English",Georgia,serif;font-size:clamp(27px,5.6vmin,65px)}.shape .sep{color:var(--gold);font-size:clamp(22px,4.48vmin,52px)}\n'
+       '  .selfname{display:flex;flex-direction:column;gap:.8vmin;margin-top:3.4vmin}.selfname .big{font-family:"IM Fell English",Georgia,serif;font-size:clamp(31px,6.05vmin,67px);line-height:1.1;color:var(--gold)}.selfname .gl{font-style:italic;color:var(--smoke);font-size:clamp(15px,2.24vmin,24px)}\n'
+       '  .wmap.all .th{opacity:.85}\n'
+       '  .vt:not(.vo) .vev:not(.cur) .pull{opacity:0}\n'
        '  .litany{line-height:1.5;font-size:clamp(20px,3.6vmin,44px)}\n'
        '  .days{font-family:"IM Fell English SC","IM Fell English",Georgia,serif;'
        'font-size:clamp(13px,2.05vmin,21px);color:var(--bone-dim);line-height:2.1;max-width:52em;letter-spacing:.02em}\n'
