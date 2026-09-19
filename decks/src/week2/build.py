@@ -34,7 +34,7 @@ js=js.replace("||'read')","||'present')")  # one deck: present mode by default
 
 html=('<!doctype html><html><head><meta charset=utf8>'
  '<meta name=viewport content="width=device-width,initial-scale=1">'
- '<title>Our Wild Democracy &middot; Week 2</title>'
+ '<title>Our Wild Democracy &middot; Week 2 &middot; Thomas Campbell&rsquo;s Heresy Trial</title>'
  '<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap">'
  '<style>\n/* ============================================================\n'
  '   THOMAS CAMPBELL\'S BREAK — Week 2 deck\n'

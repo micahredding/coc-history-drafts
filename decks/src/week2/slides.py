@@ -14,7 +14,13 @@ A = S.append
 W1_SITESLIDE = open(__file__.rsplit('/',1)[0]+'/w1_siteslide.html').read()
 
 # ---------- 1 THE CAVALRY (cold open) ----------
-A('<section class="slide"><aside class=notes>Black. No title, no date.<br>&rarr; Put us inside a church service in Ireland, summer 1798, before anyone knows whose church it is.</aside></section>')
+A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Week 2</div>'
+  '<h1>Thomas Campbell&rsquo;s Heresy Trial</h1><div class=table-line></div>'
+  '<div class=sub>Ireland 1798 &mdash; Pennsylvania 1810</div>'
+  '<aside class=notes>Title up while people settle. Then black, and open cold on the cavalry. ~40 min; the room takes the court at ~20 and discussion at ~40.</aside></section>')
+
+# ---------- 1 THE CAVALRY (cold open) ----------
+A('<section class="slide"><aside class=notes>Black.<br>&rarr; Put us inside a church service in Ireland, summer 1798, before anyone knows whose church it is.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Ireland &middot; summer 1798</div>'
   '<h2>A troop of cavalry surrounded the church.</h2>'
@@ -31,11 +37,6 @@ A('<section class="slide"><h2>The captain listened to the end, bowed, and rode a
 
 A('<section class="slide plateslide tight"><figure class="plate short"><img src="IMG_TCAMPBELL" alt="" style="max-height:62vh"><figcaption>Thomas Campbell, 1763&ndash;1854</figcaption></figure>'
   '<aside class=notes>&rarr; Name him. One sentence.</aside></section>')
-
-A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Week 2</div>'
-  '<h1>Thomas Campbell&rsquo;s Break</h1><div class=table-line></div>'
-  '<div class=sub>Ireland 1798 &mdash; Pennsylvania 1810</div>'
-  '<aside class=notes>Say the title once and go. ~40 min; the room takes the court at ~20 and discussion at ~40.</aside></section>')
 
 # ---------- 2 DIVISION AFTER DIVISION ----------
 A(C('Division After Division', 'Say the designation once, then peel it, outside in. Under three minutes for the section.'))
@@ -251,6 +252,7 @@ A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
   '<aside class=notes>~minute 40.</aside></section>')
 
 A(W1_SITESLIDE)
+
 
 
 
