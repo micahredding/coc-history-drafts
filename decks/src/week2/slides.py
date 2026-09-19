@@ -20,11 +20,14 @@ A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Week 2<
   '<aside class=notes>Title up while people settle. Then black, and open cold on the cavalry. ~40 min; the room takes the court at ~20 and discussion at ~40.</aside></section>')
 
 # ---------- 1 THE CAVALRY (cold open) ----------
-A('<section class="slide"><aside class=notes>Black.<br>&rarr; Put us inside a church service in Ireland, summer 1798, before anyone knows whose church it is.</aside></section>')
+A('<section class="slide"><aside class=notes>Black. A breath after the title.</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>Ireland &middot; summer 1798</div>'
-  '<h2>A troop of cavalry surrounded the church.</h2>'
-  '<aside class=notes>Probably Ahorey, near Armagh. Welsh horse from Newry, feared for reprisals after the failed rising (the United Irishmen &mdash; Presbyterians had joined it). The captain dismounted and walked in alone.<br>&rarr; The captain up the aisle.</aside></section>')
+A('<section class="slide breath"><h2>Ireland <span class=dim>&middot;</span> summer 1798</h2>'
+  '<div class=sub>A Presbyterian meeting house near Armagh, during the Sunday service.</div>'
+  '<aside class=notes>Probably Ahorey. The failed rising of 1798 (the United Irishmen &mdash; Presbyterians had joined it); reprisals running.<br>&rarr; Put us inside the service before anyone knows whose church it is.</aside></section>')
+
+A('<section class="slide"><h2>A troop of cavalry surrounded the church.</h2>'
+  '<aside class=notes>Welsh horse from Newry, feared for reprisals. The captain dismounted and walked in alone.<br>&rarr; The captain up the aisle.</aside></section>')
 
 A(Q('&ldquo;Pray, sir!&rdquo;', 'a venerable elder, sitting near Mr. Campbell &middot; Richardson, <i>Memoirs</i> 1:44') +
   '<aside class=notes>An elder tells him to pray. He does not think of it himself.</aside></section>')
