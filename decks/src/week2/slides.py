@@ -18,21 +18,11 @@ RECAP_VO = open(_D+'/recap_vo.html').read()
 
 # ---------- 1 THE CAVALRY (cold open) ----------
 # ---------- 0 RECAP — the class, then last week ----------
+# ---------- 0 RECAP ----------
 A('<section class="slide"><div class="eyebrow quiet">Otter Creek Church of Christ &nbsp;&middot;&nbsp; Fall 2026</div>'
   '<h1>Our Wild<br>Democracy</h1>'
   '<p class=sub>The Story, Promise, and Future<br>of the Churches of Christ</p>'
   '<aside class=notes>Recap, five minutes: the class, then last week. Same slides as Week 0 where possible.</aside></section>')
-
-A('<section class="slide ideasmap"><div class=eyebrow>The ideas</div>'
-  '<div class="wmap all"><div class="r ms-christ"><span class="th key">CHRIST ALONE</span></div>'
-  '<div class="r ms-pri"><span class=th>UNITY</span><span class=th>PRIESTHOOD</span><span class=th>FUTURE</span></div>'
-  '<div class="r ms-sec"><span class=th>HOMECOMING</span><span class=th>SELF-SACRIFICE</span><span class=th>FREEDOM OF CONSCIENCE</span><span class=th>SCIENCE &amp; REASON</span><span class=th>MINIMALISM</span></div>'
-  '<div class="r ms-pra"><span class=th>the Table</span><span class=th>Baptism</span><span class=th>Scripture</span><span class=th>Singing</span><span class=th>Congregation</span></div></div>'
-  '<aside class=notes>The board from Week 0. Christ alone at the centre; three primary ideas; five secondary; five practices.</aside></section>')
-
-A(RECAP_VO)
-
-A(RECAP_VT)
 
 A('<section class="slide"><div class=eyebrow>How each week works</div>'
   '<div class=shape><span class=step>Story</span><span class=sep>&rarr;</span><span class=step>Idea</span><span class=sep>&rarr;</span><span class=step>Future</span></div>'
@@ -40,6 +30,18 @@ A('<section class="slide"><div class=eyebrow>How each week works</div>'
 
 A('<section class="slide"><p class=bigquote style="font-size:clamp(27px,5.15vmin,60px)"><span class=q>What is beautiful here?<br>What do we carry forward?</span></p>'
   '<aside class=notes>The class question. It closes every week.</aside></section>')
+
+A('<section class="slide"><div class="eyebrow quiet">A movement with more than one name</div>'
+  '<div class=litany><div class=frag>The Restoration Movement</div><div class=frag>The Stone&ndash;Campbell Movement</div><div class=frag>The Stone&ndash;Campbell Restoration Movement</div></div>'
+  '<aside class=notes>Week 0&rsquo;s slide. Three names for one movement; we use them interchangeably.</aside></section>')
+
+A('<section class="slide"><div class="eyebrow quiet">Where the movement lives today</div>'
+  '<div class=selfname><span class=big>Churches of Christ</span><span class=gl>that&rsquo;s us</span></div>'
+  '<div class=selfname><span class=big>Christian Churches</span><span class=gl>the independent congregations</span></div>'
+  '<div class=selfname><span class=big>Disciples of Christ</span><span class=gl>the organized denomination</span></div>'
+  '<aside class=notes>One movement, three families. This class is the family story, told from our branch.</aside></section>')
+
+A(RECAP_VO)
 
 A(C('Last week &middot; Cane Ridge, 1801', 'Four beats, one slide each.'))
 
@@ -67,22 +69,6 @@ A('<section class="slide"><div class=eyebrow>And they came together</div><h1>Thi
 A(Q('&ldquo;Together, in sweetest, holiest, symbolic communion, <b>they sat down at the one table of the one Lord</b>&hellip; many good people thought assuredly, <b>the millennium had begun to dawn upon the world.</b>&rdquo;', 'William Rogers, of Cane Ridge &middot; who was there', 'A foretaste of the future') +
   '<aside class=notes>The table as the age to come, arriving early. Hold this: today someone puts a gate in front of it.</aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">Where the movement lives today</div>'
-  '<div class=selfname><span class=big>Churches of Christ</span><span class=gl>that&rsquo;s us</span></div>'
-  '<div class=selfname><span class=big>Christian Churches</span><span class=gl>the independent congregations</span></div>'
-  '<div class=selfname><span class=big>Disciples of Christ</span><span class=gl>the organized denomination</span></div>'
-  '<aside class=notes>One movement, three families. This class is the family story, told from our branch.</aside></section>')
-
-A('<section class="slide"><div class=eyebrow>Three founders</div>'
-  '<div class=faces>'
-  '<div class=face><img src="IMG_STONE" alt=""><span class=nm>Barton W. Stone</span><span class=rl>Cane Ridge, Kentucky. Last week.</span></div>'
-  '<div class=face><img src="IMG_TCAMPBELL" alt=""><span class=nm>Thomas Campbell</span><span class=rl>Ireland, then Pennsylvania. Today.</span></div>'
-  '<div class=face><img src="IMG_ACAMPBELL" alt=""><span class=nm>Alexander Campbell</span><span class=rl>His son. Today, and most weeks after.</span></div>'
-  '</div>'
-  '<div class=facecred>Stone: memorial portrait at the Cane Ridge shrine, a later painting (photo Chris Light, CC BY-SA 4.0). Alexander Campbell at about 65.</div>'
-  '<aside class=notes>Stone and the Campbells do not meet until 1824; their movements merge in 1832 (Week 7).</aside></section>')
-
-# ---------- 0b OPEN COMMUNION — the question of the class ----------
 A(C('Open Communion', 'Before the story: the thing the story is about.'))
 
 A('<section class="slide"><h2>What is <span style="color:var(--gold)">open communion</span>?</h2>'
@@ -103,13 +89,20 @@ A('<section class="slide plateslide tight"><div class=eyebrow>1945</div>'
 A(Q('&ldquo;&hellip;no man or set of men has the right to judge who shall and shall not have the privilege of communion&hellip; The self-examination taught in this verse <b>condemns the doctrine of close communion</b>. Each is to examine himself; not somebody else.&rdquo;', 'Leroy Brownlow, <i>Why I Am a Member of the Church of Christ</i>, 1945, p. 178', 'On 1 Corinthians 11:28') +
   '<aside class=notes>His argument: it is the Lord&rsquo;s table, so the judgment belongs to Christ and to each communicant, not to the church. That is the position Thomas Campbell was tried for in 1808.</aside></section>')
 
-# ---------- TITLE ----------
+A('<section class="slide"><div class=eyebrow>Three founders</div>'
+  '<div class=faces>'
+  '<div class=face><img src="IMG_STONE" alt=""><span class=nm>Barton W. Stone</span><span class=rl>Cane Ridge, Kentucky. Last week.</span></div>'
+  '<div class=face><img src="IMG_TCAMPBELL" alt=""><span class=nm>Thomas Campbell</span><span class=rl>Ireland, then Pennsylvania. Today.</span></div>'
+  '<div class=face><img src="IMG_ACAMPBELL" alt=""><span class=nm>Alexander Campbell</span><span class=rl>His son. Today, and most weeks after.</span></div>'
+  '</div>'
+  '<div class=facecred>Stone: memorial portrait at the Cane Ridge shrine, a later painting (photo Chris Light, CC BY-SA 4.0). Alexander Campbell at about 65.</div>'
+  '<aside class=notes>Stone and the Campbells do not meet until 1824; their movements merge in 1832 (Week 7).</aside></section>')
+
 A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Week 2</div>'
   '<h1>Thomas Campbell&rsquo;s Heresy Trial</h1><div class=table-line></div>'
   '<div class=sub>Ireland 1798 &mdash; Pennsylvania 1810</div>'
   '<aside class=notes>Title up while people settle. Then black, and open cold on the cavalry. ~40 min; the room takes the court at ~20 and discussion at ~40.</aside></section>')
 
-# ---------- 1 THE CAVALRY (cold open) ----------
 A('<section class="slide"><aside class=notes>Black. A breath after the title.</aside></section>')
 
 A('<section class="slide breath"><h2>Ireland <span class=dim>&middot;</span> summer 1798</h2>'
@@ -142,7 +135,6 @@ A('<section class="slide"><div class=eyebrow>His designation in Ireland</div>'
   '</div>'
   '<aside class=notes>Every word is a division from other Christians. Build it one line at a time, then take it apart.</aside></section>')
 
-# ---------- 2 DIVISION AFTER DIVISION ----------
 A(C('Division After Division', 'Say the designation once, then peel it, outside in. Under three minutes for the section.'))
 
 A('<section class="slide"><div class=eyebrow>Old Light &middot; 1806</div>'
@@ -173,7 +165,6 @@ A('<section class="slide"><div class=eyebrow>1804</div>'
 
 A(C('Unity Failed', 'Card. Then the ship.'))
 
-# ---------- 3 SEA VOYAGE → COMMUNION AT CONEMAUGH ----------
 A('<section class="slide bleed sect"><div class=bg><div class="bgimg shipbg"></div></div>'
   '<div class=credit>Robert Salmon, <i>British Merchantman in the River Mersey off Liverpool</i>, 1809<br>A ship of the kind, not the <i>Brutus</i></div>'
   '<h2>Sea Voyage</h2><div class=table-line></div>'
@@ -210,7 +201,6 @@ A('<section class="slide"><h2>It was well received.</h2>'
   '<div class="sub frag">The young minister assisting him, <b>William Wilson</b>, reported it to the presbytery.</div>'
   '<aside class=notes>Nobody objected in the room. Wilson took it to his old teacher John Anderson, professor of theology; Anderson refused to keep a preaching appointment with Campbell.</aside></section>')
 
-# ---------- 4 THE TRIAL ----------
 A(C('The Trial', 'Five minutes belong to the room.'))
 
 A('<section class="slide"><h2>The Libel <span class=dim>&middot; January 1808</span></h2>'
@@ -262,7 +252,6 @@ A(Q('&ldquo;he was accordingly <b>rebuked and admonished by the Mod&rsquo;r</b>&
     '<div class=sub>He submitted &mdash; as &ldquo;no more&hellip; than an act of deference to the judgment of the court.&rdquo;</div>') +
   '<aside class=notes>Presbytery&rsquo;s judgment set aside for &ldquo;informalities&rdquo;; his answers found &ldquo;so evasive and unsatisfactory, and highly equivocal&hellip; sufficient grounds to infer censure.&rdquo; Rebuked to his face before the assembled Synod.</aside></section>')
 
-# ---------- 5 THE BREAK ----------
 A(C('The Break', 'Accuracy: the break is September 1808, three weeks before his family sailed.'))
 
 A(Q('&ldquo;It is with <b>sincere reluctance</b>&hellip; that I find myself in duty bound to refuse submission to their decision as unjust and partial&hellip; And I hereby do <b>decline all ministerial connection with, or subjection to, the Associate Synod of North America</b>.&rdquo;', 'Thomas Campbell, 13&ndash;14 September 1808 &middot; Chartiers Presbytery, Burgettstown', 'September 1808') +
@@ -271,7 +260,6 @@ A(Q('&ldquo;It is with <b>sincere reluctance</b>&hellip; that I find myself in d
 A(Q('&ldquo;&hellip;had they possessed the power, he would have suffered martyrdom at their hands, or, as he expressed it, that <b>&lsquo;nothing but the law of the land had kept his head upon his shoulders.&rsquo;</b>&rdquo;', 'Richardson, <i>Memoirs</i> 1:219&ndash;220', '', 'slide hard') +
   '<aside class=notes>His own summary of the two years &mdash; said to Alexander on the road a year later, as Richardson reports it. Keep the qualifier: <i>had they possessed the power</i>.</aside></section>')
 
-# ---------- 6 THE GROVE ----------
 A(C('The Grove', ''))
 
 A('<section class="slide breath"><h1 style="font-size:clamp(28px,5.4vmin,64px);line-height:1.25">And then Campbell discovered that this meant very little.</h1>'
@@ -285,7 +273,6 @@ A(C('What did they stand for?', ''))
 A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;', '<i>Declaration and Address</i>, 1809', 'That fall they asked him to write down what they stood for') +
   '<aside class=notes>Close his half of the hour on his own sentence. It returns at the end.</aside></section>')
 
-# ---------- 7 ALEXANDER AND THE SHIPWRECK ----------
 A(C('Alexander and the Shipwreck', 'The son&rsquo;s story, while the father&rsquo;s is still open. He does not know what has happened in Pennsylvania.'))
 
 A('<section class="slide bleed"><div class=bg><div class="bgimg wreckbg"></div></div>'
@@ -312,7 +299,6 @@ A(Q('&ldquo;&hellip;conscientious misgivings as to the propriety of <b>sanctioni
 A(Q('&ldquo;&hellip;the ring of the token, falling upon the plate, announced the instant at which he renounced Presbyterianism for ever &mdash; <b>the leaden voucher becoming thus a token not of communion but of separation</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:190', '', 'slide hard') +
   '<aside class=notes>He dropped the token and passed the bread and wine. Told no one. Collected his certificate of good standing on the way out.</aside></section>')
 
-# ---------- 8 FAMILY REUNION ----------
 A(C('Family Reunion', ''))
 
 A('<section class="slide"><div class=eyebrow>19 October 1809 &middot; the road into Washington, Pennsylvania</div>'
@@ -323,7 +309,6 @@ A('<section class="slide"><div class=eyebrow>19 October 1809 &middot; the road i
 A(Q('&ldquo;Alexander could not but feel indignant at this recital&hellip; <b>He was greatly surprised, however, when informed by his father that the latter had actually dissolved his connection with the Seceders.</b>&rdquo;', 'Richardson, <i>Memoirs</i>') +
   '<aside class=notes>He learned it on the road. Thomas did not know what his son had done in Glasgow.<br>&rarr; The father invited people who had no token; the son held a valid one and would not use it. Neither knew.</aside></section>')
 
-# ---------- 9 CLOSE ----------
 A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;', '<i>Declaration and Address</i>, 1809', 'That fall they asked him to write down what they stood for', 'slide',
     '<div class="sub frag">Next week: <b>the Declaration and Address</b>.</div>') +
   '<aside class=notes>Optional sting: the presbytery formally deposed him on 18 April 1810 &mdash; seven months after this was published.</aside></section>')
@@ -365,3 +350,15 @@ A(W1_SITESLIDE)
 
 
 
+
+
+A(C('Addendum', 'Reference material; not part of the telling.'))
+
+A('<section class="slide ideasmap"><div class=eyebrow>The ideas</div>'
+  '<div class="wmap all"><div class="r ms-christ"><span class="th key">CHRIST ALONE</span></div>'
+  '<div class="r ms-pri"><span class=th>UNITY</span><span class=th>PRIESTHOOD</span><span class=th>FUTURE</span></div>'
+  '<div class="r ms-sec"><span class=th>HOMECOMING</span><span class=th>SELF-SACRIFICE</span><span class=th>FREEDOM OF CONSCIENCE</span><span class=th>SCIENCE &amp; REASON</span><span class=th>MINIMALISM</span></div>'
+  '<div class="r ms-pra"><span class=th>the Table</span><span class=th>Baptism</span><span class=th>Scripture</span><span class=th>Singing</span><span class=th>Congregation</span></div></div>'
+  '<aside class=notes>The board from Week 0. Christ alone at the centre; three primary ideas; five secondary; five practices.</aside></section>')
+
+A(RECAP_VT)
