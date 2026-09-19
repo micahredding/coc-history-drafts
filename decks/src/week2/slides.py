@@ -82,6 +82,27 @@ A('<section class="slide"><div class=eyebrow>Three founders</div>'
   '<div class=facecred>Stone: memorial portrait at the Cane Ridge shrine, a later painting (photo Chris Light, CC BY-SA 4.0). Alexander Campbell at about 65.</div>'
   '<aside class=notes>Stone and the Campbells do not meet until 1824; their movements merge in 1832 (Week 7).</aside></section>')
 
+# ---------- 0b OPEN COMMUNION — the question of the class ----------
+A(C('Open Communion', 'Before the story: the thing the story is about.'))
+
+A('<section class="slide"><h2>What is <span style="color:var(--gold)">open communion</span>?</h2>'
+  '<aside class=notes>Ask it. Let two or three people answer before the next slide.</aside></section>')
+
+A('<section class="slide"><div class="eyebrow quiet">A working definition</div>'
+  '<h2>The Lord&rsquo;s Supper offered to every believer present &mdash; with no church test at the door.</h2>'
+  '<div class=sub>Its opposite is <i>close communion</i>: only members of that church, in good standing, may partake.</div>'
+  '<aside class=notes>General definition, not a technical one. In the Scottish Presbyterian world of 1800 the test was the token; in Baptist churches it was immersion; in most churches it was membership.</aside></section>')
+
+A('<section class="slide room"><h2>Did you know this was <span style="color:var(--gold)">part of our practice</span>?</h2>'
+  '<aside class=notes>Hands. Then: Churches of Christ have practised it, and defended it in print, for a very long time.</aside></section>')
+
+A('<section class="slide plateslide tight"><div class=eyebrow>1945</div>'
+  '<figure class="plate short"><img src="IMG_BROWNLOW" alt="" style="max-height:56vh"><figcaption>Leroy Brownlow, <i>Why I Am a Member of the Church of Christ</i> &middot; Reason XXIII, &ldquo;Because of its scriptural teaching and observance of the Lord&rsquo;s Supper&rdquo;</figcaption></figure>'
+  '<aside class=notes>The standard twentieth-century tract of the Churches of Christ; twenty-five reasons. Reason XXIII, section III: &ldquo;Who shall participate in the communion.&rdquo;</aside></section>')
+
+A(Q('&ldquo;&hellip;no man or set of men has the right to judge who shall and shall not have the privilege of communion&hellip; The self-examination taught in this verse <b>condemns the doctrine of close communion</b>. Each is to examine himself; not somebody else.&rdquo;', 'Leroy Brownlow, <i>Why I Am a Member of the Church of Christ</i>, 1945, p. 178', 'On 1 Corinthians 11:28') +
+  '<aside class=notes>His argument: it is the Lord&rsquo;s table, so the judgment belongs to Christ and to each communicant, not to the church. That is the position Thomas Campbell was tried for in 1808.</aside></section>')
+
 # ---------- TITLE ----------
 A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Week 2</div>'
   '<h1>Thomas Campbell&rsquo;s Heresy Trial</h1><div class=table-line></div>'

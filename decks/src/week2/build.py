@@ -7,7 +7,7 @@ def b64(p):
 
 IMG='decks/src/week2/'
 imgs={'IMG_TOKEN':'token.jpg','IMG_MAP':'map_marked.jpg','IMG_ANDERSON':'anderson_face.jpg',
-      'IMG_ANDERSONTITLE':'anderson_title.jpg','IMG_TCAMPBELL':'tcampbell.jpg','IMG_STONE':'stone.jpg','IMG_ACAMPBELL':'acampbell.jpg'}
+      'IMG_ANDERSONTITLE':'anderson_title.jpg','IMG_TCAMPBELL':'tcampbell.jpg','IMG_STONE':'stone.jpg','IMG_ACAMPBELL':'acampbell.jpg','IMG_BROWNLOW':'brownlow.jpg'}
 body='\n\n'.join(S)
 for k,v in sorted(imgs.items(), key=lambda kv:-len(kv[0])):  # longest key first: IMG_ANDERSON is a prefix of IMG_ANDERSONTITLE
     if k in body: body=body.replace(k, b64(IMG+v))
