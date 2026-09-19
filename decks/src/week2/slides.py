@@ -19,7 +19,7 @@ RECAP_VO = open(_D+'/recap_vo.html').read()
 # ---------- 1 THE CAVALRY (cold open) ----------
 # ---------- 0 RECAP — the class, then last week ----------
 # ---------- 0 RECAP ----------
-A('<section class="slide"><div class="eyebrow quiet">Otter Creek Church of Christ &nbsp;&middot;&nbsp; Fall 2026</div>'
+A('<section class="slide"><div class="eyebrow quiet">Otter Creek &middot; Fall 2026</div>'
   '<h1>Our Wild<br>Democracy</h1>'
   '<p class=sub>The Story, Promise, and Future<br>of the Churches of Christ</p>'
   '<aside class=notes>Recap, five minutes: the class, then last week. Same slides as Week 0 where possible.</aside></section>')
@@ -28,7 +28,7 @@ A('<section class="slide"><div class=eyebrow>How each week works</div>'
   '<div class=shape><span class=step>Story</span><span class=sep>&rarr;</span><span class=step>Idea</span><span class=sep>&rarr;</span><span class=step>Future</span></div>'
   '<aside class=notes>One of us tells a story from our history. Another cross-examines it. Then the questions are yours.</aside></section>')
 
-A('<section class="slide"><p class=bigquote style="font-size:clamp(27px,5.15vmin,60px)"><span class=q>What is beautiful here?<br>What do we carry forward?</span></p>'
+A('<section class="slide"><p class=bigquote style="font-size:clamp(36px,7.4vmin,92px)"><span class=q>What is beautiful here?<br>What do we carry forward?</span></p>'
   '<aside class=notes>The class question. It closes every week.</aside></section>')
 
 A('<section class="slide"><div class="eyebrow quiet">A movement with more than one name</div>'
@@ -83,7 +83,7 @@ A('<section class="slide room"><h2>Did you know this was <span style="color:var(
   '<aside class=notes>Hands. Then: Churches of Christ have practised it, and defended it in print, for a very long time.</aside></section>')
 
 A('<section class="slide plateslide tight"><div class=eyebrow>1945</div>'
-  '<figure class="plate short"><img src="IMG_BROWNLOW" alt="" style="max-height:56vh"><figcaption>Leroy Brownlow, <i>Why I Am a Member of the Church of Christ</i> &middot; Reason XXIII, &ldquo;Because of its scriptural teaching and observance of the Lord&rsquo;s Supper&rdquo;</figcaption></figure>'
+  '<figure class="plate short"><img src="IMG_BROWNLOW" alt="" style="max-height:72vh"><figcaption>Leroy Brownlow, <i>Why I Am a Member of the Church of Christ</i> &middot; Reason XXIII, &ldquo;Because of its scriptural teaching and observance of the Lord&rsquo;s Supper&rdquo;</figcaption></figure>'
   '<aside class=notes>The standard twentieth-century tract of the Churches of Christ; twenty-five reasons. Reason XXIII, section III: &ldquo;Who shall participate in the communion.&rdquo;</aside></section>')
 
 A(Q('&ldquo;&hellip;no man or set of men has the right to judge who shall and shall not have the privilege of communion&hellip; The self-examination taught in this verse <b>condemns the doctrine of close communion</b>. Each is to examine himself; not somebody else.&rdquo;', 'Leroy Brownlow, <i>Why I Am a Member of the Church of Christ</i>, 1945, p. 178', 'On 1 Corinthians 11:28') +
@@ -121,7 +121,7 @@ A(Q('&ldquo;Thou, O God, art our refuge and strength, a very present help in tro
 A('<section class="slide"><h2>The captain listened to the end, bowed, and rode away with his troop.</h2>'
   '<aside class=notes>Family tradition, via Richardson &mdash; say &ldquo;as the story goes.&rdquo;<br>&rarr; Nothing was taken from him that day.</aside></section>')
 
-A('<section class="slide plateslide tight"><figure class="plate short"><img src="IMG_TCAMPBELL" alt="" style="max-height:62vh"><figcaption>Thomas Campbell, 1763&ndash;1854</figcaption></figure>'
+A('<section class="slide plateslide tight"><figure class="plate short"><img src="IMG_TCAMPBELL" alt="" style="max-height:74vh"><figcaption>Thomas Campbell, 1763&ndash;1854</figcaption></figure>'
   '<aside class=notes>&rarr; Name him. One sentence.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>His designation in Ireland</div>'
@@ -203,7 +203,7 @@ A('<section class="slide"><h2>It was well received.</h2>'
 
 A(C('The Trial', 'Five minutes belong to the room.'))
 
-A('<section class="slide"><h2>The Libel <span class=dim>&middot; January 1808</span></h2>'
+A('<section class="slide"><h2 style="max-width:none;white-space:nowrap;font-size:clamp(34px,6.4vmin,80px)">The Libel <span class=dim>&middot; January 1808</span></h2>'
   '<div class=days>'
   '<div class="d"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span></div>'
   '<div class="d"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span></div>'
@@ -219,7 +219,7 @@ A('<section class="slide room"><h2><span style="color:var(--gold)">YOU</span> ar
   '<div class=sub>Guilty, or not guilty?</div>'
   '<aside class=notes>~minute 20. Hand it over. Co-teacher reads the charges.</aside></section>')
 
-A('<section class="slide hard"><h2>The Verdict <span class=dim>&middot; February 1808</span></h2>'
+A('<section class="slide hard"><h2 style="max-width:none;white-space:nowrap;font-size:clamp(34px,6.4vmin,80px)">The Verdict <span class=dim>&middot; February 1808</span></h2>'
   '<div class="days verdictlist">'
   '<div class="d"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
   '<div class="d"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
@@ -262,7 +262,7 @@ A(Q('&ldquo;&hellip;had they possessed the power, he would have suffered martyrd
 
 A(C('The Grove', ''))
 
-A('<section class="slide breath"><h1 style="font-size:clamp(28px,5.4vmin,64px);line-height:1.25">And then Campbell discovered that this meant very little.</h1>'
+A('<section class="slide breath"><h1 style="font-size:clamp(36px,7.6vmin,96px);line-height:1.2">And then Campbell discovered that this meant very little.</h1>'
   '<aside class=notes>Your sentence. Black screen; give it a breath.</aside></section>')
 
 A(Q('&ldquo;Sometimes the deep shade of a <b>maple grove</b> sheltered the assembly from the summer sun. Generally, however, the houses of his old Irish neighbors&hellip; were the places where he had his appointments for preaching, and where he discoursed weekly to <b>all who chose to assemble</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:231') +
