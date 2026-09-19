@@ -47,6 +47,14 @@ A('<section class="slide"><h2>Tens of thousands gathered.</h2>'
   '<div class=sub>One man counted 12,000. Military men on the ground guessed twenty to thirty thousand.</div>'
   '<aside class=notes>Patterson, counting, September 1801; the whole state held 220,955 people.</aside></section>')
 
+A('<section class="slide"><div class=eyebrow>And they were not people of one church</div>'
+  '<div class=litany><div class="no frag">Presbyterians. Methodists. <b>Baptists.</b></div>'
+  '<div class="no frag">Folks both <b>black and white</b>.</div>'
+  '<div class="no frag">Preachers who were formally <b>at odds</b> &mdash;</div>'
+  '<div class="no frag">whose churches did not, as a rule,<br><b>commune at one another&rsquo;s tables.</b></div>'
+  '<div class="coda frag">And here they were.</div></div>'
+  '<aside class=notes>The Week 1 slide, verbatim. Seven preachers at once; a Black preacher at the fourth centre.</aside></section>')
+
 A(Q('&ldquo;cordially united&hellip; of one mind and one soul&hellip; all engaged in singing the same songs of praise &mdash; all united in prayer &mdash; all preached the same things.&rdquo;', 'Barton W. Stone, of Cane Ridge, August 1801', 'They experienced a profound unity') +
   '<aside class=notes>Presbyterians, Methodists, Baptists; Black and white; seven preachers at once.</aside></section>')
 
