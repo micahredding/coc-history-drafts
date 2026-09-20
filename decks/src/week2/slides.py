@@ -22,6 +22,7 @@ RECAP_VO = open(_D+'/recap_vo.html').read()
 # ---------- 0 RECAP ----------
 # ---------- 0 RECAP ----------
 # ---------- 0 RECAP ----------
+# ---------- 0 RECAP ----------
 A('<section class="slide"><div class="eyebrow quiet">Otter Creek &middot; Fall 2026</div>'
   '<h1>Our Wild<br>Democracy</h1>'
   '<p class=sub>The Story, Promise, and Future<br>of the Churches of Christ</p>'
@@ -137,23 +138,7 @@ A('<section class="slide"><div class=eyebrow>His designation in Ireland</div>'
   '</div>'
   '<aside class=notes>Every word is a division from other Christians. Build it one line at a time, then take it apart, outside in.</aside></section>')
 
-A(C('Division After Division', 'Say the designation once, then peel it, outside in. Under three minutes for the section.'))
-
-A('<section class="slide"><div class=eyebrow>Old Light &middot; 1806</div>'
-  '<h2>Division over whether the <span style="color:var(--gold)">magistrate</span> may enforce religion.</h2>'
-  '<aside class=notes>Three splits in three slides, then two tries at mending. Under three minutes.</aside></section>')
-
-A('<section class="slide"><div class=eyebrow>Anti-Burgher &middot; 1747</div>'
-  '<h2>Division over an <span style="color:var(--gold)">oath</span>.</h2>'
-  '<div class=sub>After it, Burghers and Anti-Burghers could no longer take communion together.</div>'
-  '<aside class=notes>Whether a Seceder could swear to &ldquo;the true religion presently professed within this realm.&rdquo; Burghers: it only means not Catholic. Anti-Burghers: it blesses the church we left. Within two years, mutual excommunication &mdash; &ldquo;mutual forbidding of intermingling.&rdquo; The oath applied in three Scottish cities and had never been required in Ireland at all. This is the rule Conemaugh breaks.</aside></section>')
-
-A('<section class="slide"><div class=eyebrow>Seceder &middot; 1733</div>'
-  '<h2>Division over <span style="color:var(--gold)">who appoints the minister</span>.</h2>'
-  '<div class=sub>They walked out of the Church of Scotland.</div>'
-  '<aside class=notes>Lay patrons placing ministers over congregations that had not called them. His tradition began as a protest against imposed authority.</aside></section>')
-
-A(C('Worked for Unity', 'Two tries in Ireland, 1798 and 1804.'))
+A(C('Division After Division', 'Peel the four words, outside in &mdash; under two minutes, from these notes.<br><br><b>Old Light &middot; 1806 &mdash; division over whether the magistrate may enforce religion.</b> The Anti-Burghers split again the year before he sailed; he sided with the Old Lights by friendship more than conviction (Foster).<br><br><b>Anti-Burgher &middot; 1747 &mdash; division over an oath.</b> Whether a Seceder could swear to &ldquo;the true religion presently professed within this realm.&rdquo; Burghers: it only means not Catholic. Anti-Burghers: it blesses the church we left. Within two years, mutual excommunication &mdash; &ldquo;mutual forbidding of intermingling&rdquo;: Burghers and Anti-Burghers could no longer take communion together. The oath applied in three Scottish cities and had never been required in Ireland at all. This is the rule Conemaugh breaks.<br><br><b>Seceder &middot; 1733 &mdash; division over who appoints the minister.</b> Lay patrons placing ministers over congregations that had not called them; the dissenting presbyteries walked out of the Church of Scotland. His tradition began as a protest against imposed authority.'))
 
 A('<section class="slide"><div class=eyebrow>1798</div>'
   '<h2>He helped found a missionary society open to every denomination.</h2>'
@@ -165,7 +150,9 @@ A('<section class="slide"><div class=eyebrow>1804</div>'
   '<div class="sub frag">Glasgow &ldquo;allowed him to argue his case but <b>refused to allow the proposition to come to a vote</b>.&rdquo;</div>'
   '<aside class=notes>October 1804, a consultation at Rich Hill drafted a formal proposal to reunite Burghers and Anti-Burghers in Ireland, on the ground that the burgess oath had never applied there. The Synod of Ulster at Belfast &ldquo;favorably received&rdquo; it. The General Associate Synod in Scotland moved to block it; the Irish sent Campbell to Glasgow to ask that the Irish churches decide for themselves. Glasgow &ldquo;allowed him to argue his case but refused to allow the proposition to come to a vote&rdquo; (Foster). Twice he tried; twice a court above him closed it.</aside></section>')
 
-A(C('Unity Failed', 'Card. Then the ship.'))
+A('<section class="slide breath sect"><h2>Unity vs Authority</h2><div class=table-line></div>'
+  '<div class=sub>Unity failed.</div>'
+  '<aside class=notes>Card. Two tries in Ireland, both closed by his own church courts. Then the ship.</aside></section>')
 
 A('<section class="slide bleed"><div class=bg><div class="bgimg shipbg"></div></div>'
   '<div class=eyebrow>April 1807 &middot; Londonderry</div>'
@@ -384,4 +371,5 @@ A('<section class="slide"><div class=eyebrow>How each week works</div>'
 
 A('<section class="slide"><p class=bigquote style="font-size:clamp(36px,7.4vmin,92px)"><span class=q>What is beautiful here?<br>What do we carry forward?</span></p>'
   '<aside class=notes>The class question. It closes every week.</aside></section>')
+
 
