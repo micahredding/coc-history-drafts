@@ -37,7 +37,7 @@ A(C('Last week &middot; Cane Ridge, 1801', 'Four beats, one slide each.'))
 
 A('<section class="slide"><h2>Tens of thousands gathered.</h2>'
   '<div class=sub>One man counted 12,000. Military men on the ground guessed twenty to thirty thousand.</div>'
-  '<aside class=notes>Patterson, counting, September 1801; the whole state held 220,955 people.</aside></section>')
+  '<aside class=notes>Six beats, one slide each: the crowd, the mix of churches, the unity, the Spirit, the communion, the foretaste.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>And they were not people of one church</div>'
   '<div class=litany><div class="no frag">Presbyterians. Methodists. <b>Baptists.</b></div>'
@@ -62,7 +62,7 @@ A(Q('&ldquo;Together, in sweetest, holiest, symbolic communion, <b>they sat down
 A(C('Open Communion', 'Before the story: the thing the story is about.'))
 
 A('<section class="slide"><h2>What is <span style="color:var(--gold)">open communion</span>?</h2>'
-  '<aside class=notes>Ask it. Let two or three people answer before the next slide.</aside></section>')
+  '<aside class=notes>Ask it. Let two or three people answer before you give the working definition.</aside></section>')
 
 A('<section class="slide"><div class="eyebrow quiet">A working definition</div>'
   '<h2>The Lord&rsquo;s Supper offered to every believer present &mdash; with no church test at the door.</h2>'
@@ -86,45 +86,45 @@ A('<section class="slide"><div class=eyebrow>Three founders</div>'
   '<div class=face><img src="IMG_ACAMPBELL" alt=""><span class=nm>Alexander Campbell</span><span class=rl>His son. Today, and most weeks after.</span></div>'
   '</div>'
   '<div class=facecred>Stone: memorial portrait at the Cane Ridge shrine, a later painting (photo Chris Light, CC BY-SA 4.0). Alexander Campbell at about 65.</div>'
-  '<aside class=notes>Stone and the Campbells do not meet until 1824; their movements merge in 1832 (Week 7).</aside></section>')
+  '<aside class=notes>Name them once. Stone&rsquo;s story was last week; the Campbells are today. They meet in 1824 and their movements merge in 1832 (Week 7).</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Week 2</div>'
   '<h1>Thomas Campbell&rsquo;s Heresy Trial</h1><div class=table-line></div>'
   '<div class=sub>Ireland 1798 &mdash; Pennsylvania 1810</div>'
-  '<aside class=notes>Title up while people settle. Then black, and open cold on the cavalry. ~40 min; the room takes the court at ~20 and discussion at ~40.</aside></section>')
+  '<aside class=notes>Title up. Then black, and the cold open. ~40 min for the story; the room takes the court at about minute 20 and discussion at about 40.</aside></section>')
 
 A('<section class="slide"><aside class=notes>Black. A breath after the title.</aside></section>')
 
 A('<section class="slide breath"><h2>Ireland <span class=dim>&middot;</span> summer 1798</h2>'
   '<div class=sub>A Presbyterian meeting house near Armagh, during the Sunday service.</div>'
-  '<aside class=notes>Probably Ahorey. The failed rising of 1798 (the United Irishmen &mdash; Presbyterians had joined it); reprisals running.<br>&rarr; Put us inside the service before anyone knows whose church it is.</aside></section>')
+  '<aside class=notes>Probably Ahorey, his congregation eight miles from Armagh; he had been its minister since 1798, licensed 1791. Summer 1798 is the failed rising of the United Irishmen &mdash; Presbyterians had joined it in great numbers &mdash; and the reprisals were under way. A Presbyterian meeting house was, to a soldier, a possible rebel meeting.<br>&rarr; Put us inside the service before anyone knows whose church it is.</aside></section>')
 
 A('<section class="slide"><h2>A troop of cavalry surrounded the church.</h2>'
-  '<aside class=notes>Welsh horse from Newry, feared for reprisals. The captain dismounted and walked in alone.<br>&rarr; The captain up the aisle.</aside></section>')
+  '<aside class=notes>Richardson 1:44: &ldquo;a troop of Welsh horse, notorious for their severities and outrages upon those they conceived to be rebels.&rdquo; Stationed at Newry. The captain, &ldquo;conceiving that in this remote place he had come upon a meeting of rebels, dismounted and in a threatening manner marched into the church.&rdquo; He came in alone.<br>&rarr; The captain up the aisle, &ldquo;casting fierce glances upon all sides.&rdquo;</aside></section>')
 
 A(Q('&ldquo;Pray, sir!&rdquo;', 'a venerable elder, sitting near Mr. Campbell &middot; Richardson, <i>Memoirs</i> 1:44') +
-  '<aside class=notes>An elder tells him to pray. He does not think of it himself.</aside></section>')
+  '<aside class=notes>A venerable elder sitting near him &ldquo;called to him solemnly.&rdquo; Campbell does not think of it; a layman tells the minister what to do.</aside></section>')
 
 A(Q('&ldquo;Thou, O God, art our refuge and strength, a very present help in trouble. Therefore will not we fear, though the earth be removed and though the mountains be carried into the midst of the sea.&rdquo;', '', 'He began in the words of the forty-sixth Psalm') +
-  '<aside class=notes>&ldquo;in a deep, unfaltering voice.&rdquo; Read the whole thing.</aside></section>')
+  '<aside class=notes>&ldquo;in a deep, unfaltering voice.&rdquo; Read the whole verse; do not summarise it.</aside></section>')
 
 A('<section class="slide"><h2>The captain listened to the end, bowed, and rode away with his troop.</h2>'
-  '<aside class=notes>Family tradition, via Richardson &mdash; say &ldquo;as the story goes.&rdquo;<br>&rarr; Nothing was taken from him that day.</aside></section>')
+  '<aside class=notes>Richardson: &ldquo;No sooner was the first verse uttered than the captain paused, and, apparently impressed, bent his head, listened to the close, then bowed, and retracing his steps, mounted his horse and dashed away with the entire troop.&rdquo; Family tradition, written down seventy years later &mdash; say &ldquo;as the story goes.&rdquo;<br>&rarr; Nothing was taken from him that day.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Armagh &middot; the 1790s</div>'
   '<h2>Ireland was tearing itself apart.</h2>'
   '<div class=sub>Orangemen and Defenders by night. The United Irishmen by secret oath. Most of his own people had joined.</div>'
-  '<aside class=notes>Richardson 1:41&ndash;42: the Orange society formed in Armagh in 1795 to drive out the Catholic peasantry; Defenders and Peep-o&rsquo;-Day Boys; houses searched for arms by night. Then the United Irishmen, bound by oath &mdash; and &ldquo;the greater portion of the Presbyterians became connected with this secret organization.&rdquo;</aside></section>')
+  '<aside class=notes>Richardson 1:41&ndash;42, the fullest account. The <b>Orange society</b> formed in County Armagh in 1795 &ldquo;to drive by threats and nocturnal outrages the entire Catholic peasantry from the country&rdquo;; Catholic <b>Defenders</b> and Protestant <b>Peep-o&rsquo;-Day Boys</b> fought across Ulster; houses were searched for arms by night and robbers used the cover. Then the <b>United Irishmen</b> &mdash; a secret, oath-bound society aiming at an independent republic. Catholics joined for protection from the Orangemen; Presbyterians for parliamentary reform &mdash; and &ldquo;the greater portion of the Presbyterians became connected with this secret organization,&rdquo; its &ldquo;chief moral strength.&rdquo; In the six northern counties they were much of the population. That is his congregation.</aside></section>')
 
 A(Q('&ldquo;&hellip;he presented so candidly and earnestly his views in condemnation of them that <b>a large portion of the audience became excited and exasperated</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:42', 'Asked to preach on the lawfulness of oaths and secret societies') +
-  '<aside class=notes>His &ldquo;utter refusal to take any part in the movement, and his conscientious opposition to secret associations&rdquo; put him at odds with his own congregation. He preached against joining. They were furious.</aside></section>')
+  '<aside class=notes>Richardson 1:42. Campbell&rsquo;s &ldquo;utter refusal to take any part in the movement, and his conscientious opposition to secret associations,&rdquo; brought him &ldquo;into disfavor with his people.&rdquo; Asked, in the heat of it, to preach on oaths and secret societies, he condemned both &mdash; the United Irishmen and, by the same principle, the Orange Order. Foster: he &ldquo;had consistently spoken against membership in any society that might encourage rebellion and violence.&rdquo; He would take neither side, and said so from his own pulpit to a room that had largely taken one.</aside></section>')
 
 A('<section class="slide"><h2>He would not let his church become a <span style="color:var(--gold)">faction</span>.</h2>'
   '<div class=sub>A friend took him by the arm and walked him safely out through the crowd.</div>'
-  '<aside class=notes>Richardson: &ldquo;a prominent member, fearing lest he should be insulted, courteously took him by the arm and conducted him safely through the crowd.&rdquo; Through all the troubles he &ldquo;remained entirely unmolested&rdquo;; Lord Gosford offered him a post as tutor, which he declined.<br>&rarr; His first act for unity: in a country choosing sides, he refused to pick one for his people.</aside></section>')
+  '<aside class=notes>Richardson: &ldquo;a prominent member, fearing lest he should be insulted, courteously took him by the arm and conducted him safely through the crowd.&rdquo; Through the whole rebellion he &ldquo;remained entirely unmolested, retaining the confidence of the community.&rdquo; Lord Gosford, governor of the county &mdash; who had himself tried to check the persecution of Catholics &mdash; was impressed enough to offer him a post as tutor to his family, a large salary and a house on the estate; Campbell declined it. When the rising failed and the reprisals came, Richardson says, &ldquo;the unhappy results of the rebellion vindicated the correctness of his principles.&rdquo;<br>&rarr; His first act for unity: in a country choosing sides, he refused to choose one for his people.</aside></section>')
 
 A('<section class="slide plateslide tight"><figure class="plate short"><img src="IMG_TCAMPBELL" alt="" style="max-height:74vh"><figcaption>Thomas Campbell, 1763&ndash;1854</figcaption></figure>'
-  '<aside class=notes>&rarr; Name him. One sentence.</aside></section>')
+  '<aside class=notes>&rarr; Name him. Born County Down 1763; schoolmaster, then Seceder minister; forty-four when this story crosses the Atlantic. The engraving is later.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>His designation in Ireland</div>'
   '<div class=litany>'
@@ -135,13 +135,13 @@ A('<section class="slide"><div class=eyebrow>His designation in Ireland</div>'
   '<div class="frag dim">of the Anti-Burgher Synod of Ulster</div>'
   '<div class="frag dim">under the General Associate Synod in Scotland</div>'
   '</div>'
-  '<aside class=notes>Every word is a division from other Christians. Build it one line at a time, then take it apart.</aside></section>')
+  '<aside class=notes>Every word is a division from other Christians. Build it one line at a time, then take it apart, outside in.</aside></section>')
 
 A(C('Division After Division', 'Say the designation once, then peel it, outside in. Under three minutes for the section.'))
 
 A('<section class="slide"><div class=eyebrow>Old Light &middot; 1806</div>'
   '<h2>Division over whether the <span style="color:var(--gold)">magistrate</span> may enforce religion.</h2>'
-  '<aside class=notes>The Anti-Burghers split again the year before he sailed. He sided with the Old Lights by friendship more than conviction (Foster).</aside></section>')
+  '<aside class=notes>Three splits in three slides, then two tries at mending. Under three minutes.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Anti-Burgher &middot; 1747</div>'
   '<h2>Division over an <span style="color:var(--gold)">oath</span>.</h2>'
@@ -153,55 +153,55 @@ A('<section class="slide"><div class=eyebrow>Seceder &middot; 1733</div>'
   '<div class=sub>They walked out of the Church of Scotland.</div>'
   '<aside class=notes>Lay patrons placing ministers over congregations that had not called them. His tradition began as a protest against imposed authority.</aside></section>')
 
-A(C('Worked for Unity', 'Two tries, two slides.'))
+A(C('Worked for Unity', 'Two tries in Ireland, 1798 and 1804.'))
 
 A('<section class="slide"><div class=eyebrow>1798</div>'
   '<h2>He helped found a missionary society open to every denomination.</h2>'
   '<div class="sub frag">His synod voted it inconsistent with the Secession Testimony. He gave it up.</div>'
-  '<aside class=notes>Evangelical Society of Ulster &mdash; &ldquo;regardless of their denomination.&rdquo; Synod of Ulster, Aug 1799: the vote came at the same meeting that seated him. Three elders asked whether he would submit; he agreed to &ldquo;try to see eye to eye.&rdquo;<br>&rarr; The one that could make him yield was never the one with the horses.</aside></section>')
+  '<aside class=notes>The Evangelical Society of Ulster, October 1798 &mdash; cross-denominational, supporting missionaries &ldquo;regardless of their denomination,&rdquo; tied to the London Missionary Society. His synod took it up at the very meeting that seated him (Synod of Ulster, 30 July&ndash;1 August 1799): &ldquo;Is the Evangelical Society of Ulster constituted on principles consistent with the Secession Testimony?&rdquo; Voted no. Three elders were sent to ask whether he would submit; he agreed to &ldquo;try to see eye to eye,&rdquo; gave up his role, and was out of the society by 1800.<br>&rarr; The one that could make him yield was never the one with the horses.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>1804</div>'
   '<h2>He proposed reuniting Burghers and Anti-Burghers in Ireland.</h2>'
   '<div class="sub frag">Glasgow &ldquo;allowed him to argue his case but <b>refused to allow the proposition to come to a vote</b>.&rdquo;</div>'
-  '<aside class=notes>The Irish synod received it favourably; the General Associate Synod in Scotland would not let it be decided (Foster). Twice he tried; twice a court above him closed it.</aside></section>')
+  '<aside class=notes>October 1804, a consultation at Rich Hill drafted a formal proposal to reunite Burghers and Anti-Burghers in Ireland, on the ground that the burgess oath had never applied there. The Synod of Ulster at Belfast &ldquo;favorably received&rdquo; it. The General Associate Synod in Scotland moved to block it; the Irish sent Campbell to Glasgow to ask that the Irish churches decide for themselves. Glasgow &ldquo;allowed him to argue his case but refused to allow the proposition to come to a vote&rdquo; (Foster). Twice he tried; twice a court above him closed it.</aside></section>')
 
 A(C('Unity Failed', 'Card. Then the ship.'))
 
 A('<section class="slide bleed sect"><div class=bg><div class="bgimg shipbg"></div></div>'
   '<div class=credit>Robert Salmon, <i>British Merchantman in the River Mersey off Liverpool</i>, 1809<br>A ship of the kind, not the <i>Brutus</i></div>'
   '<h2>Sea Voyage</h2><div class=table-line></div>'
-  '<aside class=notes>Card.</aside></section>')
+  '<aside class=notes>Card. Two tries in Ireland, both closed by his own church courts. Then the ship.</aside></section>')
 
 A('<section class="slide bleed"><div class=bg><div class="bgimg shipbg"></div></div>'
   '<div class=eyebrow>April 1807 &middot; Londonderry</div>'
   '<h2>His doctor prescribed a sea voyage.</h2>'
   '<div class=sub>He left his eighteen-year-old son, <b>Alexander</b>, in charge of the family and the school.</div>'
-  '<aside class=notes>Illness from overwork; thirty-five days on the <i>Brutus</i>; Philadelphia in May. Assigned to the Presbytery of Chartiers, western Pennsylvania. Alexander: one clause; he returns in the last two chapters.</aside></section>')
+  '<aside class=notes>Teaching, pastoring Ahorey and synod work had produced a debilitating illness; his physician said the only remedy was to get out from under it and prescribed a sea voyage. He sailed 8 April 1807 on the <i>Brutus</i> out of Londonderry, thirty-five days, with a young charge, Hannah Acheson, whom he left with her uncle at Washington. He landed at Philadelphia in May to find the <b>Associate Synod of North America in session</b>, presented his letters from Markethill and Ahorey, and was seated. At his own request he was assigned to the <b>Presbytery of Chartiers</b>, western Pennsylvania, where old neighbours from Ireland had settled. He crossed the mountains and settled near the town of <b>Washington</b>, thirty miles south-west of Pittsburgh. Alexander, eighteen, stayed behind in charge of the family and the school.</aside></section>')
 
 A('<section class="slide plateslide tight"><div class=eyebrow>August 1807 &middot; seventy miles from home</div>'
   '<figure class="plate wide"><img src="IMG_MAP" alt=""><figcaption>Reading Howell, <i>A Map of the State of Pennsylvania</i>, 1792 &middot; Library of Congress</figcaption></figure>'
-  '<aside class=notes>Washington, his home, south-west of Pittsburgh. Conemaugh Township, later Indiana County, the far edge of a four-county circuit. Cannamaugh Church, an Associate congregation founded 1798.</aside></section>')
+  '<aside class=notes>Howell&rsquo;s 1792 map, the standard sheet of his lifetime. <b>Washington</b>, his base, is south-west of Pittsburgh. The presbytery&rsquo;s July 1807 meeting gave him preaching stations in <b>four counties</b> &mdash; Beaver, Allegheny, Indiana, and his own Washington &mdash; and in August that circuit took him seventy miles east-north-east to <b>Cannamaugh Church</b>, Conemaugh Township, an Associate congregation founded in 1798 in what had just become Indiana County (1803; the township organised in 1807). Hanna finds it spelled Cannamagh, Cannamaugh and Conemaugh in one minute book. The ring marks the district, not a building. The point: the open table was not his home ground. It happened once, on a trip, on the far edge of his circuit.</aside></section>')
 
 A(C('Communion at Conemaugh', ''))
 
 A('<section class="slide plateslide tokenslide"><div class=eyebrow>The token</div>'
   '<figure class="plate short"><img src="IMG_TOKEN" alt=""><figcaption>A Scottish communion token, 1750</figcaption></figure>'
   '<div class=sub>Examined beforehand. Handed a lead ticket. Surrendered at the table.</div>'
-  '<aside class=notes>Same object as Week 1. The fence, in metal.</aside></section>')
+  '<aside class=notes>The Week 1 object. The Scottish communion season: days of preparation, the fencing sermon, the examination, and the lead token you surrendered at the table. The fence, in metal. And since 1747 Burghers and Anti-Burghers had been forbidden each other&rsquo;s tables.</aside></section>')
 
 A('<section class="slide"><h2>Faithful Presbyterians who had not received communion in years.</h2>'
   '<div class="sub frag">Not for lack of a minister. For lack of a minister <b>of their own sub-sect</b>.</div>'
-  '<aside class=notes>Your sentence from the site.</aside></section>')
+  '<aside class=notes>Your sentence from the site. On the frontier the sub-sects were thin on the ground; a family could go years between a minister of exactly their own kind. Richardson 1:224 describes the settlers as fragments &ldquo;thrown together in the circling eddies of these new settlements.&rdquo;</aside></section>')
 
 A(Q('&hellip;that all his pious hearers, &ldquo;who felt so disposed and duly prepared, should, <b>without respect to party differences</b>, enjoy the benefits of the communion season then providentially afforded them.&rdquo;', 'Richardson, <i>Memoirs</i> 1:224', 'He did not fence the table') +
-  '<aside class=notes>Wilson&rsquo;s deposition: he &ldquo;would not go over the commands&rdquo; &mdash; to require assent to the terms particularly would be to demand &ldquo;implicit faith.&rdquo;</aside></section>')
+  '<aside class=notes>Richardson 1:224: he invited &ldquo;all his pious hearers, who felt so disposed and duly prepared,&rdquo; to the table &ldquo;without respect to party differences.&rdquo; Wilson&rsquo;s later deposition fills in the fencing: he &ldquo;would not go over the commands,&rdquo; offered the terms of communion generally rather than particularly, saying that to require assent to them one by one would be to demand &ldquo;implicit faith&rdquo;; said the church held many things &ldquo;for which they had only human authority&rdquo;; and said the Burgher quarrel deserved &ldquo;a decent burial.&rdquo;</aside></section>')
 
 A(Q('&ldquo;&hellip;the Lord&rsquo;s Supper, <b>that great ordinance of unity and love</b>.&rdquo;', '<i>Declaration and Address</i>, 1809', 'Two years later, in his own words') +
-  '<aside class=notes>1809, not 1807 &mdash; say &ldquo;two years later he put it this way.&rdquo;</aside></section>')
+  '<aside class=notes>1809, not 1807 &mdash; say &ldquo;two years later he put it this way.&rdquo; From the <i>Declaration and Address</i>.</aside></section>')
 
 A('<section class="slide"><h2>It was well received.</h2>'
   '<div class="sub frag">The young minister assisting him, <b>William Wilson</b>, reported it to the presbytery.</div>'
-  '<aside class=notes>Nobody objected in the room. Wilson took it to his old teacher John Anderson, professor of theology; Anderson refused to keep a preaching appointment with Campbell.</aside></section>')
+  '<aside class=notes>Your sentences from the site: it was well received, and he was heartened about the growth of Christian brotherhood. Nobody objected in the room. Wilson carried it back to <b>John Anderson</b> &mdash; his old teacher, professor of theology for the presbytery &mdash; who then refused to keep a joint preaching appointment with Campbell at Buffaloe, citing doctrines &ldquo;inconsistent with some articles of our testimony.&rdquo; At the October 1807 presbytery Wilson gave his testimony; a committee of Anderson and three of his former students was appointed to frame charges; Campbell&rsquo;s appointments were suspended in the meantime; he entered a verbal protest, said he &ldquo;would not sit any longer in this Presbytery,&rdquo; and withdrew. The libel followed in January.</aside></section>')
 
 A(C('The Trial', 'Five minutes belong to the room.'))
 
@@ -234,10 +234,10 @@ A('<section class="slide hard"><h2 style="max-width:none;white-space:nowrap;font
 A(C('The Appeal', 'May 1808. He appealed the presbytery&rsquo;s verdict to the Associate Synod at Philadelphia and read his appeal aloud before it.'))
 
 A(Q('&ldquo;For what error or immorality ought I to be rejected, except it be that I refuse to acknowledge as obligatory upon myself, or to impose upon others, anything as of Divine obligation for which I cannot produce a <b>&lsquo;Thus saith the Lord?&rsquo;</b>&rdquo;', 'Richardson, <i>Memoirs</i> 1:227', 'May 1808 &middot; his appeal to the Synod at Philadelphia') +
-  '<aside class=notes>A separate sentence, two pages on in the appeal.</aside></section>')
+  '<aside class=notes>Richardson 1:227. The rule he lived by, stated to the court about to censure him for it.</aside></section>')
 
 A(Q('&ldquo;It is, therefore, because I have <b>no confidence, either in my own infallibility or in that of others</b>, that I absolutely refuse, as inadmissible and schismatic, the introduction of human opinions and human inventions into the faith and worship of the Church.&rdquo;', 'Richardson, <i>Memoirs</i> 1:227', 'May 1808 &middot; his appeal to the Synod at Philadelphia') +
-  '<aside class=notes>Richardson: &ldquo;he addressed an earnest appeal to the Synod when his case came up.&rdquo; The Synod minutes: his reasons of protest and appeal were read, and &ldquo;parties were heard.&rdquo; He opened by asking them to &ldquo;pause a moment.&rdquo;</aside></section>')
+  '<aside class=notes>Richardson 1:227, two pages on in the same appeal. He had opened it: &ldquo;Honored Brethren: before you come to a final issue in the present business, let me entreat you to pause a moment.&rdquo;</aside></section>')
 
 A(C('The Judgment', 'The Synod set the presbytery&rsquo;s judgment aside for &ldquo;informalities&rdquo; &mdash; then found his answers on the same articles &ldquo;so evasive and unsatisfactory, and highly equivocal&hellip; sufficient grounds to infer censure.&rdquo;'))
 
@@ -369,11 +369,11 @@ A(RECAP_VT)
 
 A('<section class="slide treeslide"><div class="eyebrow quiet">One movement &middot; alternate</div>'
   '<svg class=tree viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="d250"><circle cx="250" cy="235" r="62"/></clipPath><clipPath id="d500"><circle cx="500" cy="235" r="62"/></clipPath><clipPath id="d750"><circle cx="750" cy="235" r="62"/></clipPath></defs><line x1="60" y1="60" x2="60" y2="540" stroke="#5a4a2e" stroke-width="2"/><polygon points="54,540 66,540 60,556" fill="#5a4a2e"/><text x="60" y="44" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="18" letter-spacing="2" fill="#8e8272">1800s</text><text x="60" y="582" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="18" letter-spacing="2" fill="#8e8272">today</text><text x="500" y="72" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="54" fill="#c89b3c">The Restoration Movement</text><text x="500" y="104" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="20" fill="#8e8272">one movement &#183; many congregations &#183; two centuries</text><path d="M500,118 L500,173 M500,297 L500,420" fill="none" stroke="#c89b3c" stroke-width="2.5"/><path d="M438,235 L312,235 M562,235 L688,235" fill="none" stroke="#c89b3c" stroke-width="2" stroke-dasharray="4 5"/><image href="IMG_STONE" x="188" y="173" width="124" height="124" preserveAspectRatio="xMidYMid slice" clip-path="url(#d250)"/><circle cx="250" cy="235" r="62" fill="none" stroke="#c89b3c" stroke-width="2"/><text x="250" y="327" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="19" letter-spacing="1.5" fill="#ede4d3">Barton W. Stone</text><text x="250" y="351" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="17" fill="#8e8272">Kentucky &#183; 1801</text><image href="IMG_TCAMPBELL" x="438" y="173" width="124" height="124" preserveAspectRatio="xMidYMid slice" clip-path="url(#d500)"/><circle cx="500" cy="235" r="62" fill="none" stroke="#c89b3c" stroke-width="2"/><text x="500" y="327" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="19" letter-spacing="1.5" fill="#ede4d3">Thomas Campbell</text><text x="500" y="351" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="17" fill="#8e8272">Pennsylvania &#183; 1809</text><image href="IMG_ACAMPBELL" x="688" y="173" width="124" height="124" preserveAspectRatio="xMidYMid slice" clip-path="url(#d750)"/><circle cx="750" cy="235" r="62" fill="none" stroke="#c89b3c" stroke-width="2"/><text x="750" y="327" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="19" letter-spacing="1.5" fill="#ede4d3">Alexander Campbell</text><text x="750" y="351" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="17" fill="#8e8272">his son</text><path d="M500,420 C500,455 185,455 165,485 M500,420 L500,485 M500,420 C500,455 815,455 835,485" fill="none" stroke="#c89b3c" stroke-width="2.5"/><text x="165" y="520" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="34" fill="#c89b3c">Churches of Christ</text><text x="165" y="550" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="19" fill="#c89b3c">that&#8217;s us</text><text x="500" y="520" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="34" fill="#ede4d3">Christian Churches</text><text x="500" y="550" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="19" fill="#8e8272">the independent congregations</text><text x="835" y="520" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="34" fill="#ede4d3">Disciples of Christ</text><text x="835" y="550" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="19" fill="#8e8272">the organized denomination</text></svg>'
-  '<aside class=notes>Alternate of the previous slide: the movement named first, the founders as figures in its stream, the three families downstream. Keep one of the two.</aside></section>')
+  '<aside class=notes>Alternate design, not used in the telling: the movement named first, the founders as figures in its stream.</aside></section>')
 
 A('<section class="slide treeslide"><div class="eyebrow quiet">One movement &middot; streams</div>'
   '<svg class=tree viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="e250"><circle cx="250" cy="240" r="62"/></clipPath><clipPath id="e500"><circle cx="500" cy="240" r="62"/></clipPath><clipPath id="e750"><circle cx="750" cy="240" r="62"/></clipPath></defs><g class=ribbons><path d="M140,-30 C140,150 330,170 330,320 S150,470 150,640" fill="none" stroke="#c89b3c" stroke-opacity="0.13" stroke-width="60" stroke-linecap="butt"/><path d="M260,-30 C260,150 420,170 420,320 S190,470 190,640" fill="none" stroke="#ede4d3" stroke-opacity="0.07" stroke-width="44" stroke-linecap="butt"/><path d="M700,-30 C700,150 380,170 380,320 S215,470 215,640" fill="none" stroke="#a03b24" stroke-opacity="0.11" stroke-width="34" stroke-linecap="butt"/><path d="M380,-30 C380,150 470,170 470,320 S470,470 470,640" fill="none" stroke="#c89b3c" stroke-opacity="0.12" stroke-width="58" stroke-linecap="butt"/><path d="M820,-30 C820,150 540,170 540,320 S505,470 505,640" fill="none" stroke="#ede4d3" stroke-opacity="0.06" stroke-width="40" stroke-linecap="butt"/><path d="M200,-30 C200,150 600,170 600,320 S540,470 540,640" fill="none" stroke="#a03b24" stroke-opacity="0.1" stroke-width="30" stroke-linecap="butt"/><path d="M520,-30 C520,150 650,170 650,320 S800,470 800,640" fill="none" stroke="#a03b24" stroke-opacity="0.1" stroke-width="64" stroke-linecap="butt"/><path d="M880,-30 C880,150 700,170 700,320 S845,470 845,640" fill="none" stroke="#c89b3c" stroke-opacity="0.12" stroke-width="46" stroke-linecap="butt"/><path d="M320,-30 C320,150 560,170 560,320 S870,470 870,640" fill="none" stroke="#ede4d3" stroke-opacity="0.05" stroke-width="30" stroke-linecap="butt"/></g><line x1="60" y1="60" x2="60" y2="540" stroke="#5a4a2e" stroke-width="2"/><polygon points="54,540 66,540 60,556" fill="#5a4a2e"/><text x="60" y="44" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="18" letter-spacing="2" fill="#8e8272">1800s</text><text x="60" y="582" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="18" letter-spacing="2" fill="#8e8272">today</text><text x="500" y="72" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="54" fill="#c89b3c" style="paint-order:stroke;stroke:#100d0a;stroke-width:10px;stroke-linejoin:round">The Restoration Movement</text><text x="500" y="104" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="20" fill="#8e8272" style="paint-order:stroke;stroke:#100d0a;stroke-width:6px">one movement &#183; many congregations &#183; two centuries</text><circle cx="250" cy="240" r="66" fill="#100d0a" opacity=".85"/><image href="IMG_STONE" x="188" y="178" width="124" height="124" preserveAspectRatio="xMidYMid slice" clip-path="url(#e250)"/><circle cx="250" cy="240" r="62" fill="none" stroke="#c89b3c" stroke-width="2"/><text x="250" y="332" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="19" letter-spacing="1.5" fill="#ede4d3">Barton W. Stone</text><text x="250" y="356" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="17" fill="#8e8272">Kentucky &#183; 1801</text><circle cx="500" cy="240" r="66" fill="#100d0a" opacity=".85"/><image href="IMG_TCAMPBELL" x="438" y="178" width="124" height="124" preserveAspectRatio="xMidYMid slice" clip-path="url(#e500)"/><circle cx="500" cy="240" r="62" fill="none" stroke="#c89b3c" stroke-width="2"/><text x="500" y="332" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="19" letter-spacing="1.5" fill="#ede4d3">Thomas Campbell</text><text x="500" y="356" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="17" fill="#8e8272">Pennsylvania &#183; 1809</text><circle cx="750" cy="240" r="66" fill="#100d0a" opacity=".85"/><image href="IMG_ACAMPBELL" x="688" y="178" width="124" height="124" preserveAspectRatio="xMidYMid slice" clip-path="url(#e750)"/><circle cx="750" cy="240" r="62" fill="none" stroke="#c89b3c" stroke-width="2"/><text x="750" y="332" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="19" letter-spacing="1.5" fill="#ede4d3">Alexander Campbell</text><text x="750" y="356" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="17" fill="#8e8272">his son</text><text x="165" y="520" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="34" fill="#c89b3c">Churches of Christ</text><text x="165" y="550" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="19" fill="#c89b3c">that&#8217;s us</text><text x="500" y="520" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="34" fill="#ede4d3">Christian Churches</text><text x="500" y="550" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="19" fill="#8e8272">the independent congregations</text><text x="835" y="520" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="34" fill="#ede4d3">Disciples of Christ</text><text x="835" y="550" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="19" fill="#8e8272">the organized denomination</text></svg>'
-  '<aside class=notes>Third version: no tree lines. Translucent streams enter at the top, cross and recombine through the founders, and run out toward the three families. Keep one of the three.</aside></section>')
+  '<aside class=notes>Alternate design, not used in the telling: translucent streams crossing and recombining.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>How each week works</div>'
   '<div class=shape><span class=step>Story</span><span class=sep>&rarr;</span><span class=step>Idea</span><span class=sep>&rarr;</span><span class=step>Future</span></div>'
