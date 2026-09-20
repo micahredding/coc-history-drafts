@@ -24,6 +24,7 @@ RECAP_VO = open(_D+'/recap_vo.html').read()
 # ---------- 0 RECAP ----------
 # ---------- 0 RECAP ----------
 # ---------- 0 RECAP ----------
+# ---------- 0 RECAP ----------
 A('<section class="slide"><div class="eyebrow quiet">Otter Creek &middot; Fall 2026</div>'
   '<h1>Our Wild<br>Democracy</h1>'
   '<p class=sub>The Story, Promise, and Future<br>of the Churches of Christ</p>'
@@ -266,14 +267,6 @@ A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, an
     '<div class="sub frag">Next week: <b>the Declaration and Address</b>.</div>') +
   '<aside class=notes>Close his half of the hour on his own sentence. It returns at the end.</aside></section>')
 
-A('<section class="slide ideasmap"><div class=eyebrow>What this week touched</div>'
-  '<div class=wmap><div class="r ms-christ"><span class="th key">CHRIST ALONE</span></div>'
-  '<div class="r ms-pri"><span class="th key">UNITY</span><span class="th key">PRIESTHOOD</span><span class="th on">FUTURE</span></div>'
-  '<div class="r ms-sec"><span class="th on">HOMECOMING</span><span class="th on">SELF-SACRIFICE</span><span class="th key">FREEDOM OF CONSCIENCE</span><span class=th>SCIENCE &amp; REASON</span><span class="th on">MINIMALISM</span></div>'
-  '<div class="r ms-pra"><span class="th key">the Table</span><span class=th>Baptism</span><span class="th on">Scripture</span><span class=th>Singing</span><span class="th on">Congregation</span></div></div>'
-  '<div class=small>Bright: the spine of this week. Dim: touched in passing. Unlit: still ahead of us.</div>'
-  '<aside class=notes>Same board as Week 1. New light: Priesthood, Freedom of Conscience, Christ Alone.</aside></section>')
-
 A('<section class="slide idea room"><div class="eyebrow quiet">Idea 1 of 4</div>'
   '<h2>The unity movement <span style="color:var(--gold)">did not begin in America.</span></h2>'
   '<aside class=notes>Thomas Campbell was already working for unity in a divided Ireland, and took that work with him across the Atlantic.</aside></section>')
@@ -347,6 +340,14 @@ A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, an
 
 A(C('Addendum', 'Reference material; not part of the telling.'))
 
+A('<section class="slide ideasmap"><div class=eyebrow>What this week touched</div>'
+  '<div class=wmap><div class="r ms-christ"><span class="th key">CHRIST ALONE</span></div>'
+  '<div class="r ms-pri"><span class="th key">UNITY</span><span class="th key">PRIESTHOOD</span><span class="th on">FUTURE</span></div>'
+  '<div class="r ms-sec"><span class="th on">HOMECOMING</span><span class="th on">SELF-SACRIFICE</span><span class="th key">FREEDOM OF CONSCIENCE</span><span class=th>SCIENCE &amp; REASON</span><span class="th on">MINIMALISM</span></div>'
+  '<div class="r ms-pra"><span class="th key">the Table</span><span class=th>Baptism</span><span class="th on">Scripture</span><span class=th>Singing</span><span class="th on">Congregation</span></div></div>'
+  '<div class=small>Bright: the spine of this week. Dim: touched in passing. Unlit: still ahead of us.</div>'
+  '<aside class=notes>Same board as Week 1. New light: Priesthood, Freedom of Conscience, Christ Alone.</aside></section>')
+
 A('<section class="slide ideasmap"><div class=eyebrow>The ideas</div>'
   '<div class="wmap all"><div class="r ms-christ"><span class="th key">CHRIST ALONE</span></div>'
   '<div class="r ms-pri"><span class=th>UNITY</span><span class=th>PRIESTHOOD</span><span class=th>FUTURE</span></div>'
@@ -372,6 +373,7 @@ A('<section class="slide"><div class=eyebrow>How each week works</div>'
 
 A('<section class="slide"><p class=bigquote style="font-size:clamp(36px,7.4vmin,92px)"><span class=q>What is beautiful here?<br>What do we carry forward?</span></p>'
   '<aside class=notes>The class question. It closes every week.</aside></section>')
+
 
 
 
