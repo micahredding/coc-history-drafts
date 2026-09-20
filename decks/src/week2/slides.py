@@ -21,6 +21,7 @@ RECAP_VO = open(_D+'/recap_vo.html').read()
 # ---------- 0 RECAP ----------
 # ---------- 0 RECAP ----------
 # ---------- 0 RECAP ----------
+# ---------- 0 RECAP ----------
 A('<section class="slide"><div class="eyebrow quiet">Otter Creek &middot; Fall 2026</div>'
   '<h1>Our Wild<br>Democracy</h1>'
   '<p class=sub>The Story, Promise, and Future<br>of the Churches of Christ</p>'
@@ -177,11 +178,11 @@ A('<section class="slide bleed"><div class=bg><div class="bgimg shipbg"></div></
   '<div class=sub>He left his eighteen-year-old son, <b>Alexander</b>, in charge of the family and the school.</div>'
   '<aside class=notes>Illness from overwork; thirty-five days on the <i>Brutus</i>; Philadelphia in May. Assigned to the Presbytery of Chartiers, western Pennsylvania. Alexander: one clause; he returns in the last two chapters.</aside></section>')
 
-A(C('Communion at Conemaugh', ''))
-
 A('<section class="slide plateslide tight"><div class=eyebrow>August 1807 &middot; seventy miles from home</div>'
   '<figure class="plate wide"><img src="IMG_MAP" alt=""><figcaption>Reading Howell, <i>A Map of the State of Pennsylvania</i>, 1792 &middot; Library of Congress</figcaption></figure>'
   '<aside class=notes>Washington, his home, south-west of Pittsburgh. Conemaugh Township, later Indiana County, the far edge of a four-county circuit. Cannamaugh Church, an Associate congregation founded 1798.</aside></section>')
+
+A(C('Communion at Conemaugh', ''))
 
 A('<section class="slide plateslide tokenslide"><div class=eyebrow>The token</div>'
   '<figure class="plate short"><img src="IMG_TOKEN" alt=""><figcaption>A Scottish communion token, 1750</figcaption></figure>'
@@ -380,3 +381,4 @@ A('<section class="slide"><div class=eyebrow>How each week works</div>'
 
 A('<section class="slide"><p class=bigquote style="font-size:clamp(36px,7.4vmin,92px)"><span class=q>What is beautiful here?<br>What do we carry forward?</span></p>'
   '<aside class=notes>The class question. It closes every week.</aside></section>')
+
