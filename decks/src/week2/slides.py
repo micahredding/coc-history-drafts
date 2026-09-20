@@ -44,10 +44,6 @@ A('<section class="slide"><div class=eyebrow>How each week works</div>'
 A('<section class="slide"><p class=bigquote style="font-size:clamp(36px,7.4vmin,92px)"><span class=q>What is beautiful here?<br>What do we carry forward?</span></p>'
   '<aside class=notes>The class question. It closes every week.</aside></section>')
 
-A('<section class="slide"><div class="eyebrow quiet">A movement with more than one name</div>'
-  '<div class=litany><div class=frag>The Restoration Movement</div><div class=frag>The Stone&ndash;Campbell Movement</div><div class=frag>The Stone&ndash;Campbell Restoration Movement</div></div>'
-  '<aside class=notes>Week 0&rsquo;s slide. Three names for one movement; we use them interchangeably.</aside></section>')
-
 A(RECAP_VO)
 
 A(C('Last week &middot; Cane Ridge, 1801', 'Four beats, one slide each.'))
