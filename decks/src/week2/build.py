@@ -55,6 +55,12 @@ css+= ('\n  /* ---- Week 2 bleeds ---- */\n'
        '  .litany{line-height:1.5;font-size:clamp(20px,3.6vmin,44px)}\n'
        '  .days{font-family:"IM Fell English SC","IM Fell English",Georgia,serif;'
        'font-size:clamp(13px,2.05vmin,21px);color:var(--bone-dim);line-height:2.1;max-width:52em;letter-spacing:.02em}\n'
+       '  /* ---- The Libel as a poster: narrow column, bigger type ---- */\n'
+       '  #deck .slide#libel .days{max-width:58vw;width:58vw;margin:0 auto;gap:2.9vmin;font-size:clamp(23px,4.05vmin,47px)}\n'
+       '  #deck .slide#libel .days .dn{flex:0 0 2.2em}\n'
+       '  /* ---- The Verdict, enlarged to match ---- */\n'
+       '  #deck .slide#verdict .days{font-size:clamp(23px,4.05vmin,47px);gap:2.9vmin}\n'
+       '  #deck .slide#verdict .days .verdict{font-size:clamp(27px,5vmin,56px)}\n'
        % (b64(IMG+'wreck.jpg'), b64(IMG+'indaal.jpg'), b64(IMG+'ship.jpg')))
 
 js=open('decks/src/week2/engine.js').read()

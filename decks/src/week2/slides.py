@@ -61,7 +61,7 @@ A(Q('&ldquo;Together, in sweetest, holiest, symbolic communion, <b>they sat down
 
 A(C('Open Communion', 'Before the story: the thing the story is about.'))
 
-A('<section class="slide"><h2>What is <span style="color:var(--gold)">open communion</span>?</h2>'
+A('<section class="slide"><h2 style="font-size:clamp(46px,9vmin,118px)">What is <span style="color:var(--gold)">open communion</span>?</h2>'
   '<aside class=notes>Ask it. Let two or three people answer before you give the working definition.</aside></section>')
 
 A('<section class="slide"><div class="eyebrow quiet">A working definition</div>'
@@ -79,7 +79,7 @@ A('<section class="slide plateslide tight"><div class=eyebrow>1945</div>'
 A(Q('&ldquo;&hellip;no man or set of men has the right to judge who shall and shall not have the privilege of communion&hellip; The self-examination taught in this verse <b>condemns the doctrine of close communion</b>. Each is to examine himself; not somebody else.&rdquo;', 'Leroy Brownlow, <i>Why I Am a Member of the Church of Christ</i>, 1945, p. 178', 'On 1 Corinthians 11:28') +
   '<aside class=notes>His argument: it is the Lord&rsquo;s table, so the judgment belongs to Christ and to each communicant, not to the church. That is the position Thomas Campbell was tried for in 1808.</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>Three founders</div>'
+A('<section class="slide"><div class=eyebrow>Three Instigators</div>'
   '<div class=faces>'
   '<div class=face><img src="IMG_STONE" alt=""><span class=nm>Barton W. Stone</span><span class=rl>Cane Ridge, Kentucky. Last week.</span></div>'
   '<div class=face><img src="IMG_TCAMPBELL" alt=""><span class=nm>Thomas Campbell</span><span class=rl>Ireland, then Pennsylvania. Today.</span></div>'
@@ -96,8 +96,10 @@ A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Week 2<
 A('<section class="slide"><aside class=notes>Black. A breath after the title.</aside></section>')
 
 A('<section class="slide breath"><h2>Ireland <span class=dim>&middot;</span> summer 1798</h2>'
-  '<div class=sub>A Presbyterian meeting house near Armagh, during the Sunday service.</div>'
+  '<div class=sub>A Presbyterian meeting house near <b>Richhill, County Armagh</b> &mdash; probably his own at <b>Ahorey</b> &mdash; during the Sunday service.</div>'
   '<aside class=notes>Probably Ahorey, his congregation eight miles from Armagh; he had been its minister since 1798, licensed 1791. Summer 1798 is the failed rising of the United Irishmen &mdash; Presbyterians had joined it in great numbers &mdash; and the reprisals were under way. A Presbyterian meeting house was, to a soldier, a possible rebel meeting.<br>&rarr; Put us inside the service before anyone knows whose church it is.</aside></section>')
+
+A('<section class="slide"><aside class=notes>Black. A breath before the cavalry.</aside></section>')
 
 A('<section class="slide"><h2>A troop of cavalry surrounded the church.</h2>'
   '<aside class=notes>Richardson 1:44: &ldquo;a troop of Welsh horse, notorious for their severities and outrages upon those they conceived to be rebels.&rdquo; Stationed at Newry. The captain, &ldquo;conceiving that in this remote place he had come upon a meeting of rebels, dismounted and in a threatening manner marched into the church.&rdquo; He came in alone.<br>&rarr; The captain up the aisle, &ldquo;casting fierce glances upon all sides.&rdquo;</aside></section>')
@@ -167,31 +169,32 @@ A('<section class="slide"><div class=eyebrow>1804</div>'
 
 A(C('Unity Failed', 'Card. Then the ship.'))
 
-A('<section class="slide bleed sect"><div class=bg><div class="bgimg shipbg"></div></div>'
-  '<div class=credit>Robert Salmon, <i>British Merchantman in the River Mersey off Liverpool</i>, 1809<br>A ship of the kind, not the <i>Brutus</i></div>'
-  '<h2>Sea Voyage</h2><div class=table-line></div>'
-  '<aside class=notes>Card. Two tries in Ireland, both closed by his own church courts. Then the ship.</aside></section>')
-
 A('<section class="slide bleed"><div class=bg><div class="bgimg shipbg"></div></div>'
   '<div class=eyebrow>April 1807 &middot; Londonderry</div>'
   '<h2>His doctor prescribed a sea voyage.</h2>'
   '<div class=sub>He left his eighteen-year-old son, <b>Alexander</b>, in charge of the family and the school.</div>'
   '<aside class=notes>Teaching, pastoring Ahorey and synod work had produced a debilitating illness; his physician said the only remedy was to get out from under it and prescribed a sea voyage. He sailed 8 April 1807 on the <i>Brutus</i> out of Londonderry, thirty-five days, with a young charge, Hannah Acheson, whom he left with her uncle at Washington. He landed at Philadelphia in May to find the <b>Associate Synod of North America in session</b>, presented his letters from Markethill and Ahorey, and was seated. At his own request he was assigned to the <b>Presbytery of Chartiers</b>, western Pennsylvania, where old neighbours from Ireland had settled. He crossed the mountains and settled near the town of <b>Washington</b>, thirty miles south-west of Pittsburgh. Alexander, eighteen, stayed behind in charge of the family and the school.</aside></section>')
 
+A('<section class="slide bleed sect"><div class=bg><div class="bgimg shipbg"></div></div>'
+  '<div class=credit>Robert Salmon, <i>British Merchantman in the River Mersey off Liverpool</i>, 1809<br>A ship of the kind, not the <i>Brutus</i></div>'
+  '<h2>Voyage to America</h2><div class=table-line></div>'
+  '<aside class=notes>Card. Two tries in Ireland, both closed by his own church courts. Then the ship.</aside></section>')
+
 A('<section class="slide plateslide tight"><div class=eyebrow>August 1807 &middot; seventy miles from home</div>'
   '<figure class="plate wide"><img src="IMG_MAP" alt=""><figcaption>Reading Howell, <i>A Map of the State of Pennsylvania</i>, 1792 &middot; Library of Congress</figcaption></figure>'
   '<aside class=notes>Howell&rsquo;s 1792 map, the standard sheet of his lifetime. <b>Washington</b>, his base, is south-west of Pittsburgh. The presbytery&rsquo;s July 1807 meeting gave him preaching stations in <b>four counties</b> &mdash; Beaver, Allegheny, Indiana, and his own Washington &mdash; and in August that circuit took him seventy miles east-north-east to <b>Cannamaugh Church</b>, Conemaugh Township, an Associate congregation founded in 1798 in what had just become Indiana County (1803; the township organised in 1807). Hanna finds it spelled Cannamagh, Cannamaugh and Conemaugh in one minute book. The ring marks the district, not a building. The point: the open table was not his home ground. It happened once, on a trip, on the far edge of his circuit.</aside></section>')
 
-A(C('Communion at Conemaugh', ''))
+A(Q('&ldquo;This part of the country was then <b>thinly settled</b>, and it was seldom that ministerial services were enjoyed by the various <b>fragments of religious parties</b>, which, having <b>floated off from the Old World</b> upon the tide of emigration, had been <b>thrown together in the circling eddies of these new settlements</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:223', 'Who was out there') +
+  '<aside class=notes>Richardson&rsquo;s description of the people Campbell had been sent up the Alleghany to serve. Not a congregation &mdash; wreckage: pieces of every Old World party, washed into the same eddy, and rarely a minister of any of them. The word is <b>fragments</b>, not dregs; the image is flotsam, not sediment.<br>&rarr; This is who is sitting in front of him at Conemaugh.</aside></section>')
+
+A('<section class="slide"><h2>Faithful Presbyterians who had not received communion in years.</h2>'
+  '<div class="sub frag">Not for lack of a minister. For lack of a minister <b>of their own sub-sect</b>.</div>'
+  '<aside class=notes>Your sentence from the site. On the frontier the sub-sects were thin on the ground; a family could go years between a minister of exactly their own kind. Richardson 1:224 describes the settlers as fragments &ldquo;thrown together in the circling eddies of these new settlements.&rdquo;</aside></section>')
 
 A('<section class="slide plateslide tokenslide"><div class=eyebrow>The token</div>'
   '<figure class="plate short"><img src="IMG_TOKEN" alt=""><figcaption>A Scottish communion token, 1750</figcaption></figure>'
   '<div class=sub>Examined beforehand. Handed a lead ticket. Surrendered at the table.</div>'
   '<aside class=notes>The Week 1 object. The Scottish communion season: days of preparation, the fencing sermon, the examination, and the lead token you surrendered at the table. The fence, in metal. And since 1747 Burghers and Anti-Burghers had been forbidden each other&rsquo;s tables.</aside></section>')
-
-A('<section class="slide"><h2>Faithful Presbyterians who had not received communion in years.</h2>'
-  '<div class="sub frag">Not for lack of a minister. For lack of a minister <b>of their own sub-sect</b>.</div>'
-  '<aside class=notes>Your sentence from the site. On the frontier the sub-sects were thin on the ground; a family could go years between a minister of exactly their own kind. Richardson 1:224 describes the settlers as fragments &ldquo;thrown together in the circling eddies of these new settlements.&rdquo;</aside></section>')
 
 A(Q('&hellip;that all his pious hearers, &ldquo;who felt so disposed and duly prepared, should, <b>without respect to party differences</b>, enjoy the benefits of the communion season then providentially afforded them.&rdquo;', 'Richardson, <i>Memoirs</i> 1:224', 'He did not fence the table') +
   '<aside class=notes>Richardson 1:224: he invited &ldquo;all his pious hearers, who felt so disposed and duly prepared,&rdquo; to the table &ldquo;without respect to party differences.&rdquo; Wilson&rsquo;s later deposition fills in the fencing: he &ldquo;would not go over the commands,&rdquo; offered the terms of communion generally rather than particularly, saying that to require assent to them one by one would be to demand &ldquo;implicit faith&rdquo;; said the church held many things &ldquo;for which they had only human authority&rdquo;; and said the Burgher quarrel deserved &ldquo;a decent burial.&rdquo;</aside></section>')
@@ -200,12 +203,13 @@ A(Q('&ldquo;&hellip;the Lord&rsquo;s Supper, <b>that great ordinance of unity an
   '<aside class=notes>1809, not 1807 &mdash; say &ldquo;two years later he put it this way.&rdquo; From the <i>Declaration and Address</i>.</aside></section>')
 
 A('<section class="slide"><h2>It was well received.</h2>'
+  '<div class="sub frag">But not by everyone.</div>'
   '<div class="sub frag">The young minister assisting him, <b>William Wilson</b>, reported it to the presbytery.</div>'
   '<aside class=notes>Your sentences from the site: it was well received, and he was heartened about the growth of Christian brotherhood. Nobody objected in the room. Wilson carried it back to <b>John Anderson</b> &mdash; his old teacher, professor of theology for the presbytery &mdash; who then refused to keep a joint preaching appointment with Campbell at Buffaloe, citing doctrines &ldquo;inconsistent with some articles of our testimony.&rdquo; At the October 1807 presbytery Wilson gave his testimony; a committee of Anderson and three of his former students was appointed to frame charges; Campbell&rsquo;s appointments were suspended in the meantime; he entered a verbal protest, said he &ldquo;would not sit any longer in this Presbytery,&rdquo; and withdrew. The libel followed in January.</aside></section>')
 
 A(C('The Trial', 'Five minutes belong to the room.'))
 
-A('<section class="slide"><h2 style="max-width:none;white-space:nowrap;font-size:clamp(34px,6.4vmin,80px)">The Libel <span class=dim>&middot; January 1808</span></h2>'
+A('<section class="slide libelposter" id=libel><h2 style="max-width:none;white-space:nowrap;font-size:clamp(34px,6.4vmin,80px)">The Libel <span class=dim>&middot; January 1808</span></h2>'
   '<div class=days>'
   '<div class="d"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span></div>'
   '<div class="d"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span></div>'
@@ -217,11 +221,11 @@ A('<section class="slide"><h2 style="max-width:none;white-space:nowrap;font-size
   '</div>'
   '<aside class=notes>Hanna, ch. II, from the Chartiers minutes. Read them plain.</aside></section>')
 
-A('<section class="slide room"><h2><span style="color:var(--gold)">YOU</span> are the court.</h2>'
-  '<div class=sub>Guilty, or not guilty?</div>'
+A('<section class="slide room"><h2 style="font-size:clamp(48px,9.6vmin,126px)"><span style="color:var(--gold)">YOU</span> are the court.</h2>'
+  '<div class=sub style="font-size:clamp(30px,5.2vmin,64px)">Guilty, or not guilty?</div>'
   '<aside class=notes>~minute 20. Hand it over. Co-teacher reads the charges.</aside></section>')
 
-A('<section class="slide hard"><h2 style="max-width:none;white-space:nowrap;font-size:clamp(34px,6.4vmin,80px)">The Verdict <span class=dim>&middot; February 1808</span></h2>'
+A('<section class="slide hard" id=verdict><h2 style="max-width:none;white-space:nowrap;font-size:clamp(34px,6.4vmin,80px)">The Verdict <span class=dim>&middot; February 1808</span></h2>'
   '<div class="days verdictlist">'
   '<div class="d"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
   '<div class="d"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
@@ -262,18 +266,58 @@ A(Q('&ldquo;It is with <b>sincere reluctance</b>&hellip; that I find myself in d
 A(Q('&ldquo;&hellip;had they possessed the power, he would have suffered martyrdom at their hands, or, as he expressed it, that <b>&lsquo;nothing but the law of the land had kept his head upon his shoulders.&rsquo;</b>&rdquo;', 'Richardson, <i>Memoirs</i> 1:219&ndash;220', '', 'slide hard') +
   '<aside class=notes>His own summary of the two years &mdash; said to Alexander on the road a year later, as Richardson reports it. Keep the qualifier: <i>had they possessed the power</i>.</aside></section>')
 
-A(C('The Grove', ''))
-
 A('<section class="slide breath"><h1 style="font-size:clamp(36px,7.6vmin,96px);line-height:1.2">And then Campbell discovered that this meant very little.</h1>'
   '<aside class=notes>Your sentence. Black screen; give it a breath.</aside></section>')
+
+A(C('The Grove', ''))
 
 A(Q('&ldquo;Sometimes the deep shade of a <b>maple grove</b> sheltered the assembly from the summer sun. Generally, however, the houses of his old Irish neighbors&hellip; were the places where he had his appointments for preaching, and where he discoursed weekly to <b>all who chose to assemble</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:231') +
   '<aside class=notes>No pulpit, no salary, no standing &mdash; and no interruption.<br>&rarr; An association, then a church, then a movement.</aside></section>')
 
 A(C('What did they stand for?', ''))
 
-A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;', '<i>Declaration and Address</i>, 1809', 'That fall they asked him to write down what they stood for') +
+A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;', '<i>Declaration and Address</i>, 1809', 'That fall they asked him to write down what they stood for', 'slide',
+    '<div class="sub frag">Next week: <b>the Declaration and Address</b>.</div>') +
   '<aside class=notes>Close his half of the hour on his own sentence. It returns at the end.</aside></section>')
+
+A('<section class="slide ideasmap"><div class=eyebrow>What this week touched</div>'
+  '<div class=wmap><div class="r ms-christ"><span class="th key">CHRIST ALONE</span></div>'
+  '<div class="r ms-pri"><span class="th key">UNITY</span><span class="th key">PRIESTHOOD</span><span class="th on">FUTURE</span></div>'
+  '<div class="r ms-sec"><span class="th on">HOMECOMING</span><span class="th on">SELF-SACRIFICE</span><span class="th key">FREEDOM OF CONSCIENCE</span><span class=th>SCIENCE &amp; REASON</span><span class="th on">MINIMALISM</span></div>'
+  '<div class="r ms-pra"><span class="th key">the Table</span><span class=th>Baptism</span><span class="th on">Scripture</span><span class=th>Singing</span><span class="th on">Congregation</span></div></div>'
+  '<div class=small>Bright: the spine of this week. Dim: touched in passing. Unlit: still ahead of us.</div>'
+  '<aside class=notes>Same board as Week 1. New light: Priesthood, Freedom of Conscience, Christ Alone.</aside></section>')
+
+A('<section class="slide idea room"><div class="eyebrow quiet">Idea 1 of 4</div>'
+  '<h2>The unity movement <span style="color:var(--gold)">did not begin in America.</span></h2>'
+  '<aside class=notes>Thomas Campbell was already working for unity in a divided Ireland, and took that work with him across the Atlantic.</aside></section>')
+
+A('<section class="slide idea room"><div class="eyebrow quiet">Idea 2 of 4</div>'
+  '<h2>They divided over <span style="color:var(--gold)">hospitality, not doctrine.</span></h2>'
+  '<aside class=notes>He did not set out to found anything or to dispute a doctrine; he extended the Supper to believers the system had orphaned, holding the fences to be the thing without divine warrant.</aside></section>')
+
+A('<section class="slide idea room"><div class="eyebrow quiet">Idea 3 of 4</div>'
+  '<h2>Non-creedalism is <span style="color:var(--gold)">a protective move.</span></h2>'
+  '<aside class=notes>No human formulation as a test of fellowship &mdash; because no one&rsquo;s interpretation is infallible, and the simplest believer must be able to confess Christ and belong.</aside></section>')
+
+A('<section class="slide idea room"><div class="eyebrow quiet">Idea 4 of 4</div>'
+  '<h2>They stood for <span style="color:var(--gold)">the universal church.</span></h2>'
+  '<aside class=notes>That autumn the people following him from farmhouse to grove asked him to write down what they stood for, and the first sentence was that the church of Christ upon earth is essentially, intentionally, and constitutionally one.</aside></section>')
+
+A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
+  '<h2>What is beautiful here? What do we carry forward?</h2>'
+  '<div class="sub frag">What &ldquo;testimonies&rdquo; &mdash; written or unwritten &mdash; do we treat as terms of fellowship today?</div>'
+  '<div class="sub frag">Who around us has gone years without being invited to the table?</div>'
+  '<aside class=notes>~minute 40.</aside></section>')
+
+A(W1_SITESLIDE)
+
+
+
+
+
+
+
 
 A(C('Alexander and the Shipwreck', 'The son&rsquo;s story, while the father&rsquo;s is still open. He does not know what has happened in Pennsylvania.'))
 
@@ -314,45 +358,6 @@ A(Q('&ldquo;Alexander could not but feel indignant at this recital&hellip; <b>He
 A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;', '<i>Declaration and Address</i>, 1809', 'That fall they asked him to write down what they stood for', 'slide',
     '<div class="sub frag">Next week: <b>the Declaration and Address</b>.</div>') +
   '<aside class=notes>Optional sting: the presbytery formally deposed him on 18 April 1810 &mdash; seven months after this was published.</aside></section>')
-
-A('<section class="slide ideasmap"><div class=eyebrow>What this week touched</div>'
-  '<div class=wmap><div class="r ms-christ"><span class="th key">CHRIST ALONE</span></div>'
-  '<div class="r ms-pri"><span class="th key">UNITY</span><span class="th key">PRIESTHOOD</span><span class="th on">FUTURE</span></div>'
-  '<div class="r ms-sec"><span class="th on">HOMECOMING</span><span class="th on">SELF-SACRIFICE</span><span class="th key">FREEDOM OF CONSCIENCE</span><span class=th>SCIENCE &amp; REASON</span><span class="th on">MINIMALISM</span></div>'
-  '<div class="r ms-pra"><span class="th key">the Table</span><span class=th>Baptism</span><span class="th on">Scripture</span><span class=th>Singing</span><span class="th on">Congregation</span></div></div>'
-  '<div class=small>Bright: the spine of this week. Dim: touched in passing. Unlit: still ahead of us.</div>'
-  '<aside class=notes>Same board as Week 1. New light: Priesthood, Freedom of Conscience, Christ Alone.</aside></section>')
-
-A('<section class="slide idea room"><div class="eyebrow quiet">Idea 1 of 4</div>'
-  '<h2>The unity movement <span style="color:var(--gold)">did not begin in America.</span></h2>'
-  '<aside class=notes>Thomas Campbell was already working for unity in a divided Ireland, and took that work with him across the Atlantic.</aside></section>')
-
-A('<section class="slide idea room"><div class="eyebrow quiet">Idea 2 of 4</div>'
-  '<h2>They divided over <span style="color:var(--gold)">hospitality, not doctrine.</span></h2>'
-  '<aside class=notes>He did not set out to found anything or to dispute a doctrine; he extended the Supper to believers the system had orphaned, holding the fences to be the thing without divine warrant.</aside></section>')
-
-A('<section class="slide idea room"><div class="eyebrow quiet">Idea 3 of 4</div>'
-  '<h2>Non-creedalism is <span style="color:var(--gold)">a protective move.</span></h2>'
-  '<aside class=notes>No human formulation as a test of fellowship &mdash; because no one&rsquo;s interpretation is infallible, and the simplest believer must be able to confess Christ and belong.</aside></section>')
-
-A('<section class="slide idea room"><div class="eyebrow quiet">Idea 4 of 4</div>'
-  '<h2>They stood for <span style="color:var(--gold)">the universal church.</span></h2>'
-  '<aside class=notes>That autumn the people following him from farmhouse to grove asked him to write down what they stood for, and the first sentence was that the church of Christ upon earth is essentially, intentionally, and constitutionally one.</aside></section>')
-
-A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
-  '<h2>What is beautiful here? What do we carry forward?</h2>'
-  '<div class="sub frag">What &ldquo;testimonies&rdquo; &mdash; written or unwritten &mdash; do we treat as terms of fellowship today?</div>'
-  '<div class="sub frag">Who around us has gone years without being invited to the table?</div>'
-  '<aside class=notes>~minute 40.</aside></section>')
-
-A(W1_SITESLIDE)
-
-
-
-
-
-
-
 
 A(C('Addendum', 'Reference material; not part of the telling.'))
 
