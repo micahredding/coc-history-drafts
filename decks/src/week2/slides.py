@@ -26,9 +26,9 @@ RECAP_VO = open(_D+'/recap_vo.html').read()
 # ---------- 0 RECAP ----------
 # ---------- 0 RECAP ----------
 # ---------- 0 RECAP ----------
-A('<section class="slide"><div class="eyebrow quiet">Otter Creek &middot; Fall 2026</div>'
-  '<h1>Our Wild<br>Democracy</h1>'
-  '<p class=sub>The Story, Promise, and Future<br>of the Churches of Christ</p>'
+A('<section class="slide" style="padding-bottom:10vmin"><div class="eyebrow quiet" style="font-size:clamp(16px,3vmin,36px)">Otter Creek &middot; Fall 2026</div>'
+  '<h1 style="font-size:min(19vmin,11.5vw);line-height:1.02;max-width:none">Our Wild<br>Democracy</h1>'
+  '<p class=sub style="font-size:min(5vmin,3.6vw);max-width:none;margin-top:2vmin">The Story, Promise, and Future<br>of the Churches of Christ</p>'
   '<aside class=notes>Recap, about four minutes: the class title, the movement, then last week at Cane Ridge.</aside></section>')
 
 A('<section class="slide treeslide"><div class="eyebrow quiet">One movement</div>'
