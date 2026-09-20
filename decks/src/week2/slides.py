@@ -35,8 +35,7 @@ A(RECAP_VO)
 
 A(C('Last week &middot; Cane Ridge, 1801', 'Four beats, one slide each.'))
 
-A('<section class="slide"><h2>Tens of thousands gathered.</h2>'
-  '<div class=sub>One man counted 12,000. Military men on the ground guessed twenty to thirty thousand.</div>'
+A('<section class="slide"><h2>10,000&ndash;30,000 gathered.</h2>'
   '<aside class=notes>Six beats, one slide each: the crowd, the mix of churches, the unity, the Spirit, the communion, the foretaste.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>And they were not people of one church</div>'
@@ -50,10 +49,10 @@ A('<section class="slide"><div class=eyebrow>And they were not people of one chu
 A(Q('&ldquo;cordially united&hellip; of one mind and one soul&hellip; all engaged in singing the same songs of praise &mdash; all united in prayer &mdash; all preached the same things.&rdquo;', 'Barton W. Stone, of Cane Ridge, August 1801', 'They experienced a profound unity') +
   '<aside class=notes>Presbyterians, Methodists, Baptists; Black and white; seven preachers at once.</aside></section>')
 
-A(Q('&ldquo;Many, very many fell down, <b>as men slain in battle</b>, and continued for hours together in an apparently breathless and motionless state.&rdquo;', 'Barton W. Stone', 'They witnessed the work of the Spirit') +
-  '<aside class=notes>The falling &mdash; the part that made it famous, and made it suspect.</aside></section>')
+A('<section class="slide"><h2>Evidences of the work of the Spirit.</h2>'
+  '<aside class=notes>The falling &mdash; &ldquo;many, very many fell down, as men slain in battle&rdquo; (Stone) &mdash; the part that made it famous, and made it suspect.</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>And they came together</div><h1>This was a<br><span style="color:var(--gold)">communion service.</span></h1>'
+A('<section class="slide"><h1>A <span style="color:var(--gold)">communion service.</span></h1>'
   '<aside class=notes>Methodists at a Presbyterian table. Stone dropped the doctrinal test at the door.</aside></section>')
 
 A(Q('&ldquo;Together, in sweetest, holiest, symbolic communion, <b>they sat down at the one table of the one Lord</b>&hellip; many good people thought assuredly, <b>the millennium had begun to dawn upon the world.</b>&rdquo;', 'William Rogers, of Cane Ridge &middot; who was there', 'A foretaste of the future') +
@@ -121,8 +120,7 @@ A('<section class="slide"><div class=eyebrow>Armagh &middot; the 1790s</div>'
 A(Q('&ldquo;&hellip;he presented so candidly and earnestly his views in condemnation of them that <b>a large portion of the audience became excited and exasperated</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:42', 'Asked to preach on the lawfulness of oaths and secret societies') +
   '<aside class=notes>Richardson 1:42. Campbell&rsquo;s &ldquo;utter refusal to take any part in the movement, and his conscientious opposition to secret associations,&rdquo; brought him &ldquo;into disfavor with his people.&rdquo; Asked, in the heat of it, to preach on oaths and secret societies, he condemned both &mdash; the United Irishmen and, by the same principle, the Orange Order. Foster: he &ldquo;had consistently spoken against membership in any society that might encourage rebellion and violence.&rdquo; He would take neither side, and said so from his own pulpit to a room that had largely taken one.</aside></section>')
 
-A('<section class="slide"><h2>He would not let his church become a <span style="color:var(--gold)">faction</span>.</h2>'
-  '<div class=sub>A friend took him by the arm and walked him safely out through the crowd.</div>'
+A('<section class="slide"><h2>He had to be <span style="color:var(--gold)">escorted</span> through the crowd.</h2>'
   '<aside class=notes>Richardson: &ldquo;a prominent member, fearing lest he should be insulted, courteously took him by the arm and conducted him safely through the crowd.&rdquo; Through the whole rebellion he &ldquo;remained entirely unmolested, retaining the confidence of the community.&rdquo; Lord Gosford, governor of the county &mdash; who had himself tried to check the persecution of Catholics &mdash; was impressed enough to offer him a post as tutor to his family, a large salary and a house on the estate; Campbell declined it. When the rising failed and the reprisals came, Richardson says, &ldquo;the unhappy results of the rebellion vindicated the correctness of his principles.&rdquo;<br>&rarr; His first act for unity: in a country choosing sides, he refused to choose one for his people.</aside></section>')
 
 A('<section class="slide plateslide tight"><figure class="plate short"><img src="IMG_TCAMPBELL" alt="" style="max-height:74vh"><figcaption>Thomas Campbell, 1763&ndash;1854</figcaption></figure>'
