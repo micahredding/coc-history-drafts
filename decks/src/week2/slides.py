@@ -197,13 +197,13 @@ A(C('The Trial', 'Five minutes belong to the room.'))
 
 A('<section class="slide libelposter" id=libel><h2 style="max-width:none;white-space:nowrap;font-size:clamp(34px,6.4vmin,80px)">The Libel <span class=dim>&middot; January 1808</span></h2>'
   '<div class=days>'
-  '<div class="d"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span></div>'
+  '<div class="d"><span class=dn>1</span><span>that one may have doubts even in the midst of saving faith</span></div>'
   '<div class="d"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span></div>'
   '<div class="d"><span class=dn>3</span><span>that ruling elders may pray and exhort publicly in vacant congregations</span></div>'
   '<div class="d"><span class=dn>4</span><span>that our people may hear ministers in stated opposition to our testimony</span></div>'
   '<div class="d"><span class=dn>5</span><span>that Christ was not subject to the precept of the law, as well as its penalty, for his people</span></div>'
   '<div class="d"><span class=dn>6</span><span>that a man may live without sin in this life</span></div>'
-  '<div class="d"><span class=dn>7</span><span>that he preached in another minister&rsquo;s bounds without appointment</span></div>'
+  '<div class="d"><span class=dn>7</span><span>that a divine calling, ordination, and the invitation of the people is sufficient warrant to preach, without authorization of church authorities</span></div>'
   '</div>'
   '<aside class=notes>Hanna, ch. II, from the Chartiers minutes. Read them plain.</aside></section>')
 
@@ -213,11 +213,11 @@ A('<section class="slide room"><h2 style="font-size:clamp(48px,9.6vmin,126px)"><
 
 A('<section class="slide hard" id=verdict><h2 style="max-width:none;white-space:nowrap;font-size:clamp(34px,6.4vmin,80px)">The Verdict <span class=dim>&middot; February 1808</span></h2>'
   '<div class="days verdictlist">'
-  '<div class="d"><span class=dn>1</span><span>that appropriating Christ as one&rsquo;s own Savior does not belong to the essence of saving faith</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
+  '<div class="d"><span class=dn>1</span><span>that one may have doubts even in the midst of saving faith</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
   '<div class="d"><span class=dn>2</span><span>that a church has no divine warrant for holding Confessions of Faith as terms of communion</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
   '<div class="d"><span class=dn>3</span><span>that ruling elders may pray and exhort publicly in vacant congregations</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
   '<div class="d"><span class=dn>4</span><span>that our people may hear ministers in stated opposition to our testimony</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
-  '<div class="d"><span class=dn>7</span><span>that he preached in another minister&rsquo;s bounds without appointment</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
+  '<div class="d"><span class=dn>7</span><span>that a divine calling, ordination, and the invitation of the people is sufficient warrant to preach, without authorization of church authorities</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
   '</div>'
   '<aside class=notes>Minutes, 12 Feb 1808: 1 and 2 &ldquo;clearly proved&rdquo;; 3, 4 and 7 &ldquo;acknowledged&hellip; and still adhered to by him.&rdquo; Charges 5 and 6 fell away: his answers were accepted (5 &ldquo;not sufficiently proved&rdquo;; 6 approved except &ldquo;or&rdquo; for &ldquo;and&rdquo;). Click through the five verdicts.</aside></section>')
 
