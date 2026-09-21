@@ -26,42 +26,15 @@ RECAP_VO = open(_D+'/recap_vo.html').read()
 # ---------- 0 RECAP ----------
 # ---------- 0 RECAP ----------
 # ---------- 0 RECAP ----------
+# ---------- 0 RECAP ----------
 A('<section class="slide" style="padding-bottom:10vmin"><div class="eyebrow quiet" style="font-size:clamp(16px,3vmin,36px)">Otter Creek &middot; Fall 2026</div>'
   '<h1 style="font-size:min(19vmin,11.5vw);line-height:1.02;max-width:none">Our Wild<br>Democracy</h1>'
   '<p class=sub style="font-size:min(5vmin,3.6vw);max-width:none;margin-top:2vmin">The Story, Promise, and Future<br>of the Churches of Christ</p>'
   '<aside class=notes>Recap, about four minutes: the class title, the movement, then last week at Cane Ridge.</aside></section>')
 
-A('<section class="slide room"><h2>What was carved on the front of your communion table?</h2>'
-  '<aside class=notes>Ask the room. Most Church of Christ tables read &ldquo;This do in remembrance of me&rdquo; or &ldquo;In remembrance of me.&rdquo; Let a few people answer; the table is where this whole story lands.</aside></section>')
-
 A('<section class="slide treeslide"><div class="eyebrow quiet">One movement</div>'
   '<svg class=tree viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><clipPath id="c250"><circle cx="250" cy="95" r="68"/></clipPath><clipPath id="c500"><circle cx="500" cy="95" r="68"/></clipPath><clipPath id="c750"><circle cx="750" cy="95" r="68"/></clipPath></defs><line x1="60" y1="60" x2="60" y2="540" stroke="#5a4a2e" stroke-width="2"/><polygon points="54,540 66,540 60,556" fill="#5a4a2e"/><text x="60" y="44" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="18" letter-spacing="2" fill="#8e8272">1800s</text><text x="60" y="582" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="18" letter-spacing="2" fill="#8e8272">today</text><image href="IMG_STONE" x="182" y="27" width="136" height="136" preserveAspectRatio="xMidYMid slice" clip-path="url(#c250)"/><circle cx="250" cy="95" r="68" fill="none" stroke="#c89b3c" stroke-width="2"/><text x="250" y="192" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="19" letter-spacing="1.5" fill="#ede4d3">Barton W. Stone</text><text x="250" y="216" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="17" fill="#8e8272">Kentucky · 1801</text><image href="IMG_TCAMPBELL" x="432" y="27" width="136" height="136" preserveAspectRatio="xMidYMid slice" clip-path="url(#c500)"/><circle cx="500" cy="95" r="68" fill="none" stroke="#c89b3c" stroke-width="2"/><text x="500" y="192" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="19" letter-spacing="1.5" fill="#ede4d3">Thomas Campbell</text><text x="500" y="216" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="17" fill="#8e8272">Pennsylvania · 1809</text><image href="IMG_ACAMPBELL" x="682" y="27" width="136" height="136" preserveAspectRatio="xMidYMid slice" clip-path="url(#c750)"/><circle cx="750" cy="95" r="68" fill="none" stroke="#c89b3c" stroke-width="2"/><text x="750" y="192" text-anchor="middle" font-family="IM Fell English SC","IM Fell English",Georgia,serif font-size="19" letter-spacing="1.5" fill="#ede4d3">Alexander Campbell</text><text x="750" y="216" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="17" fill="#8e8272">his son</text><path d="M250,226 C250,270 460,268 500,290 M500,226 L500,290 M750,226 C750,270 540,268 500,290" fill="none" stroke="#c89b3c" stroke-width="2.5"/><text x="500" y="345" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="46" fill="#c89b3c">The Stone&#8211;Campbell Restoration Movement</text><text x="500" y="376" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="20" fill="#8e8272">one movement, many congregations &#183; merged 1832</text><path d="M500,392 C500,430 185,430 165,465 M500,392 L500,465 M500,392 C500,430 815,430 835,465" fill="none" stroke="#c89b3c" stroke-width="2.5"/><text x="165" y="500" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="34" fill="#c89b3c">Churches of Christ</text><text x="165" y="530" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="19" fill="#c89b3c">that&#8217;s us</text><text x="500" y="500" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="34" fill="#ede4d3">Christian Churches</text><text x="500" y="530" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="19" fill="#8e8272">the independent congregations</text><text x="835" y="500" text-anchor="middle" font-family="IM Fell English",Georgia,serif font-size="34" fill="#ede4d3">Disciples of Christ</text><text x="835" y="530" text-anchor="middle" font-family=Spectral,Georgia,serif font-style="italic" font-size="19" fill="#8e8272">the organized denomination</text></svg>'
   '<aside class=notes>Three founders, one movement, three families. Stone and the Campbells merge in 1832 (Week 7); the three families separate in the twentieth century. We are the branch on the left.</aside></section>')
-
-A(C('Last week &middot; Cane Ridge, 1801', 'Four beats, one slide each.'))
-
-A('<section class="slide"><h2>10,000&ndash;30,000 gathered.</h2>'
-  '<aside class=notes>Patterson, counting on the ground, made it 12,000; military men guessed twenty to thirty thousand. The whole state held 220,955 people.</aside></section>')
-
-A('<section class="slide"><div class=eyebrow>And they were not people of one church</div>'
-  '<div class=litany><div class="no frag">Presbyterians. Methodists. <b>Baptists.</b></div>'
-  '<div class="no frag">Folks both <b>black and white</b>.</div>'
-  '<div class="no frag">Preachers who were formally <b>at odds</b> &mdash;</div>'
-  '<div class="no frag">whose churches did not, as a rule,<br><b>commune at one another&rsquo;s tables.</b></div>'
-  '<div class="coda frag">And here they were.</div></div>'
-  '<aside class=notes>The Week 1 slide, verbatim. Seven preachers at once; a Black preacher at the fourth centre.</aside></section>')
-
-A(Q('&ldquo;cordially united&hellip; of one mind and one soul&hellip; all engaged in singing the same songs of praise &mdash; all united in prayer &mdash; all preached the same things.&rdquo;', 'Barton W. Stone, of Cane Ridge, August 1801', 'They experienced a profound unity') +
-  '<aside class=notes>Presbyterians, Methodists, Baptists; Black and white; seven preachers at once.</aside></section>')
-
-A('<section class="slide"><h2>Evidences of the work of the Spirit.</h2>'
-  '<aside class=notes>The falling &mdash; &ldquo;many, very many fell down, as men slain in battle&rdquo; (Stone) &mdash; the part that made it famous, and made it suspect.</aside></section>')
-
-A('<section class="slide"><h1>A <span style="color:var(--gold)">communion service.</span></h1>'
-  '<aside class=notes>Methodists at a Presbyterian table. Stone dropped the doctrinal test at the door.</aside></section>')
-
-A(Q('&ldquo;Together, in sweetest, holiest, symbolic communion, <b>they sat down at the one table of the one Lord</b>&hellip; many good people thought assuredly, <b>the millennium had begun to dawn upon the world.</b>&rdquo;', 'William Rogers, of Cane Ridge &middot; who was there', 'A foretaste of the future') +
-  '<aside class=notes>The table as the age to come, arriving early. Hold this: today someone puts a gate in front of it.</aside></section>')
 
 A(C('Open Communion', 'Before the story: the thing the story is about.'))
 
@@ -377,6 +350,7 @@ A('<section class="slide"><div class=eyebrow>How each week works</div>'
 
 A('<section class="slide"><p class=bigquote style="font-size:clamp(36px,7.4vmin,92px)"><span class=q>What is beautiful here?<br>What do we carry forward?</span></p>'
   '<aside class=notes>The class question. It closes every week.</aside></section>')
+
 
 
 
