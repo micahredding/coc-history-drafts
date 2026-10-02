@@ -1,14 +1,14 @@
-# Week 4 — The Rise and Fall of the Springfield Presbytery (1803–1804)
+# Chapter 4 — The Rise and Fall of the Springfield Presbytery (1803–1804)
 
-[← All weeks](.)
+[← All chapters](.)
 
 **The Story:** Barton W Stone and minister friends are brought up on trial. They withdrew, but refused to un-church the men who were un-churching them. When their own movement started becoming a sect, they killed it. In the process, they ascribed all religious authority to the gathered body of believers.
 
 **The Idea**: Our movement is built on institutional self-sacrifice, and the willingness to lay down every obstacle to unity and freedom. And to relentlessly embrace the priesthood of all believers.
 
 **Connections:**
-- Week 2's echo in the other founding stream: the same heresy machinery, five years earlier, with a different ending — the five walked together, built something, and then laid it down.
-- Returns the class to the very room of Week 1: the Last Will was signed in the Cane Ridge meetinghouse, where the communion tables stood three years before.
+- Chapter 2's echo in the other founding stream: the same heresy machinery, five years earlier, with a different ending — the five walked together, built something, and then laid it down.
+- Returns the class to the very room of Chapter 1: the Last Will was signed in the Cane Ridge meetinghouse, where the communion tables stood three years before.
 
 ---
 

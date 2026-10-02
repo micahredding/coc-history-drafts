@@ -1,6 +1,6 @@
-# Week 10 — The Story of Congregational Singing
+# Chapter 10 — The Story of Congregational Singing
 
-[← All weeks](.)
+[← All chapters](.)
 
 **The Story:** Before a cappella was ever a rule, it was a literacy movement — the church taught every farmer to sight-read four-part harmony the same way it taught every member to read Scripture. 
 

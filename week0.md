@@ -1,6 +1,6 @@
-# Week 0 — Overview: Our Wild Democracy
+# Prologue — Overview: Our Wild Democracy
 
-[← All weeks](.)
+[← All chapters](.)
 
 **The Story:** This is a class about a table — and about what a group of people on the American frontier were willing to tear down in order to keep anyone from standing in front of it.
 
@@ -16,7 +16,7 @@ This class is going to argue something different. Absences have shapes. And if y
 
 What they were protecting was a meal.
 
-**Start with a scene we will spend all of Week 1 on.** August of 1801, Bourbon County, Kentucky. The roads are clogged for miles — wagons, carriages, horsemen, people on foot. Somewhere between ten and thirty thousand people, in a state that did not have many more than that to spare, converging on a log meetinghouse built to hold four hundred. It is the largest gathering anyone in America has ever seen, and what they have all come through the mud to reach is the Lord's Supper.
+**Start with a scene we will spend all of Chapter 1 on.** August of 1801, Bourbon County, Kentucky. The roads are clogged for miles — wagons, carriages, horsemen, people on foot. Somewhere between ten and thirty thousand people, in a state that did not have many more than that to spare, converging on a log meetinghouse built to hold four hundred. It is the largest gathering anyone in America has ever seen, and what they have all come through the mud to reach is the Lord's Supper.
 
 Why would anyone do that? What did they think was on that table?
 
@@ -38,7 +38,7 @@ Which tells you what recovery looks like. Not abandoning the practices. Remember
 
 **So: "our wild democracy."** The wildness is real, and this class is not going to soften it. But notice that it is not the point — it is the price. These people did not set out to build a radically decentralized church and then decorate it with a meal. They set out to protect a meal, and a radically decentralized church is what it cost them. This is not a tradition with no center. It is a tradition that refused to let anything stand between you and its center.
 
-Over twelve weeks we are going to walk that story from Cane Ridge forward, and at the end of each one ask the same two questions.
+Over twelve chapters we are going to walk that story from Cane Ridge forward, and at the end of each one ask the same two questions.
 
 ---
 

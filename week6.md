@@ -1,6 +1,6 @@
-# Week 6 — Millennial Harbinger
+# Chapter 6 — Millennial Harbinger
 
-[← All weeks](.)
+[← All chapters](.)
 
 **The Story:** In 1830, Alexander Campbell pivoted from attack journalism, to building for the age to come. Millennial Harbinger became the leading journal of the movement, with its vision of societal and religious reform, science and education, and eschatology as north star.
 

@@ -1,6 +1,6 @@
-# Week 7 — The Stone-Campbell Merger (1832)
+# Chapter 7 — The Stone-Campbell Merger (1832)
 
-[← All weeks](.)
+[← All chapters](.)
 
 **The Story:** In Lexington, two unity and reform movements, represented by Barton W Stone and Raccoon John Smith, come together to work out unity with each other. Yet after days of wrestling, they disagree on many foundational issues. The only basis for unity they can come up with is the Bible. And that's what they shake on.
 

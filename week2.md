@@ -1,12 +1,12 @@
-# Week 2 — Thomas Campbell's Heresy Trial (1807–1809)
+# Chapter 2 — Thomas Campbell's Heresy Trial (1807–1809)
 
-[← All weeks](.)
+[← All chapters](.)
 
 **The Story:** Thomas Campbell was a Presbyterian minister seeking unity in a violent and divided Ireland. In America, he found sectarianism leaving Christians without communion, and opened the table to include them. For this, he was given a heresy trial and condemned. But the unity movement kept growing.
 
 **The Idea**: Our movement began with open communion, and a desire to overcome division. When human hierarchy wrongly divided the body of Christ, we determined we must be free.
 
-**Companion week to Week 1:** both weeks are about a communion table someone tried to
+**Companion chapter to Chapter 1:** both chapters are about a communion table someone tried to
 fence. At Cane Ridge the gatekeepers backed down and the table opened; here the
 fence fights back.
 
@@ -55,14 +55,15 @@ One of Campbell's travel companions had privately looked on at this process with
 disapproval, and once they had returned, he reported to the church hierarchy, and
 Thomas Campbell was brought up on a heresy trial.
 
-The charges brought against him included claims that he had:
+The charges that held against him were that he had taught:
 
-- Said it was okay to occasionally listen to a sermon from a Presbyterian of a
-  different sect
-- Said it was okay for elders to pray and worship with a congregation when a
-  minister was absent
+1. that one may have doubts even in the midst of saving faith
+2. that a church has no divine warrant for holding Confessions of Faith as terms of communion
+3. that ruling elders may pray and exhort publicly in congregations where a minister is absent
+4. that our people may hear ministers in stated opposition to our testimony
+5. that a divine calling, ordination, and the invitation of the people is sufficient warrant to preach, without authorization of church authorities
 
-But the greatest charge of all was that Thomas Campbell refused to let the doctrines
+But the greatest charge of all was the second: Thomas Campbell refused to let the doctrines
 of a particular Presbyterian sect determine who could and could not receive
 Communion.
 
@@ -105,7 +106,7 @@ line from Thomas Campbell's Declaration and Address, written shortly after:
 "The Church of Christ upon earth is essentially, intentionally, and constitutionally
 one; consisting of all those in every place that profess their faith in Christ..."
 
-We'll return to that next week.
+We'll return to that in the next chapter.
 
 ---
 

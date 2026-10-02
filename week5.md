@@ -1,6 +1,6 @@
-# Week 5 — Brush Run Ordination
+# Chapter 5 — Brush Run Ordination
 
-[← All weeks](.)
+[← All chapters](.)
 
 **The Story:** The fledging unity movement seeks to join with local Presbyterians, is rebuffed. They must now ordain their own ministers and deacons, prompting a recognition that in the New Testament, authority inheres in congregations and in every believer. The priesthood of all believers is the root of Alexander Campbell's ministry.
 

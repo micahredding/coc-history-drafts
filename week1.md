@@ -1,6 +1,6 @@
-# Week 1 — Cane Ridge Communion (August 1801)
+# Chapter 1 — Cane Ridge Communion (August 1801)
 
-[← All weeks](.)
+[← All chapters](.)
 
 **The Story:** Thousands came together in a wild experience of unity, centered on open communion. This changed the participants — and left a profound impression of the Spirit calling the church to come together, even if it meant defying human-imposed authority structures.
 
@@ -53,8 +53,8 @@ What were they converging on? The divided church united at one table. That's the
    Creek itself.
 2. **The central practice of unity was a shared table** — a table opened
    beyond the limits authority had placed on it. The demand withdrawn at Cane
-   Ridge is the very demand a presbytery would enforce six years later — next
-   week's story. And it lands at home: If you've heard Josh or one of the other ministers saying that all are welcome to participate—that didn't begin here. That is Cane Ridge
+   Ridge is the very demand a presbytery would enforce six years later — the next
+   chapter's story. And it lands at home: If you've heard Josh or one of the other ministers saying that all are welcome to participate—that didn't begin here. That is Cane Ridge
    carried forward. That is a practice embraced on the frontier, and continued every Sunday.
 3. **Why a table was worth all this.** Ten thousand people do not cross a frontier in the mud for a symbol. They came because of what they believed was on that table. Alexander Campbell would later put it in his very first sermon: communion is *a taste of the Millennial Church* — the age to come, arriving early. That is the engine under everything else in this class. Hospitality alone does not explain a heresy trial; nobody is put on trial for being welcoming. But if this meal is God's future breaking into the present, then a gate in front of it is an attempt to hold back the kingdom — and it has to come down, whatever it costs. Every radical thing this movement ever did is downstream of that conviction.
 4. **The table asks two questions, and this movement answered both the same way.** *Who may come?* — that is hospitality, and it is the question Cane Ridge answers when the doctrinal test at the door is withdrawn. *Who may preside?* — that is priesthood, and it is the question the rest of this class answers. In the Catholic tradition the priest is defined precisely by his power at the altar; to say every believer is a priest and then reserve the table to a class of men is to say it without meaning it. Our movement meant it. The same fence gets removed twice: once from the door of the table, once from the head of it. Watch for the second removal — it is the whole second half of the class. And notice it is already in this story: the moment the test at the door is dropped, William Burke climbs a fallen tree with an umbrella lashed over his head and preaches without anyone's authorization, and the thing works.

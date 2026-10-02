@@ -1,6 +1,6 @@
-# Week 8 — Eschatology and Non-Conformity: Lipscomb & the Civil War
+# Chapter 8 — Eschatology and Non-Conformity: Lipscomb & the Civil War
 
-[← All weeks](.)
+[← All chapters](.)
 
 **The Story:** Our movement's eschatology and non-institutional impulses led to bold non-conformity. That could look very different in different contexts.
 
