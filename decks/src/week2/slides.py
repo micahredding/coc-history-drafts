@@ -273,40 +273,39 @@ A(W1_SITESLIDE)
 
 
 
-A(C('Alexander and the Shipwreck', 'The son&rsquo;s story, while the father&rsquo;s is still open. He does not know what has happened in Pennsylvania.'))
+A(C('Alexander and the Shipwreck', 'The son&rsquo;s story, while the father&rsquo;s is still open. Three points, each a charge the room just judged. He does not know what has happened in Pennsylvania.'))
 
 A('<section class="slide bleed"><div class=bg><div class="bgimg wreckbg"></div></div>'
   '<div class=credit>Philippe Jacques de Loutherbourg, <i>A Shipwreck off a Rocky Coast</i><br>Not the <i>Hibernia</i>, and not Islay</div>'
   '<h2>October 1808. His family sailed &mdash; and were wrecked off Islay.</h2>'
   '<div class=sub>Everyone survived. They were stranded in Scotland for ten months.</div>'
-  '<aside class=notes>After-section, following the site slide: the son&rsquo;s story, told while the father&rsquo;s is still open. He does not know what has happened in Pennsylvania. Tell it if there is time; the hour has already closed on the Ideas and discussion.</aside></section>')
+  '<aside class=notes>After-section, following the site slide: tell it if there is time; the hour has already closed on the Ideas and discussion. Setup only &mdash; the winter is spent at the University of Glasgow.</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>Glasgow &middot; 1808&ndash;09</div>'
+# --- 1 · occasional hearing (Article 4)
+A('<section class="slide"><div class=eyebrow>Glasgow &middot; 1808&ndash;09 &middot; <span style="color:var(--gold)">Article 4</span></div>'
   '<h2>Every week, Alexander went to hear ministers outside his church.</h2>'
-  '<div class="sub frag">Richardson&rsquo;s word for it: <b>&ldquo;occasional hearing.&rdquo;</b> Article 4.</div>'
-  '<aside class=notes>Seceder church in the morning; Greville Ewing&rsquo;s Tabernacle in the evening &mdash; fifteen hundred people in a former circus &mdash; and others. His father is on trial in Pennsylvania partly for saying this is permissible.</aside></section>')
+  '<div class="sub frag">Richardson&rsquo;s word for it: <b>&ldquo;occasional hearing.&rdquo;</b></div>'
+  '<aside class=notes>Richardson 1:188. The Seceder minister was &ldquo;a prosy speaker,&rdquo; so he took &ldquo;all the opportunities&hellip; for &lsquo;occasional hearing&rsquo;&rdquo;: Greville Ewing&rsquo;s Tabernacle &mdash; fifteen hundred people in a former circus &mdash; Mitchel at Anderston, Balford at George&rsquo;s Square, Wall at the Salt Market. It released him &ldquo;from the denominational influences of his religious education&rdquo; &mdash; made easier, Richardson says, because his father &ldquo;was now separated from him by the wide Atlantic.&rdquo;<br>&rarr; His father is on trial in Pennsylvania partly for saying this is permissible.</aside></section>')
 
-A(Q('&ldquo;&hellip;an effect which was, doubtless, facilitated by the fact that <b>his revered father, to whose religious sentiments he was accustomed to pay the utmost deference, was now separated from him by the wide Atlantic</b>.&rdquo;', 'Richardson, on why Alexander changed') +
-  '<aside class=notes>The son drifts partly because the father is not there &mdash; while the father, unknown to him, is breaking too.</aside></section>')
+# --- 2 · arbitrary church power (root of Articles 2 and 3)
+A(Q('&ldquo;&hellip;an entire emancipation from the control of <b>domineering Synods and General Assemblies</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:189', '<span style="color:var(--gold)">Articles 2 &amp; 3</span> &middot; what Ewing told him') +
+  '<aside class=notes>Richardson 1:188&ndash;89. The change was &ldquo;chiefly due&rdquo; to the story of the Haldanes, told him by Ewing: laymen who preached, opposed at every turn by the clergy of the establishments &mdash; their &ldquo;unscrupulous methods,&rdquo; their disposition &ldquo;to exercise the power which they possessed in an arbitrary manner.&rdquo; He grew &ldquo;more and more favorable&rdquo; to Ewing&rsquo;s congregationalism, &ldquo;much more accordant with primitive usage.&rdquo;<br>&rarr; The son hears about it. The father has lived it: two church courts closed his Irish reunion; a presbytery and a synod condemned him in America.</aside></section>')
 
-A('<section class="slide"><div class=eyebrow>The communion season</div>'
-  '<h2>He was examined, and given the token.</h2>'
-  '<aside class=notes>No letter from Ahorey, so the session examined him. Eight hundred communicants, eight or nine tables. He waited for the last one, &ldquo;in hopes of being able to overcome his scruples.&rdquo;</aside></section>')
-
-A(Q('&ldquo;&hellip;conscientious misgivings as to the propriety of <b>sanctioning any longer, by participation, a religious system which he disapproved</b>.&rdquo;', 'Richardson, <i>Memoirs</i>', 'Why he could not') +
-  '<aside class=notes>Participation is sanction. The father: you may not make this table a test. The son: I will not let this table make me a witness.</aside></section>')
+# --- 3 · the table
+A(Q('&ldquo;&hellip;conscientious misgivings as to the propriety of <b>sanctioning any longer, by participation, a religious system which he disapproved</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:189', '<span style="color:var(--gold)">The table</span> &middot; the communion season, spring 1809') +
+  '<aside class=notes>He still thought it &ldquo;his duty to be a regular communicant.&rdquo; He had no letter from Ahorey, so the session examined him, and gave him the token. Eight hundred communicants, eight or nine tables. He waited for the last one, &ldquo;in hopes of being able to overcome his scruples.&rdquo;<br>&rarr; Participation is sanction. The father: you may not make this table a test. The son: I will not let this table make me a witness.</aside></section>')
 
 A(Q('&ldquo;&hellip;the ring of the token, falling upon the plate, announced the instant at which he renounced Presbyterianism for ever &mdash; <b>the leaden voucher becoming thus a token not of communion but of separation</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:190', '', 'slide hard') +
-  '<aside class=notes>He dropped the token and passed the bread and wine. Told no one. Collected his certificate of good standing on the way out.</aside></section>')
+  '<aside class=notes>He threw his token on the plate and, when the elements came along the table, &ldquo;declined to partake.&rdquo; Told no one. Collected his certificate of good standing on the way out.</aside></section>')
 
 A(C('Family Reunion', ''))
 
 A('<section class="slide"><div class=eyebrow>19 October 1809 &middot; the road into Washington, Pennsylvania</div>'
   '<h2>He rode out to meet them.</h2>'
   '<div class=sub>Two and a half years.</div>'
-  '<aside class=notes>Riding back together, Thomas told his son what had happened.</aside></section>')
+  '<aside class=notes>Riding back together, Thomas told his son what had happened &mdash; and that he had left the Seceders, because he &ldquo;could no longer feel justified in <b>sanctioning</b> their proceedings by remaining with them&rdquo; (1:220). Same word as the son&rsquo;s.</aside></section>')
 
-A(Q('&ldquo;Alexander could not but feel indignant at this recital&hellip; <b>He was greatly surprised, however, when informed by his father that the latter had actually dissolved his connection with the Seceders.</b>&rdquo;', 'Richardson, <i>Memoirs</i>') +
+A(Q('&ldquo;&hellip;he found him already, though by a somewhat different method, <b>led practically to the very same conclusions</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:220', 'On the road') +
   '<aside class=notes>He learned it on the road. Thomas did not know what his son had done in Glasgow.<br>&rarr; The father invited people who had no token; the son held a valid one and would not use it. Neither knew.</aside></section>')
 
 A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;', '<i>Declaration and Address</i>, 1809', 'That fall they asked him to write down what they stood for', 'slide',
