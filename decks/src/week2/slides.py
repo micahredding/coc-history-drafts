@@ -317,6 +317,12 @@ A(Q('&ldquo;&hellip;an entire emancipation from the control of <b>domineering Sy
     '&rarr; The son only heard these stories. The father was living them: church courts shut down his Irish reunion; a presbytery and a synod condemned him.'))
 
 # --- 3 · the table
+A(Q('&ldquo;He thought of his father&rsquo;s noble life&hellip; and resolved that, if saved from the present peril, <b>he would certainly spend his entire life in the ministry of the gospel</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:101&ndash;02', 'The shipwreck &middot; on the broken mast') +
+  N('Back to the wreck, October 1808. Night, the storm still on, no help in sight.',
+    'Alexander sits on the stump of the broken mast, expecting to die.',
+    'He thinks of his father&rsquo;s life &mdash; and vows: if he lives, he will give his whole life to the ministry.',
+    '&rarr; His calling is born out of admiring his father. Five months later, his conscience leads him away from his father&rsquo;s church.'))
+
 A('<section class="slide"><div class=eyebrow><span style="color:var(--gold)">3 &middot; The table</span> &middot; Glasgow, spring 1809</div>'
   '<h2>The communion season came. He was examined, and given the token.</h2>'
   '<div class="sub frag">Eight hundred communicants. Eight or nine tables. <b>He waited for the last one.</b></div>'
@@ -326,8 +332,10 @@ A('<section class="slide"><div class=eyebrow><span style="color:var(--gold)">3 &
       'About 800 communicants, eight or nine sittings. He waited for the last, hoping his doubts would settle.',
       'Source: Richardson 1:189&ndash;90.'))
 
-A(Q('&ldquo;&hellip;conscientious misgivings as to the propriety of <b>sanctioning any longer, by participation, a religious system which he disapproved</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:189', 'Why he hesitated') +
-  N('Taking part would put his stamp of approval on the system.',
+A(Q('&ldquo;His conscientious misgivings as to the propriety of sanctioning any longer, by participation, a religious system which he disapproved, and, on the other hand, his sincere desire to comply with all his religious obligations, <b>created a serious conflict in his mind, from which he found it impossible to escape</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:189', 'Why he hesitated') +
+  N('Both pulls at once: taking part would put his stamp of approval on the system &mdash; but he still felt bound to every duty of that church.',
+    'What he would be leaving: &ldquo;the Seceder Church to which <b>his father and the family belonged</b>&rdquo; (1:189).',
+    'He waited for the last table &ldquo;in hopes of being able to overcome his scruples.&rdquo; He wanted to stay.',
     '&rarr; Participation is sanction. The father: you may not make this table a test. The son: I will not let this table make me a witness.'))
 
 A(Q('&ldquo;&hellip;the ring of the token, falling upon the plate, announced the instant at which he renounced Presbyterianism for ever &mdash; <b>the leaden voucher becoming thus a token not of communion but of separation</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:190', '', 'slide hard') +
@@ -347,9 +355,11 @@ A('<section class="slide"><div class=eyebrow>19 October 1809 &middot; the road i
       '&rarr; Same word the son used about the table: sanctioning.',
       'Source: Richardson 1:219&ndash;20.'))
 
-A(Q('&ldquo;&hellip;he found him already, though by a somewhat different method, <b>led practically to the very same conclusions</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:220', 'On the road') +
-  N('Each had feared what the other would think.',
-    'Instead: by different roads, the same place.'))
+A(Q('&ldquo;&hellip;instead of <b>fearing opposition from him</b> to the views to which he had himself been definitely brought while in Glasgow, he found him already, though by a somewhat different method, <b>led practically to the very same conclusions</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:220', 'On the road') +
+  N('Six months he had carried it alone: &ldquo;as yet confined to his own heart&rdquo; (1:190).',
+    'He expected his father to oppose him.',
+    'Instead: by different roads, the same place.',
+    'The father&rsquo;s side mirrors it: &ldquo;compelled suddenly to turn away&hellip; from the religious body which he had <b>loved and espoused</b>&rdquo; (1:221). Neither left lightly.'))
 
 A('<section class="slide hard"><h2>The father opened the table to people who had no token.</h2>'
   '<div class="sub frag">The son held a valid token, and would not use it.</div>'
