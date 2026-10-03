@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import re
 # Week 2 deck content — minimal cut, 2026-09-18. One idea per slide. S = list of slide html.
 # Notes are a cue card: fact / source / your line. "→" marks a line that is Micah's to say.
 def C(name, note):   # chapter card: the name only
@@ -7,7 +8,9 @@ def C(name, note):   # chapter card: the name only
 def Q(quote, cite='', eyebrow='', cls='slide', sub=''):   # a quotation alone
     e = '<div class=eyebrow>%s</div>' % eyebrow if eyebrow else ''
     c = '<div class=cite>%s</div>' % cite if cite else ''
-    return '<section class="%s">%s<p class=bigquote><span class=q>%s</span></p>%s%s' % (cls, e, quote, sub, c)
+    n = len(re.sub(r'<[^>]+>|&[a-z]+;', 'x', quote))   # visible length, entities as one char
+    size = ' xlong' if n > 260 else ' long' if n > 150 else ''
+    return '<section class="%s">%s<p class="bigquote%s"><span class=q>%s</span></p>%s%s' % (cls, e, size, quote, sub, c)
 
 def N(*bul):   # speaker notes as bullets, closing the section
     return '<aside class=notes>' + '<br>'.join('&bull; '+x for x in bul) + '</aside></section>'
