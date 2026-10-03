@@ -9,6 +9,9 @@ def Q(quote, cite='', eyebrow='', cls='slide', sub=''):   # a quotation alone
     c = '<div class=cite>%s</div>' % cite if cite else ''
     return '<section class="%s">%s<p class=bigquote><span class=q>%s</span></p>%s%s' % (cls, e, quote, sub, c)
 
+def N(*bul):   # speaker notes as bullets, closing the section
+    return '<aside class=notes>' + '<br>'.join('&bull; '+x for x in bul) + '</aside></section>'
+
 S = []
 A = S.append
 _D = __file__.rsplit('/',1)[0]
@@ -273,40 +276,85 @@ A(W1_SITESLIDE)
 
 
 
-A(C('Alexander and the Shipwreck', 'The son&rsquo;s story, while the father&rsquo;s is still open. Three points, each a charge the room just judged. He does not know what has happened in Pennsylvania.'))
+A(C('Alexander and the Shipwreck', 'The son&rsquo;s story, while the father&rsquo;s is still open. Three points, each a charge the room just judged.'))
 
 A('<section class="slide bleed"><div class=bg><div class="bgimg wreckbg"></div></div>'
   '<div class=credit>Philippe Jacques de Loutherbourg, <i>A Shipwreck off a Rocky Coast</i><br>Not the <i>Hibernia</i>, and not Islay</div>'
   '<h2>October 1808. His family sailed &mdash; and were wrecked off Islay.</h2>'
-  '<div class=sub>Everyone survived. They were stranded in Scotland for ten months.</div>'
-  '<aside class=notes>After-section, following the site slide: tell it if there is time; the hour has already closed on the Ideas and discussion. Setup only &mdash; the winter is spent at the University of Glasgow.</aside></section>')
+  '<div class=sub>Everyone survived. Stranded ten months, Alexander spent the winter at the <b>University of Glasgow</b>.</div>'
+  + N('Thomas had left Alexander, eighteen, in charge of the family in Ireland.',
+      'October 1808: they sail to join him. The ship wrecks off Islay, Scotland. Everyone survives.',
+      'Stuck in Scotland ten months. Alexander spends the winter at the University of Glasgow.',
+      'Meanwhile his father has been tried and condemned. Alexander does not know.',
+      '&rarr; In Glasgow, the son runs into the same questions his father was charged with &mdash; one after another.'))
 
 # --- 1 · occasional hearing (Article 4)
-A('<section class="slide"><div class=eyebrow>Glasgow &middot; 1808&ndash;09 &middot; <span style="color:var(--gold)">Article 4</span></div>'
-  '<h2>Every week, Alexander went to hear ministers outside his church.</h2>'
-  '<div class="sub frag">Richardson&rsquo;s word for it: <b>&ldquo;occasional hearing.&rdquo;</b></div>'
-  '<aside class=notes>Richardson 1:188. The Seceder minister was &ldquo;a prosy speaker,&rdquo; so he took &ldquo;all the opportunities&hellip; for &lsquo;occasional hearing&rsquo;&rdquo;: Greville Ewing&rsquo;s Tabernacle &mdash; fifteen hundred people in a former circus &mdash; Mitchel at Anderston, Balford at George&rsquo;s Square, Wall at the Salt Market. It released him &ldquo;from the denominational influences of his religious education&rdquo; &mdash; made easier, Richardson says, because his father &ldquo;was now separated from him by the wide Atlantic.&rdquo;<br>&rarr; His father is on trial in Pennsylvania partly for saying this is permissible.</aside></section>')
+A('<section class="slide"><div class=eyebrow><span style="color:var(--gold)">1 &middot; Article 4</span> &middot; Glasgow, winter 1808&ndash;09</div>'
+  '<h2>His own church&rsquo;s minister was dull. So he went to hear other preachers.</h2>'
+  '<div class="sub frag">Above all <b>Greville Ewing</b> &mdash; fifteen hundred people in a converted circus.</div>'
+  '<div class="sub frag">The very thing his father was convicted for: <b>&ldquo;occasional hearing.&rdquo;</b></div>'
+  + N('Article 4: his father was condemned for saying our people may hear ministers outside our church.',
+      'In Glasgow, Alexander found the Seceder minister &ldquo;a prosy speaker.&rdquo;',
+      'So every chance he got, he went to hear others. Favorite: Greville Ewing, preaching to 1,500 in a converted circus building (the Tabernacle).',
+      'Richardson: it freed him from the denominational habits of his upbringing &mdash; easier with his father &ldquo;separated from him by the wide Atlantic.&rdquo;',
+      '&rarr; The son is doing every week what the father was convicted for.',
+      'Source: Richardson 1:188.'))
 
-# --- 2 · arbitrary church power (root of Articles 2 and 3)
-A(Q('&ldquo;&hellip;an entire emancipation from the control of <b>domineering Synods and General Assemblies</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:189', '<span style="color:var(--gold)">Articles 2 &amp; 3</span> &middot; what Ewing told him') +
-  '<aside class=notes>Richardson 1:188&ndash;89. The change was &ldquo;chiefly due&rdquo; to the story of the Haldanes, told him by Ewing: laymen who preached, opposed at every turn by the clergy of the establishments &mdash; their &ldquo;unscrupulous methods,&rdquo; their disposition &ldquo;to exercise the power which they possessed in an arbitrary manner.&rdquo; He grew &ldquo;more and more favorable&rdquo; to Ewing&rsquo;s congregationalism, &ldquo;much more accordant with primitive usage.&rdquo;<br>&rarr; The son hears about it. The father has lived it: two church courts closed his Irish reunion; a presbytery and a synod condemned him in America.</aside></section>')
+# --- 2 · the Haldanes (root of Articles 2 and 3)
+A('<section class="slide"><div class=eyebrow><span style="color:var(--gold)">2 &middot; Articles 2 &amp; 3</span> &middot; at Ewing&rsquo;s house</div>'
+  '<h2>Ewing told him the story of the Haldanes.</h2>'
+  '<div class="sub frag">Two Scottish <b>laymen</b> who began preaching the gospel without ordination.</div>'
+  '<div class="sub frag">The church courts fought them at every turn.</div>'
+  + N('Alexander was often at Ewing&rsquo;s house. Ewing told him about the Haldanes &mdash; Robert and James, wealthy laymen who took up preaching.',
+      'Article 3 echo: his father was condemned for letting elders &mdash; non-ministers &mdash; pray and exhort.',
+      'The established clergy opposed them at every turn. Richardson: &ldquo;unscrupulous methods,&rdquo; power used &ldquo;in an arbitrary manner.&rdquo;',
+      'Richardson says this story, more than anything, is what changed Alexander&rsquo;s mind.',
+      'Source: Richardson 1:188&ndash;89.'))
+
+A(Q('&ldquo;&hellip;an entire emancipation from the control of <b>domineering Synods and General Assemblies</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:189', 'What Alexander came to want') +
+  N('He came to believe a congregation should be free of these church courts &mdash; &ldquo;more accordant with primitive usage.&rdquo;',
+    'Article 2 echo: who sets the terms of the church &mdash; a synod&rsquo;s standards, or Scripture?',
+    '&rarr; The son only heard these stories. The father was living them: church courts shut down his Irish reunion; a presbytery and a synod condemned him.'))
 
 # --- 3 · the table
-A(Q('&ldquo;&hellip;conscientious misgivings as to the propriety of <b>sanctioning any longer, by participation, a religious system which he disapproved</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:189', '<span style="color:var(--gold)">The table</span> &middot; the communion season, spring 1809') +
-  '<aside class=notes>He still thought it &ldquo;his duty to be a regular communicant.&rdquo; He had no letter from Ahorey, so the session examined him, and gave him the token. Eight hundred communicants, eight or nine tables. He waited for the last one, &ldquo;in hopes of being able to overcome his scruples.&rdquo;<br>&rarr; Participation is sanction. The father: you may not make this table a test. The son: I will not let this table make me a witness.</aside></section>')
+A('<section class="slide"><div class=eyebrow><span style="color:var(--gold)">3 &middot; The table</span> &middot; Glasgow, spring 1809</div>'
+  '<h2>The communion season came. He was examined, and given the token.</h2>'
+  '<div class="sub frag">Eight hundred communicants. Eight or nine tables. <b>He waited for the last one.</b></div>'
+  + N('The Seceder church in Glasgow held its spring communion season.',
+      'He still felt it was his duty to commune. But he no longer believed in the system.',
+      'No letter from his church in Ireland, so the elders examined him &mdash; and gave him the token, his ticket to the table.',
+      'About 800 communicants, eight or nine sittings. He waited for the last, hoping his doubts would settle.',
+      'Source: Richardson 1:189&ndash;90.'))
+
+A(Q('&ldquo;&hellip;conscientious misgivings as to the propriety of <b>sanctioning any longer, by participation, a religious system which he disapproved</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:189', 'Why he hesitated') +
+  N('Taking part would put his stamp of approval on the system.',
+    '&rarr; Participation is sanction. The father: you may not make this table a test. The son: I will not let this table make me a witness.'))
 
 A(Q('&ldquo;&hellip;the ring of the token, falling upon the plate, announced the instant at which he renounced Presbyterianism for ever &mdash; <b>the leaden voucher becoming thus a token not of communion but of separation</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:190', '', 'slide hard') +
-  '<aside class=notes>He threw his token on the plate and, when the elements came along the table, &ldquo;declined to partake.&rdquo; Told no one. Collected his certificate of good standing on the way out.</aside></section>')
+  N('His doubts did not settle.',
+    'When the plate came around, he dropped his token on it.',
+    'When the bread and wine came down the table, he &ldquo;declined to partake.&rdquo;',
+    'He told no one. Collected his certificate of good standing on the way out.'))
 
 A(C('Family Reunion', ''))
 
 A('<section class="slide"><div class=eyebrow>19 October 1809 &middot; the road into Washington, Pennsylvania</div>'
-  '<h2>He rode out to meet them.</h2>'
-  '<div class=sub>Two and a half years.</div>'
-  '<aside class=notes>Riding back together, Thomas told his son what had happened &mdash; and that he had left the Seceders, because he &ldquo;could no longer feel justified in <b>sanctioning</b> their proceedings by remaining with them&rdquo; (1:220). Same word as the son&rsquo;s.</aside></section>')
+  '<h2>Thomas rode out to meet them.</h2>'
+  '<div class="sub frag">On the ride back he told his son everything: the trial, the rebuke &mdash; and that <b>he had left the Seceders</b>.</div>'
+  + N('October 1809: the family finally lands. Thomas rides out to meet them. Apart two and a half years.',
+      'On the ride back, Thomas tells it all: the trial, the rebuke, and that he has left the Seceders.',
+      'Why: he &ldquo;could no longer feel justified in <b>sanctioning</b> their proceedings by remaining with them.&rdquo;',
+      '&rarr; Same word the son used about the table: sanctioning.',
+      'Source: Richardson 1:219&ndash;20.'))
 
 A(Q('&ldquo;&hellip;he found him already, though by a somewhat different method, <b>led practically to the very same conclusions</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:220', 'On the road') +
-  '<aside class=notes>He learned it on the road. Thomas did not know what his son had done in Glasgow.<br>&rarr; The father invited people who had no token; the son held a valid one and would not use it. Neither knew.</aside></section>')
+  N('Each had feared what the other would think.',
+    'Instead: by different roads, the same place.'))
+
+A('<section class="slide hard"><h2>The father opened the table to people who had no token.</h2>'
+  '<div class="sub frag">The son held a valid token, and would not use it.</div>'
+  '<div class="sub frag"><b>Neither knew.</b></div>'
+  + N('Say it plain and stop.'))
 
 A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;', '<i>Declaration and Address</i>, 1809', 'That fall they asked him to write down what they stood for', 'slide',
     '<div class="sub frag">Next week: <b>the Declaration and Address</b>.</div>') +
