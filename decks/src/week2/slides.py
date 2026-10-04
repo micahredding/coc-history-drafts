@@ -286,9 +286,7 @@ A('<section class="slide idea room"><div class="eyebrow quiet">Idea 6 of 6</div>
 
 A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
   '<h2>What is beautiful here? What do we carry forward?</h2>'
-  '<div class="sub frag">What &ldquo;testimonies&rdquo; &mdash; written or unwritten &mdash; do we treat as terms of fellowship today?</div>'
-  '<div class="sub frag">Who around us has gone years without being invited to the table?</div>'
-  '<aside class=notes>~minute 40.<br>If the room is slow: &ldquo;Have you ever stayed at a table you no longer believed in &mdash; or left one?&rdquo;<br>Close the loop to slide 8: Brownlow&rsquo;s 1945 sentence &mdash; &ldquo;no man or set of men has the right to judge&rdquo; &mdash; is where this trial ends up. Our own church&rsquo;s tract.</aside></section>')
+  '<aside class=notes>~minute 40.<br>Backup prompts (off the slide): What &ldquo;testimonies&rdquo; &mdash; written or unwritten &mdash; do we treat as terms of fellowship today? Who around us has gone years without being invited to the table?<br>If the room is slow: &ldquo;Have you ever stayed at a table you no longer believed in &mdash; or left one?&rdquo;<br>Close the loop to slide 8: Brownlow&rsquo;s 1945 sentence &mdash; &ldquo;no man or set of men has the right to judge&rdquo; &mdash; is where this trial ends up. Our own church&rsquo;s tract.</aside></section>')
 
 A(W1_SITESLIDE)
 
