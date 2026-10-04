@@ -338,13 +338,18 @@ A('<section class="slide"><div class=eyebrow><span style="color:var(--gold)">1 &
 A('<section class="slide"><div class=eyebrow><span style="color:var(--gold)">2 &middot; Articles 2 &amp; 3</span> &middot; at Ewing&rsquo;s house</div>'
   '<h2>Ewing told him the story of the Haldanes.</h2>'
   '<div class="sub frag">Two Scottish <b>laymen</b> who began preaching the gospel without ordination.</div>'
-  '<div class="sub frag">The church courts fought them at every turn.</div>'
+  '<div class="sub frag">James Haldane was <b>arrested at the instigation of the clergy</b>.</div>'
   + N('Alexander was often at Ewing&rsquo;s house. Ewing told him about the Haldanes &mdash; Robert and James, wealthy ex-navy laymen. James preached for years before he was ordained; Robert funded the movement.',
       'Ewing himself: left the Church of Scotland in 1798 to join them; ran their Glasgow Tabernacle and seminary; started weekly communion there. Their 1799 church was founded to avoid &ldquo;that contracted spirit which would exclude from the pulpit, or from occasional communion, any faithful preacher of the gospel or sincere lover of Christ&rdquo; (1:166) &mdash; Conemaugh, eight years early.',
       'Article 3 echo: his father was condemned for letting elders &mdash; non-ministers &mdash; pray and exhort.',
-      'The established clergy opposed them at every turn. Richardson: &ldquo;unscrupulous methods,&rdquo; power used &ldquo;in an arbitrary manner.&rdquo;',
+      '<b>Foreign missions.</b> Robert Haldane sold his estate, Airthrey, to fund a mission to Bengal; the East India Company &ldquo;positively and unexpectedly refused&rdquo; permission, and he had already sold it (1797). When the General Assembly debated &ldquo;That it is the duty of Christians to send the gospel to the heathen world,&rdquo; it voted it down &ldquo;by a large majority&rdquo; &mdash; plenty of unbelief at home, they said. James was in the room and took them at their word: he went and preached at home (1:152&ndash;54).',
+      '<b>What the church tolerated.</b> In 1786 Dr. McGill, a minister at Ayr, published a book teaching that Christ &ldquo;was not God, equal with the Father&rdquo; and explaining away the atonement. It circulated for years with no action by presbytery, synod or General Assembly; when a complaint came in 1789 it was &ldquo;hushed up&rdquo; on &ldquo;vague explanations,&rdquo; and he kept his pulpit (1:153, note).',
+      '&rarr; A minister could deny Christ&rsquo;s divinity and keep his pulpit. Laymen preaching Christ in the open air were the danger.',
+      '<b>What the church fought.</b> The 1798 preaching tours met &ldquo;much opposition on the part of the clergy and the magistrates&rdquo; (1:161). Ewing&rsquo;s 1797 sermon defending field-preaching &ldquo;served still more to alarm the Moderates&rdquo; (1:162).',
+      '<b>The arrest.</b> June 1800, Kintyre: James Haldane and his companion John Campbell (no relation to our Campbells), preaching every day in the open air, were &ldquo;held for some time under arrest by the Highland chiefs, at the instigation of the clergy&rdquo; (1:168&ndash;69).',
+      'What struck Alexander (1:188&ndash;89): the clergy&rsquo;s &ldquo;persistent opposition&hellip; to every overture for reformation,&rdquo; their &ldquo;unscrupulous methods,&rdquo; and power used &ldquo;in an arbitrary manner.&rdquo;',
       'Richardson says this story, more than anything, is what changed Alexander&rsquo;s mind.',
-      'Source: Richardson 1:188&ndash;89.'))
+      'Source: Richardson 1:152&ndash;69, 188&ndash;89.'))
 
 A(Q('&ldquo;&hellip;an entire emancipation from the control of <b>domineering Synods and General Assemblies</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:189', 'What Alexander came to want') +
   N('He came to believe a congregation should be free of these church courts &mdash; &ldquo;more accordant with primitive usage.&rdquo;',
