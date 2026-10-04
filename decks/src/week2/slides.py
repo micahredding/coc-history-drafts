@@ -121,7 +121,7 @@ A('<section class="slide"><div class=eyebrow>His designation in Ireland</div>'
   '</div>'
   '<aside class=notes>Every word is a division from other Christians. Build it one line at a time, then take it apart, outside in.</aside></section>')
 
-A(C('Division After Division', 'Peel the four words, outside in &mdash; under two minutes, from these notes.<br><br><b>Old Light &middot; 1806 &mdash; division over whether the magistrate may enforce religion.</b> The Anti-Burghers split again the year before he sailed; he sided with the Old Lights by friendship more than conviction (Foster).<br><br><b>Anti-Burgher &middot; 1747 &mdash; division over an oath.</b> Whether a Seceder could swear to &ldquo;the true religion presently professed within this realm.&rdquo; Burghers: it only means not Catholic. Anti-Burghers: it blesses the church we left. Within two years, mutual excommunication &mdash; &ldquo;mutual forbidding of intermingling&rdquo;: Burghers and Anti-Burghers could no longer take communion together. The oath applied in three Scottish cities and had never been required in Ireland at all. This is the rule Conemaugh breaks.<br><br><b>Seceder &middot; 1733 &mdash; division over who appoints the minister.</b> Lay patrons placing ministers over congregations that had not called them; the dissenting presbyteries walked out of the Church of Scotland. His tradition began as a protest against imposed authority.'))
+A(C('Division After Division', 'Peel the four words, outside in &mdash; under two minutes, from these notes.<br><br><b>Old Light &middot; 1806 &mdash; division over whether the magistrate may enforce religion.</b> The Anti-Burghers split again the year before he sailed; he sided with the Old Lights by friendship more than conviction (Foster).<br><br><b>Anti-Burgher &middot; 1747 &mdash; division over an oath.</b> Whether a Seceder could swear to &ldquo;the true religion presently professed within this realm.&rdquo; Burghers: it only means not Catholic. Anti-Burghers: it blesses the church we left. Within two years, mutual excommunication &mdash; &ldquo;mutual forbidding of intermingling&rdquo;: Burghers and Anti-Burghers could no longer take communion together. The oath applied in three Scottish cities and had never been required in Ireland at all. This is the rule Conemaugh breaks.<br>Why it felt so big: the Seceders existed as a sworn &ldquo;Testimony&rdquo; against a corrupt national church. Swearing loyalty to that church&rsquo;s religion betrayed the reason they existed. Behind it stand the <b>Covenants</b> &mdash; the National Covenant (1638) and the Solemn League and Covenant (1643), oaths binding Scotland (and Ulster) to Reformed religion; the Westminster Confession was written to fulfil the second. The 1690 church never renewed them; the Seceders did.<br><br><b>Seceder &middot; 1733 &mdash; division over who appoints the minister.</b> Lay patrons placing ministers over congregations that had not called them; the dissenting presbyteries walked out of the Church of Scotland. His tradition began as a protest against imposed authority.'))
 
 A('<section class="slide"><div class=eyebrow>1798</div>'
   '<h2>He helped found a missionary society open to every denomination.</h2>'
@@ -135,7 +135,7 @@ A('<section class="slide"><div class=eyebrow>1804</div>'
 
 A('<section class="slide breath sect"><h2>Unity vs Authority</h2><div class=table-line></div>'
   '<div class=sub>Unity failed.</div>'
-  '<aside class=notes>Card. Two tries in Ireland, both closed by his own church courts. Then the ship.</aside></section>')
+  '<aside class=notes>Card. Two tries in Ireland, both closed by his own church courts. Then the ship.<br>Running long? Slides 24&ndash;25 can be one sentence: &ldquo;Twice he tried to bring Christians together; twice his own church courts shut it down.&rdquo; Protect the court at minute 20.</aside></section>')
 
 A('<section class="slide bleed"><div class=bg><div class="bgimg shipbg"></div></div>'
   '<div class=eyebrow>April 1807 &middot; Londonderry</div>'
@@ -152,7 +152,7 @@ A('<section class="slide plateslide tight"><div class=eyebrow>August 1807 &middo
   '<figure class="plate wide"><img src="IMG_MAP" alt=""><figcaption>Reading Howell, <i>A Map of the State of Pennsylvania</i>, 1792 &middot; Library of Congress</figcaption></figure>'
   '<aside class=notes>Howell&rsquo;s 1792 map, the standard sheet of his lifetime. <b>Washington</b>, his base, is south-west of Pittsburgh. The presbytery met at the Harmony meeting-house on 30 June&ndash;1 July 1807 and gave him a circuit of appointments through <b>four counties</b> &mdash; Buffaloe, Mt. Pleasant, Pittsburgh, Squire McKee&rsquo;s, then <b>Cannamaugh on the third and fourth Sabbaths of August</b> (16 and 23 August 1807), then Squire Smith&rsquo;s, Templeton&rsquo;s, Upper Piney Creek, Mercer&rsquo;s, Hammel&rsquo;s, Breakneck, and back to Buffaloe in October (Chartiers minutes p. 122, in Hanna). Cannamaugh Church: an Associate congregation founded 1798 in Conemaugh Township, seventy miles east-north-east, in what had just become Indiana County; Ebenezer was the post office; Richardson calls it &ldquo;up the Allegheny.&rdquo; The ring marks the district, not a building. The point: the open table was not his home ground. It happened once, on a trip, on the far edge of his circuit.</aside></section>')
 
-A(Q('&ldquo;This part of the country was then <b>thinly settled</b>, and it was seldom that ministerial services were enjoyed by the various <b>fragments of religious parties</b>, which, having <b>floated off from the Old World</b> upon the tide of emigration, had been <b>thrown together in the circling eddies of these new settlements</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:223', 'Who was out there') +
+A(Q('&ldquo;This part of the country was then <b>thinly settled</b>, and it was seldom that ministerial services were enjoyed by the various <b>fragments of religious parties</b>, which, having <b>floated off from the Old World</b> upon the tide of emigration, had been <b>thrown together in the circling eddies of these new settlements</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:224', 'Who was out there') +
   '<aside class=notes>Richardson&rsquo;s description of the people Campbell had been sent up the Alleghany to serve. Not a congregation &mdash; wreckage: pieces of every Old World party, washed into the same eddy, and rarely a minister of any of them. The word is <b>fragments</b>, not dregs; the image is flotsam, not sediment.<br>&rarr; This is who is sitting in front of him at Conemaugh.<br><br>A two-Sabbath sacramental occasion, 16&ndash;23 August 1807, two months after he landed. The presbytery had assigned a younger minister, <b>William Wilson</b> &mdash; Glasgow-educated, in America since about 1791, John Anderson&rsquo;s first pupil &mdash; to assist, and the two travelled there together. Wrather: Campbell, &ldquo;perceiving that members from other branches of the Presbyterian Church were mingled with the seceders in his audience,&rdquo; took it as the moment to put his ideas into practice. Foster: Wilson was already &ldquo;upset by some of the religious views Campbell had formed in Ireland.&rdquo; Troubled before the table, not by it.</aside></section>')
 
 A('<section class="slide"><h2>Faithful Presbyterians who had not received communion in years.</h2>'
@@ -162,7 +162,7 @@ A('<section class="slide"><h2>Faithful Presbyterians who had not received commun
 A('<section class="slide plateslide tokenslide"><div class=eyebrow>The token</div>'
   '<figure class="plate short"><img src="IMG_TOKEN" alt=""><figcaption>A Scottish communion token, 1750</figcaption></figure>'
   '<div class=sub>Examined beforehand. Handed a lead ticket. Surrendered at the table.</div>'
-  '<aside class=notes>The Chapter 1 object. The Scottish communion season: days of preparation, the fencing sermon, the examination, and the lead token you surrendered at the table. The fence, in metal. And since 1747 Burghers and Anti-Burghers had been forbidden each other&rsquo;s tables.</aside></section>')
+  '<aside class=notes>The Chapter 1 object. The Scottish communion season: days of preparation, the fencing sermon, the examination, and the lead token you surrendered at the table. The fence, in metal. And since 1747 Burghers and Anti-Burghers had been forbidden each other&rsquo;s tables.<br><b>&rarr; Through-line: who sets the terms of the table?</b> Say it here for the first time.</aside></section>')
 
 A(Q('&hellip;that all his pious hearers, &ldquo;who felt so disposed and duly prepared, should, <b>without respect to party differences</b>, enjoy the benefits of the communion season then providentially afforded them.&rdquo;', 'Richardson, <i>Memoirs</i> 1:224', 'He did not fence the table') +
   '<aside class=notes>Richardson 1:224: he invited &ldquo;all his pious hearers, who felt so disposed and duly prepared,&rdquo; to the table &ldquo;without respect to party differences.&rdquo; Wilson&rsquo;s deposition gives the fencing itself: Scripture first, &ldquo;that he who runs might read&rdquo;; the Confession and the Testimony only &ldquo;generally,&rdquo; since to require them particularly &ldquo;would be to require an implicit faith.&rdquo; Asked why he did not fence the table, Wilson said Campbell gave as his reason &ldquo;the care that was taken by the session in not admitting such gross characters&rdquo; &mdash; the session had already examined the communicants; he would not add a doctrinal gate on top.</aside></section>')
@@ -187,7 +187,7 @@ A('<section class="slide libelposter" id=libel><h2 style="max-width:none;white-s
   '<div class="d"><span class=dn>6</span><span>that a man may live without sin in this life</span></div>'
   '<div class="d"><span class=dn>7</span><span>that he preached in another minister&rsquo;s bounds without appointment</span></div>'
   '</div>'
-  '<aside class=notes>Hanna, ch. II, from the Chartiers minutes. Read them plain.</aside></section>')
+  '<aside class=notes>Hanna, ch. II, from the Chartiers minutes. Read them plain.<br>Charge 1 is a Glas-and-Sandeman question: Sandeman taught faith is simple belief of the testimony, against Hervey&rsquo;s &ldquo;appropriating&rdquo; faith. His accusers heard Sandeman in him.<br>The verdict slide words 1 and 7 in plain English &mdash; say &ldquo;in plain words&rdquo; when it comes up.</aside></section>')
 
 A('<section class="slide room"><h2 style="font-size:clamp(48px,9.6vmin,126px)"><span style="color:var(--gold)">YOU</span> are the court.</h2>'
   '<div class=sub style="font-size:clamp(30px,5.2vmin,64px)">Guilty, or not guilty?</div>'
@@ -201,7 +201,7 @@ A('<section class="slide hard" id=verdict><h2 style="max-width:none;white-space:
   '<div class="d"><span class=dn>4</span><span>that our people may hear ministers in stated opposition to our testimony</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
   '<div class="d"><span class=dn>7</span><span>that a divine calling, ordination, and the invitation of the people is sufficient warrant to preach, without authorization of church authorities</span><span class="verdict frag v-red" data-o=1>guilty!</span></div>'
   '</div>'
-  '<aside class=notes>Minutes, 12 Feb 1808: 1 and 2 &ldquo;clearly proved&rdquo;; 3, 4 and 7 &ldquo;acknowledged&hellip; and still adhered to by him.&rdquo; Charges 5 and 6 fell away: his answers were accepted (5 &ldquo;not sufficiently proved&rdquo;; 6 approved except &ldquo;or&rdquo; for &ldquo;and&rdquo;). One more fact for the room if it asks: Campbell objected that &ldquo;there might be witnesses found in Conemaugh who would prove the contrary of what Mr. Wilson had deposed.&rdquo; The presbytery would not wait for them, and the Synod&rsquo;s dissenters later conceded the point &mdash; he was condemned &ldquo;by witnesses from elsewhere.&rdquo; No one who sat in that congregation was ever heard. Click through the five verdicts.</aside></section>')
+  '<aside class=notes>Minutes, 12 Feb 1808: 1 and 2 &ldquo;clearly proved&rdquo;; 3, 4 and 7 &ldquo;acknowledged&hellip; and still adhered to by him.&rdquo; Charges 5 and 6 fell away: his answers were accepted (5 &ldquo;not sufficiently proved&rdquo;; 6 approved except &ldquo;or&rdquo; for &ldquo;and&rdquo;). One more fact for the room if it asks: Campbell objected that &ldquo;there might be witnesses found in Conemaugh who would prove the contrary of what Mr. Wilson had deposed.&rdquo; The presbytery would not wait for them, and the Synod&rsquo;s dissenters later conceded the point &mdash; he was condemned &ldquo;by witnesses from elsewhere.&rdquo; No one who sat in that congregation was ever heard. Click through the five verdicts.<br>Charges 1 and 7 are paraphrased here; same charges as the libel.<br><b>&rarr; Through-line: who sets the terms of the table?</b> Second time.</aside></section>')
 
 A(C('The Appeal', 'May 1808. He appealed the presbytery&rsquo;s verdict to the Associate Synod at Philadelphia and read his appeal aloud before it.'))
 
@@ -209,7 +209,7 @@ A(Q('&ldquo;For what error or immorality ought I to be rejected, except it be th
   '<aside class=notes>May 1808. He appealed the presbytery&rsquo;s verdict to the Associate Synod at Philadelphia. Richardson: &ldquo;he addressed an earnest appeal to the Synod when his case came up.&rdquo; The Synod read his reasons of protest and appeal on 20 May, and &ldquo;parties were heard.&rdquo;</aside></section>')
 
 A(Q('&ldquo;It is, therefore, because I have <b>no confidence, either in my own infallibility or in that of others</b>, that I absolutely refuse, as inadmissible and schismatic, the introduction of human opinions and human inventions into the faith and worship of the Church.&rdquo;', 'Richardson, <i>Memoirs</i> 1:227', 'May 1808 &middot; his appeal to the Synod at Philadelphia') +
-  '<aside class=notes>Richardson 1:227, two pages on in the same appeal. He had opened it: &ldquo;Honored Brethren: before you come to a final issue in the present business, let me entreat you to pause a moment.&rdquo;</aside></section>')
+  '<aside class=notes>Same appeal, a few lines before the &ldquo;Thus saith the Lord&rdquo; sentence (Richardson 1:226&ndash;27).<br>The Westminster Confession says it too: &ldquo;All synods or councils since the apostles&rsquo; times&hellip; may err, and many have erred&rdquo; (31.4). He is holding the church to its own disclaimer.<br>He had opened it: &ldquo;Honored Brethren: before you come to a final issue in the present business, let me entreat you to pause a moment.&rdquo;</aside></section>')
 
 A(C('The Judgment', 'The Synod set the presbytery&rsquo;s judgment aside for &ldquo;informalities&rdquo; &mdash; then found his answers on the same articles &ldquo;so evasive and unsatisfactory, and highly equivocal&hellip; sufficient grounds to infer censure.&rdquo;'))
 
@@ -232,7 +232,7 @@ A(Q('&ldquo;&hellip;had they possessed the power, he would have suffered martyrd
 A(C('The Break', 'Accuracy: the break is September 1808, three weeks before his family sailed.'))
 
 A(Q('&ldquo;It is with <b>sincere reluctance</b>&hellip; that I find myself in duty bound to refuse submission to their decision as unjust and partial&hellip; And I hereby do <b>decline all ministerial connection with, or subjection to, the Associate Synod of North America</b>.&rdquo;', 'Thomas Campbell, 13&ndash;14 September 1808 &middot; Chartiers Presbytery, Burgettstown', 'September 1808') +
-  '<aside class=notes>He had offered this letter in May and withdrawn it. In September he sent it again. Printed by Alexander, 1861.</aside></section>')
+  '<aside class=notes>He had offered this letter in May and withdrawn it. In September he sent it again. Printed by Alexander, 1861.<br>Read only the gold phrase; say the rest in your own words.</aside></section>')
 
 A('<section class="slide breath"><h1 style="font-size:clamp(36px,7.6vmin,96px);line-height:1.2">And then Campbell discovered that this meant very little.</h1>'
   '<aside class=notes>Your sentence. Black screen; give it a breath.</aside></section>')
@@ -250,7 +250,7 @@ A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, an
 
 A('<section class="slide idea room"><div class="eyebrow quiet">Idea 1 of 4</div>'
   '<h2>The unity movement <span style="color:var(--gold)">did not begin in America.</span></h2>'
-  '<aside class=notes>Close his half of the hour on his own sentence. It returns once more at the end of the Alexander section.</aside></section>')
+  '<aside class=notes>He was working for unity in a divided Ireland &mdash; the missionary society, the Burgher reunion &mdash; years before America. He brought that work with him.</aside></section>')
 
 A('<section class="slide idea room"><div class="eyebrow quiet">Idea 2 of 4</div>'
   '<h2>They divided over <span style="color:var(--gold)">hospitality, not doctrine.</span></h2>'
@@ -268,7 +268,7 @@ A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
   '<h2>What is beautiful here? What do we carry forward?</h2>'
   '<div class="sub frag">What &ldquo;testimonies&rdquo; &mdash; written or unwritten &mdash; do we treat as terms of fellowship today?</div>'
   '<div class="sub frag">Who around us has gone years without being invited to the table?</div>'
-  '<aside class=notes>~minute 40.</aside></section>')
+  '<aside class=notes>~minute 40.<br>If the room is slow: &ldquo;Have you ever stayed at a table you no longer believed in &mdash; or left one?&rdquo;<br>Close the loop to slide 8: Brownlow&rsquo;s 1945 sentence &mdash; &ldquo;no man or set of men has the right to judge&rdquo; &mdash; is where this trial ends up. Our own church&rsquo;s tract.</aside></section>')
 
 A(W1_SITESLIDE)
 
@@ -308,7 +308,8 @@ A('<section class="slide"><div class=eyebrow><span style="color:var(--gold)">2 &
   '<h2>Ewing told him the story of the Haldanes.</h2>'
   '<div class="sub frag">Two Scottish <b>laymen</b> who began preaching the gospel without ordination.</div>'
   '<div class="sub frag">The church courts fought them at every turn.</div>'
-  + N('Alexander was often at Ewing&rsquo;s house. Ewing told him about the Haldanes &mdash; Robert and James, wealthy laymen who took up preaching.',
+  + N('Alexander was often at Ewing&rsquo;s house. Ewing told him about the Haldanes &mdash; Robert and James, wealthy ex-navy laymen. James preached for years before he was ordained; Robert funded the movement.',
+      'Ewing himself: left the Church of Scotland in 1798 to join them; ran their Glasgow Tabernacle and seminary; started weekly communion there. Their 1799 church was founded to avoid &ldquo;that contracted spirit which would exclude from the pulpit, or from occasional communion, any faithful preacher of the gospel or sincere lover of Christ&rdquo; (1:166) &mdash; Conemaugh, eight years early.',
       'Article 3 echo: his father was condemned for letting elders &mdash; non-ministers &mdash; pray and exhort.',
       'The established clergy opposed them at every turn. Richardson: &ldquo;unscrupulous methods,&rdquo; power used &ldquo;in an arbitrary manner.&rdquo;',
       'Richardson says this story, more than anything, is what changed Alexander&rsquo;s mind.',
@@ -339,13 +340,16 @@ A(Q('&ldquo;His conscientious misgivings as to the propriety of sanctioning any 
   N('Both pulls at once: taking part would put his stamp of approval on the system &mdash; but he still felt bound to every duty of that church.',
     'What he would be leaving: &ldquo;the Seceder Church to which <b>his father and the family belonged</b>&rdquo; (1:189).',
     'He waited for the last table &ldquo;in hopes of being able to overcome his scruples.&rdquo; He wanted to stay.',
-    '&rarr; Participation is sanction. The father: you may not make this table a test. The son: I will not let this table make me a witness.'))
+    '&rarr; Participation is sanction. The father: you may not make this table a test. The son: I will not let this table make me a witness.',
+    'Read only the gold phrase. Hit the word <b>sanctioning</b> hard.'))
 
 A(Q('&ldquo;&hellip;the ring of the token, falling upon the plate, announced the instant at which he renounced Presbyterianism for ever &mdash; <b>the leaden voucher becoming thus a token not of communion but of separation</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:190', '', 'slide hard') +
-  N('His doubts did not settle.',
+  N('His doubts did not settle. Call back the mast: the boy who vowed his life to his father&rsquo;s ministry.',
     'When the plate came around, he dropped his token on it.',
     'When the bread and wine came down the table, he &ldquo;declined to partake.&rdquo;',
-    'He told no one. Collected his certificate of good standing on the way out.'))
+    'He told no one. Collected his certificate of good standing on the way out.',
+    '<b>&rarr; Through-line: who sets the terms of the table?</b> Third time.',
+    'Then silence. Do not explain it.'))
 
 A(C('Family Reunion', ''))
 
@@ -359,7 +363,8 @@ A('<section class="slide"><div class=eyebrow>19 October 1809 &middot; the road i
       'Source: Richardson 1:219&ndash;20.'))
 
 A(Q('&ldquo;&hellip;instead of <b>fearing opposition from him</b> to the views to which he had himself been definitely brought while in Glasgow, he found him already, though by a somewhat different method, <b>led practically to the very same conclusions</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:220', 'On the road') +
-  N('Six months he had carried it alone: &ldquo;as yet confined to his own heart&rdquo; (1:190).',
+  N('Read only the gold phrases.',
+    'Six months he had carried it alone: &ldquo;as yet confined to his own heart&rdquo; (1:190).',
     'He expected his father to oppose him.',
     'Instead: by different roads, the same place.',
     'The father&rsquo;s side mirrors it: &ldquo;compelled suddenly to turn away&hellip; from the religious body which he had <b>loved and espoused</b>&rdquo; (1:221). Neither left lightly.'))
@@ -367,7 +372,7 @@ A(Q('&ldquo;&hellip;instead of <b>fearing opposition from him</b> to the views t
 A('<section class="slide hard"><h2>The father opened the table to people who had no token.</h2>'
   '<div class="sub frag">The son held a valid token, and would not use it.</div>'
   '<div class="sub frag"><b>Neither knew.</b></div>'
-  + N('Say it plain and stop.'))
+  + N('Say it plain and stop. Let the silence sit before you click.'))
 
 A(Q('&ldquo;The Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ&hellip;&rdquo;', '<i>Declaration and Address</i>, 1809', 'That fall they asked him to write down what they stood for', 'slide',
     '<div class="sub frag">Next week: <b>the Declaration and Address</b>.</div>') +
