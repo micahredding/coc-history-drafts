@@ -119,7 +119,7 @@ A('<section class="slide"><div class=eyebrow>1804</div>'
 
 A('<section class="slide breath sect"><h2>Unity vs Authority</h2><div class=table-line></div>'
   '<div class=sub>Unity failed.</div>'
-  '<aside class=notes>Card. Two tries in Ireland, both closed by his own church courts. Then the ship.<br>Running long? Slides 24&ndash;25 can be one sentence: &ldquo;Twice he tried to bring Christians together; twice his own church courts shut it down.&rdquo; Protect the court at minute 20.</aside></section>')
+  '<aside class=notes>Card. Two tries in Ireland, both closed by his own church courts. Then the ship.<br>Running long? The missionary-society and reunion slides can be one sentence: &ldquo;Twice he tried to bring Christians together; twice his own church courts shut it down.&rdquo; Protect the court at minute 20.</aside></section>')
 
 A('<section class="slide bleed"><div class=bg><div class="bgimg shipbg"></div></div>'
   '<div class=eyebrow>April 1807 &middot; Londonderry</div>'
@@ -251,7 +251,7 @@ A('<section class="slide idea room"><div class="eyebrow quiet">Idea 3 of 6</div>
 A('<section class="slide idea room"><div class="eyebrow quiet">Idea 4 of 6</div>'
   '<h2>He trusted ordinary believers with <span style="color:var(--gold)">the table, the pulpit, and their own ears.</span></h2>'
   + N('Look at what the charges that held have in common. Four of the five move power from the church court to ordinary believers:',
-      '<b>The table</b> (charge 2): no confession as the gate. Each examines himself &mdash; Brownlow&rsquo;s 1 Cor 11:28, slide 8.',
+      '<b>The table</b> (charge 2): no confession as the gate. Each examines himself &mdash; Brownlow&rsquo;s 1 Cor 11:28 (now in the Addendum).',
       '<b>The pulpit</b> (charge 3): ruling elders &mdash; laymen &mdash; may pray and exhort where there is no minister. Callback: &ldquo;Pray, sir!&rdquo;',
       '<b>Their own ears</b> (charge 4): the people may go and hear whom they choose.',
       '<b>The call</b> (charge 7): the libel allowed only two regular calls &mdash; sent by a presbytery, or ordained to a congregation. His answer: he had &ldquo;the call of some of the most regular and respectable people of that vicinity.&rdquo; The people&rsquo;s invitation counted.',
@@ -270,7 +270,7 @@ A('<section class="slide idea room"><div class="eyebrow quiet">Idea 6 of 6</div>
 
 A('<section class="slide room"><div class=eyebrow>&#9670; for discussion</div>'
   '<h2>What is beautiful here? What do we carry forward?</h2>'
-  '<aside class=notes>~minute 40.<br>Backup prompts (off the slide): What &ldquo;testimonies&rdquo; &mdash; written or unwritten &mdash; do we treat as terms of fellowship today? Who around us has gone years without being invited to the table?<br>If the room is slow: &ldquo;Have you ever stayed at a table you no longer believed in &mdash; or left one?&rdquo;<br>Close the loop to slide 8: Brownlow&rsquo;s 1945 sentence &mdash; &ldquo;no man or set of men has the right to judge&rdquo; &mdash; is where this trial ends up. Our own church&rsquo;s tract.</aside></section>')
+  '<aside class=notes>~minute 40.<br>Backup prompts (off the slide): What &ldquo;testimonies&rdquo; &mdash; written or unwritten &mdash; do we treat as terms of fellowship today? Who around us has gone years without being invited to the table?<br>If the room is slow: &ldquo;Have you ever stayed at a table you no longer believed in &mdash; or left one?&rdquo;<br>Optional close (Brownlow is now in the Addendum): his 1945 sentence &mdash; &ldquo;no man or set of men has the right to judge&rdquo; &mdash; is where this trial ends up. Our own church&rsquo;s tract.</aside></section>')
 
 A(W1_SITESLIDE)
 
