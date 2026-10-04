@@ -281,15 +281,27 @@ A(W1_SITESLIDE)
 
 A(C('Alexander and the Shipwreck', 'The son&rsquo;s story, while the father&rsquo;s is still open. Three points, each a charge the room just judged.'))
 
+A('<section class="slide"><h2 style="max-width:none">October 1808 &mdash; His family sailed</h2>'
+  '<div class=days>'
+  '<div class="d frag"><span class=dn style="flex:0 0 4.6em">Sep 20</span><span>The family sets out for Londonderry. The <i>Hibernia</i> is not ready; they wait eight days.</span></div>'
+  '<div class="d frag"><span class=dn style="flex:0 0 4.6em">Oct 1</span><span>The <i>Hibernia</i> sails, firing her ten cannon in farewell.</span></div>'
+  '<div class="d frag"><span class=dn style="flex:0 0 4.6em">Oct 2</span><span>Out into the Atlantic &mdash; then anchored again off Inishowen.</span></div>'
+  '<div class="d frag"><span class=dn style="flex:0 0 4.6em">Oct 3</span><span>Contrary winds off Malin Head. They run before the gale all night.</span></div>'
+  '<div class="d frag"><span class=dn style="flex:0 0 4.6em">Oct 4</span><span>The coast of Scotland. They anchor in Loch Indaal, on Islay, and wait for wind.</span></div>'
+  '<div class="d frag"><span class=dn style="flex:0 0 4.6em">Oct 7</span><span>Evening. Alexander wakes from a dream: <b>the ship has struck a rock, and the water is rushing in.</b></span></div>'
+  '</div>'
+  + N('Click each date in. Keep it brisk until the last one.',
+      'Thomas had left Alexander, eighteen, in charge of the family in Ireland. Now they sail to join him.',
+      'Oct 7: Alexander dozes while reading to his sister Dorothea. He wakes alarmed &mdash; he dreamed the ship struck a rock and the water rushed in.',
+      'He tells the family: &ldquo;I will not undress to-night. I will lay my shoes within my reach, and be ready to rise at a moment&rsquo;s warning.&rdquo;',
+      'Then stop. Let the dream sit before you click.',
+      'Source: Richardson 1:94&ndash;99.'))
+
 A('<section class="slide bleed"><div class=bg><div class="bgimg wreckbg"></div></div>'
   '<div class=credit>Philippe Jacques de Loutherbourg, <i>A Shipwreck off a Rocky Coast</i><br>Not the <i>Hibernia</i>, and not Islay</div>'
   '<h2>October 1808. His family sailed &mdash; and were wrecked off Islay.</h2>'
-  + N('Thomas had left Alexander, eighteen, in charge of the family in Ireland.',
-      'October 1808: they sail to join him. Blown off course, they anchor in Loch Indaal, off Islay, Scotland.',
-      'Evening of 7 October: Alexander dozes while reading to his sister Dorothea. He wakes alarmed &mdash; he dreamed the ship struck a rock and the water rushed in.',
-      'He tells the family: &ldquo;I will not undress to-night. I will lay my shoes within my reach, and be ready to rise at a moment&rsquo;s warning.&rdquo;',
-      'About ten o&rsquo;clock the gale turns into the bay. The ship drags her anchors onto a sunken rock.',
-      'Source: Richardson 1:98&ndash;99.',
+  + N('About ten o&rsquo;clock that night the gale turns into the bay. The ship drags her anchors onto a sunken rock.',
+      'Source: Richardson 1:99.',
       'Meanwhile his father has been tried and condemned. Alexander does not know.'))
 
 A(Q('&ldquo;He thought of his father&rsquo;s noble life&hellip; and resolved that, if saved from the present peril, <b>he would certainly spend his entire life in the ministry of the gospel</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:101&ndash;02', 'The shipwreck &middot; on the broken mast', 'slide',
