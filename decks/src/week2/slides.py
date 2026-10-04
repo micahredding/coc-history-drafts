@@ -288,7 +288,7 @@ A('<section class="slide"><h2 style="max-width:none">October 1808 &mdash; His fa
   '<div class="d frag"><span class=dn style="flex:0 0 4.6em">Oct 2</span><span>Out into the Atlantic &mdash; then anchored again off Inishowen.</span></div>'
   '<div class="d frag"><span class=dn style="flex:0 0 4.6em">Oct 3</span><span>Contrary winds off Malin Head. They run before the gale all night.</span></div>'
   '<div class="d frag"><span class=dn style="flex:0 0 4.6em">Oct 4</span><span>The coast of Scotland. They anchor in Loch Indaal, on Islay, and wait for wind.</span></div>'
-  '<div class="d frag"><span class=dn style="flex:0 0 4.6em">Oct 7</span><span>Evening. Alexander wakes from a dream: <b>the ship has struck a rock, and the water is rushing in.</b></span></div>'
+  '<div class="d frag"><span class=dn style="flex:0 0 4.6em">Oct 7</span><span>Evening. Alexander wakes from a dream: <b style="color:var(--gold)">the ship has struck a rock, and the water is rushing in.</b></span></div>'
   '</div>'
   + N('Click each date in. Keep it brisk until the last one.',
       'Thomas had left Alexander, eighteen, in charge of the family in Ireland. Now they sail to join him.',
