@@ -279,7 +279,7 @@ A(W1_SITESLIDE)
 
 
 
-A(C('Alexander and the Shipwreck', 'The son&rsquo;s story, while the father&rsquo;s is still open. Three points, each a charge the room just judged.'))
+A(C('Alexander and the Sea', 'The son&rsquo;s story, while the father&rsquo;s is still open. Three points, each a charge the room just judged.'))
 
 A('<section class="slide"><h2 style="max-width:none">October 1808 &mdash; His family sailed</h2>'
   '<div class=days>'
