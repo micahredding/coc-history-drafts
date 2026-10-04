@@ -284,12 +284,18 @@ A(C('Alexander and the Shipwreck', 'The son&rsquo;s story, while the father&rsqu
 A('<section class="slide bleed"><div class=bg><div class="bgimg wreckbg"></div></div>'
   '<div class=credit>Philippe Jacques de Loutherbourg, <i>A Shipwreck off a Rocky Coast</i><br>Not the <i>Hibernia</i>, and not Islay</div>'
   '<h2>October 1808. His family sailed &mdash; and were wrecked off Islay.</h2>'
-  '<div class=sub>Everyone survived. Stranded ten months, Alexander spent the winter at the <b>University of Glasgow</b>.</div>'
   + N('Thomas had left Alexander, eighteen, in charge of the family in Ireland.',
-      'October 1808: they sail to join him. The ship wrecks off Islay, Scotland. Everyone survives.',
-      'Stuck in Scotland ten months. Alexander spends the winter at the University of Glasgow.',
-      'Meanwhile his father has been tried and condemned. Alexander does not know.',
-      '&rarr; In Glasgow, the son runs into the same questions his father was charged with &mdash; one after another.'))
+      'October 1808: they sail to join him. The ship wrecks off Islay, Scotland.',
+      'Meanwhile his father has been tried and condemned. Alexander does not know.'))
+
+A(Q('&ldquo;He thought of his father&rsquo;s noble life&hellip; and resolved that, if saved from the present peril, <b>he would certainly spend his entire life in the ministry of the gospel</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:101&ndash;02', 'The shipwreck &middot; on the broken mast', 'slide',
+    '<div class="sub frag">Everyone survived. Stranded ten months, Alexander spent the winter at the <b>University of Glasgow</b>.</div>') +
+  N('Night, the storm still on, no help in sight.',
+    'Alexander sits on the stump of the broken mast, expecting to die.',
+    'He thinks of his father&rsquo;s life &mdash; and vows: if he lives, he will give his whole life to the ministry.',
+    '&rarr; His calling is born out of admiring his father. Within months, his conscience leads him away from his father&rsquo;s church.',
+    'Click: everyone survives. Stuck in Scotland ten months; the winter at the University of Glasgow.',
+    '&rarr; In Glasgow, the son runs into the same questions his father was charged with &mdash; one after another.'))
 
 # --- 1 · occasional hearing (Article 4)
 A('<section class="slide"><div class=eyebrow><span style="color:var(--gold)">1 &middot; Article 4</span> &middot; Glasgow, winter 1808&ndash;09</div>'
@@ -321,12 +327,6 @@ A(Q('&ldquo;&hellip;an entire emancipation from the control of <b>domineering Sy
     '&rarr; The son only heard these stories. The father was living them: church courts shut down his Irish reunion; a presbytery and a synod condemned him.'))
 
 # --- 3 · the table
-A(Q('&ldquo;He thought of his father&rsquo;s noble life&hellip; and resolved that, if saved from the present peril, <b>he would certainly spend his entire life in the ministry of the gospel</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:101&ndash;02', 'The shipwreck &middot; on the broken mast') +
-  N('Back to the wreck, October 1808. Night, the storm still on, no help in sight.',
-    'Alexander sits on the stump of the broken mast, expecting to die.',
-    'He thinks of his father&rsquo;s life &mdash; and vows: if he lives, he will give his whole life to the ministry.',
-    '&rarr; His calling is born out of admiring his father. Five months later, his conscience leads him away from his father&rsquo;s church.'))
-
 A('<section class="slide"><div class=eyebrow><span style="color:var(--gold)">3 &middot; The table</span> &middot; Glasgow, spring 1809</div>'
   '<h2>The communion season came. He was examined, and given the token.</h2>'
   '<div class="sub frag">Eight hundred communicants. Eight or nine tables. <b>He waited for the last one.</b></div>'
