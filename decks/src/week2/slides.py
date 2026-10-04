@@ -285,7 +285,11 @@ A('<section class="slide bleed"><div class=bg><div class="bgimg wreckbg"></div><
   '<div class=credit>Philippe Jacques de Loutherbourg, <i>A Shipwreck off a Rocky Coast</i><br>Not the <i>Hibernia</i>, and not Islay</div>'
   '<h2>October 1808. His family sailed &mdash; and were wrecked off Islay.</h2>'
   + N('Thomas had left Alexander, eighteen, in charge of the family in Ireland.',
-      'October 1808: they sail to join him. The ship wrecks off Islay, Scotland.',
+      'October 1808: they sail to join him. Blown off course, they anchor in Loch Indaal, off Islay, Scotland.',
+      'Evening of 7 October: Alexander dozes while reading to his sister Dorothea. He wakes alarmed &mdash; he dreamed the ship struck a rock and the water rushed in.',
+      'He tells the family: &ldquo;I will not undress to-night. I will lay my shoes within my reach, and be ready to rise at a moment&rsquo;s warning.&rdquo;',
+      'About ten o&rsquo;clock the gale turns into the bay. The ship drags her anchors onto a sunken rock.',
+      'Source: Richardson 1:98&ndash;99.',
       'Meanwhile his father has been tried and condemned. Alexander does not know.'))
 
 A(Q('&ldquo;He thought of his father&rsquo;s noble life&hellip; and resolved that, if saved from the present peril, <b>he would certainly spend his entire life in the ministry of the gospel</b>.&rdquo;', 'Richardson, <i>Memoirs</i> 1:101&ndash;02', 'The shipwreck &middot; on the broken mast', 'slide',
