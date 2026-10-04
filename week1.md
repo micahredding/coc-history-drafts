@@ -2,6 +2,8 @@
 
 [← All chapters](.)
 
+**Slides:** [Chapter 1 deck](decks/week1-cane-ridge.html)
+
 **The Story:** Thousands came together in a wild experience of unity, centered on open communion. This changed the participants — and left a profound impression of the Spirit calling the church to come together, even if it meant defying human-imposed authority structures.
 
 **The Idea**: Our movement began with open communion. A wild and deep expression of the true identity of the church, that challenged existing authority structures, and emphasized the need for Christian freedom.

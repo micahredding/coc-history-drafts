@@ -2,6 +2,8 @@
 
 [← All chapters](.)
 
+**Slides:** [Chapter 2 deck](decks/week2-thomas-campbell.html) · [as taught 2026-09-20](decks/week2-thomas-campbell-as-taught-2026-09-20.html)
+
 **The Story:** Thomas Campbell was a Presbyterian minister seeking unity in a violent and divided Ireland. In America, he found sectarianism leaving Christians without communion, and opened the table to include them. For this, he was given a heresy trial and condemned. But the unity movement kept growing.
 
 **The Idea**: Our movement began with open communion, and a desire to overcome division. When human hierarchy wrongly divided the body of Christ, we determined we must be free.

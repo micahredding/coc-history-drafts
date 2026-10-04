@@ -1,0 +1,165 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>The Theme Map</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Spectral:ital,wght@0,300;0,400;1,300&display=swap">
+<style>
+  /* One projected screen: Christ at center, three primaries large, five secondaries
+     present but dimmed. Click a theme to spotlight it; click again (or Esc) to reset. */
+  :root{
+    --ground:#100d0a; --bone:#ede4d3; --bone-dim:#b3a68e;
+    --smoke:#7a6e5c; --gold:#c89b3c; --gold-dim:#8a6d2c;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    background:var(--ground);color:var(--bone);
+    font-family:'Spectral',Georgia,serif;overflow:hidden;
+  }
+  #map{position:fixed;inset:0;cursor:default}
+
+  .theme{
+    position:absolute;transform:translate(-50%,-50%);
+    text-align:center;cursor:pointer;user-select:none;
+    transition:opacity .5s ease,color .5s ease,transform .5s ease;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .theme .name{
+    font-family:'IM Fell English SC','IM Fell English',Georgia,serif;
+    letter-spacing:.16em;line-height:1.15;display:block;
+  }
+  .theme .gloss{
+    font-family:'Spectral',Georgia,serif;font-style:italic;font-weight:300;
+    display:block;margin-top:.5em;color:var(--smoke);
+    font-size:clamp(11px,1.7vmin,17px);
+    opacity:0;transition:opacity .5s ease;
+  }
+
+  /* the three primaries — large, core */
+  .primary{color:var(--bone);opacity:.92}
+  .primary .name{font-size:clamp(30px,6.2vmin,66px)}
+
+  /* the five secondaries — present, slightly dimmed, clearly smaller */
+  .secondary{color:var(--bone-dim);opacity:.5}
+  .secondary .name{font-size:clamp(14px,2.5vmin,26px);letter-spacing:.2em}
+
+  /* Christ at the center */
+  #christ{color:var(--gold);opacity:.95}
+  #christ .name{font-size:clamp(22px,4vmin,44px)}
+  #christ .ring{
+    position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    width:clamp(150px,26vmin,290px);height:clamp(150px,26vmin,290px);
+    border:1.5px solid var(--gold);border-radius:50%;opacity:.8;
+    transition:opacity .5s ease;
+    pointer-events:none;
+  }
+
+  /* spotlight state: one theme lit, the rest recede */
+  body.lit .theme{opacity:.14}
+  body.lit .theme.on{
+    opacity:1;color:var(--gold);transform:translate(-50%,-50%) scale(1.06);
+  }
+  body.lit .theme.on .gloss{opacity:1;color:var(--bone-dim)}
+  body.lit #christ:not(.on){opacity:.3}
+  body.lit #christ:not(.on) .ring{opacity:.25}
+  body.lit #christ.on .ring{opacity:1}
+
+  #hint{
+    position:fixed;left:50%;bottom:2vmin;transform:translateX(-50%);
+    font-size:clamp(10px,1.4vmin,14px);color:var(--smoke);opacity:.7;
+    transition:opacity 1s ease;font-style:italic;
+  }
+  #hint.gone{opacity:0}
+
+  @media (prefers-reduced-motion:reduce){
+    .theme,.gloss,#christ .ring{transition:none}
+  }
+</style>
+
+<div id="map">
+
+  <!-- center -->
+  <div class="theme" id="christ" data-key="0" style="left:50%;top:50%">
+    <span class="ring"></span>
+    <span class="name">CHRIST<br>ALONE</span>
+  </div>
+
+  <!-- primaries -->
+  <div class="theme primary" data-key="1" style="left:50%;top:15%">
+    <span class="name">UNITY</span>
+    <span class="gloss">who we gather around — no one fenced out</span>
+  </div>
+  <div class="theme primary" data-key="2" style="left:23%;top:74%">
+    <span class="name">PRIESTHOOD</span>
+    <span class="gloss">every believer empowered — anyone may perform it</span>
+  </div>
+  <div class="theme primary" data-key="3" style="left:77%;top:74%">
+    <span class="name">FUTURE</span>
+    <span class="gloss">the age to come, arriving early</span>
+  </div>
+
+  <!-- secondaries — arranged for balance, not meaning -->
+  <div class="theme secondary" data-key="4" style="left:17%;top:24%">
+    <span class="name">HOMECOMING</span>
+    <span class="gloss">where most distinctive, most catholic</span>
+  </div>
+  <div class="theme secondary" data-key="5" style="left:83%;top:24%">
+    <span class="name">INSTITUTIONAL<br>SELF-SACRIFICE</span>
+    <span class="gloss">willing to dissolve our own structures</span>
+  </div>
+  <div class="theme secondary" data-key="6" style="left:11%;top:50%">
+    <span class="name">FREEDOM</span>
+    <span class="gloss">no conscience coerced</span>
+  </div>
+  <div class="theme secondary" data-key="7" style="left:89%;top:50%">
+    <span class="name">SCIENCE &amp;<br>REASON</span>
+    <span class="gloss">the dignity of the believer's mind</span>
+  </div>
+  <div class="theme secondary" data-key="8" style="left:50%;top:90%">
+    <span class="name">MINIMALISM</span>
+    <span class="gloss">subtract until Christ alone remains</span>
+  </div>
+
+</div>
+<div id="hint">click a theme to highlight it · click again or press Esc to reset · 1–8 select · f fullscreen</div>
+
+<script>
+(function(){
+  var themes=[].slice.call(document.querySelectorAll('.theme'));
+  var hint=document.getElementById('hint');
+  var current=null;
+
+  function reset(){
+    current=null;
+    document.body.classList.remove('lit');
+    themes.forEach(function(t){t.classList.remove('on')});
+  }
+  function light(t){
+    if(current===t){reset();return}
+    current=t;
+    document.body.classList.add('lit');
+    themes.forEach(function(x){x.classList.toggle('on',x===t)});
+  }
+  function fadeHint(){hint.classList.add('gone')}
+
+  themes.forEach(function(t){
+    t.addEventListener('click',function(e){e.stopPropagation();fadeHint();light(t)});
+  });
+  document.getElementById('map').addEventListener('click',reset);
+
+  document.addEventListener('keydown',function(e){
+    if(e.metaKey||e.ctrlKey||e.altKey)return;
+    if(e.key==='Escape'){reset();return}
+    if(e.key==='f'||e.key==='F'){
+      if(document.fullscreenElement)document.exitFullscreen&&document.exitFullscreen();
+      else document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();
+      return;
+    }
+    var t=themes.find(function(x){return x.getAttribute('data-key')===e.key});
+    if(t){fadeHint();light(t)}
+    if(e.key==='0'){fadeHint();light(document.getElementById('christ'))}
+  });
+
+  setTimeout(fadeHint,8000);
+})();
+</script>
+
+</body></html>

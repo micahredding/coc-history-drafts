@@ -1,0 +1,334 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>The Wild Democracy Grid</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap">
+<style>
+  /* Same visual world as the Week 0 deck: night field, bone paper, candle gold. */
+  :root{
+    --ground:#100d0a; --ground-lift:#181310; --panel:#1d1712;
+    --bone:#ede4d3; --bone-dim:#b3a68e; --smoke:#7a6e5c;
+    --gold:#c89b3c; --gold-dim:#8a6d2c; --ink-brown:#5c4a33;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--ground);color:var(--bone);
+    font-family:'Spectral',Georgia,'Times New Roman',serif;font-weight:300;
+    line-height:1.55;padding:clamp(20px,4vw,64px);
+  }
+  ::selection{background:var(--gold-dim);color:var(--ground)}
+  .wrap{max-width:1240px;margin:0 auto}
+
+  /* ---------- header ---------- */
+  .eyebrow{
+    font-family:'IM Fell English SC',Georgia,serif;
+    font-size:clamp(12px,1.4vw,15px);letter-spacing:.26em;color:var(--smoke);
+    margin-bottom:14px;
+  }
+  h1{
+    font-family:'IM Fell English',Georgia,serif;font-weight:400;
+    font-size:clamp(34px,5.2vw,60px);line-height:1.05;text-wrap:balance;
+  }
+  .thesis{
+    font-style:italic;color:var(--bone-dim);max-width:62ch;
+    font-size:clamp(16px,1.8vw,20px);margin-top:16px;text-wrap:balance;
+  }
+  .thesis em{color:var(--gold);font-style:italic}
+
+  /* ---------- the grid ---------- */
+  .gridbox{margin-top:44px;overflow-x:auto}
+  .grid{
+    display:grid;
+    grid-template-columns:minmax(120px,.8fr) repeat(3,minmax(210px,1fr));
+    gap:10px;min-width:840px;
+  }
+  .colhead{
+    padding:14px 16px 12px;text-align:center;
+    border-bottom:2px solid var(--ink-brown);cursor:default;
+  }
+  .colhead h2{
+    font-family:'IM Fell English',Georgia,serif;font-weight:400;
+    font-size:clamp(20px,2.4vw,28px);color:var(--bone);
+  }
+  .colhead .as{
+    font-family:'IM Fell English SC',Georgia,serif;
+    font-size:12px;letter-spacing:.2em;color:var(--smoke);display:block;margin-top:4px;
+  }
+  .colhead.gov{border-bottom-color:var(--gold-dim)}
+  .colhead.gov .tag{
+    display:inline-block;margin-top:8px;padding:2px 10px;
+    font-family:'IM Fell English SC',Georgia,serif;font-size:11px;letter-spacing:.18em;
+    color:var(--gold);border:1px solid var(--gold-dim);border-radius:2px;
+  }
+  .rowhead{
+    display:flex;align-items:center;justify-content:flex-end;
+    padding:14px 16px;text-align:right;cursor:default;
+    border-right:2px solid var(--ink-brown);
+  }
+  .rowhead h3{
+    font-family:'IM Fell English',Georgia,serif;font-weight:400;
+    font-size:clamp(18px,2.1vw,25px);color:var(--bone);
+  }
+  .cell{
+    background:var(--ground-lift);border:1px solid #2a2118;
+    padding:16px 18px 14px;display:flex;flex-direction:column;gap:8px;
+    transition:opacity .25s ease,border-color .25s ease,background .25s ease;
+  }
+  .cell.gov{background:var(--panel)}
+  .cell .k{
+    font-family:'IM Fell English',Georgia,serif;font-style:italic;
+    font-size:clamp(16px,1.8vw,20px);color:var(--gold);line-height:1.25;
+  }
+  .cell p{font-size:clamp(13.5px,1.5vw,15.5px);color:var(--bone-dim)}
+  .cell .anchor{
+    margin-top:auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center;
+    padding-top:8px;
+  }
+  .chip{
+    font-family:'IM Fell English SC',Georgia,serif;font-size:11px;letter-spacing:.12em;
+    color:var(--smoke);border:1px solid var(--ink-brown);border-radius:2px;
+    padding:1px 8px;white-space:nowrap;
+  }
+  .cell.open{border-style:dashed;border-color:var(--ink-brown);background:transparent}
+  .cell.open .k{color:var(--bone-dim)}
+  .chip.openchip{color:var(--gold);border-color:var(--gold-dim)}
+
+  /* hover a column or row header → read that thread */
+  .grid.focus .cell{opacity:.22}
+  .grid.focus .cell.lit{opacity:1;border-color:var(--gold-dim)}
+  .grid.focus .colhead,.grid.focus .rowhead{opacity:.35}
+  .grid.focus .colhead.lit,.grid.focus .rowhead.lit{opacity:1}
+  .colhead,.rowhead{transition:opacity .25s ease}
+
+  /* ---------- vertical readings ---------- */
+  .readings{
+    margin-top:52px;display:grid;gap:18px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  }
+  .reading{border-top:2px solid var(--ink-brown);padding-top:14px}
+  .reading.gov{border-top-color:var(--gold-dim)}
+  .reading h4{
+    font-family:'IM Fell English SC',Georgia,serif;font-weight:400;
+    font-size:14px;letter-spacing:.22em;color:var(--gold);margin-bottom:8px;
+  }
+  .reading p{font-size:15px;color:var(--bone-dim);max-width:52ch}
+  .reading p b{font-weight:500;color:var(--bone)}
+
+  /* ---------- how it docks ---------- */
+  .dock{margin-top:56px;border-top:1px solid #2a2118;padding-top:28px}
+  .dock h4{
+    font-family:'IM Fell English SC',Georgia,serif;font-weight:400;
+    font-size:14px;letter-spacing:.22em;color:var(--smoke);margin-bottom:16px;
+  }
+  .dock .maps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .map{
+    border:1px dashed var(--ink-brown);padding:14px 16px;
+  }
+  .map .k{
+    font-family:'IM Fell English',Georgia,serif;font-style:italic;
+    font-size:17px;color:var(--bone);
+  }
+  .map p{font-size:14px;color:var(--smoke);margin-top:6px}
+  .map p em{color:var(--bone-dim)}
+
+  footer{
+    margin-top:48px;font-size:12.5px;color:var(--smoke);
+    font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.14em;
+  }
+  @media print{body{background:#fff;color:#1a1510}}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">Our Wild Democracy · a working idea map · draft of 29 Aug 2026</div>
+  <h1>Every practice, three ways</h1>
+  <p class="thesis">One claim, run through everything this church does: each practice <em>unites</em> (no one fenced out), <em>empowers</em> (anyone may perform it), and <em>anticipates</em> (the age to come, arriving early). The rows are the practices. The columns are the class's three threads. Hover a row or column head to read it as one line of thought.</p>
+
+  <div class="gridbox">
+  <div class="grid" id="grid">
+    <div class="colhead" style="border-bottom:none"></div>
+    <div class="colhead" data-col="1"><h2>Unity</h2><span class="as">what it unites</span></div>
+    <div class="colhead gov" data-col="2"><h2>Priesthood</h2><span class="as">who it empowers</span><span class="tag">the governance thread</span></div>
+    <div class="colhead" data-col="3"><h2>Future</h2><span class="as">what it anticipates</span></div>
+
+    <!-- THE TABLE -->
+    <div class="rowhead" data-row="1"><h3>The Table</h3></div>
+    <div class="cell" data-col="1" data-row="1">
+      <div class="k">The open table</div>
+      <p>A doctrinal test raised at the door of the table — and withdrawn. Hundreds commune across traditions, in an age when that was not done.</p>
+      <div class="anchor"><span class="chip">W1 · Cane Ridge</span><span class="chip">W2 · the trial</span></div>
+    </div>
+    <div class="cell gov" data-col="2" data-row="1">
+      <div class="k">Anyone may preside</div>
+      <p>A farmer, a teenager, someone who fixes cars all week, at the head of the Supper as unremarkable routine. Nowhere else is the doctrine cashed so literally.</p>
+      <div class="anchor"><span class="chip">W0</span><span class="chip">W5 · Brush Run</span></div>
+    </div>
+    <div class="cell" data-col="3" data-row="1">
+      <div class="k">&ldquo;A taste of the Millennial Church&rdquo;</div>
+      <p>Not a memorial, not a ritual — the age to come, arriving early. The engine the whole story runs on.</p>
+      <div class="anchor"><span class="chip">W0</span><span class="chip">Campbell's first sermon</span></div>
+    </div>
+
+    <!-- BAPTISM -->
+    <div class="rowhead" data-row="2"><h3>Baptism</h3></div>
+    <div class="cell" data-col="1" data-row="2">
+      <div class="k">One sentence at the water</div>
+      <p>The whole entrance exam is a single confession — no creedal gauntlet between a believer and the water. And &ldquo;for remission of sins&rdquo; is the Nicene clause verbatim.</p>
+      <div class="anchor"><span class="chip">W9</span><span class="chip">Acts 2:38</span></div>
+    </div>
+    <div class="cell gov" data-col="2" data-row="2">
+      <div class="k">Anyone may baptize</div>
+      <p>No ordination required at the river. The act that makes Christians was handed to whoever was standing closest.</p>
+      <div class="anchor"><span class="chip">W9</span></div>
+    </div>
+    <div class="cell" data-col="3" data-row="2">
+      <div class="k">The promise, forward</div>
+      <p>Resurrection enacted in advance — &ldquo;and the promise is to your children.&rdquo; A promise made in the past, binding the future.</p>
+      <div class="anchor"><span class="chip">W9</span><span class="chip">Acts 2:39</span></div>
+    </div>
+
+    <!-- SCRIPTURE -->
+    <div class="rowhead" data-row="3"><h3>Scripture</h3></div>
+    <div class="cell" data-col="1" data-row="3">
+      <div class="k">The one book already shared</div>
+      <p>No creed but the Bible: common ground that every tradition at the table already owns. Unity sought in the text, not the confession.</p>
+      <div class="anchor"><span class="chip">W11</span><span class="chip">W3 · D&amp;A</span></div>
+    </div>
+    <div class="cell gov" data-col="2" data-row="3">
+      <div class="k">Every reader an interpreter</div>
+      <p>Plowboys reading Greek; Campbell answering the 1829 convention with &ldquo;a Bible all his own.&rdquo; Interpretation taken back from the clergy.</p>
+      <div class="anchor"><span class="chip">W11 · Living Oracles</span></div>
+    </div>
+    <div class="cell open" data-col="3" data-row="3">
+      <div class="k">Read toward the ending?</div>
+      <p>Study aimed at where God is taking the world — the Harbinger's wager. The cell is real; its scene isn't chosen yet.</p>
+      <div class="anchor"><span class="chip openchip">open</span><span class="chip">W6?</span></div>
+    </div>
+
+    <!-- SINGING -->
+    <div class="rowhead" data-row="4"><h3>Singing</h3></div>
+    <div class="cell" data-col="1" data-row="4">
+      <div class="k">Everyone hears everyone</div>
+      <p>You cannot sing without hearing that everyone around you has a voice — and knowing they hear yours. Mutual, public, repeated knowledge.</p>
+      <div class="anchor"><span class="chip">W0</span><span class="chip">W10</span></div>
+    </div>
+    <div class="cell gov" data-col="2" data-row="4">
+      <div class="k">The instrument no one can hold for you</div>
+      <p>Four-part harmony as distributed ministry — singing schools teaching farmers to carry a part. No performer class; the congregation is the choir.</p>
+      <div class="anchor"><span class="chip">W10 · singing schools</span></div>
+    </div>
+    <div class="cell open" data-col="3" data-row="4">
+      <div class="k">Rehearsing the new song?</div>
+      <p>Worship as practice for the age to come — &ldquo;enacted significance.&rdquo; Needs its scene and its claim stated in Micah's voice.</p>
+      <div class="anchor"><span class="chip openchip">open</span><span class="chip">W10</span></div>
+    </div>
+
+    <!-- CONGREGATION -->
+    <div class="rowhead" data-row="5"><h3>Congregation</h3></div>
+    <div class="cell" data-col="1" data-row="5">
+      <div class="k">Nothing central to capture</div>
+      <p>Autonomy as unity's odd guarantee: no headquarters to seize, no machinery whose control is worth a war. Union sought person by person, table by table.</p>
+      <div class="anchor"><span class="chip">W12</span><span class="chip">W4 · Springfield</span></div>
+    </div>
+    <div class="cell gov" data-col="2" data-row="5">
+      <div class="k">The congregation wields it</div>
+      <p>Plurality of elders; the minister under the elders; a presbytery writing its own last will and testament. Power fully distributed is still power.</p>
+      <div class="anchor"><span class="chip">W12 · Austintown 1830</span><span class="chip">W4</span></div>
+    </div>
+    <div class="cell" data-col="3" data-row="5">
+      <div class="k">A polity for the kingdom</div>
+      <p>Wild democracy as anticipation — allegiance already held for another government. The church governed as if the age to come were the real constitution.</p>
+      <div class="anchor"><span class="chip">W8 · Lipscomb</span></div>
+    </div>
+  </div>
+  </div>
+
+  <!-- ---------- the vertical readings ---------- -->
+  <div class="readings">
+    <div class="reading">
+      <h4>Unity, read down</h4>
+      <p>The homecoming thread. Each practice refuses a fence: the test withdrawn, the creed dropped at the water, the one shared book, the audible mutual voice, the un-capturable center. <b>What looks like absence is an opened door.</b></p>
+    </div>
+    <div class="reading gov">
+      <h4>Priesthood, read down — governance</h4>
+      <p>The middle column <b>is</b> the governance thread. Preside, baptize, interpret, sing, govern — five verbs, all in the hands of the congregation and the individual. Radical decentralization, <b>but not a lack of power</b>: the power didn't dissolve when the offices went; it moved into hands.</p>
+    </div>
+    <div class="reading">
+      <h4>Future, read down</h4>
+      <p>The engine. Every practice is the age to come, arriving early — a foretaste at the table, a promise at the water, a story read toward its ending, a song rehearsed, a polity anticipated. <b>Take this column away and the other two stop making sense.</b></p>
+    </div>
+  </div>
+
+  <!-- ---------- how it docks to the other maps ---------- -->
+  <div class="dock">
+    <h4>How this map connects</h4>
+    <div class="maps">
+      <div class="map">
+        <div class="k">The causal spine, turned 90°</div>
+        <p>The chain — <em>the table is the future → no fence → no gatekeepers → no caste → held by practices</em> — is this grid read as a derivation. The chain proves the columns; the grid verifies them cell by cell.</p>
+      </div>
+      <div class="map">
+        <div class="k">The syllabus, as coverage</div>
+        <p>Weeks 1–8 narrate the <em>Table row</em> slowly — one row, told as story. Weeks 9–12 show the pattern repeating down the other rows. Week 0 could hand out this grid empty and let the class fill it in all semester.</p>
+      </div>
+      <div class="map">
+        <div class="k">Story → Idea → Future</div>
+        <p>The weekly template is one cell's journey: a scene (story), its column (idea), and the standing questions — <em>what is beautiful here? what do we carry forward?</em> (future).</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- ---------- lineage: what the prior idea-collections say ---------- -->
+  <div class="dock">
+    <h4>The lineage — this grid against every prior collection of ideas (researched 29 Aug 2026)</h4>
+    <div class="maps">
+      <div class="map">
+        <div class="k">The Show Bible's three principles (June)</div>
+        <p>The columns are a <em>rediscovery</em>: Unity in Christ · Priesthood of All Believers · Eschatology — the Show Bible's Part II, re-arrived-at from the practices side. It adds the center the grid is missing: the three are &ldquo;three ways <em>Christ alone</em> becomes visible&rdquo; — Christ / Spirit / Kingdom. Christ Alone is not a fourth column; it is what the columns are views of.</p>
+      </div>
+      <div class="map">
+        <div class="k">The minimalism map (May concept map)</div>
+        <p>A fourth-column candidate already written: open communion = <em>fellowship</em> minimalism, non-creedalism = <em>doctrinal</em>, a cappella = <em>economic</em>, governance = <em>political</em>, priesthood = <em>interpretive</em>. Five practices, five cells. The spine later re-derived minimalism as a consequence of the Priesthood column — column or corollary is an open call.</p>
+      </div>
+      <div class="map">
+        <div class="k">The homecoming register (spine)</div>
+        <p>Another candidate column: <em>X as Homecoming</em> — baptism-for-remission is Nicene, weekly communion is Justin Martyr, a cappella is the ancient East. Anchors exist for three of five rows. Where we are most distinctive, we are most catholic.</p>
+      </div>
+      <div class="map">
+        <div class="k">The binding-mechanism verbs (spine ruling)</div>
+        <p>The Priesthood column has an internal <em>progression</em>, not five parallel claims: baptism <em>confers</em> the standing, singing <em>voices</em> it, scripture <em>equips</em> it, governance <em>exercises</em> it — and the table is where it <em>presides</em>. Read in that order, the column is a life, not a list.</p>
+      </div>
+      <div class="map">
+        <div class="k">The interlock (Show Bible Part IV)</div>
+        <p>Three prior collections agree the columns are not equal: unity <em>is</em> eschatological, priesthood <em>is</em> eschatological. The Future column is not a peer — it is the floor the other two stand on. The chain is this same fact stated causally.</p>
+      </div>
+      <div class="map">
+        <div class="k">The bundle-concept warning (May essay)</div>
+        <p>The tradition is not a flat list but a network held in <em>generative tension</em> — unity the polar star, freedom the beating heart. A grid cannot show tension; it shows coverage. So the grid is one projection among several: the <em>chain</em> for narrative, the <em>grid</em> for verification, the <em>naive/mature depth</em> for discussion. None replaces the others.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>A working object — rows, columns, and cells all revisable. Two cells stand open on purpose. Every prior map is honored, none is canonized.</footer>
+</div>
+
+<script>
+(function(){
+  var grid=document.getElementById('grid');
+  var heads=[].slice.call(grid.querySelectorAll('.colhead[data-col],.rowhead[data-row]'));
+  var cells=[].slice.call(grid.querySelectorAll('.cell'));
+  heads.forEach(function(h){
+    h.addEventListener('mouseenter',function(){
+      var col=h.getAttribute('data-col'),row=h.getAttribute('data-row');
+      grid.classList.add('focus');h.classList.add('lit');
+      cells.forEach(function(c){
+        var hit=(col&&c.getAttribute('data-col')===col)||(row&&c.getAttribute('data-row')===row);
+        c.classList.toggle('lit',hit);
+      });
+    });
+    h.addEventListener('mouseleave',function(){
+      grid.classList.remove('focus');h.classList.remove('lit');
+      cells.forEach(function(c){c.classList.remove('lit')});
+    });
+  });
+})();
+</script>
+
+</body></html>

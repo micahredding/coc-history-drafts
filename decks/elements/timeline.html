@@ -1,0 +1,274 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>The Wild Democracy Timeline</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Spectral:ital,wght@0,300;0,400;1,300&display=swap">
+<style>
+  /* Presentation device: a horizontal line of the class's events.
+     Select an event → it lights, and the theme strip above reveals
+     which themes that event supplies. ←/→ walk the story in order. */
+  :root{
+    --ground:#100d0a; --bone:#ede4d3; --bone-dim:#b3a68e;
+    --smoke:#7a6e5c; --gold:#c89b3c; --gold-dim:#8a6d2c; --ink-brown:#5c4a33;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    background:var(--ground);color:var(--bone);
+    font-family:'Spectral',Georgia,serif;overflow:hidden;
+  }
+
+  /* ---------- theme strip ---------- */
+  #christ{
+    position:fixed;left:50%;top:4.5vh;transform:translateX(-50%);
+    font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.22em;
+    font-size:clamp(13px,2vmin,20px);color:var(--gold);opacity:.4;
+    transition:opacity .5s ease;white-space:nowrap;
+  }
+  #primaries{
+    position:fixed;left:50%;top:10.5vh;transform:translateX(-50%);
+    display:flex;gap:8vw;white-space:nowrap;
+  }
+  #secondaries{
+    position:fixed;left:50%;top:18.5vh;transform:translateX(-50%);
+    display:flex;gap:4.5vw;white-space:nowrap;
+  }
+  .th{
+    font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.16em;
+    color:var(--bone);opacity:.5;transition:opacity .5s ease,color .5s ease;
+  }
+  #primaries .th{font-size:clamp(18px,3.2vmin,34px)}
+  #secondaries .th{font-size:clamp(11px,1.7vmin,17px);color:var(--bone-dim);text-align:center}
+  #secondaries .th small{
+    display:block;font-size:.62em;letter-spacing:.22em;margin-top:.25em;
+  }
+  #practices{
+    position:fixed;left:50%;top:25vh;transform:translateX(-50%);
+    display:flex;gap:3.5vw;white-space:nowrap;align-items:baseline;
+  }
+  #practices .th{
+    font-family:'IM Fell English',Georgia,serif;font-style:italic;letter-spacing:.04em;
+    font-size:clamp(12px,1.9vmin,19px);color:var(--bone-dim);opacity:.45;
+  }
+  body.lit .th{opacity:.14}
+  body.lit .th.on{opacity:1;color:var(--gold)}
+  /* ID-scoped rows set their own color/opacity, which outranks .on — override explicitly */
+  #secondaries .th.on,#practices .th.on{color:var(--gold);opacity:1}
+  body.lit #secondaries .th,body.lit #practices .th{opacity:.14}
+  body.lit #secondaries .th.on,body.lit #practices .th.on{opacity:1}
+  body.lit #christ{opacity:.14}
+  body.lit #christ.on{opacity:1}
+
+  /* ---------- timeline ---------- */
+  #rail{
+    position:fixed;left:4vw;right:4vw;top:52vh;height:2px;
+    background:var(--ink-brown);
+  }
+  #rail .arrowcap{
+    position:absolute;right:-2px;top:-5px;width:0;height:0;
+    border-left:12px solid var(--ink-brown);
+    border-top:6px solid transparent;border-bottom:6px solid transparent;
+  }
+  #beyond{
+    position:fixed;right:4vw;top:55.5vh;
+    font-family:'IM Fell English',Georgia,serif;font-style:italic;
+    font-size:clamp(11px,1.6vmin,16px);color:var(--smoke);
+    text-align:right;
+  }
+  .brk{
+    position:fixed;top:50.2vh;width:14px;height:6px;color:var(--ground);
+    border-left:3px solid var(--ground);border-right:3px solid var(--ground);
+    background:var(--ground);transform:skewX(-24deg);
+  }
+
+  .ev{
+    position:fixed;top:52vh;transform:translateX(-50%);
+    cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;
+    transition:opacity .45s ease;
+  }
+  .ev .tick{
+    position:absolute;left:50%;transform:translateX(-50%);
+    width:2px;background:var(--bone-dim);transition:background .45s ease;
+  }
+  .ev.up .tick{bottom:1px;height:2.6vh}
+  .ev.dn .tick{top:1px;height:2.6vh}
+  .ev .lab{
+    position:absolute;left:50%;transform:translateX(-50%);
+    text-align:center;width:max-content;max-width:16vw;
+  }
+  .ev.up .lab{bottom:3.4vh}
+  .ev.dn .lab{top:3.4vh}
+  .ev .yr{
+    font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.14em;
+    font-size:clamp(11px,1.7vmin,17px);color:var(--gold-dim);display:block;
+    transition:color .45s ease;
+  }
+  .ev .nm{
+    font-family:'IM Fell English',Georgia,serif;font-style:italic;
+    font-size:clamp(12px,1.9vmin,19px);line-height:1.25;color:var(--bone-dim);
+    display:block;margin-top:.2em;transition:color .45s ease;
+  }
+  body.lit .ev{opacity:.28}
+  body.lit .ev.on{opacity:1}
+  .ev.on .yr{color:var(--gold)}
+  .ev.on .nm{color:var(--bone)}
+  .ev.on .tick{background:var(--gold)}
+
+  /* ---------- caption ---------- */
+  #cap{
+    position:fixed;left:50%;bottom:9vh;transform:translateX(-50%);
+    width:min(78ch,86vw);text-align:center;
+    opacity:0;transition:opacity .5s ease;
+  }
+  #cap.show{opacity:1}
+  #cap .pull{
+    font-family:'IM Fell English',Georgia,serif;font-style:italic;
+    font-size:clamp(16px,2.9vmin,30px);line-height:1.4;color:var(--bone);
+    text-wrap:balance;
+  }
+  #cap .wk{
+    font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.2em;
+    font-size:clamp(10px,1.5vmin,15px);color:var(--smoke);
+    display:block;margin-top:1.4vh;
+  }
+  #hint{
+    position:fixed;left:50%;bottom:2vmin;transform:translateX(-50%);
+    font-size:clamp(10px,1.4vmin,14px);color:var(--smoke);opacity:.7;
+    font-style:italic;transition:opacity 1s ease;white-space:nowrap;
+  }
+  #hint.gone{opacity:0}
+
+  @media (prefers-reduced-motion:reduce){
+    .ev,.th,#cap,#christ,.ev .yr,.ev .nm,.ev .tick{transition:none}
+  }
+</style>
+
+<div id="christ" data-t="christ">CHRIST ALONE</div>
+<div id="primaries">
+  <span class="th" data-t="unity">UNITY</span>
+  <span class="th" data-t="priesthood">PRIESTHOOD</span>
+  <span class="th" data-t="future">FUTURE</span>
+</div>
+<div id="secondaries">
+  <span class="th" data-t="homecoming">HOMECOMING</span>
+  <span class="th" data-t="sacrifice">SELF-SACRIFICE</span>
+  <span class="th" data-t="freedom">FREEDOM<small>OF CONSCIENCE</small></span>
+  <span class="th" data-t="science">SCIENCE &amp; REASON</span>
+  <span class="th" data-t="minimalism">MINIMALISM</span>
+</div>
+<div id="practices">
+  <span class="th" data-t="table">the Table</span>
+  <span class="th" data-t="baptism">Baptism</span>
+  <span class="th" data-t="scripture">Scripture</span>
+  <span class="th" data-t="singing">Singing</span>
+  <span class="th" data-t="congregation">Congregation</span>
+</div>
+
+<div id="rail"><span class="arrowcap"></span></div>
+<div id="beyond">…the age<br>to come</div>
+<div id="deck"></div>
+<div id="cap"><div class="pull"></div><span class="wk"></span></div>
+<div id="hint">click an event · ← → walk the story in order · Esc clears · f fullscreen</div>
+
+<script>
+(function(){
+  // x = percent across the rail (rail spans 4vw..96vw). Break in scale before 2026.
+  var EVENTS=[
+    {x:5,  yr:"1801",    nm:"The Cane Ridge\nCommunion",        t:["unity","priesthood","future","christ","table"],
+     pull:"One table, many traditions — the whole class in miniature.", wk:"Week 1"},
+    {x:12, yr:"1804",    nm:"The Last Will\n& Testament",       t:["sacrifice","unity","freedom","congregation"],
+     pull:"A presbytery writes its own death — dissolving itself for the body's sake.", wk:"Week 4"},
+    {x:19, yr:"1807–09", nm:"Thomas Campbell's\nTrial",         t:["unity","freedom","table"],
+     pull:"Censured for opening the table. The founding rupture was caused by a meal.", wk:"Week 2"},
+    {x:26, yr:"1809",    nm:"The Declaration\n& Address",       t:["unity","minimalism","freedom","christ","scripture"],
+     pull:"“The Church of Christ upon earth is essentially, intentionally, and constitutionally one.”", wk:"Week 3"},
+    {x:33, yr:"1812",    nm:"The Brush Run\nOrdination",        t:["priesthood","congregation","table"],
+     pull:"Authority conferred by the gathered congregation — every assembly apostolic.", wk:"Week 5"},
+    {x:40, yr:"1826",    nm:"The Living\nOracles",              t:["priesthood","science","scripture"],
+     pull:"A fresh translation in the people's own language — the text handed to every reader.", wk:"Week 11"},
+    {x:47, yr:"1830",    nm:"The Millennial\nHarbinger",        t:["future","science","scripture"],
+     pull:"Restoration as the herald of the age to come — faith at the frontier of thought.", wk:"Week 6"},
+    {x:53.5,yr:"1830",   nm:"Austintown",                       t:["sacrifice","priesthood","congregation"],
+     pull:"The association dissolves itself rather than become a ruler.", wk:"Week 12"},
+    {x:60, yr:"1832",    nm:"The Merger\nat Lexington",         t:["unity","priesthood","table","scripture"],
+     pull:"Union on the commitment to Scripture — not on conclusions from it.", wk:"Week 7"},
+    {x:66.5,yr:"1837",   nm:"The Lunenburg\nLetter",            t:["unity","freedom","baptism"],
+     pull:"A high view of baptism that refuses to weaponize it — conviction without coercion.", wk:"Week 9"},
+    {x:73, yr:"1820s–40s",nm:"The Singing\nSchools",            t:["priesthood","minimalism","singing"],
+     pull:"Farmers taught to carry a part — every voice the instrument.", wk:"Week 10"},
+    {x:80.5,yr:"1861–65",nm:"Lipscomb &\nthe Civil War",        t:["future","freedom","congregation"],
+     pull:"Allegiance already held for another government — the vision tested by fire.", wk:"Week 8"},
+    {x:92, yr:"2026",    nm:"This Class,\nThis Table",          t:["unity","future","homecoming","table"],
+     pull:"A mixed-tradition congregation — exactly what the movement was at its birth. The story is unfinished.", wk:"Week 0 · and every week"},
+  ];
+  var BREAK_X=86.5; // scale break between 1865 and 2026
+
+  var deck=document.getElementById('deck');
+  var cap=document.getElementById('cap');
+  var capPull=cap.querySelector('.pull');
+  var capWk=cap.querySelector('.wk');
+  var hint=document.getElementById('hint');
+  var ths=[].slice.call(document.querySelectorAll('.th'));
+  var christ=document.getElementById('christ');
+  var current=-1;
+
+  // rail spans 4vw..96vw → x% maps into that band
+  function vx(p){return (4+p*0.92)+'vw'}
+
+  var nodes=EVENTS.map(function(e,i){
+    var d=document.createElement('div');
+    d.className='ev '+(i%2?'dn':'up');
+    d.style.left=vx(e.x);
+    d.innerHTML='<span class="tick"></span><span class="lab"><span class="yr">'+e.yr+
+      '</span><span class="nm">'+e.nm.replace(/\n/g,'<br>')+'</span></span>';
+    d.addEventListener('click',function(ev){ev.stopPropagation();select(i)});
+    deck.appendChild(d);
+    return d;
+  });
+
+  // scale-break glyph
+  var b=document.createElement('div');
+  b.className='brk';b.style.left='calc('+vx(BREAK_X)+' - 7px)';
+  document.body.appendChild(b);
+
+  function reset(){
+    current=-1;
+    document.body.classList.remove('lit');
+    nodes.forEach(function(n){n.classList.remove('on')});
+    ths.forEach(function(t){t.classList.remove('on')});
+    christ.classList.remove('on');
+    cap.classList.remove('show');
+  }
+  function select(i){
+    if(i===current){reset();return}
+    current=i;
+    var e=EVENTS[i];
+    document.body.classList.add('lit');
+    nodes.forEach(function(n,k){n.classList.toggle('on',k===i)});
+    ths.forEach(function(t){t.classList.toggle('on',e.t.indexOf(t.getAttribute('data-t'))>-1)});
+    christ.classList.toggle('on',e.t.indexOf('christ')>-1);
+    capPull.textContent=e.pull;
+    capWk.textContent=e.wk;
+    cap.classList.add('show');
+    fadeHint();
+  }
+  function fadeHint(){hint.classList.add('gone')}
+
+  document.body.addEventListener('click',reset);
+  document.addEventListener('keydown',function(ev){
+    if(ev.metaKey||ev.ctrlKey||ev.altKey)return;
+    switch(ev.key){
+      case 'ArrowRight':case ' ':ev.preventDefault();select(Math.min(EVENTS.length-1,current+1));break;
+      case 'ArrowLeft':ev.preventDefault();select(Math.max(0,current-1));break;
+      case 'Escape':reset();break;
+      case 'Home':select(0);break;
+      case 'End':select(EVENTS.length-1);break;
+      case 'f':case 'F':
+        if(document.fullscreenElement)document.exitFullscreen&&document.exitFullscreen();
+        else document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();
+        break;
+    }
+  });
+  setTimeout(fadeHint,9000);
+})();
+</script>
+
+</body></html>

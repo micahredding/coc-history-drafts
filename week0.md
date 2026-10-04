@@ -2,6 +2,8 @@
 
 [← All chapters](.)
 
+**Slides:** [Prologue deck](decks/week0-overview.html) · **Visuals:** [Timeline](decks/elements/timeline.html) · [Theme Map](decks/elements/theme-map.html) · [Wild Democracy Grid](decks/elements/grid.html)
+
 **The Story:** This is a class about a table — and about what a group of people on the American frontier were willing to tear down in order to keep anyone from standing in front of it.
 
 **The Idea**: The Lord's Supper is the age to come, arriving early. Nearly everything distinctive about the Churches of Christ follows from a refusal to let anything stand between people and that future.

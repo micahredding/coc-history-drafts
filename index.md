@@ -4,9 +4,9 @@ A movement drawn together from reformers, farmers, clergy, and laypeople of many
 
 ## Chapters
 
-- [Prologue — Overview / Introduction](week0)
-- [Chapter 1 — Cane Ridge Communion](week1)
-- [Chapter 2 — Thomas Campbell's Heresy Trial](week2)
+- [Prologue — Overview / Introduction](week0) · [slides](decks/week0-overview.html)
+- [Chapter 1 — Cane Ridge Communion](week1) · [slides](decks/week1-cane-ridge.html)
+- [Chapter 2 — Thomas Campbell's Heresy Trial](week2) · [slides](decks/week2-thomas-campbell.html)
 - [Chapter 3 — Declaration & Address](week3)
 - [Chapter 4 — Rise and Fall of the Springfield Presbytery](week4)
 - [Chapter 5 — Where two or three gather: Brush Run Ordination](week5)
@@ -17,3 +17,11 @@ A movement drawn together from reformers, farmers, clergy, and laypeople of many
 - [Chapter 10 — The Story of Congregational Singing](week10)
 - [Chapter 11 — The Story of Studying Scripture](week11)
 - [Chapter 12 — The Story of Governance](week12)
+
+## Visuals
+
+- [The Wild Democracy Timeline](decks/elements/timeline.html) — click an event; ← → walk the story in order
+- [The Theme Map](decks/elements/theme-map.html) — click a theme to highlight it
+- [The Wild Democracy Grid](decks/elements/grid.html) — every practice, three ways: unity, priesthood, future
+
+In the slides: → / space / click to advance · f fullscreen · p opens the presenter window with notes (Chapters 1–2).
