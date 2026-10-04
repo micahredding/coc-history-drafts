@@ -81,6 +81,8 @@ A(Q('&ldquo;Thou, O God, art our refuge and strength, a very present help in tro
 A('<section class="slide"><h2>The captain listened to the end, bowed, and rode away with his troop.</h2>'
   '<aside class=notes>Richardson: &ldquo;No sooner was the first verse uttered than the captain paused, and, apparently impressed, bent his head, listened to the close, then bowed, and retracing his steps, mounted his horse and dashed away with the entire troop.&rdquo; Family tradition, written down seventy years later &mdash; say &ldquo;as the story goes.&rdquo;<br>&rarr; Nothing was taken from him that day.</aside></section>')
 
+A(C('Ireland', 'Card. From the one Sunday to the whole decade.'))
+
 A('<section class="slide"><div class=eyebrow>Armagh &middot; the 1790s</div>'
   '<h2>Ireland was tearing itself apart.</h2>'
   '<div class=sub>Orangemen and Defenders by night. The United Irishmen by secret oath. Most of his own people had joined.</div>'
