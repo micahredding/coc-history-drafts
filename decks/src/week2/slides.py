@@ -51,6 +51,10 @@ A('<section class="slide"><div class=eyebrow>Three Instigators</div>'
   '<div class=facecred>Stone: memorial portrait at the Cane Ridge shrine, a later painting (photo Chris Light, CC BY-SA 4.0). Alexander Campbell at about 65.</div>'
   '<aside class=notes>Name them once. Stone&rsquo;s story was last week; the Campbells are today. They meet in 1824 and their movements merge in 1832 (Chapter 7).</aside></section>')
 
+A('<section class="slide"><div class=eyebrow>Quiz</div>'
+  '<h2>We are Christians only&hellip;</h2>'
+  '<div class="sub frag">&hellip;but not the only Christians.</div></section>')
+
 A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Chapter 2</div>'
   '<h1>Thomas Campbell&rsquo;s Heresy Trial</h1><div class=table-line></div>'
   '<div class=sub>Ireland 1798 &mdash; Pennsylvania 1810</div>'
