@@ -72,7 +72,8 @@
     document.body.classList.add('preview');
     var pvS=-1,pvM='',pvPushed=false;
     function pvApply(c,m){
-      var n=Math.min(slides.length-1,Math.max(0,c)+1);
+      var off=parseInt(q.get('off')||'1',10);if(isNaN(off))off=1;
+      var n=Math.min(slides.length-1,Math.max(0,c)+off);
       if(n!==pvS||m!==pvM){pvS=n;pvM=m;
         document.body.classList.toggle('present',m==='present');goto(n,true)}
     }
@@ -91,16 +92,20 @@
     var pbase=location.href.split(/[?#]/)[0];
     pres.innerHTML='<div class=pcol><div class=pn id=ppn></div><div class=pt id=ppt></div>'+
       '<div class=pnotes id=ppnotes></div></div>'+
-      '<div class=pside><div class=plabel id=pplabel>NEXT</div>'+
-      '<div class=pwrap id=ppwrap><iframe id=ppif src="'+pbase+'?preview=1"></iframe></div>'+
+      '<div class=pside><div class=plabel>NOW &middot; fully built</div>'+
+      '<div class=pwrap id=ppwrap0><iframe id=ppif0 src="'+pbase+'?preview=1&off=0"></iframe></div>'+
+      '<div class=plabel id=pplabel>NEXT</div>'+
+      '<div class=pwrap id=ppwrap><iframe id=ppif src="'+pbase+'?preview=1&off=1"></iframe></div>'+
       '<div class=pnexttitle id=ppnt></div>'+
       '<div class=pkeys>arrows / space advance the deck from here too</div></div>';
     var ppif=document.getElementById('ppif'),ppwrap=document.getElementById('ppwrap');
-    function pfit(){ppif.style.transform='scale('+(ppwrap.clientWidth/1920)+')'}
+    var ppif0=document.getElementById('ppif0'),ppwrap0=document.getElementById('ppwrap0');
+    function pfit(){ppif.style.transform='scale('+(ppwrap.clientWidth/1920)+')';
+      ppif0.style.transform='scale('+(ppwrap0.clientWidth/1920)+')'}
     pfit();window.addEventListener('resize',pfit);setTimeout(pfit,300);
-    function ppush(){try{ppif.contentWindow&&ppif.contentWindow.postMessage(
-      {w1:1,cur:sharedCur(),mode:LS.get('w1mode')||'read'},'*')}catch(e){}}
-    ppif.addEventListener('load',ppush);
+    function ppush(){var m={w1:1,cur:sharedCur(),mode:LS.get('w1mode')||'read'};
+      [ppif,ppif0].forEach(function(f){try{f.contentWindow&&f.contentWindow.postMessage(m,'*')}catch(e){}})}
+    ppif.addEventListener('load',ppush);ppif0.addEventListener('load',ppush);
     var last=-1;
     function tick(){
       var c=sharedCur();ppush();
