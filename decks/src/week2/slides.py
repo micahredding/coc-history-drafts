@@ -313,7 +313,7 @@ A(Q('&ldquo;He thought of his father&rsquo;s noble life&hellip; and resolved tha
 
 # --- 1 · occasional hearing (Article 4)
 A('<section class="slide"><div class=eyebrow><span style="color:var(--gold)">1 &middot; Article 4</span> &middot; Glasgow, winter 1808&ndash;09</div>'
-  '<h2>His own church&rsquo;s minister was dull. So he went to hear other preachers.</h2>'
+  '<h2>He went to hear other preachers.</h2>'
   '<div class="sub frag">Above all <b>Greville Ewing</b> &mdash; fifteen hundred people in a converted circus.</div>'
   '<div class="sub frag">The very thing his father was convicted for: <b>&ldquo;occasional hearing.&rdquo;</b></div>'
   + N('Article 4: his father was condemned for saying our people may hear ministers outside our church.',
