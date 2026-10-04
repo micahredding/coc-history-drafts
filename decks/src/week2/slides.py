@@ -257,10 +257,14 @@ A('<section class="slide idea room"><div class="eyebrow quiet">Idea 1 of 6</div>
   '<aside class=notes>He was working for unity in a divided Ireland &mdash; the missionary society, the Burgher reunion &mdash; years before America. He brought that work with him.</aside></section>')
 
 A('<section class="slide idea room"><div class="eyebrow quiet">Idea 2 of 6</div>'
+  '<h2>They divided over <span style="color:var(--gold)">hospitality, not doctrine.</span></h2>'
+  '<aside class=notes>He did not set out to found anything or to dispute a doctrine; he extended the Supper to believers the system had orphaned, holding the fences to be the thing without divine warrant.</aside></section>')
+
+A('<section class="slide idea room"><div class="eyebrow quiet">Idea 3 of 6</div>'
   '<h2>Unity rose from below; <span style="color:var(--gold)">division was enforced from above.</span></h2>'
   '<aside class=notes>The people kept moving toward each other. What stopped them was the authority structure that bound them to other people&rsquo;s fights.<br>&bull; The Burgher oath: a 1747 quarrel over an oath sworn by burgesses of Scottish towns. It never applied in Ireland &mdash; yet it divided Irish Seceders, and then American ones.<br>&bull; 1799: a missionary society open to every denomination. His synod voted it &ldquo;inconsistent with the Secession Testimony.&rdquo;<br>&bull; 1804: the Irish synod at Belfast &ldquo;favorably received&rdquo; the Burgher reunion. Glasgow would not let it come to a vote.<br>&bull; Conemaugh, 1807: the frontier settlers were &ldquo;fragments of religious parties&rdquo; carried over on the tide of emigration, still bound to Old World divisions. The open table was well received in the room. A colleague reported it; no one from Conemaugh was ever heard as a witness.<br>&rarr; Slide 26 set this up: Unity vs Authority.<br>Caveat, if the room romanticizes &ldquo;the people&rdquo;: in 1798 his own congregation turned on him over secret societies. He told the crowd no, too.</aside></section>')
 
-A('<section class="slide idea room"><div class="eyebrow quiet">Idea 3 of 6</div>'
+A('<section class="slide idea room"><div class="eyebrow quiet">Idea 4 of 6</div>'
   '<h2>He trusted ordinary believers with <span style="color:var(--gold)">the table, the pulpit, and their own ears.</span></h2>'
   + N('Look at what the charges that held have in common. Four of the five move power from the church court to ordinary believers:',
       '<b>The table</b> (charge 2): no confession as the gate. Each examines himself &mdash; Brownlow&rsquo;s 1 Cor 11:28, slide 8.',
@@ -271,10 +275,6 @@ A('<section class="slide idea room"><div class="eyebrow quiet">Idea 3 of 6</div>
       '&rarr; Recognizing more than empowering: the people already had faith, judgment, and a voice. He refused to treat them as needing a court&rsquo;s permission.',
       'Honest caveat: the witnesses against him were lay people too (Buffaloe). He was still a Presbyterian minister, not a democrat. Governance is Chapter 12.',
       'Sources: Hanna ch. II (libel), ch. III (his answer to art. 7), ch. IV (petitions).'))
-
-A('<section class="slide idea room"><div class="eyebrow quiet">Idea 4 of 6</div>'
-  '<h2>They divided over <span style="color:var(--gold)">hospitality, not doctrine.</span></h2>'
-  '<aside class=notes>He did not set out to found anything or to dispute a doctrine; he extended the Supper to believers the system had orphaned, holding the fences to be the thing without divine warrant.</aside></section>')
 
 A('<section class="slide idea room"><div class="eyebrow quiet">Idea 5 of 6</div>'
   '<h2>&ldquo;Thus saith the Lord&rdquo; was a check on <span style="color:var(--gold)">new boundaries</span> &mdash; not a test for other people&rsquo;s worship.</h2>'
