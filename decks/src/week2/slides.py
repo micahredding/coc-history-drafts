@@ -129,14 +129,14 @@ A('<section class="slide breath sect"><h2>Unity vs Authority</h2><div class=tabl
   '<aside class=notes>Card. Two tries in Ireland, both closed by his own church courts. Then the ship.<br>Running long? The missionary-society and reunion slides can be one sentence: &ldquo;Twice he tried to bring Christians together; twice his own church courts shut it down.&rdquo; Protect the court at minute 20.</aside></section>')
 
 A('<section class="slide bleed"><div class=bg><div class="bgimg shipbg"></div></div>'
-  '<div class=eyebrow>April 1807 &middot; Londonderry</div>'
   '<h2>His doctor prescribed a sea voyage.</h2>'
-  '<div class=sub>He left his eighteen-year-old son, <b>Alexander</b>, in charge of the family and the school.</div>'
   '<aside class=notes>Teaching, pastoring Ahorey and synod work had produced a debilitating illness; his physician said the only remedy was to get out from under it and prescribed a sea voyage. He sailed 8 April 1807 on the <i>Brutus</i> out of Londonderry, thirty-five days, with a young charge, Hannah Acheson, whom he left with her uncle at Washington. He landed at Philadelphia in May to find the <b>Associate Synod of North America in session</b>, presented his letters from Markethill and Ahorey, and was seated. At his own request he was assigned to the <b>Presbytery of Chartiers</b>, western Pennsylvania, where old neighbours from Ireland had settled. He crossed the mountains and settled near the town of <b>Washington</b>, thirty miles south-west of Pittsburgh. Alexander, eighteen, stayed behind in charge of the family and the school; his story is the section after the site slide, if there is time.</aside></section>')
 
 A('<section class="slide bleed sect"><div class=bg><div class="bgimg shipbg"></div></div>'
   '<div class=credit>Robert Salmon, <i>British Merchantman in the River Mersey off Liverpool</i>, 1809<br>A ship of the kind, not the <i>Brutus</i></div>'
+  '<div class=eyebrow>April 1807 &middot; Londonderry</div>'
   '<h2>Voyage to America</h2><div class=table-line></div>'
+  '<div class=sub>He left his eighteen-year-old son, <b>Alexander</b>, in charge of the family and the school.</div>'
   '<aside class=notes>Card. He sails from Londonderry, 8 April 1807, on the <i>Brutus</i>.</aside></section>')
 
 A('<section class="slide plateslide tight"><div class=eyebrow>August 1807 &middot; seventy miles from home</div>'
