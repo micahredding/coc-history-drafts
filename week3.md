@@ -2,6 +2,8 @@
 
 [← All chapters](.)
 
+**Slides:** [Oct 11 deck: Alexander and the Declaration, part 1](decks/week3-declaration-part1.html) (draft, cliffhanger not yet chosen)
+
 **The Story:** A few decades after the American Declaration of Independence, Thomas Campbell pens a declaration of Christian unity. The body of Christ is already one, and ought not be divided by the arrogance of human opinions. 
 
 **The Idea**: Our movement is a testimony to the freedom and unity of the universal church. Any attempt to impose another mechanism of unity—a creed or ecclesiastical hierarchy—cannot achieve the actual substance of unity in Christ.
