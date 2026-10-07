@@ -27,29 +27,49 @@ for _, w in LEAVES:
     SLICES.append((_x, _x + 2 * R * w / _tw)); _x += 2 * R * w / _tw
 def U(a, b=None): return list(range(a, (b if b is not None else a) + 1))
 
+WIDTH = {}   # unit key (tuple of slice indices) -> drawn width (floored at MINW)
+RAW = {}     # the same by pure halving, no floor: a unit's true share; the base slices are built from it
+def _grow(order):
+    allk = tuple(range(len(LEAVES)))
+    RAW[allk] = WIDTH[allk] = 2 * R
+    prev = [allk]
+    for k in order:
+        cur = [tuple(u[0]) for u in ST[k]]
+        for key in cur:
+            if key in WIDTH: continue
+            parent = next(pk for pk in prev if set(key) <= set(pk))
+            n = sum(1 for c in cur if set(c) <= set(parent))
+            RAW[key] = RAW[parent] / n
+            WIDTH[key] = max(MINW, RAW[key])
+        prev = cur
+    # base slices: each leaf's true share, so a unit is only ever stretched, never squeezed
+    del SLICES[:]
+    x = CX - R
+    for i in range(len(LEAVES)):
+        w = RAW[(i,)]
+        SLICES.append((x, x + w)); x += w
+
 def _layout(units):
-    """Per-unit stretch: a unit narrower than MINW is widened to MINW (its slices scale together);
-    everything else keeps its true width. Returns per-slice (target center, scale), per-unit (center, width), total."""
-    widths = [sum(SLICES[i][1] - SLICES[i][0] for i in u[0]) for u in units]
-    scales = [max(1.0, MINW / w) for w in widths]
-    total = sum(w * sc for w, sc in zip(widths, scales)) + GAP * (len(units) - 1)
+    """Each unit has the width history gave it; its slices scale together to fill it."""
+    total = sum(WIDTH[tuple(u[0])] for u in units) + GAP * (len(units) - 1)
     x = CX - total / 2
     tgt = {}; centers = []
-    for (idx, lab, col, dying), w, sc in zip(units, widths, scales):
+    for idx, lab, col, dying in units:
+        w = WIDTH[tuple(idx)]; base = sum(SLICES[i][1] - SLICES[i][0] for i in idx); sc = w / base
         off = 0
         for i in idx:
             sw = (SLICES[i][1] - SLICES[i][0]) * sc
             tgt[i] = (x + off + sw / 2, sc); off += sw
-        centers.append((x + w * sc / 2, w * sc)); x += w * sc + GAP
+        centers.append((x + w / 2, w)); x += w + GAP
     return tgt, centers, total
 
 def split(pre, post):
     t0, c0, w0 = _layout(pre); t1, c1, w1 = _layout(post)
-    col0 = {}; col1 = {}; dy1 = {}
+    col0 = {}; col1 = {}; dy0 = {}; dy1 = {}; unit0 = {}; unit1 = {}
     for idx, lab, col, dying in pre:
-        for i in idx: col0[i] = col
+        for i in idx: col0[i] = col; unit0[i] = tuple(idx); dy0[i] = dying
     for idx, lab, col, dying in post:
-        for i in idx: col1[i] = col; dy1[i] = dying
+        for i in idx: col1[i] = col; dy1[i] = dying; unit1[i] = tuple(idx)
     out = []
     for i, (xa, xb) in enumerate(SLICES):
         ya = math.sqrt(max(R * R - (xa - CX) ** 2, 0)); yb = math.sqrt(max(R * R - (xb - CX) ** 2, 0))
@@ -57,8 +77,8 @@ def split(pre, post):
              % (xa, CY - ya, R, R, xb, CY - yb, xb, CY + yb, R, R, xa, CY + ya))
         bc = (xa + xb) / 2
         k0 = 'bone-dim' if col0[i] == 'bone' else col0[i]; k1 = 'bone-dim' if col1[i] == 'bone' else col1[i]
-        out.append('<g class="piece%s" style="--dx0:%.1fpx;--sx0:%.3f;--dx1:%.1fpx;--sx1:%.3f;--k0:var(--%s);--k1:var(--%s)"><path d="%s"/></g>'
-                   % (' dying' if dy1[i] else '', t0[i][0] - bc, t0[i][1], t1[i][0] - bc, t1[i][1], k0, k1, d))
+        out.append('<g class="piece%s%s%s" style="--dx0:%.1fpx;--sx0:%.3f;--dx1:%.1fpx;--sx1:%.3f;--k0:var(--%s);--k1:var(--%s)"><path d="%s" vector-effect="non-scaling-stroke"/></g>'
+                   % (' dying0' if dy0[i] else '', ' dying1' if dy1[i] else '', ' moved' if unit0[i] != unit1[i] else '', t0[i][0] - bc, t0[i][1], t1[i][0] - bc, t1[i][1], k0, k1, d))
     pre_keys = {tuple(u[0]) for u in pre}; post_keys = {tuple(u[0]) for u in post}
     def label(u, center, row, cls):
         idx, lab, col, dying = u
@@ -87,7 +107,7 @@ def D(title, line, pre, post, notes, kind='', cut=False):
                 ' cuttable' if cut else '', title, line, split(pre, post), healer, notes))
 
 # ---------- the states, in order ----------
-ARIAN = (U(15), 'Arian', 'c1', True)
+ARIAN = (U(15), 'Arian', 'smoke', True)
 EAST = (U(0), 'Church of|the East', 'c3', False)
 ORIENTAL = (U(1), 'Oriental|Orthodox', 'c2', False)
 ORTHODOX = (U(2), 'Orthodox|East', 'c4', False)
@@ -116,6 +136,8 @@ ST['1747'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, LUTHERAN, ANGLICAN, INDEP, REF
 ST['1806'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, LUTHERAN, ANGLICAN, INDEP, REFORMED, COVEN, SCOTLAND,
               (U(10), 'Burgher|Old Light', 'c3', False), (U(11), 'Burgher|New Light', 'c4', False),
               (U(12), 'Anti-Burgher|Old Light', 'c2', False), (U(13), 'Anti-Burgher|New Light', 'c3', False), ANABAP, ARIAN]
+
+_grow(['325', '431', '451', '482', '1054', '1530', '1527', '1529', '1646', '1690', '1733', '1747', '1806'])
 
 S = []
 A = S.append
