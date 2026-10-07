@@ -49,22 +49,30 @@ def _grow(order):
         w = RAW[(i,)]
         SLICES.append((x, x + w)); x += w
 
-def _layout(units):
+SHRINK = {'325': 170, '431': 124, '451': 90, '482': 64, '1054': 44}   # the Arian remnant, by state; absent = gone
+def _width(key, unit):
+    if unit == tuple(U(15)):
+        return SHRINK.get(key, 0)
+    return WIDTH[unit]
+
+def _layout(units, key):
     """Each unit has the width history gave it; its slices scale together to fill it."""
-    total = sum(WIDTH[tuple(u[0])] for u in units) + GAP * (len(units) - 1)
+    ws = [_width(key, tuple(u[0])) for u in units]
+    total = sum(ws) + GAP * (sum(1 for w in ws if w > 0) - 1)
     x = CX - total / 2
     tgt = {}; centers = []
-    for idx, lab, col, dying in units:
-        w = WIDTH[tuple(idx)]; base = sum(SLICES[i][1] - SLICES[i][0] for i in idx); sc = w / base
+    for (idx, lab, col, dying), w in zip(units, ws):
+        base = sum(SLICES[i][1] - SLICES[i][0] for i in idx); sc = w / base
         off = 0
         for i in idx:
             sw = (SLICES[i][1] - SLICES[i][0]) * sc
-            tgt[i] = (x + off + sw / 2, sc); off += sw
-        centers.append((x + w / 2, w)); x += w + GAP
+            tgt[i] = (x + off + sw / 2, max(sc, 0.001)); off += sw
+        centers.append((x + w / 2, w))
+        if w > 0: x += w + GAP
     return tgt, centers, total
 
-def split(pre, post):
-    t0, c0, w0 = _layout(pre); t1, c1, w1 = _layout(post)
+def split(pre, post, k0, k1):
+    t0, c0, w0 = _layout(pre, k0); t1, c1, w1 = _layout(post, k1)
     col0 = {}; col1 = {}; dy0 = {}; dy1 = {}; unit0 = {}; unit1 = {}
     for idx, lab, col, dying in pre:
         for i in idx: col0[i] = col; unit0[i] = tuple(idx); dy0[i] = dying
@@ -77,12 +85,13 @@ def split(pre, post):
              % (xa, CY - ya, R, R, xb, CY - yb, xb, CY + yb, R, R, xa, CY + ya))
         bc = (xa + xb) / 2
         k0 = 'bone-dim' if col0[i] == 'bone' else col0[i]; k1 = 'bone-dim' if col1[i] == 'bone' else col1[i]
-        out.append('<g class="piece%s%s%s" style="--dx0:%.1fpx;--sx0:%.3f;--dx1:%.1fpx;--sx1:%.3f;--k0:var(--%s);--k1:var(--%s)"><path d="%s" vector-effect="non-scaling-stroke"/></g>'
+        gone = (' gone0' if t0[i][1] <= 0.001 else '') + (' gone1' if t1[i][1] <= 0.001 else '')
+        out.append(('<g class="piece%s%s%s' + gone + '" style="--dx0:%.1fpx;--sx0:%.3f;--dx1:%.1fpx;--sx1:%.3f;--k0:var(--%s);--k1:var(--%s)"><path d="%s" vector-effect="non-scaling-stroke"/></g>')
                    % (' dying0' if dy0[i] else '', ' dying1' if dy1[i] else '', ' moved' if unit0[i] != unit1[i] else '', t0[i][0] - bc, t0[i][1], t1[i][0] - bc, t1[i][1], k0, k1, d))
     pre_keys = {tuple(u[0]) for u in pre}; post_keys = {tuple(u[0]) for u in post}
-    def label(u, center, row, cls):
+    def label(u, center, row, cls, w):
         idx, lab, col, dying = u
-        if not lab: return ''
+        if not lab or w <= 0: return ''
         y = CY + R + 50 + row * 70
         lines = lab.split('|')
         return '<text class="plab %s%s" x="%.0f" y="%d" text-anchor="middle">%s</text>' % (
@@ -91,20 +100,21 @@ def split(pre, post):
     rows = lambda units, centers: 1 if len(units) <= 2 else (2 if len(units) <= 5 else 3)
     r0 = rows(pre, c0); r1 = rows(post, c1)
     for k, (u, (cx_, w)) in enumerate(zip(pre, c0)):
-        if tuple(u[0]) not in post_keys: out.append(label(u, cx_, k % r0, 'pre'))
+        if tuple(u[0]) not in post_keys: out.append(label(u, cx_, k % r0, 'pre', w))
     for k, (u, (cx_, w)) in enumerate(zip(post, c1)):
-        out.append(label(u, cx_, k % r1, 'keep' if tuple(u[0]) in pre_keys else 'post'))
+        out.append(label(u, cx_, k % r1, 'keep' if tuple(u[0]) in pre_keys else 'post', w))
     W = max(w0, w1) + 320
     return '<svg class="splitfig" viewBox="%.0f 0 %.0f %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (CX - W / 2, W, H_, ''.join(out))
 
 def D(title, line, pre, post, notes, kind='', cut=False):
+    """pre/post are state keys into ST."""
     """One division. Headline + line at once; click = the split (+ a second click to heal, if kind='heal')."""
     healer = '<div class="frag healer"></div>' if kind == 'heal' else ''
     return ('<section class="slide divslide%s"><h2>%s</h2>'
             '<div class=line>%s</div>'
             '<div class="failure frag">%s</div>%s'
             '<aside class=notes>%s</aside></section>' % (
-                ' cuttable' if cut else '', title, line, split(pre, post), healer, notes))
+                ' cuttable' if cut else '', title, line, split(ST[pre], ST[post], pre, post), healer, notes))
 
 # ---------- the states, in order ----------
 ARIAN = (U(15), 'Arian', 'smoke', True)
@@ -167,55 +177,55 @@ A(C('Christendom&rsquo;s Search for Unity',
 
 A(D('325 &middot; Council of Nicaea',
     'Arians against non-Arians. A creed, and fifty-six more years of war.',
-    ST['0'], ST['325'], NOTES['325']))
+    '0', '325', NOTES['325']))
 
 A(D('431 &middot; Council of Ephesus',
     'Does Mary bear God? A canon forbidding new creeds, and the Church of the East gone.',
-    ST['325'], ST['431'], NOTES['431']))
+    '325', '431', NOTES['431']))
 
 A(D('451 &middot; Council of Chalcedon',
     'One nature or two? A Definition, &ldquo;not a new creed,&rdquo; and Egypt gone.',
-    ST['431'], ST['451'], NOTES['451']))
+    '431', '451', NOTES['451']))
 
 A(D('482 &middot; The Henotikon',
     'Zeno needs Egypt back. An &ldquo;instrument of union,&rdquo; and thirty-five years of schism with Rome.',
-    ST['451'], ST['482'], NOTES['482'], kind='heal'))
+    '451', '482', NOTES['482'], kind='heal'))
 
 A(D('1054 &middot; The Filioque',
     'One word added to the creed. Legates sent to settle it, and East and West apart.',
-    ST['451'], ST['1054'], NOTES['1054']))
+    '451', '1054', NOTES['1054']))
 
 A(D('1530 &middot; The Augsburg Confession',
     'Luther&rsquo;s protest. A confession offered as the basis for peace, and the West in two.',
-    ST['1054'], ST['1530'], NOTES['1530']))
+    '1054', '1530', NOTES['1530']))
 
 A(D('1527 &middot; Zurich',
     'Infant baptism and the sword. A council ruling, and Felix Manz drowned.',
-    ST['1530'], ST['1527'], NOTES['1527']))
+    '1530', '1527', NOTES['1527']))
 
 A(D('1529 &middot; The Marburg Colloquy',
     'The Lord&rsquo;s Supper. Fourteen articles agreed, and &ldquo;you have a different spirit.&rdquo;',
-    ST['1527'], ST['1529'], NOTES['1529']))
+    '1527', '1529', NOTES['1529']))
 
 A(D('1646 &middot; The Westminster Confession',
     'Three kingdoms at war. One confession for all three, and two thousand ministers ejected.',
-    ST['1529'], ST['1646'], NOTES['1646']))
+    '1529', '1646', NOTES['1646']))
 
 A(D('1690 &middot; The Revolution Settlement',
     'Scotland after the Revolution. Presbytery restored, and the Covenanters outside.',
-    ST['1646'], ST['1690'], NOTES['1690'], cut=True))
+    '1646', '1690', NOTES['1690'], cut=True))
 
 A(D('1733 &middot; The Secession',
     'Patrons appoint ministers. Erskine rebuked, and four ministers walk out.',
-    ST['1690'], ST['1733'], NOTES['1733']))
+    '1690', '1733', NOTES['1733']))
 
 A(D('1747 &middot; The Burgess Oath',
     'May a Seceder swear it? A synod vote, and mutual excommunication.',
-    ST['1733'], ST['1747'], NOTES['1747']))
+    '1733', '1747', NOTES['1747']))
 
 A(D('1799 &middot; 1806 &middot; Old Light, New Light',
     'May the magistrate enforce religion? Revised Testimonies, and each synod in two.',
-    ST['1747'], ST['1806'], NOTES['1799'], cut=True))
+    '1747', '1806', NOTES['1799'], cut=True))
 
 A('<section class="slide flowslide"><div class="eyebrow quiet">325&ndash;1806</div>' + FLOW_SVG +
   '<aside class=notes>The whole picture at once. One river, and every gold bar is a creed, council, oath or settlement offered as a term of unity. Widths are suggestive, not to scale. The faded stream is the Arians; the dotted lens is the Henotikon, the one breach that healed.<br>'
