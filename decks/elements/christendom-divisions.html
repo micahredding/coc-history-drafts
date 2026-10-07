@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Christendom’s Divisions</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap">
+<style>
+  /* Same visual world as the Week 0 deck: night field, bone paper, candle gold. */
+  :root{
+    --ground:#100d0a; --ground-lift:#181310; --panel:#1d1712;
+    --bone:#ede4d3; --bone-dim:#b3a68e; --smoke:#7a6e5c;
+    --gold:#c89b3c; --gold-dim:#8a6d2c; --ink-brown:#5c4a33;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:var(--ground);color:var(--bone);height:100%}
+  body{font-family:'Spectral',Georgia,serif;font-weight:300;display:flex;flex-direction:column;align-items:center;padding:3vmin 2vmin}
+  header{width:min(96vw,1800px);margin-bottom:1.2vmin}
+  .eyebrow{font-family:'IM Fell English SC',Georgia,serif;font-size:clamp(11px,1.4vmin,15px);letter-spacing:.26em;color:var(--smoke)}
+  h1{font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:clamp(22px,3.6vmin,40px);line-height:1.1;color:var(--bone)}
+  h1 em{font-style:italic;color:var(--gold)}
+  svg{width:min(96vw,1800px);height:auto;display:block}
+  .lane{fill:none;stroke:var(--bone-dim);stroke-width:2;stroke-linecap:round}
+  .lane.main{stroke:var(--bone);stroke-width:3}
+  .lane.dying{stroke:var(--smoke);stroke-dasharray:3 7}
+  .lane.schism{stroke:var(--gold-dim);stroke-dasharray:4 6}
+  .node{fill:var(--ground);stroke:var(--gold);stroke-width:2.5}
+  .node.heal{fill:var(--gold-dim);stroke:var(--gold-dim)}
+  .x{font-family:'IM Fell English',Georgia,serif;font-size:22px;fill:var(--smoke)}
+  .lab{font-size:16px;fill:var(--bone-dim)}
+  .lab .yr{font-family:'IM Fell English SC',Georgia,serif;font-size:16px;letter-spacing:.14em;fill:var(--gold)}
+  .lab .ttl{font-family:'IM Fell English',Georgia,serif;font-style:italic;font-size:21px;fill:var(--bone)}
+  .lab .sub{font-family:'Spectral',Georgia,serif;font-size:15px;fill:var(--bone-dim)}
+  .lab.boxed{paint-order:stroke;stroke:var(--ground);stroke-width:9px;stroke-linejoin:round}
+  .lab.boxed .yr,.lab.boxed .ttl,.lab.boxed .sub{paint-order:stroke;stroke:var(--ground);stroke-width:9px;stroke-linejoin:round}
+  .leaf{font-family:'IM Fell English',Georgia,serif;font-size:15px;fill:var(--bone)}
+  .trunk{font-family:'IM Fell English SC',Georgia,serif;font-size:13px;letter-spacing:.16em;fill:var(--smoke)}
+  .trunk.tc{fill:var(--gold-dim);paint-order:stroke;stroke:var(--ground);stroke-width:8px;stroke-linejoin:round}
+  footer{width:min(96vw,1800px);margin-top:1vmin;font-family:'IM Fell English',Georgia,serif;font-style:italic;font-size:clamp(11px,1.5vmin,16px);color:var(--smoke)}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Christendom’s search for unity · 325–1806</div>
+  <h1>Every instrument of unity drew a <em>border</em></h1>
+</header>
+<svg viewBox="0 0 1800 1270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A branching timeline of church divisions from Nicaea in 325 to the Seceder splits of 1806, each labeled with the creed, council, or oath that caused it.">
+<line class="lane main" x1="560" y1="70" x2="560" y2="1150"/>
+<text class="trunk" x="574" y="76" text-anchor="start">the one Church</text>
+<circle class="node split" cx="560" cy="170" r="7"/>
+<path class="lane" d="M560,170 C560,206.0 120,174.0 120,210"/>
+<line class="lane dying" x1="120" y1="210" x2="120" y2="500"/>
+<text class="x" x="120" y="512" text-anchor="middle">×</text>
+<text class="lab" x="582" y="175" text-anchor="start"><tspan x="582" dy="0"><tspan class="yr">325</tspan> <tspan class="ttl">Nicaea — the Nicene Creed</tspan></tspan><tspan class="sub" x="582" dy="19">lost the Arians · war for 56 more years</tspan><tspan class="sub" x="582" dy="19">Arian kingdoms persist until c. 650</tspan></text>
+<circle class="node split" cx="560" cy="250" r="7"/>
+<path class="lane" d="M560,250 C560,286.0 230,254.0 230,290"/>
+<line class="lane" x1="230" y1="290" x2="230" y2="1150"/>
+<text class="lab" x="582" y="255" text-anchor="start"><tspan x="582" dy="0"><tspan class="yr">431</tspan> <tspan class="ttl">Ephesus — Canon 7: no new creed, ever</tspan></tspan><tspan class="sub" x="582" dy="19">lost the Church of the East (Persia)</tspan></text>
+<circle class="node split" cx="560" cy="330" r="7"/>
+<path class="lane" d="M560,330 C560,366.0 340,334.0 340,370"/>
+<line class="lane" x1="340" y1="370" x2="340" y2="1150"/>
+<text class="lab" x="582" y="335" text-anchor="start"><tspan x="582" dy="0"><tspan class="yr">451</tspan> <tspan class="ttl">Chalcedon — the Definition, “not a new creed”</tspan></tspan><tspan class="sub" x="582" dy="19">lost Egypt, Armenia, Ethiopia, Syria</tspan></text>
+<circle class="node heal" cx="560" cy="400" r="6"/>
+<path class="lane schism" d="M560,400 C560,418 588,410 588,426 L588,434 C588,450 560,442 560,460"/>
+<circle class="node heal" cx="560" cy="460" r="6"/>
+<text class="lab" x="610" y="405" text-anchor="start"><tspan x="610" dy="0"><tspan class="yr">482</tspan> <tspan class="ttl">the Henotikon — “instrument of union”</tspan></tspan><tspan class="sub" x="610" dy="19">Rome and Constantinople out of communion 484–519 · healed</tspan></text>
+<circle class="node split" cx="560" cy="545" r="7"/>
+<path class="lane" d="M560,545 C560,581.0 450,549.0 450,585"/>
+<line class="lane" x1="450" y1="585" x2="450" y2="1150"/>
+<text class="lab" x="582" y="550" text-anchor="start"><tspan x="582" dy="0"><tspan class="yr">1054</tspan> <tspan class="ttl">the Filioque — the creed itself</tspan></tspan><tspan class="sub" x="582" dy="19">East and West: which wording, and who decides</tspan></text>
+<text class="trunk" x="574" y="591" text-anchor="start">Rome · the West</text>
+<circle class="node split" cx="560" cy="650" r="7"/>
+<path class="lane" d="M560,650 C560,695.0 1030,655.0 1030,700"/>
+<line class="lane" x1="1030" y1="700" x2="1030" y2="1150"/>
+<text class="lab" x="582" y="620" text-anchor="start"><tspan x="582" dy="0"><tspan class="yr">1517</tspan> <tspan class="ttl">the Reformation</tspan></tspan><tspan class="sub" x="582" dy="19">same creed, same filioque, divided anyway</tspan></text>
+<text class="trunk" x="1044" y="712" text-anchor="start">Protestants</text>
+<circle class="node split" cx="1030" cy="705" r="7"/>
+<path class="lane" d="M1030,705 C1030,745.5 1740,709.5 1740,750"/>
+<line class="lane" x1="1740" y1="750" x2="1740" y2="1150"/>
+<text class="lab" x="1008" y="710" text-anchor="end"><tspan x="1008" dy="0"><tspan class="yr">1527</tspan> <tspan class="ttl">Zurich — Felix Manz drowned</tspan></tspan><tspan class="sub" x="1008" dy="19">lost the Anabaptists</tspan></text>
+<circle class="node split" cx="1030" cy="765" r="7"/>
+<path class="lane" d="M1030,765 C1030,801.0 690,769.0 690,805"/>
+<line class="lane" x1="690" y1="805" x2="690" y2="1150"/>
+<text class="lab" x="1052" y="770" text-anchor="start"><tspan x="1052" dy="0"><tspan class="yr">1529</tspan> <tspan class="ttl">Marburg — fourteen articles agreed, the Supper not</tspan></tspan><tspan class="sub" x="1052" dy="19">Lutheran and Reformed part · “you have a different spirit”</tspan></text>
+<text class="trunk" x="1044" y="827" text-anchor="start">Reformed</text>
+<circle class="node split" cx="1030" cy="845" r="7"/>
+<path class="lane" d="M1030,845 C1030,881.0 810,849.0 810,885"/>
+<line class="lane" x1="810" y1="885" x2="810" y2="1150"/>
+<path class="lane" d="M1030,845 C1030,881.0 920,849.0 920,885"/>
+<line class="lane" x1="920" y1="885" x2="920" y2="1150"/>
+<path class="lane" d="M1030,845 C1030,881.0 1250,849.0 1250,885"/>
+<line class="lane" x1="1250" y1="885" x2="1250" y2="1150"/>
+<text class="lab" x="1272" y="825" text-anchor="start"><tspan x="1272" dy="0"><tspan class="yr">1646</tspan> <tspan class="ttl">Westminster — one confession for three kingdoms</tspan></tspan><tspan class="sub" x="1272" dy="19">England never adopted it · the Independents dissented in the room</tspan><tspan class="sub" x="1272" dy="19">1662: two thousand ministers ejected</tspan></text>
+<circle class="node split" cx="1250" cy="905" r="7"/>
+<path class="lane" d="M1250,905 C1250,941.0 1140,909.0 1140,945"/>
+<line class="lane" x1="1140" y1="945" x2="1140" y2="1150"/>
+<text class="lab" x="1272" y="910" text-anchor="start"><tspan x="1272" dy="0"><tspan class="yr">1690</tspan> <tspan class="ttl">the Revolution Settlement</tspan></tspan><tspan class="sub" x="1272" dy="19">lost the Covenanters</tspan></text>
+<circle class="node split" cx="1250" cy="955" r="7"/>
+<path class="lane" d="M1250,955 C1250,995.5 1490,959.5 1490,1000"/>
+<line class="lane" x1="1490" y1="1000" x2="1490" y2="1005"/>
+<text class="lab" x="1512" y="960" text-anchor="start"><tspan x="1512" dy="0"><tspan class="yr">1733</tspan> <tspan class="ttl">the Secession — Ebenezer Erskine</tspan></tspan><tspan class="sub" x="1512" dy="19">over patronage</tspan></text>
+<circle class="node split" cx="1490" cy="1005" r="7"/>
+<path class="lane" d="M1490,1005 C1490,1036.5 1395,1008.5 1395,1040"/>
+<line class="lane" x1="1395" y1="1040" x2="1395" y2="1055"/>
+<path class="lane" d="M1490,1005 C1490,1036.5 1585,1008.5 1585,1040"/>
+<line class="lane" x1="1585" y1="1040" x2="1585" y2="1090"/>
+<text class="lab boxed" x="1607" y="1010" text-anchor="start"><tspan x="1607" dy="0"><tspan class="yr">1747</tspan> <tspan class="ttl">the Burgess Oath</tspan></tspan><tspan class="sub" x="1607" dy="19">Burgher and Anti-Burgher</tspan></text>
+<text class="trunk tc" x="1599" y="1071" text-anchor="start">Thomas Campbell’s synod</text>
+<circle class="node split" cx="1395" cy="1055" r="7"/>
+<path class="lane" d="M1395,1055 C1395,1082.0 1350,1058.0 1350,1085"/>
+<line class="lane" x1="1350" y1="1085" x2="1350" y2="1150"/>
+<path class="lane" d="M1395,1055 C1395,1082.0 1440,1058.0 1440,1085"/>
+<line class="lane" x1="1440" y1="1085" x2="1440" y2="1150"/>
+<circle class="node split" cx="1585" cy="1090" r="7"/>
+<path class="lane" d="M1585,1090 C1585,1117.0 1540,1093.0 1540,1120"/>
+<line class="lane" x1="1540" y1="1120" x2="1540" y2="1150"/>
+<path class="lane" d="M1585,1090 C1585,1117.0 1630,1093.0 1630,1120"/>
+<line class="lane" x1="1630" y1="1120" x2="1630" y2="1150"/>
+<text class="lab boxed" x="1335" y="1060" text-anchor="end"><tspan x="1335" dy="0"><tspan class="yr">1799 · 1806</tspan> <tspan class="ttl">Old Light and New Light</tspan></tspan><tspan class="sub" x="1335" dy="19">each Seceder body splits again</tspan><tspan class="sub" x="1335" dy="19">the year before he sailed</tspan></text>
+<text class="leaf" x="230" y="1172" text-anchor="middle"><tspan x="230" dy="0">Church of</tspan><tspan x="230" dy="16">the East</tspan></text>
+<text class="leaf" x="340" y="1190" text-anchor="middle"><tspan x="340" dy="0">Oriental</tspan><tspan x="340" dy="16">Orthodox</tspan></text>
+<text class="leaf" x="450" y="1172" text-anchor="middle"><tspan x="450" dy="0">Eastern</tspan><tspan x="450" dy="16">Orthodox</tspan></text>
+<text class="leaf" x="560" y="1190" text-anchor="middle"><tspan x="560" dy="0">Roman</tspan><tspan x="560" dy="16">Catholic</tspan></text>
+<text class="leaf" x="690" y="1172" text-anchor="middle"><tspan x="690" dy="0">Lutheran</tspan></text>
+<text class="leaf" x="810" y="1190" text-anchor="middle"><tspan x="810" dy="0">Church of</tspan><tspan x="810" dy="16">England</tspan></text>
+<text class="leaf" x="920" y="1172" text-anchor="middle"><tspan x="920" dy="0">Independents</tspan></text>
+<text class="leaf" x="1030" y="1190" text-anchor="middle"><tspan x="1030" dy="0">Continental</tspan><tspan x="1030" dy="16">Reformed</tspan></text>
+<text class="leaf" x="1140" y="1172" text-anchor="middle"><tspan x="1140" dy="0">Covenanters</tspan></text>
+<text class="leaf" x="1250" y="1190" text-anchor="middle"><tspan x="1250" dy="0">Church of</tspan><tspan x="1250" dy="16">Scotland</tspan></text>
+<text class="leaf" x="1350" y="1172" text-anchor="middle"><tspan x="1350" dy="0">Burgher</tspan><tspan x="1350" dy="16">Old Light</tspan></text>
+<text class="leaf" x="1440" y="1190" text-anchor="middle"><tspan x="1440" dy="0">Burgher</tspan><tspan x="1440" dy="16">New Light</tspan></text>
+<text class="leaf" x="1540" y="1172" text-anchor="middle"><tspan x="1540" dy="0">Anti-Burgher</tspan><tspan x="1540" dy="16">Old Light</tspan></text>
+<text class="leaf" x="1630" y="1190" text-anchor="middle"><tspan x="1630" dy="0">Anti-Burgher</tspan><tspan x="1630" dy="16">New Light</tspan></text>
+<text class="leaf" x="1740" y="1172" text-anchor="middle"><tspan x="1740" dy="0">Anabaptists</tspan></text>
+</svg>
+<footer>Each dot is a creed, council, or oath offered as a term of unity. Each branch is a church that still exists. The dotted branch died out; the gold loop is the one breach that healed.</footer>
+</body>
+</html>
