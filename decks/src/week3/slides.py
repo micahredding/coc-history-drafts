@@ -30,7 +30,7 @@ _D = __file__.rsplit('/', 1)[0]
 A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Chapter 3</div>'
   '<h1>The Declaration<br>and Address</h1><div class=table-line></div>'
   '<div class=sub>Washington, Pennsylvania &middot; 1809</div>'
-  '<aside class=notes>Title up. Then the Design of Religion. The hour: Design 4 &middot; Evils 5 &middot; Preamble 3 &middot; Christendom 10 &middot; the answer 2 &middot; Propositions and the conscience thread 13 &middot; our table 8 &middot; reception and proof-sheets 5.</aside></section>')
+  '<aside class=notes>Title up. Then the Design of Religion. The hour: Design 4 &middot; Evils 5 &middot; Christendom 10 &middot; Preamble 3 &middot; the issue, conscience 5 &middot; the solution 2 &middot; Propositions 10 &middot; our table 8 &middot; reception and proof-sheets 5.</aside></section>')
 
 # ---------- 1 THE DESIGN OF RELIGION ----------
 A('<section class="slide breath sect"><div class=eyebrow>The Address</div><h2>The Design of Religion</h2><div class=table-line></div>'
@@ -60,18 +60,7 @@ A('<section class="slide"><div class=eyebrow>&ldquo;What awful and distressing e
   '<aside class=notes>Five clicks. All verbatim from the Evils of Division. The Supper line ties to the Table arc of the whole class. The last two land hardest in 2026: members who can leave for the church down the road, and the mouths of infidels. (Dropped from the list: &ldquo;Several&hellip; who live at the door of a preached Gospel, dare not in conscience go to hear it&rdquo;: people within reach of preaching, but of another party, whose scruples keep them from it, so they are as cut off as if among heathens. Restore if useful.)</aside></section>')
 
 A(Q('&ldquo;Say, dear brethren, <b>are not these things so?</b>&rdquo;', DA, 'The Evils of Division') +
-  N('His own question, to the room. Let them answer.', '&rarr; Then back to the Declaration, to what the people of the grove wanted.'))
-
-# ---------- 3 THE PREAMBLE: REST, AND DESPAIR ----------
-A('<section class="slide breath sect"><div class=eyebrow>The Declaration</div><h2>Preamble</h2><div class=table-line></div>'
-  '<div class=sub>The sentiments of the people of the grove.</div>'
-  '<aside class=notes>Summer 1809. The people following Thomas Campbell from farmhouse to maple grove have become something, and they need to say what. The Declaration is the short part, written for them. Two sentences now; the rest of the paragraph comes back after Christendom.</aside></section>')
-
-A(Q('&ldquo;&hellip;tired and sick of the bitter jarrings and janglings of a party spirit, <b>we would desire to be at rest</b>; and, were it possible, we would also desire to adopt and recommend such measures as would give rest to our brethren throughout all the churches&hellip;&rdquo;', DA, 'Preamble') +
-  N('The line everyone remembers. Say it slowly. &ldquo;Rest&rdquo; is the word they chose, not &ldquo;victory.&rdquo;'))
-
-A(Q('&ldquo;This desirable rest, however, <b>we utterly despair</b> either to find for ourselves, or to be able to recommend to our brethren, by continuing amid the diversity and rancor of party contentions, the veering uncertainty and clashings of human opinions&hellip;&rdquo;', DA, 'Preamble') +
-  N('Stop here. Do not read the next clause yet.', '&rarr; Why did they despair? What had they seen? Christendom had been trying to fix this for fifteen hundred years. Before the answer, the record.'))
+  N('His own question, to the room. Let them answer.', '&rarr; Then: it was not for want of trying. Here is fifteen hundred years of trying.'))
 
 # ---------- 4 CHRISTENDOM'S SEARCH FOR UNITY (the egg) ----------
 S += christendom_slides()
@@ -80,7 +69,40 @@ A('<section class="slide"><h2>What can Christians unite on?</h2>'
   '<div class="sub frag">He prayed that they would be one. So it must be possible.</div>'
   '<aside class=notes>John 17:21, a prayer, not a command. Pause on the question before going back to the Preamble.</aside></section>')
 
-# ---------- 5 THE PREAMBLE, FINISHED ----------
+# ---------- 5 THE PREAMBLE: REST, AND DESPAIR ----------
+A('<section class="slide breath sect"><div class=eyebrow>The Declaration</div><h2>Preamble</h2><div class=table-line></div>'
+  '<div class=sub>The sentiments of the people of the grove.</div>'
+  '<aside class=notes>Summer 1809. The people following Thomas Campbell from farmhouse to maple grove have become something, and they need to say what. The Declaration is the short part, written for them. After the egg: this is what the people of the grove wanted, and why they despaired of getting it the old way.</aside></section>')
+
+A(Q('&ldquo;&hellip;tired and sick of the bitter jarrings and janglings of a party spirit, <b>we would desire to be at rest</b>; and, were it possible, we would also desire to adopt and recommend such measures as would give rest to our brethren throughout all the churches&hellip;&rdquo;', DA, 'Preamble') +
+  N('The line everyone remembers. Say it slowly. &ldquo;Rest&rdquo; is the word they chose, not &ldquo;victory.&rdquo;'))
+
+A(Q('&ldquo;This desirable rest, however, <b>we utterly despair</b> either to find for ourselves, or to be able to recommend to our brethren, by continuing amid the diversity and rancor of party contentions, the veering uncertainty and clashings of human opinions&hellip;&rdquo;', DA, 'Preamble') +
+  N('Stop here. Do not read the next clause yet.', '&rarr; Before the answer, name the issue underneath all of it. Why can none of those instruments work?'))
+
+
+# ---------- 6 THE ISSUE: FREEDOM OF CONSCIENCE ----------
+A('<section class="slide bleed"><div class=bg><div class="bgimg lutherbg"></div></div>'
+  '<div class=credit>Anton von Werner, <i>Luther at the Diet of Worms</i>, 1877 &middot; public domain</div>'
+  '<div class=eyebrow>What&rsquo;s the issue?</div>'
+  '<h2>Freedom of conscience.</h2>'
+  '<div class="sub frag">If conscience cannot be compelled, then unity cannot be compelled either.</div>'
+  '<aside class=notes>Worms, April 1521. Asked to recant, Luther: &ldquo;my conscience is captive to the Word of God. I cannot and will not recant anything, since it is neither safe nor right to go against conscience.&rdquo; (&ldquo;Here I stand, I can do no other&rdquo; is the famous form; the earliest printed accounts add it, the transcript does not. Say &ldquo;as the story goes.&rdquo;) Protestantism begins with that sentence, and it is the reason none of the instruments on the egg could work: a creed can name who agrees, but it cannot make anyone believe. Click for the consequence.</aside></section>')
+
+A(Q('&ldquo;&hellip;my conscience is captive to the Word of God. I cannot and will not recant anything, since <b>it is neither safe nor right to go against conscience</b>.&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Here I stand') +
+  N('The documented words. The Declaration opens by saying the same thing, three centuries later, in Pennsylvania.'))
+
+A(Q('&ldquo;&hellip;it is high time for us not only to think, but also to <b>act, for ourselves</b>; to see with our own eyes, and to take all our measures directly and immediately from the Divine standard&hellip;&rdquo;', DA, 'Preamble') +
+  N('The Preamble&rsquo;s first sentence. The first word of the movement is a verb.'))
+
+A(Q('&ldquo;&hellip;as no man can be judged for his brother, so <b>no man can judge for his brother</b>; every man must be allowed to judge for himself, as every man must bear his own judgment&mdash;must give account of himself to God.&rdquo;', DA, 'Preamble') +
+  N('Its second sentence. Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying.'))
+
+A(Q('&ldquo;It is not the voice of the multitude, but the voice of truth, that has power with the conscience; that can produce rational conviction and acceptable obedience. <b>A conscience that awaits the decision of the multitude</b>&hellip;&rdquo;', DA, 'The Address') +
+  N('The Address says it of a General Council by name. Every council on the egg was a multitude deciding for a conscience.', '&rarr; So: given a people who must follow their conscience, given that no council can forever bind it, what is left to unite on? Only one thing.'))
+
+# ---------- 7 THE SOLUTION ----------
+
 A(Q('&ldquo;&hellip;nor, indeed, can we reasonably expect to find it anywhere but in <b>Christ and his simple word</b>, which is the same yesterday, to-day, and forever.&rdquo;', DA, 'Preamble, continued') +
   N('The clause you stopped before. Now it has fifteen hundred years behind it.', '&rarr; Thomas Campbell saw only one answer: given a people called to follow their conscience, given that no council could forever bind it, the only thing Christians could unite on was Christ himself.'))
 
@@ -89,7 +111,7 @@ A(Q('&ldquo;&hellip;taking the Divine word alone for our rule; the Holy Spirit f
 
 # ---------- 6 THE PROPOSITIONS ----------
 A('<section class="slide breath sect"><div class=eyebrow>The Address</div><h2>The Thirteen Propositions</h2><div class=table-line></div>'
-  '<div class=sub>Five of them, and a second thread between.</div>'
+  '<div class=sub>Five of them.</div>'
   '<aside class=notes>Offered, the Address says just before them, not &ldquo;as an overture toward a new creed or standard for the Church, or as in any wise designed to be made a term of communion.&rdquo; Remember Chalcedon said the same. Read 1, 3, 6, 8, 9; the gold clause is the one to say twice.</aside></section>')
 
 A(Q('&ldquo;That the Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ and obedience to him in all things according to the Scriptures, and that manifest the same by their tempers and conduct, and of none else&hellip;&rdquo;', DA, 'Proposition 1') +
@@ -97,17 +119,6 @@ A(Q('&ldquo;That the Church of Christ upon earth is <b>essentially, intentionall
 
 A(Q('&ldquo;That in order to do this, <b>nothing ought to be inculcated upon Christians as articles of faith; nor required of them as terms of communion, but what is expressly taught and enjoined upon them in the word of God</b>&hellip;&rdquo;', DA, 'Proposition 3') +
   N('The method. &ldquo;Expressly.&rdquo; This is the whole wager: strip terms of communion to what Scripture expressly says, and Christians will find they already agree on enough to live together.'))
-
-# ---------- the conscience thread ----------
-A('<section class="slide breath sect"><div class=eyebrow>The Declaration</div><h2>Judge for yourself</h2><div class=table-line></div>'
-  '<div class=sub>A second thread, from the Preamble&rsquo;s opening sentences.</div>'
-  '<aside class=notes>Back to the first two sentences of the Preamble, which you skipped. They carry the other theme of the document: no council can bind the conscience. Propositions 6 and 8 are these two sentences made into polity.</aside></section>')
-
-A(Q('&ldquo;&hellip;it is high time for us not only to think, but also to <b>act, for ourselves</b>; to see with our own eyes, and to take all our measures directly and immediately from the Divine standard&hellip;&rdquo;', DA, 'Preamble') +
-  N('Opening sentence. The first word of the movement is a verb.'))
-
-A(Q('&ldquo;&hellip;as no man can be judged for his brother, so <b>no man can judge for his brother</b>; every man must be allowed to judge for himself, as every man must bear his own judgment&mdash;must give account of himself to God.&rdquo;', DA, 'Preamble') +
-  N('Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying.'))
 
 A(Q('&ldquo;That although inferences and deductions from Scripture premises, when fairly inferred, may be truly called the doctrine of God&rsquo;s holy word, yet are they <b>not formally binding upon the consciences of Christians farther than they perceive the connection</b>&hellip; Therefore, no such deductions can be made terms of communion&hellip;&rdquo;', DA, 'Proposition 6') +
   N('Conscience again, now as polity. You cannot believe what you do not see, so you cannot be made to. Every council on the egg was an inference made a term of communion.'))
