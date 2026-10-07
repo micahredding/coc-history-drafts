@@ -10,82 +10,112 @@ def C(name, note=''):   # chapter card
             '<aside class=notes>%s</aside></section>' % (name, note))
 
 # ---------- the split illustration ----------
-# One circle, cut into slices. A slide has a BEFORE state and an AFTER state, each a list of units;
-# a unit = (slice indices, label, color, dying). Slices in the same unit sit flush and share a color,
-# so they read as one body. The click moves every slice from its before-unit to its after-unit.
-# Cumulative slides (325 → 431 → 451) open on the previous slide's after-state and split one unit again.
-W_, H_, CX, CY, R = 1200, 560, 600, 200, 170
-def eq(n):            # n equal vertical slices of the circle
-    w = 2 * R / n
-    return [(CX - R + i * w, CX - R + (i + 1) * w) for i in range(n)]
-# the ancient church, carved cumulatively: East · Oriental · Chalcedonian | Arian
-ANCIENT = [(CX - R, CX - R / 2), (CX - R / 2, CX - R / 4), (CX - R / 4, CX), (CX, CX + R)]
+# One body, carved cumulatively from 325 to 1806. The body is a circle cut into LEAF slices (weighted);
+# a slide's BEFORE and AFTER states are lists of units = (leaf indices, label, color, dying). Slices in one
+# unit sit flush and share a color. The click moves each slice from its before-unit to its after-unit.
+# As the pieces multiply the body stretches horizontally (scaleX on every piece) so no unit is narrower
+# than MINW, and the circle becomes a wide ellipse.
+CX, CY, R, H_, MINW, GAP = 0, 200, 170, 640, 84, 26
+LEAVES = [  # left → right in the final state: (key, weight)
+    ('east', 1), ('oriental', 1.2), ('orthodox', 1.6), ('catholic', 2.4), ('lutheran', 1.2), ('anglican', 1.2),
+    ('independents', 1), ('reformed', 1.2), ('covenanters', 1), ('scotland', 1), ('b_old', 1), ('b_new', 1),
+    ('a_old', 1), ('a_new', 1), ('anabaptists', 1), ('arian', 1.4)]
+_tw = sum(w for _, w in LEAVES)
+SLICES = []
+_x = CX - R
+for _, w in LEAVES:
+    SLICES.append((_x, _x + 2 * R * w / _tw)); _x += 2 * R * w / _tw
+def U(a, b=None): return list(range(a, (b if b is not None else a) + 1))
 
-def _layout(slices, units, gap):
-    """Lay units out left→right, centered; return per-slice dx, and per-unit (center x, width)."""
-    widths = [sum(slices[i][1] - slices[i][0] for i in u[0]) for u in units]
-    total = sum(widths) + gap * (len(units) - 1)
+def _layout(units):
+    """Per-unit stretch: a unit narrower than MINW is widened to MINW (its slices scale together);
+    everything else keeps its true width. Returns per-slice (target center, scale), per-unit (center, width), total."""
+    widths = [sum(SLICES[i][1] - SLICES[i][0] for i in u[0]) for u in units]
+    scales = [max(1.0, MINW / w) for w in widths]
+    total = sum(w * sc for w, sc in zip(widths, scales)) + GAP * (len(units) - 1)
     x = CX - total / 2
-    dx = {}; centers = []
-    for (idx, lab, col, dying), w in zip(units, widths):
+    tgt = {}; centers = []
+    for (idx, lab, col, dying), w, sc in zip(units, widths, scales):
         off = 0
         for i in idx:
-            dx[i] = x + off - slices[i][0]
-            off += slices[i][1] - slices[i][0]
-        centers.append((x + w / 2, w)); x += w + gap
-    return dx, centers
+            sw = (SLICES[i][1] - SLICES[i][0]) * sc
+            tgt[i] = (x + off + sw / 2, sc); off += sw
+        centers.append((x + w * sc / 2, w * sc)); x += w * sc + GAP
+    return tgt, centers, total
 
-def split(slices, pre, post, gap=60):
-    dx0, c0 = _layout(slices, pre, gap)
-    dx1, c1 = _layout(slices, post, gap)
+def split(pre, post):
+    t0, c0, w0 = _layout(pre); t1, c1, w1 = _layout(post)
     col0 = {}; col1 = {}; dy1 = {}
     for idx, lab, col, dying in pre:
         for i in idx: col0[i] = col
     for idx, lab, col, dying in post:
         for i in idx: col1[i] = col; dy1[i] = dying
     out = []
-    for i, (xa, xb) in enumerate(slices):
+    for i, (xa, xb) in enumerate(SLICES):
         ya = math.sqrt(max(R * R - (xa - CX) ** 2, 0)); yb = math.sqrt(max(R * R - (xb - CX) ** 2, 0))
-        d = ('M%.1f,%.1f A%d,%d 0 0 1 %.1f,%.1f L%.1f,%.1f A%d,%d 0 0 1 %.1f,%.1f Z'
+        d = ('M%.2f,%.2f A%d,%d 0 0 1 %.2f,%.2f L%.2f,%.2f A%d,%d 0 0 1 %.2f,%.2f Z'
              % (xa, CY - ya, R, R, xb, CY - yb, xb, CY + yb, R, R, xa, CY + ya))
+        bc = (xa + xb) / 2
         k0 = 'bone-dim' if col0[i] == 'bone' else col0[i]; k1 = 'bone-dim' if col1[i] == 'bone' else col1[i]
-        out.append('<g class="piece%s" style="--dx0:%.0fpx;--dx1:%.0fpx;--k0:var(--%s);--k1:var(--%s)"><path d="%s"/></g>'
-                   % (' dying' if dy1[i] else '', dx0[i], dx1[i], k0, k1, d))
-    # labels: a unit present in both states keeps its label; otherwise pre labels fade out, post labels fade in
-    pre_keys = {tuple(u[0]): u for u in pre}; post_keys = {tuple(u[0]): u for u in post}
+        out.append('<g class="piece%s" style="--dx0:%.1fpx;--sx0:%.3f;--dx1:%.1fpx;--sx1:%.3f;--k0:var(--%s);--k1:var(--%s)"><path d="%s"/></g>'
+                   % (' dying' if dy1[i] else '', t0[i][0] - bc, t0[i][1], t1[i][0] - bc, t1[i][1], k0, k1, d))
+    pre_keys = {tuple(u[0]) for u in pre}; post_keys = {tuple(u[0]) for u in post}
     def label(u, center, row, cls):
         idx, lab, col, dying = u
         if not lab: return ''
-        x = center; y = CY + R + 52 + row * 44
+        y = CY + R + 50 + row * 70
         lines = lab.split('|')
         return '<text class="plab %s%s" x="%.0f" y="%d" text-anchor="middle">%s</text>' % (
-            cls, ' dim' if dying else '', x, y,
-            ''.join('<tspan x="%.0f" dy="%d">%s</tspan>' % (x, 0 if j == 0 else 34, l) for j, l in enumerate(lines)))
-    st0 = 1 if min(w for _, w in c0) < 120 or len(pre) > 2 else 0     # stagger label rows only when pieces are narrow
-    st1 = 1 if min(w for _, w in c1) < 120 or len(post) > 2 else 0
+            cls, ' dim' if dying else '', center, y,
+            ''.join('<tspan x="%.0f" dy="%d">%s</tspan>' % (center, 0 if j == 0 else 32, l) for j, l in enumerate(lines)))
+    rows = lambda units, centers: 1 if len(units) <= 2 else (2 if len(units) <= 5 else 3)
+    r0 = rows(pre, c0); r1 = rows(post, c1)
     for k, (u, (cx_, w)) in enumerate(zip(pre, c0)):
-        if tuple(u[0]) not in post_keys: out.append(label(u, cx_, (k % 2) * st0, 'pre'))
+        if tuple(u[0]) not in post_keys: out.append(label(u, cx_, k % r0, 'pre'))
     for k, (u, (cx_, w)) in enumerate(zip(post, c1)):
-        out.append(label(u, cx_, (k % 2) * st1, 'keep' if tuple(u[0]) in pre_keys else 'post'))
-    return '<svg class="splitfig" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (W_, H_, ''.join(out))
+        out.append(label(u, cx_, k % r1, 'keep' if tuple(u[0]) in pre_keys else 'post'))
+    W = max(w0, w1) + 320
+    return '<svg class="splitfig" viewBox="%.0f 0 %.0f %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (CX - W / 2, W, H_, ''.join(out))
 
-def two(a, b, ca='c1', cb='c2', dying_b=False):   # a fresh circle splitting in n
-    kids = [a, b] if isinstance(a, str) else a
-    cols = [ca, cb, 'c3', 'c4']
-    sl = eq(len(kids))
-    pre = [(list(range(len(kids))), '', 'bone', False)]
-    post = [([i], k, cols[i], dying_b and i == len(kids) - 1) for i, k in enumerate(kids)]
-    return sl, pre, post
-
-def D(title, line, fig, notes, kind='', cut=False):
+def D(title, line, pre, post, notes, kind='', cut=False):
     """One division. Headline + line at once; click = the split (+ a second click to heal, if kind='heal')."""
-    slices, pre, post = fig
     healer = '<div class="frag healer"></div>' if kind == 'heal' else ''
     return ('<section class="slide divslide%s"><h2>%s</h2>'
             '<div class=line>%s</div>'
             '<div class="failure frag">%s</div>%s'
             '<aside class=notes>%s</aside></section>' % (
-                ' cuttable' if cut else '', title, line, split(slices, pre, post), healer, notes))
+                ' cuttable' if cut else '', title, line, split(pre, post), healer, notes))
+
+# ---------- the states, in order ----------
+ARIAN = (U(15), 'Arian', 'c1', True)
+EAST = (U(0), 'Church of|the East', 'c3', False)
+ORIENTAL = (U(1), 'Oriental|Orthodox', 'c2', False)
+ORTHODOX = (U(2), 'Orthodox|East', 'c4', False)
+CATHOLIC = (U(3), 'Catholic', 'c2', False)
+LUTHERAN = (U(4), 'Lutheran', 'c3', False)
+ANGLICAN = (U(5), 'Church of|England', 'c4', False)
+INDEP = (U(6), 'Independents', 'c2', False)
+REFORMED = (U(7), 'Continental|Reformed', 'c3', False)
+COVEN = (U(8), 'Covenanters', 'c4', False)
+SCOTLAND = (U(9), 'Church of|Scotland', 'c2', False)
+ANABAP = (U(14), 'Anabaptists', 'c4', False)
+ST = {}
+ST['0']    = [(U(0, 15), '', 'bone', False)]
+ST['325']  = [(U(0, 14), 'Nicene', 'c1', False), ARIAN]
+ST['431']  = [EAST, (U(1, 14), 'the imperial|Church', 'c1', False), ARIAN]
+ST['451']  = [EAST, ORIENTAL, (U(2, 14), 'Chalcedonian', 'c1', False), ARIAN]
+ST['482']  = [EAST, ORIENTAL, (U(2), 'Constantinople', 'c4', False), (U(3, 14), 'Rome', 'c1', False), ARIAN]
+ST['1054'] = [EAST, ORIENTAL, ORTHODOX, (U(3, 14), 'Catholic|West', 'c1', False), ARIAN]
+ST['1530'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, (U(4, 14), 'Protestant', 'c1', False), ARIAN]
+ST['1527'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, (U(4, 13), 'Protestant', 'c1', False), ANABAP, ARIAN]
+ST['1529'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, LUTHERAN, (U(5, 13), 'Reformed', 'c1', False), ANABAP, ARIAN]
+ST['1646'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, LUTHERAN, ANGLICAN, INDEP, REFORMED, (U(8, 13), 'Church of|Scotland', 'c1', False), ANABAP, ARIAN]
+ST['1690'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, LUTHERAN, ANGLICAN, INDEP, REFORMED, COVEN, (U(9, 13), 'Church of|Scotland', 'c1', False), ANABAP, ARIAN]
+ST['1733'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, LUTHERAN, ANGLICAN, INDEP, REFORMED, COVEN, SCOTLAND, (U(10, 13), 'Seceders', 'c1', False), ANABAP, ARIAN]
+ST['1747'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, LUTHERAN, ANGLICAN, INDEP, REFORMED, COVEN, SCOTLAND, (U(10, 11), 'Burgher', 'c3', False), (U(12, 13), 'Anti-|Burgher', 'c1', False), ANABAP, ARIAN]
+ST['1806'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, LUTHERAN, ANGLICAN, INDEP, REFORMED, COVEN, SCOTLAND,
+              (U(10), 'Burgher|Old Light', 'c3', False), (U(11), 'Burgher|New Light', 'c4', False),
+              (U(12), 'Anti-Burgher|Old Light', 'c2', False), (U(13), 'Anti-Burgher|New Light', 'c3', False), ANABAP, ARIAN]
 
 S = []
 A = S.append
@@ -115,58 +145,55 @@ A(C('Christendom&rsquo;s Search for Unity',
 
 A(D('325 &middot; Council of Nicaea',
     'Arians against non-Arians. A creed, and fifty-six more years of war.',
-    (ANCIENT, [([0, 1, 2, 3], '', 'bone', False)],
-              [([0, 1, 2], 'Nicene', 'c1', False), ([3], 'Arian', 'c1', True)]), NOTES['325']))
+    ST['0'], ST['325'], NOTES['325']))
 
 A(D('431 &middot; Council of Ephesus',
     'Does Mary bear God? A canon forbidding new creeds, and the Church of the East gone.',
-    (ANCIENT, [([0, 1, 2], 'Nicene', 'c1', False), ([3], 'Arian', 'c1', True)],
-              [([0], 'Church of|the East', 'c3', False), ([1, 2], 'the imperial|Church', 'c1', False), ([3], 'Arian', 'c1', True)]), NOTES['431']))
+    ST['325'], ST['431'], NOTES['431']))
 
 A(D('451 &middot; Council of Chalcedon',
     'One nature or two? A Definition, &ldquo;not a new creed,&rdquo; and Egypt gone.',
-    (ANCIENT, [([0], 'Church of|the East', 'c3', False), ([1, 2], 'the imperial|Church', 'c1', False), ([3], 'Arian', 'c1', True)],
-              [([0], 'Church of|the East', 'c3', False), ([1], 'Oriental|Orthodox', 'c2', False), ([2], 'Chalcedonian', 'c1', False), ([3], 'Arian', 'c1', True)]), NOTES['451']))
+    ST['431'], ST['451'], NOTES['451']))
 
 A(D('482 &middot; The Henotikon',
     'Zeno needs Egypt back. An &ldquo;instrument of union,&rdquo; and thirty-five years of schism with Rome.',
-    two('Rome', 'Constantinople'), NOTES['482'], kind='heal'))
+    ST['451'], ST['482'], NOTES['482'], kind='heal'))
 
 A(D('1054 &middot; The Filioque',
     'One word added to the creed. Legates sent to settle it, and East and West apart.',
-    two('Catholic West', 'Orthodox East'), NOTES['1054']))
+    ST['451'], ST['1054'], NOTES['1054']))
 
 A(D('1530 &middot; The Augsburg Confession',
     'Luther&rsquo;s protest. A confession offered as the basis for peace, and the West in two.',
-    two('Catholic', 'Protestant'), NOTES['1530']))
+    ST['1054'], ST['1530'], NOTES['1530']))
 
 A(D('1527 &middot; Zurich',
     'Infant baptism and the sword. A council ruling, and Felix Manz drowned.',
-    two('Reformed', 'Anabaptists'), NOTES['1527']))
+    ST['1530'], ST['1527'], NOTES['1527']))
 
 A(D('1529 &middot; The Marburg Colloquy',
     'The Lord&rsquo;s Supper. Fourteen articles agreed, and &ldquo;you have a different spirit.&rdquo;',
-    two('Lutheran', 'Reformed'), NOTES['1529']))
+    ST['1527'], ST['1529'], NOTES['1529']))
 
 A(D('1646 &middot; The Westminster Confession',
     'Three kingdoms at war. One confession for all three, and two thousand ministers ejected.',
-    two(['Church of|England', 'Independents', 'Church of|Scotland'], None), NOTES['1646']))
+    ST['1529'], ST['1646'], NOTES['1646']))
 
 A(D('1690 &middot; The Revolution Settlement',
     'Scotland after the Revolution. Presbytery restored, and the Covenanters outside.',
-    two('Church of Scotland', 'Covenanters'), NOTES['1690'], cut=True))
+    ST['1646'], ST['1690'], NOTES['1690'], cut=True))
 
 A(D('1733 &middot; The Secession',
     'Patrons appoint ministers. Erskine rebuked, and four ministers walk out.',
-    two('Church of Scotland', 'the Seceders'), NOTES['1733']))
+    ST['1690'], ST['1733'], NOTES['1733']))
 
 A(D('1747 &middot; The Burgess Oath',
     'May a Seceder swear it? A synod vote, and mutual excommunication.',
-    two('Burgher', 'Anti-Burgher'), NOTES['1747']))
+    ST['1733'], ST['1747'], NOTES['1747']))
 
 A(D('1799 &middot; 1806 &middot; Old Light, New Light',
     'May the magistrate enforce religion? Revised Testimonies, and each synod in two.',
-    two(['Old Light', 'New Light', 'Old Light', 'New Light'], None), NOTES['1799'], cut=True))
+    ST['1747'], ST['1806'], NOTES['1799'], cut=True))
 
 A('<section class="slide flowslide"><div class="eyebrow quiet">325&ndash;1806</div>' + FLOW_SVG +
   '<aside class=notes>The whole picture at once. One river, and every gold bar is a creed, council, oath or settlement offered as a term of unity. Widths are suggestive, not to scale. The faded stream is the Arians; the dotted lens is the Henotikon, the one breach that healed.<br>'
