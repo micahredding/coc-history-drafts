@@ -79,6 +79,8 @@ A(Q('&ldquo;This desirable rest, however, <b>we utterly despair</b> either to fi
 
 
 # ---------- 6 THE ISSUE: FREEDOM OF CONSCIENCE ----------
+A(C('Why can&rsquo;t Christians unite?', 'Card. The problem, stated as a question, after fifteen hundred years of trying and a document that despairs of the old way. The next slide names the issue underneath.'))
+
 A('<section class="slide bleed"><div class=bg><div class="bgimg lutherbg"></div></div>'
   '<div class=credit>Anton von Werner, <i>Luther at the Diet of Worms</i>, 1877 &middot; public domain</div>'
   '<div class=eyebrow>What&rsquo;s the issue?</div>'
