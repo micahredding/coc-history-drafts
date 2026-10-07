@@ -10,84 +10,74 @@ def C(name, note=''):   # chapter card
             '<aside class=notes>%s</aside></section>' % (name, note))
 
 # ---------- the split illustration ----------
-# One body, carved cumulatively from 325 to 1806. The body is a circle cut into LEAF slices (weighted);
-# a slide's BEFORE and AFTER states are lists of units = (leaf indices, label, color, dying). Slices in one
-# unit sit flush and share a color. The click moves each slice from its before-unit to its after-unit.
-# As the pieces multiply the body stretches horizontally (scaleX on every piece) so no unit is narrower
-# than MINW, and the circle becomes a wide ellipse.
+# One body, carved cumulatively from 325 to 1806. A slide has a BEFORE and an AFTER state, each a list of
+# units = (slice indices, label, color, dying). Every living unit gets an equal share of the body, floored at
+# MINW, so the body is a circle that becomes an ellipse as the pieces multiply; the Arian remnant thins after
+# 451 and is gone by 1530. The body is re-rounded in every state, so the outermost pieces always carry the
+# curve. Each slice's path is computed per state and the click morphs it (CSS transition on `d`).
 CX, CY, R, H_, MINW, GAP = 0, 200, 170, 640, 84, 26
-LEAVES = [  # left → right in the final state: (key, weight)
-    ('east', 1), ('oriental', 1.2), ('orthodox', 1.6), ('catholic', 2.4), ('lutheran', 1.2), ('anglican', 1.2),
-    ('independents', 1), ('reformed', 1.2), ('covenanters', 1), ('scotland', 1), ('b_old', 1), ('b_new', 1),
-    ('a_old', 1), ('a_new', 1), ('anabaptists', 1), ('arian', 1.4)]
-_tw = sum(w for _, w in LEAVES)
-SLICES = []
-_x = CX - R
-for _, w in LEAVES:
-    SLICES.append((_x, _x + 2 * R * w / _tw)); _x += 2 * R * w / _tw
+N = 16
+LEAVES = [('east', 1), ('oriental', 1), ('orthodox', 1), ('catholic', 1), ('lutheran', 1), ('anglican', 1),
+          ('independents', 1), ('reformed', 1), ('covenanters', 1), ('scotland', 1), ('b_old', 1), ('b_new', 1),
+          ('a_old', 1), ('a_new', 1), ('anabaptists', 1), ('arian', 1)]
 def U(a, b=None): return list(range(a, (b if b is not None else a) + 1))
+ARIAN_KEY = (15,)
+SHRINK = {'482': 58, '1054': 40}          # the Arian remnant after 451; absent from 1530 on = gone
 
-WIDTH = {}   # unit key (tuple of slice indices) -> drawn width (floored at MINW)
-RAW = {}     # the same by pure halving, no floor: a unit's true share; the base slices are built from it
-def _grow(order):
-    allk = tuple(range(len(LEAVES)))
-    RAW[allk] = WIDTH[allk] = 2 * R
-    prev = [allk]
-    for k in order:
-        cur = [tuple(u[0]) for u in ST[k]]
-        for key in cur:
-            if key in WIDTH: continue
-            parent = next(pk for pk in prev if set(key) <= set(pk))
-            n = sum(1 for c in cur if set(c) <= set(parent))
-            RAW[key] = RAW[parent] / n
-            WIDTH[key] = max(MINW, RAW[key])
-        prev = cur
-    # base slices: each leaf's true share, so a unit is only ever stretched, never squeezed
-    del SLICES[:]
-    x = CX - R
-    for i in range(len(LEAVES)):
-        w = RAW[(i,)]
-        SLICES.append((x, x + w)); x += w
+def _widths(units, key):
+    living = [u for u in units if tuple(u[0]) != ARIAN_KEY or key in ('0', '325', '431', '451') or key in SHRINK]
+    n_equal = sum(1 for u in units if tuple(u[0]) != ARIAN_KEY or key in ('0', '325', '431', '451'))
+    w_eq = max(MINW, 2 * R / max(n_equal, 1))
+    ws = []
+    for u in units:
+        k = tuple(u[0])
+        if k == ARIAN_KEY and key not in ('0', '325', '431', '451'):
+            ws.append(SHRINK.get(key, 0))
+        else:
+            ws.append(w_eq)
+    return ws
 
-SHRINK = {'325': 170, '431': 124, '451': 90, '482': 64, '1054': 44}   # the Arian remnant, by state; absent = gone
-def _width(key, unit):
-    if unit == tuple(U(15)):
-        return SHRINK.get(key, 0)
-    return WIDTH[unit]
-
-def _layout(units, key):
-    """Each unit has the width history gave it; its slices scale together to fill it."""
-    ws = [_width(key, tuple(u[0])) for u in units]
-    total = sum(ws) + GAP * (sum(1 for w in ws if w > 0) - 1)
-    x = CX - total / 2
-    tgt = {}; centers = []
+def _geom(units, key):
+    """Per-slice path for this state, plus per-unit (center, width) and the drawn extent."""
+    ws = _widths(units, key)
+    B = sum(ws); rx = B / 2; ry = R
+    living = [w for w in ws if w > 0]
+    G = GAP * (len(living) - 1)
+    x = CX - rx; shift = -G / 2
+    paths = {}; centers = []
+    def yy(px):
+        t = max(-1.0, min(1.0, (px - CX) / rx)) if rx > 0 else 0
+        return ry * math.sqrt(max(0.0, 1 - t * t))
     for (idx, lab, col, dying), w in zip(units, ws):
-        base = sum(SLICES[i][1] - SLICES[i][0] for i in idx); sc = w / base
-        off = 0
-        for i in idx:
-            sw = (SLICES[i][1] - SLICES[i][0]) * sc
-            tgt[i] = (x + off + sw / 2, max(sc, 0.001)); off += sw
-        centers.append((x + w / 2, w))
-        if w > 0: x += w + GAP
-    return tgt, centers, total
+        ua, ub = x, x + w
+        n = len(idx); sw = w / n
+        for j, i in enumerate(idx):
+            sa, sb = ua + j * sw, ua + (j + 1) * sw
+            ya, yb = yy(sa), yy(sb)
+            paths[i] = ('M%.2f,%.2f A%.2f,%.2f 0 0 1 %.2f,%.2f L%.2f,%.2f A%.2f,%.2f 0 0 1 %.2f,%.2f Z'
+                        % (sa + shift, CY - ya, rx, ry, sb + shift, CY - yb, sb + shift, CY + yb, rx, ry, sa + shift, CY + ya))
+        centers.append(((ua + ub) / 2 + shift, w))
+        x += w
+        if w > 0: shift += GAP
+    return paths, centers, B + G
 
 def split(pre, post, k0, k1):
-    t0, c0, w0 = _layout(pre, k0); t1, c1, w1 = _layout(post, k1)
-    col0 = {}; col1 = {}; dy0 = {}; dy1 = {}; unit0 = {}; unit1 = {}
-    for idx, lab, col, dying in pre:
-        for i in idx: col0[i] = col; unit0[i] = tuple(idx); dy0[i] = dying
-    for idx, lab, col, dying in post:
-        for i in idx: col1[i] = col; dy1[i] = dying; unit1[i] = tuple(idx)
+    p0, c0, w0 = _geom(pre, k0); p1, c1, w1 = _geom(post, k1)
+    col0 = {}; col1 = {}; dy0 = {}; dy1 = {}; unit0 = {}; unit1 = {}; wid0 = {}; wid1 = {}
+    for u, (cx_, w) in zip(pre, c0):
+        for i in u[0]: col0[i] = u[2]; unit0[i] = tuple(u[0]); dy0[i] = u[3]; wid0[i] = w
+    for u, (cx_, w) in zip(post, c1):
+        for i in u[0]: col1[i] = u[2]; unit1[i] = tuple(u[0]); dy1[i] = u[3]; wid1[i] = w
+    def seam(i):   # a slice on either side of a cut made this slide (used for the healed seam)
+        if unit0[i] == unit1[i]: return False
+        return any(0 <= j < N and unit0[j] == unit0[i] and unit1[j] != unit1[i] for j in (i - 1, i + 1))
     out = []
-    for i, (xa, xb) in enumerate(SLICES):
-        ya = math.sqrt(max(R * R - (xa - CX) ** 2, 0)); yb = math.sqrt(max(R * R - (xb - CX) ** 2, 0))
-        d = ('M%.2f,%.2f A%d,%d 0 0 1 %.2f,%.2f L%.2f,%.2f A%d,%d 0 0 1 %.2f,%.2f Z'
-             % (xa, CY - ya, R, R, xb, CY - yb, xb, CY + yb, R, R, xa, CY + ya))
-        bc = (xa + xb) / 2
-        k0 = 'bone-dim' if col0[i] == 'bone' else col0[i]; k1 = 'bone-dim' if col1[i] == 'bone' else col1[i]
-        gone = (' gone0' if t0[i][1] <= 0.001 else '') + (' gone1' if t1[i][1] <= 0.001 else '')
-        out.append(('<g class="piece%s%s%s' + gone + '" style="--dx0:%.1fpx;--sx0:%.3f;--dx1:%.1fpx;--sx1:%.3f;--k0:var(--%s);--k1:var(--%s)"><path d="%s" vector-effect="non-scaling-stroke"/></g>')
-                   % (' dying0' if dy0[i] else '', ' dying1' if dy1[i] else '', ' moved' if unit0[i] != unit1[i] else '', t0[i][0] - bc, t0[i][1], t1[i][0] - bc, t1[i][1], k0, k1, d))
+    for i in range(N):
+        k0c = 'bone-dim' if col0[i] == 'bone' else col0[i]; k1c = 'bone-dim' if col1[i] == 'bone' else col1[i]
+        cls = 'piece' + (' dying0' if dy0[i] else '') + (' dying1' if dy1[i] else '') + \
+              (' moved' if seam(i) else '') + (' gone0' if wid0[i] <= 0 else '') + (' gone1' if wid1[i] <= 0 else '')
+        out.append('<g class="%s" style="--d0:path(\'%s\');--d1:path(\'%s\');--k0:var(--%s);--k1:var(--%s)"><path d="%s" vector-effect="non-scaling-stroke"/></g>'
+                   % (cls, p0[i], p1[i], k0c, k1c, p0[i]))
     pre_keys = {tuple(u[0]) for u in pre}; post_keys = {tuple(u[0]) for u in post}
     def label(u, center, row, cls, w):
         idx, lab, col, dying = u
@@ -97,8 +87,8 @@ def split(pre, post, k0, k1):
         return '<text class="plab %s%s" x="%.0f" y="%d" text-anchor="middle">%s</text>' % (
             cls, ' dim' if dying else '', center, y,
             ''.join('<tspan x="%.0f" dy="%d">%s</tspan>' % (center, 0 if j == 0 else 32, l) for j, l in enumerate(lines)))
-    rows = lambda units, centers: 1 if len(units) <= 2 else (2 if len(units) <= 5 else 3)
-    r0 = rows(pre, c0); r1 = rows(post, c1)
+    rows = lambda units: 1 if len(units) <= 2 else (2 if len(units) <= 5 else 3)
+    r0 = rows(pre); r1 = rows(post)
     for k, (u, (cx_, w)) in enumerate(zip(pre, c0)):
         if tuple(u[0]) not in post_keys: out.append(label(u, cx_, k % r0, 'pre', w))
     for k, (u, (cx_, w)) in enumerate(zip(post, c1)):
@@ -107,8 +97,7 @@ def split(pre, post, k0, k1):
     return '<svg class="splitfig" viewBox="%.0f 0 %.0f %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (CX - W / 2, W, H_, ''.join(out))
 
 def D(title, line, pre, post, notes, kind='', cut=False):
-    """pre/post are state keys into ST."""
-    """One division. Headline + line at once; click = the split (+ a second click to heal, if kind='heal')."""
+    """pre/post are state keys into ST. Headline + line at once; click = the split (+ a second click to heal)."""
     healer = '<div class="frag healer"></div>' if kind == 'heal' else ''
     return ('<section class="slide divslide%s"><h2>%s</h2>'
             '<div class=line>%s</div>'
@@ -147,7 +136,6 @@ ST['1806'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, LUTHERAN, ANGLICAN, INDEP, REF
               (U(10), 'Burgher|Old Light', 'c3', False), (U(11), 'Burgher|New Light', 'c4', False),
               (U(12), 'Anti-Burgher|Old Light', 'c2', False), (U(13), 'Anti-Burgher|New Light', 'c3', False), ANABAP, ARIAN]
 
-_grow(['325', '431', '451', '482', '1054', '1530', '1527', '1529', '1646', '1690', '1733', '1747', '1806'])
 
 S = []
 A = S.append
