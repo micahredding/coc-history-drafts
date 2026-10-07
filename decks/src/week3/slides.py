@@ -15,7 +15,7 @@ def C(name, note=''):   # chapter card
 # MINW, so the body is a circle that becomes an ellipse as the pieces multiply; the Arian remnant thins after
 # 451 and is gone by 1530. The body is re-rounded in every state, so the outermost pieces always carry the
 # curve. Each slice's path is computed per state and the click morphs it (CSS transition on `d`).
-CX, CY, R, H_, MINW, GAP = 0, 200, 170, 640, 84, 26
+CX, CY, R, H_, MINW, GAP = 0, 200, 170, 660, 84, 26
 N = 16
 LEAVES = [('east', 1), ('oriental', 1), ('orthodox', 1), ('catholic', 1), ('lutheran', 1), ('anglican', 1),
           ('independents', 1), ('reformed', 1), ('covenanters', 1), ('scotland', 1), ('b_old', 1), ('b_new', 1),
@@ -176,7 +176,8 @@ def split(pre, post, k0, k1, k2=None):
     for k, (u, (cx_, w)) in enumerate(zip(post, c1)):
         out.append(label(u, cx_, k % r1, 'keep' if tuple(u[0]) in pre_keys else 'post', w))
     W = max(w0, w1) + 320
-    return '<svg class="splitfig" viewBox="%.0f 0 %.0f %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (CX - W / 2, W, H_, ''.join(out))
+    Hv = CY + R + 50 + (max(r0, r1) - 1) * 70 + 44 + 20   # only as tall as the label rows in use, so small bodies draw big
+    return '<svg class="splitfig" viewBox="%.0f 0 %.0f %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (CX - W / 2, W, Hv, ''.join(out))
 
 def D(title, line, pre, post, notes, heal=None, cut=False):
     """pre/post/heal are state keys into ST. Headline + line at once; click = the split; a second click = heal."""
