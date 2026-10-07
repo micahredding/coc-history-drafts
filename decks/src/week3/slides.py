@@ -30,33 +30,22 @@ _D = __file__.rsplit('/', 1)[0]
 A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Chapter 3</div>'
   '<h1>The Declaration<br>and Address</h1><div class=table-line></div>'
   '<div class=sub>Washington, Pennsylvania &middot; 1809</div>'
-  '<aside class=notes>Title up. Then the Preamble, read aloud, to the despair. The hour: Preamble 5 &middot; Design 3 &middot; Evils 5 &middot; Christendom 10 &middot; the answer 2 &middot; Propositions 12 &middot; our table 8 &middot; reception and proof-sheets 5.</aside></section>')
+  '<aside class=notes>Title up. Then the Design of Religion. The hour: Design 4 &middot; Evils 5 &middot; Preamble 3 &middot; Christendom 10 &middot; the answer 2 &middot; Propositions and the conscience thread 13 &middot; our table 8 &middot; reception and proof-sheets 5.</aside></section>')
 
-# ---------- 1 THE PREAMBLE, TO THE DESPAIR ----------
-A('<section class="slide breath sect"><div class=eyebrow>The Declaration</div><h2>Preamble</h2><div class=table-line></div>'
-  '<div class=sub>The sentiments of the people of the grove.</div>'
-  '<aside class=notes>Summer 1809. The people following Thomas Campbell from farmhouse to maple grove have become something, and they need to say what. The Declaration is the short part, written for them. Read these in order; they are the arc of the whole hour.</aside></section>')
-
-A(Q('&ldquo;&hellip;it is high time for us not only to think, but also to <b>act, for ourselves</b>; to see with our own eyes, and to take all our measures directly and immediately from the Divine standard&hellip;&rdquo;', DA, 'Preamble') +
-  N('Opening sentence. The first word of the movement is a verb.'))
-
-A(Q('&ldquo;&hellip;as no man can be judged for his brother, so <b>no man can judge for his brother</b>; every man must be allowed to judge for himself, as every man must bear his own judgment&mdash;must give account of himself to God.&rdquo;', DA, 'Preamble') +
-  N('Freedom of conscience, in the second sentence. Not a right claimed but an impossibility stated: you cannot believe for someone else.', '&rarr; Hold this. It comes back at Zurich, at 1806, and in proposition 6.'))
-
-A(Q('&ldquo;&hellip;tired and sick of the bitter jarrings and janglings of a party spirit, <b>we would desire to be at rest</b>; and, were it possible, we would also desire to adopt and recommend such measures as would give rest to our brethren throughout all the churches&hellip;&rdquo;', DA, 'Preamble') +
-  N('The line everyone remembers. Say it slowly. &ldquo;Rest&rdquo; is the word they chose, not &ldquo;victory.&rdquo;'))
-
-A(Q('&ldquo;This desirable rest, however, <b>we utterly despair</b> either to find for ourselves, or to be able to recommend to our brethren, by continuing amid the diversity and rancor of party contentions, the veering uncertainty and clashings of human opinions&hellip;&rdquo;', DA, 'Preamble') +
-  N('Stop here. Do not read the next clause yet.', '&rarr; Why did they despair? What had they seen? Christendom had been trying to fix this for fifteen hundred years. Before the answer, the record.'))
-
-# ---------- 2 THE DESIGN OF RELIGION ----------
+# ---------- 1 THE DESIGN OF RELIGION ----------
 A('<section class="slide breath sect"><div class=eyebrow>The Address</div><h2>The Design of Religion</h2><div class=table-line></div>'
-  '<aside class=notes>The Address is the long part, to &ldquo;all that love our Lord Jesus Christ, in sincerity, throughout all the Churches.&rdquo; Its first paragraph is the premise under everything.</aside></section>')
+  '<aside class=notes>Start here. The Address is the long part, to &ldquo;all that love our Lord Jesus Christ, in sincerity, throughout all the Churches.&rdquo; Its first paragraph is the premise under everything that follows.</aside></section>')
 
-A(Q('&ldquo;That it is the grand design and native tendency of our holy religion <b>to reconcile and unite men to God, and to each other, in truth and love</b>, to the glory of God, and their own present and eternal good, will not, we presume, be denied, by any of the genuine subjects of Christianity.&rdquo;', DA, 'The Design of Religion') +
-  N('Stand one, asked lightly: is unity what Christianity is <i>for</i>? If yes, every century of division is the religion failing its own purpose, and what follows is not a history lesson but an indictment.', '&ldquo;In truth and love&rdquo;: both sides, from the first sentence. The motto later is &ldquo;Union in Truth.&rdquo;'))
+A(Q('&ldquo;That it is the grand design and native tendency of our holy religion <b>to reconcile and unite men to God, and to each other, in truth and love</b>, to the glory of God, and their own present and eternal good&hellip;&rdquo;', DA, 'The Design of Religion') +
+  N('Stop before &ldquo;will not, we presume, be denied.&rdquo; Stand one, asked lightly: is unity what Christianity is <i>for</i>? If yes, every century of division is the religion failing its own purpose.', '&ldquo;In truth and love&rdquo;: both sides, from the first sentence. The motto later is &ldquo;Union in Truth.&rdquo;'))
 
-# ---------- 3 THE EVILS OF DIVISION ----------
+A(Q('&ldquo;The nativity of its Divine author was announced from heaven, by a host of angels, with high acclamations of <b>&lsquo;Glory to God in the highest, and on earth peace and good-will toward men.&rsquo;</b>&rdquo;', DA, 'The Design of Religion') +
+  N('Same paragraph. The proof he offers is Luke 2: the religion was announced as peace.'))
+
+A(Q('&ldquo;In so far, then, as this holy unity and unanimity in faith and love is attained, <b>just in the same degree</b> is the glory of God and the happiness of men promoted and secured.&rdquo;', DA, 'The Design of Religion') +
+  N('&ldquo;Just in the same degree.&rdquo; Unity is not a bonus on top of the religion; it is the measure of it. Then: what does division cost?'))
+
+# ---------- 2 THE EVILS OF DIVISION ----------
 A('<section class="slide breath sect"><div class=eyebrow>The Address</div><h2>The Evils of Division</h2><div class=table-line></div>'
   '<aside class=notes>What division costs. Practical, not doctrinal. Build the list one line at a time and let the room map each one onto now.</aside></section>')
 
@@ -72,7 +61,18 @@ A('<section class="slide"><div class=eyebrow>&ldquo;What awful and distressing e
   '<aside class=notes>Six clicks. All verbatim from the Evils of Division. The Supper line ties to the Table arc of the whole class; the conscience line shows conscience on both sides of the document, the thing that cannot be compelled and the thing division wounds. The last two land hardest in 2026: members who can leave for the church down the road, and the mouths of infidels.</aside></section>')
 
 A(Q('&ldquo;Say, dear brethren, <b>are not these things so?</b>&rdquo;', DA, 'The Evils of Division') +
-  N('His own question, to the room. Let them answer.', '&rarr; Then: it was not for want of trying. Here is fifteen hundred years of trying.'))
+  N('His own question, to the room. Let them answer.', '&rarr; Then back to the Declaration, to what the people of the grove wanted.'))
+
+# ---------- 3 THE PREAMBLE: REST, AND DESPAIR ----------
+A('<section class="slide breath sect"><div class=eyebrow>The Declaration</div><h2>Preamble</h2><div class=table-line></div>'
+  '<div class=sub>The sentiments of the people of the grove.</div>'
+  '<aside class=notes>Summer 1809. The people following Thomas Campbell from farmhouse to maple grove have become something, and they need to say what. The Declaration is the short part, written for them. Two sentences now; the rest of the paragraph comes back after Christendom.</aside></section>')
+
+A(Q('&ldquo;&hellip;tired and sick of the bitter jarrings and janglings of a party spirit, <b>we would desire to be at rest</b>; and, were it possible, we would also desire to adopt and recommend such measures as would give rest to our brethren throughout all the churches&hellip;&rdquo;', DA, 'Preamble') +
+  N('The line everyone remembers. Say it slowly. &ldquo;Rest&rdquo; is the word they chose, not &ldquo;victory.&rdquo;'))
+
+A(Q('&ldquo;This desirable rest, however, <b>we utterly despair</b> either to find for ourselves, or to be able to recommend to our brethren, by continuing amid the diversity and rancor of party contentions, the veering uncertainty and clashings of human opinions&hellip;&rdquo;', DA, 'Preamble') +
+  N('Stop here. Do not read the next clause yet.', '&rarr; Why did they despair? What had they seen? Christendom had been trying to fix this for fifteen hundred years. Before the answer, the record.'))
 
 # ---------- 4 CHRISTENDOM'S SEARCH FOR UNITY (the egg) ----------
 S += christendom_slides()
@@ -90,7 +90,7 @@ A(Q('&ldquo;&hellip;taking the Divine word alone for our rule; the Holy Spirit f
 
 # ---------- 6 THE PROPOSITIONS ----------
 A('<section class="slide breath sect"><div class=eyebrow>The Address</div><h2>The Thirteen Propositions</h2><div class=table-line></div>'
-  '<div class=sub>Five of them.</div>'
+  '<div class=sub>Five of them, and a second thread between.</div>'
   '<aside class=notes>Offered, the Address says just before them, not &ldquo;as an overture toward a new creed or standard for the Church, or as in any wise designed to be made a term of communion.&rdquo; Remember Chalcedon said the same. Read 1, 3, 6, 8, 9; the gold clause is the one to say twice.</aside></section>')
 
 A(Q('&ldquo;That the Church of Christ upon earth is <b>essentially, intentionally, and constitutionally one</b>; consisting of all those in every place that profess their faith in Christ and obedience to him in all things according to the Scriptures, and that manifest the same by their tempers and conduct, and of none else&hellip;&rdquo;', DA, 'Proposition 1') +
@@ -98,6 +98,17 @@ A(Q('&ldquo;That the Church of Christ upon earth is <b>essentially, intentionall
 
 A(Q('&ldquo;That in order to do this, <b>nothing ought to be inculcated upon Christians as articles of faith; nor required of them as terms of communion, but what is expressly taught and enjoined upon them in the word of God</b>&hellip;&rdquo;', DA, 'Proposition 3') +
   N('The method. &ldquo;Expressly.&rdquo; This is the whole wager: strip terms of communion to what Scripture expressly says, and Christians will find they already agree on enough to live together.'))
+
+# ---------- the conscience thread ----------
+A('<section class="slide breath sect"><div class=eyebrow>The Declaration</div><h2>Judge for yourself</h2><div class=table-line></div>'
+  '<div class=sub>A second thread, from the Preamble&rsquo;s opening sentences.</div>'
+  '<aside class=notes>Back to the first two sentences of the Preamble, which you skipped. They carry the other theme of the document: no council can bind the conscience. Propositions 6 and 8 are these two sentences made into polity.</aside></section>')
+
+A(Q('&ldquo;&hellip;it is high time for us not only to think, but also to <b>act, for ourselves</b>; to see with our own eyes, and to take all our measures directly and immediately from the Divine standard&hellip;&rdquo;', DA, 'Preamble') +
+  N('Opening sentence. The first word of the movement is a verb.'))
+
+A(Q('&ldquo;&hellip;as no man can be judged for his brother, so <b>no man can judge for his brother</b>; every man must be allowed to judge for himself, as every man must bear his own judgment&mdash;must give account of himself to God.&rdquo;', DA, 'Preamble') +
+  N('Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying.'))
 
 A(Q('&ldquo;That although inferences and deductions from Scripture premises, when fairly inferred, may be truly called the doctrine of God&rsquo;s holy word, yet are they <b>not formally binding upon the consciences of Christians farther than they perceive the connection</b>&hellip; Therefore, no such deductions can be made terms of communion&hellip;&rdquo;', DA, 'Proposition 6') +
   N('Conscience again, now as polity. You cannot believe what you do not see, so you cannot be made to. Every council on the egg was an inference made a term of communion.'))
