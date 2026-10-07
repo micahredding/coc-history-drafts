@@ -65,9 +65,6 @@ A(Q('&ldquo;Say, dear brethren, <b>are not these things so?</b>&rdquo;', DA, 'Th
 # ---------- 4 CHRISTENDOM'S SEARCH FOR UNITY (the egg) ----------
 S += christendom_slides()
 
-A('<section class="slide"><h2>What can Christians unite on?</h2>'
-  '<div class="sub frag">He prayed that they would be one. So it must be possible.</div>'
-  '<aside class=notes>John 17:21, a prayer, not a command. Pause on the question before going back to the Preamble.</aside></section>')
 
 # ---------- 5 THE PREAMBLE: REST, AND DESPAIR ----------
 A('<section class="slide breath sect"><div class=eyebrow>The Declaration</div><h2>Preamble</h2><div class=table-line></div>'
@@ -99,7 +96,11 @@ A(Q('&ldquo;&hellip;as no man can be judged for his brother, so <b>no man can ju
   N('Its second sentence. Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying.'))
 
 A(Q('&ldquo;It is not the voice of the multitude, but the voice of truth, that has power with the conscience; that can produce rational conviction and acceptable obedience. <b>A conscience that awaits the decision of the multitude</b>&hellip;&rdquo;', DA, 'The Address') +
-  N('The Address says it of a General Council by name. Every council on the egg was a multitude deciding for a conscience.', '&rarr; So: given a people who must follow their conscience, given that no council can forever bind it, what is left to unite on? Only one thing.'))
+  N('The Address says it of a General Council by name. Every council on the egg was a multitude deciding for a conscience.', '&rarr; So: given a people who must follow their conscience, given that no council can forever bind it, what is left to unite on?'))
+
+A('<section class="slide"><h2>What can Christians unite on?</h2>'
+  '<div class="sub frag">He prayed that they would be one. So it must be possible.</div>'
+  '<aside class=notes>John 17:21, a prayer, not a command. The question, now that the issue is named. Pause on it before the answer.</aside></section>')
 
 # ---------- 7 THE SOLUTION ----------
 
