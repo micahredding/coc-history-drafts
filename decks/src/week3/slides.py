@@ -10,39 +10,82 @@ def C(name, note=''):   # chapter card
             '<aside class=notes>%s</aside></section>' % (name, note))
 
 # ---------- the split illustration ----------
-# One circle, cut into n vertical slices. Before the click: one body, one color. On the click the
-# slices slide apart and take their own colors; a 'dies' slice fades instead; kind='heal' adds a
-# second click that closes the gap again.
-COLORS = ['c1', 'c2', 'c3', 'c4']
-def split(kids, kind=''):
-    W, H, cx, cy, r = 1000, 470, 500, 200, 170
-    n = len(kids)
-    step = 2 * r / n
-    spread = 150 if n == 2 else 110
-    out = []
-    for i, (lab, kk) in enumerate(kids):
-        xa, xb = cx - r + i * step, cx - r + (i + 1) * step
-        ya = math.sqrt(max(r * r - (xa - cx) ** 2, 0)); yb = math.sqrt(max(r * r - (xb - cx) ** 2, 0))
-        d = ('M%.1f,%.1f A%d,%d 0 0 1 %.1f,%.1f L%.1f,%.1f A%d,%d 0 0 1 %.1f,%.1f Z'
-             % (xa, cy - ya, r, r, xb, cy - yb, xb, cy + yb, r, r, xa, cy + ya))
-        dx = (i - (n - 1) / 2) * spread
-        cls = 'piece %s%s' % (COLORS[i], ' dying' if kk == 'dies' else '')
-        out.append('<g class="%s" style="--dx:%.0fpx"><path d="%s"/></g>' % (cls, dx, d))
-        lines = lab.split('|')
-        lx = (xa + xb) / 2 + dx
-        out.append('<text class="plab %s%s" x="%.0f" y="%d" text-anchor="middle">%s</text>' % (
-            COLORS[i], ' dim' if kk == 'dies' else '', lx, cy + r + 52,
-            ''.join('<tspan x="%.0f" dy="%d">%s</tspan>' % (lx, 0 if j == 0 else 34, l) for j, l in enumerate(lines))))
-    return '<svg class="splitfig" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (W, H, ''.join(out))
+# One circle, cut into slices. A slide has a BEFORE state and an AFTER state, each a list of units;
+# a unit = (slice indices, label, color, dying). Slices in the same unit sit flush and share a color,
+# so they read as one body. The click moves every slice from its before-unit to its after-unit.
+# Cumulative slides (325 → 431 → 451) open on the previous slide's after-state and split one unit again.
+W_, H_, CX, CY, R = 1200, 560, 600, 200, 170
+def eq(n):            # n equal vertical slices of the circle
+    w = 2 * R / n
+    return [(CX - R + i * w, CX - R + (i + 1) * w) for i in range(n)]
+# the ancient church, carved cumulatively: East · Oriental · Chalcedonian | Arian
+ANCIENT = [(CX - R, CX - R / 2), (CX - R / 2, CX - R / 4), (CX - R / 4, CX), (CX, CX + R)]
 
-def D(title, line, kids, notes, kind='', cut=False):
+def _layout(slices, units, gap):
+    """Lay units out left→right, centered; return per-slice dx, and per-unit (center x, width)."""
+    widths = [sum(slices[i][1] - slices[i][0] for i in u[0]) for u in units]
+    total = sum(widths) + gap * (len(units) - 1)
+    x = CX - total / 2
+    dx = {}; centers = []
+    for (idx, lab, col, dying), w in zip(units, widths):
+        off = 0
+        for i in idx:
+            dx[i] = x + off - slices[i][0]
+            off += slices[i][1] - slices[i][0]
+        centers.append((x + w / 2, w)); x += w + gap
+    return dx, centers
+
+def split(slices, pre, post, gap=60):
+    dx0, c0 = _layout(slices, pre, gap)
+    dx1, c1 = _layout(slices, post, gap)
+    col0 = {}; col1 = {}; dy1 = {}
+    for idx, lab, col, dying in pre:
+        for i in idx: col0[i] = col
+    for idx, lab, col, dying in post:
+        for i in idx: col1[i] = col; dy1[i] = dying
+    out = []
+    for i, (xa, xb) in enumerate(slices):
+        ya = math.sqrt(max(R * R - (xa - CX) ** 2, 0)); yb = math.sqrt(max(R * R - (xb - CX) ** 2, 0))
+        d = ('M%.1f,%.1f A%d,%d 0 0 1 %.1f,%.1f L%.1f,%.1f A%d,%d 0 0 1 %.1f,%.1f Z'
+             % (xa, CY - ya, R, R, xb, CY - yb, xb, CY + yb, R, R, xa, CY + ya))
+        k0 = 'bone-dim' if col0[i] == 'bone' else col0[i]; k1 = 'bone-dim' if col1[i] == 'bone' else col1[i]
+        out.append('<g class="piece%s" style="--dx0:%.0fpx;--dx1:%.0fpx;--k0:var(--%s);--k1:var(--%s)"><path d="%s"/></g>'
+                   % (' dying' if dy1[i] else '', dx0[i], dx1[i], k0, k1, d))
+    # labels: a unit present in both states keeps its label; otherwise pre labels fade out, post labels fade in
+    pre_keys = {tuple(u[0]): u for u in pre}; post_keys = {tuple(u[0]): u for u in post}
+    def label(u, center, row, cls):
+        idx, lab, col, dying = u
+        if not lab: return ''
+        x = center; y = CY + R + 52 + row * 44
+        lines = lab.split('|')
+        return '<text class="plab %s%s" x="%.0f" y="%d" text-anchor="middle">%s</text>' % (
+            cls, ' dim' if dying else '', x, y,
+            ''.join('<tspan x="%.0f" dy="%d">%s</tspan>' % (x, 0 if j == 0 else 34, l) for j, l in enumerate(lines)))
+    st0 = 1 if min(w for _, w in c0) < 120 or len(pre) > 2 else 0     # stagger label rows only when pieces are narrow
+    st1 = 1 if min(w for _, w in c1) < 120 or len(post) > 2 else 0
+    for k, (u, (cx_, w)) in enumerate(zip(pre, c0)):
+        if tuple(u[0]) not in post_keys: out.append(label(u, cx_, (k % 2) * st0, 'pre'))
+    for k, (u, (cx_, w)) in enumerate(zip(post, c1)):
+        out.append(label(u, cx_, (k % 2) * st1, 'keep' if tuple(u[0]) in pre_keys else 'post'))
+    return '<svg class="splitfig" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (W_, H_, ''.join(out))
+
+def two(a, b, ca='c1', cb='c2', dying_b=False):   # a fresh circle splitting in n
+    kids = [a, b] if isinstance(a, str) else a
+    cols = [ca, cb, 'c3', 'c4']
+    sl = eq(len(kids))
+    pre = [(list(range(len(kids))), '', 'bone', False)]
+    post = [([i], k, cols[i], dying_b and i == len(kids) - 1) for i, k in enumerate(kids)]
+    return sl, pre, post
+
+def D(title, line, fig, notes, kind='', cut=False):
     """One division. Headline + line at once; click = the split (+ a second click to heal, if kind='heal')."""
+    slices, pre, post = fig
     healer = '<div class="frag healer"></div>' if kind == 'heal' else ''
     return ('<section class="slide divslide%s"><h2>%s</h2>'
             '<div class=line>%s</div>'
             '<div class="failure frag">%s</div>%s'
             '<aside class=notes>%s</aside></section>' % (
-                ' cuttable' if cut else '', title, line, split(kids, kind), healer, notes))
+                ' cuttable' if cut else '', title, line, split(slices, pre, post), healer, notes))
 
 S = []
 A = S.append
@@ -72,55 +115,58 @@ A(C('Christendom&rsquo;s Search for Unity',
 
 A(D('325 &middot; Council of Nicaea',
     'Arians against non-Arians. A creed, and fifty-six more years of war.',
-    [('Nicene', ''), ('Arian', 'dies')], NOTES['325']))
+    (ANCIENT, [([0, 1, 2, 3], '', 'bone', False)],
+              [([0, 1, 2], 'Nicene', 'c1', False), ([3], 'Arian', 'c1', True)]), NOTES['325']))
 
 A(D('431 &middot; Council of Ephesus',
     'Does Mary bear God? A canon forbidding new creeds, and the Church of the East gone.',
-    [('the imperial Church', ''), ('the Church|of the East', '')], NOTES['431']))
+    (ANCIENT, [([0, 1, 2], 'Nicene', 'c1', False), ([3], 'Arian', 'c1', True)],
+              [([0], 'Church of|the East', 'c3', False), ([1, 2], 'the imperial|Church', 'c1', False), ([3], 'Arian', 'c1', True)]), NOTES['431']))
 
 A(D('451 &middot; Council of Chalcedon',
     'One nature or two? A Definition, &ldquo;not a new creed,&rdquo; and Egypt gone.',
-    [('Chalcedonian', ''), ('Oriental Orthodox', '')], NOTES['451']))
+    (ANCIENT, [([0], 'Church of|the East', 'c3', False), ([1, 2], 'the imperial|Church', 'c1', False), ([3], 'Arian', 'c1', True)],
+              [([0], 'Church of|the East', 'c3', False), ([1], 'Oriental|Orthodox', 'c2', False), ([2], 'Chalcedonian', 'c1', False), ([3], 'Arian', 'c1', True)]), NOTES['451']))
 
 A(D('482 &middot; The Henotikon',
     'Zeno needs Egypt back. An &ldquo;instrument of union,&rdquo; and thirty-five years of schism with Rome.',
-    [('Rome', ''), ('Constantinople', '')], NOTES['482'], kind='heal'))
+    two('Rome', 'Constantinople'), NOTES['482'], kind='heal'))
 
 A(D('1054 &middot; The Filioque',
     'One word added to the creed. Legates sent to settle it, and East and West apart.',
-    [('Catholic West', ''), ('Orthodox East', '')], NOTES['1054']))
+    two('Catholic West', 'Orthodox East'), NOTES['1054']))
 
 A(D('1530 &middot; The Augsburg Confession',
     'Luther&rsquo;s protest. A confession offered as the basis for peace, and the West in two.',
-    [('Catholic', ''), ('Protestant', '')], NOTES['1530']))
+    two('Catholic', 'Protestant'), NOTES['1530']))
 
 A(D('1527 &middot; Zurich',
     'Infant baptism and the sword. A council ruling, and Felix Manz drowned.',
-    [('Reformed', ''), ('Anabaptists', '')], NOTES['1527']))
+    two('Reformed', 'Anabaptists'), NOTES['1527']))
 
 A(D('1529 &middot; The Marburg Colloquy',
     'The Lord&rsquo;s Supper. Fourteen articles agreed, and &ldquo;you have a different spirit.&rdquo;',
-    [('Lutheran', ''), ('Reformed', '')], NOTES['1529']))
+    two('Lutheran', 'Reformed'), NOTES['1529']))
 
 A(D('1646 &middot; The Westminster Confession',
     'Three kingdoms at war. One confession for all three, and two thousand ministers ejected.',
-    [('Church of|England', ''), ('Independents', ''), ('Church of|Scotland', '')], NOTES['1646']))
+    two(['Church of|England', 'Independents', 'Church of|Scotland'], None), NOTES['1646']))
 
 A(D('1690 &middot; The Revolution Settlement',
     'Scotland after the Revolution. Presbytery restored, and the Covenanters outside.',
-    [('Church of Scotland', ''), ('Covenanters', '')], NOTES['1690'], cut=True))
+    two('Church of Scotland', 'Covenanters'), NOTES['1690'], cut=True))
 
 A(D('1733 &middot; The Secession',
     'Patrons appoint ministers. Erskine rebuked, and four ministers walk out.',
-    [('Church of Scotland', ''), ('the Seceders', '')], NOTES['1733']))
+    two('Church of Scotland', 'the Seceders'), NOTES['1733']))
 
 A(D('1747 &middot; The Burgess Oath',
     'May a Seceder swear it? A synod vote, and mutual excommunication.',
-    [('Burgher', ''), ('Anti-Burgher', '')], NOTES['1747']))
+    two('Burgher', 'Anti-Burgher'), NOTES['1747']))
 
 A(D('1799 &middot; 1806 &middot; Old Light, New Light',
     'May the magistrate enforce religion? Revised Testimonies, and each synod in two.',
-    [('Old Light', ''), ('New Light', ''), ('Old Light', ''), ('New Light', '')], NOTES['1799'], cut=True))
+    two(['Old Light', 'New Light', 'Old Light', 'New Light'], None), NOTES['1799'], cut=True))
 
 A('<section class="slide flowslide"><div class="eyebrow quiet">325&ndash;1806</div>' + FLOW_SVG +
   '<aside class=notes>The whole picture at once. One river, and every gold bar is a creed, council, oath or settlement offered as a term of unity. Widths are suggestive, not to scale. The faded stream is the Arians; the dotted lens is the Henotikon, the one breach that healed.<br>'
