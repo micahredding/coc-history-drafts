@@ -31,6 +31,12 @@ css+= ('\n  /* ---- Week 3 type scale (inherited from Week 2) ---- */\n'
 defs = '<defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs>'
 body = body.replace('xmlns="http://www.w3.org/2000/svg"><path class="rib"', 'xmlns="http://www.w3.org/2000/svg">' + defs + '<path class="rib"')
 
+css += ('\n  /* ---- quote litanies (evils, reception) ---- */\n'
+        '  #deck .slide .litany{gap:1.6vmin;margin-top:2vmin;max-width:88vw}\n'
+        '  #deck .slide .litany .no{font-family:"IM Fell English",Georgia,serif;font-size:clamp(20px,3.4vmin,42px);line-height:1.3;color:var(--bone)}\n'
+        '  #deck .slide .litany .no b{color:var(--gold);font-weight:400}\n'
+        '  #deck .slide .eyebrow{max-width:70ch;line-height:1.4}\n')
+
 js=open('decks/src/week3/engine.js').read()
 js=js.replace("'w1cur'","'w3cur'").replace("'w1mode'","'w3mode'").replace("'w1strip'","'w3strip'")
 js=js.replace("'w1presenter'","'w3presenter'")
