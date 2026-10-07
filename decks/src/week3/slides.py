@@ -22,7 +22,7 @@ LEAVES = [('east', 1), ('oriental', 1), ('orthodox', 1), ('catholic', 1), ('luth
           ('a_old', 1), ('a_new', 1), ('anabaptists', 1), ('arian', 1)]
 def U(a, b=None): return list(range(a, (b if b is not None else a) + 1))
 ARIAN_KEY = (15,)
-SHRINK = {'482': 58, '1054': 40}          # the Arian remnant after 451; absent from 1530 on = gone
+SHRINK = {'482': 58, '519': 58, '1054': 40}          # the Arian remnant after 451; absent from 1530 on = gone
 
 def _widths(units, key):
     living = [u for u in units if tuple(u[0]) != ARIAN_KEY or key in ('0', '325', '431', '451') or key in SHRINK]
@@ -37,47 +37,96 @@ def _widths(units, key):
             ws.append(w_eq)
     return ws
 
+ORDER = ['0', '325', '431', '451', '482', '519', '1054', '1530', '1527', '1529', '1646', '1690', '1733', '1747', '1806']
+JAG = {2: '1054', 3: '1530'}     # boundary after slice b is jagged from this state on (an Easter-egg zigzag)
+JOIN = {'519': {2}}              # boundaries with no gap in this state: the Henotikon's awkward join, seam showing
+AMP, K = 9, 10                   # zigzag amplitude and segments per edge
+
+def _amp(key, b):
+    st = JAG.get(b)
+    return AMP if st and ORDER.index(key) >= ORDER.index(st) else 0
+
 def _geom(units, key):
-    """Per-slice path for this state, plus per-unit (center, width) and the drawn extent."""
+    """Per-slice path for this state, plus per-unit (center, width), the drawn extent, and seam paths."""
     ws = _widths(units, key)
     B = sum(ws); rx = B / 2; ry = R
-    living = [w for w in ws if w > 0]
-    G = GAP * (len(living) - 1)
-    x = CX - rx; shift = -G / 2
-    paths = {}; centers = []
+    joined = JOIN.get(key, set())
+    # gaps: one between each pair of living units, unless joined
+    order_slices = [i for u in units for i in u[0]]
+    x = CX - rx
+    paths = {}; centers = []; seams = {}
     def yy(px):
         t = max(-1.0, min(1.0, (px - CX) / rx)) if rx > 0 else 0
         return ry * math.sqrt(max(0.0, 1 - t * t))
+    # first pass: slice extents in body coordinates (no gaps)
+    ext = {}
     for (idx, lab, col, dying), w in zip(units, ws):
-        ua, ub = x, x + w
         n = len(idx); sw = w / n
         for j, i in enumerate(idx):
-            sa, sb = ua + j * sw, ua + (j + 1) * sw
-            ya, yb = yy(sa), yy(sb)
-            paths[i] = ('M%.2f,%.2f A%.2f,%.2f 0 0 1 %.2f,%.2f L%.2f,%.2f A%.2f,%.2f 0 0 1 %.2f,%.2f Z'
-                        % (sa + shift, CY - ya, rx, ry, sb + shift, CY - yb, sb + shift, CY + yb, rx, ry, sa + shift, CY + ya))
-        centers.append(((ua + ub) / 2 + shift, w))
+            ext[i] = (x + j * sw, x + (j + 1) * sw)
         x += w
-        if w > 0: shift += GAP
-    return paths, centers, B + G
+    # shifts: accumulate a GAP after each living unit's last slice unless that boundary is joined
+    shift = {}; sh = 0.0; last_living = None
+    total_gaps = 0
+    for (idx, lab, col, dying), w in zip(units, ws):
+        if w <= 0:
+            for i in idx: shift[i] = sh
+            continue
+        if last_living is not None and last_living not in joined:
+            sh += GAP; total_gaps += GAP
+        for i in idx: shift[i] = sh
+        last_living = idx[-1]
+    for i in shift: shift[i] -= total_gaps / 2
+    def edge(xx, y0, y1, amp, k_from_top):
+        """interior points of a vertical edge from y0 to y1 (K segments), zigzagging by amp."""
+        pts = []
+        for k in range(1, K):
+            t = k / K
+            y = y0 + (y1 - y0) * t
+            kk = k if k_from_top else K - k
+            pts.append((xx + amp * (1 if kk % 2 else -1), y))
+        return pts
+    for i in range(N):
+        sa, sb = ext[i]; sa += shift[i]; sb += shift[i]
+        ya, yb = yy(ext[i][0]), yy(ext[i][1])
+        ar = _amp(key, i); al = _amp(key, i - 1)
+        d = 'M%.2f,%.2f A%.2f,%.2f 0 0 1 %.2f,%.2f' % (sa, CY - ya, rx, ry, sb, CY - yb)
+        for px, py in edge(sb, CY - yb, CY + yb, ar, True): d += ' L%.2f,%.2f' % (px, py)
+        d += ' L%.2f,%.2f A%.2f,%.2f 0 0 1 %.2f,%.2f' % (sb, CY + yb, rx, ry, sa, CY + ya)
+        for px, py in edge(sa, CY + ya, CY - ya, al, False): d += ' L%.2f,%.2f' % (px, py)
+        d += ' Z'
+        paths[i] = d
+        if i in JAG:   # seam along this boundary (drawn only when joined)
+            sd = 'M%.2f,%.2f' % (sb, CY - yb)
+            for px, py in edge(sb, CY - yb, CY + yb, ar, True): sd += ' L%.2f,%.2f' % (px, py)
+            sd += ' L%.2f,%.2f' % (sb, CY + yb)
+            seams[i] = sd
+    for (idx, lab, col, dying), w in zip(units, ws):
+        a = ext[idx[0]][0] + shift[idx[0]]; b_ = ext[idx[-1]][1] + shift[idx[-1]]
+        centers.append(((a + b_) / 2, w))
+    return paths, centers, B + total_gaps, seams
 
-def split(pre, post, k0, k1):
-    p0, c0, w0 = _geom(pre, k0); p1, c1, w1 = _geom(post, k1)
+def split(pre, post, k0, k1, k2=None):
+    p0, c0, w0, s0 = _geom(pre, k0); p1, c1, w1, s1 = _geom(post, k1)
+    p2, s2 = (_geom(post, k2)[0], _geom(post, k2)[3]) if k2 else (p1, s1)
     col0 = {}; col1 = {}; dy0 = {}; dy1 = {}; unit0 = {}; unit1 = {}; wid0 = {}; wid1 = {}
     for u, (cx_, w) in zip(pre, c0):
         for i in u[0]: col0[i] = u[2]; unit0[i] = tuple(u[0]); dy0[i] = u[3]; wid0[i] = w
     for u, (cx_, w) in zip(post, c1):
         for i in u[0]: col1[i] = u[2]; unit1[i] = tuple(u[0]); dy1[i] = u[3]; wid1[i] = w
-    def seam(i):   # a slice on either side of a cut made this slide (used for the healed seam)
-        if unit0[i] == unit1[i]: return False
-        return any(0 <= j < N and unit0[j] == unit0[i] and unit1[j] != unit1[i] for j in (i - 1, i + 1))
     out = []
     for i in range(N):
         k0c = 'bone-dim' if col0[i] == 'bone' else col0[i]; k1c = 'bone-dim' if col1[i] == 'bone' else col1[i]
         cls = 'piece' + (' dying0' if dy0[i] else '') + (' dying1' if dy1[i] else '') + \
-              (' moved' if seam(i) else '') + (' gone0' if wid0[i] <= 0 else '') + (' gone1' if wid1[i] <= 0 else '')
-        out.append('<g class="%s" style="--d0:path(\'%s\');--d1:path(\'%s\');--k0:var(--%s);--k1:var(--%s)"><path d="%s" vector-effect="non-scaling-stroke"/></g>'
-                   % (cls, p0[i], p1[i], k0c, k1c, p0[i]))
+              (' gone0' if wid0[i] <= 0 else '') + (' gone1' if wid1[i] <= 0 else '')
+        out.append('<g class="%s" style="--d0:path(\'%s\');--d1:path(\'%s\');--d2:path(\'%s\');--k0:var(--%s);--k1:var(--%s)"><path d="%s" vector-effect="non-scaling-stroke"/></g>'
+                   % (cls, p0[i], p1[i], p2[i], k0c, k1c, p0[i]))
+    # seams: visible in a state where the boundary is joined
+    j0 = JOIN.get(k0, set()); j1 = JOIN.get(k1, set()); j2 = JOIN.get(k2, set()) if k2 else set()
+    for b in JAG:
+        cls = 'seam' + (' on0' if b in j0 else '') + (' on1' if b in j1 else '') + (' on2' if b in j2 else '')
+        out.append('<path class="%s" d="%s" style="--d0:path(\'%s\');--d1:path(\'%s\');--d2:path(\'%s\')" vector-effect="non-scaling-stroke"/>'
+                   % (cls, s0[b], s0[b], s1[b], s2[b]))
     pre_keys = {tuple(u[0]) for u in pre}; post_keys = {tuple(u[0]) for u in post}
     def label(u, center, row, cls, w):
         idx, lab, col, dying = u
@@ -96,14 +145,14 @@ def split(pre, post, k0, k1):
     W = max(w0, w1) + 320
     return '<svg class="splitfig" viewBox="%.0f 0 %.0f %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (CX - W / 2, W, H_, ''.join(out))
 
-def D(title, line, pre, post, notes, kind='', cut=False):
-    """pre/post are state keys into ST. Headline + line at once; click = the split (+ a second click to heal)."""
-    healer = '<div class="frag healer"></div>' if kind == 'heal' else ''
+def D(title, line, pre, post, notes, heal=None, cut=False):
+    """pre/post/heal are state keys into ST. Headline + line at once; click = the split; a second click = heal."""
+    healer = '<div class="frag healer"></div>' if heal else ''
     return ('<section class="slide divslide%s"><h2>%s</h2>'
             '<div class=line>%s</div>'
             '<div class="failure frag">%s</div>%s'
             '<aside class=notes>%s</aside></section>' % (
-                ' cuttable' if cut else '', title, line, split(ST[pre], ST[post], pre, post), healer, notes))
+                ' cuttable' if cut else '', title, line, split(ST[pre], ST[post], pre, post, heal), healer, notes))
 
 # ---------- the states, in order ----------
 ARIAN = (U(15), 'Arian', 'smoke', True)
@@ -124,6 +173,7 @@ ST['325']  = [(U(0, 14), 'Nicene', 'c1', False), ARIAN]
 ST['431']  = [EAST, (U(1, 14), 'the imperial|Church', 'c1', False), ARIAN]
 ST['451']  = [EAST, ORIENTAL, (U(2, 14), 'Chalcedonian', 'c1', False), ARIAN]
 ST['482']  = [EAST, ORIENTAL, (U(2), 'Constantinople', 'c4', False), (U(3, 14), 'Rome', 'c1', False), ARIAN]
+ST['519']  = ST['482']
 ST['1054'] = [EAST, ORIENTAL, ORTHODOX, (U(3, 14), 'Catholic|West', 'c1', False), ARIAN]
 ST['1530'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, (U(4, 14), 'Protestant', 'c1', False), ARIAN]
 ST['1527'] = [EAST, ORIENTAL, ORTHODOX, CATHOLIC, (U(4, 13), 'Protestant', 'c1', False), ANABAP, ARIAN]
@@ -177,11 +227,11 @@ A(D('451 &middot; Council of Chalcedon',
 
 A(D('482 &middot; The Henotikon',
     'Zeno needs Egypt back. An &ldquo;instrument of union,&rdquo; and thirty-five years of schism with Rome.',
-    '451', '482', NOTES['482'], kind='heal'))
+    '451', '482', NOTES['482'], heal='519'))
 
 A(D('1054 &middot; The Filioque',
     'One word added to the creed. Legates sent to settle it, and East and West apart.',
-    '451', '1054', NOTES['1054']))
+    '519', '1054', NOTES['1054']))
 
 A(D('1530 &middot; The Augsburg Confession',
     'Luther&rsquo;s protest. A confession offered as the basis for peace, and the West in two.',
