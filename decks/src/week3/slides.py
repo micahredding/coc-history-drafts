@@ -53,12 +53,11 @@ A('<section class="slide"><div class=eyebrow>&ldquo;What awful and distressing e
   '<div class=litany>'
   '<div class="no frag">&ldquo;congregations <b>broken to pieces</b>&rdquo;</div>'
   '<div class="no frag">&ldquo;large settlements and tracts of country&hellip; <b>entirely destitute of a Gospel ministry</b>&rdquo;</div>'
-  '<div class="no frag">&ldquo;Several&hellip; who live at the door of a preached Gospel, <b>dare not in conscience go to hear it</b>&rdquo;</div>'
   '<div class="no frag">&ldquo;How seldom do many&hellip; enjoy the dispensations of the Lord&rsquo;s Supper, <b>that great ordinance of unity and love</b>&rdquo;</div>'
   '<div class="no frag">&ldquo;the tone of discipline relaxed&hellip; lest their people should leave them, and&hellip; <b>find refuge in the bosom of another party</b>&rdquo;</div>'
   '<div class="no frag">&ldquo;the weak stumbled, the graceless and profane hardened, <b>the mouths of infidels opened</b> to blaspheme religion&rdquo;</div>'
   '</div><div class=cite>' + DA + '</div>'
-  '<aside class=notes>Six clicks. All verbatim from the Evils of Division. The Supper line ties to the Table arc of the whole class; the conscience line shows conscience on both sides of the document, the thing that cannot be compelled and the thing division wounds. The last two land hardest in 2026: members who can leave for the church down the road, and the mouths of infidels.</aside></section>')
+  '<aside class=notes>Five clicks. All verbatim from the Evils of Division. The Supper line ties to the Table arc of the whole class. The last two land hardest in 2026: members who can leave for the church down the road, and the mouths of infidels. (Dropped from the list: &ldquo;Several&hellip; who live at the door of a preached Gospel, dare not in conscience go to hear it&rdquo;: people within reach of preaching, but of another party, whose scruples keep them from it, so they are as cut off as if among heathens. Restore if useful.)</aside></section>')
 
 A(Q('&ldquo;Say, dear brethren, <b>are not these things so?</b>&rdquo;', DA, 'The Evils of Division') +
   N('His own question, to the room. Let them answer.', '&rarr; Then back to the Declaration, to what the people of the grove wanted.'))

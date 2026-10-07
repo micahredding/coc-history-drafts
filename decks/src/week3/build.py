@@ -32,8 +32,8 @@ defs = '<defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop of
 body = body.replace('xmlns="http://www.w3.org/2000/svg"><path class="rib"', 'xmlns="http://www.w3.org/2000/svg">' + defs + '<path class="rib"')
 
 css += ('\n  /* ---- quote litanies (evils, reception) ---- */\n'
-        '  #deck .slide .litany{gap:1.6vmin;margin-top:2vmin;max-width:88vw}\n'
-        '  #deck .slide .litany .no{font-family:"IM Fell English",Georgia,serif;font-size:clamp(20px,3.4vmin,42px);line-height:1.3;color:var(--bone)}\n'
+        '  #deck .slide .litany{gap:2.2vmin;margin-top:2vmin;max-width:90vw}\n'
+        '  #deck .slide .litany .no{font-family:"IM Fell English",Georgia,serif;font-size:clamp(24px,4.3vmin,54px);line-height:1.28;color:var(--bone)}\n'
         '  #deck .slide .litany .no b{color:var(--gold);font-weight:400}\n'
         '  #deck .slide .eyebrow{max-width:70ch;line-height:1.4}\n')
 
