@@ -289,6 +289,108 @@ def shatter(seed=7, cols=15, rows=7):
         out.append('</g>')
     return '<svg class="shards" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (W, H, ''.join(out))
 
+
+# ---------- the tree of divisions ----------
+# (name, year, children). A leaf is a church that still exists; year = when it parted from its parent.
+def T(name, year, *kids): return (name, year, list(kids))
+TREE = T('the Church', 100,
+  T('Arian', 325, T('Arian kingdoms †c.650', 650)),
+  T('Church of the East', 431, T('Assyrian Church of the East', 431), T('Chaldean Catholic', 1552), T('Ancient Church of the East', 1968)),
+  T('Oriental Orthodox', 451, T('Coptic', 451), T('Armenian', 451), T('Syriac', 451), T('Ethiopian', 451), T('Malankara', 1653), T('Eritrean', 1993)),
+  T('Eastern Orthodox', 1054, T('Greek', 1054), T('Russian', 1448, T('Old Believers', 1666)), T('Serbian', 1219), T('Romanian', 1872), T('OCA', 1970)),
+  T('Catholic West', 1054,
+    T('Roman Catholic', 1054, T('Old Catholic', 1870), T('Polish National Catholic', 1897), T('Maronite', 1182)),
+    T('Waldensian', 1173),
+    T('Hussite · Moravian', 1457),
+    T('Protestant', 1517,
+      T('Lutheran', 1530, T('ELCA', 1988), T('LCMS', 1847), T('WELS', 1850), T('Church of Sweden', 1593)),
+      T('Anabaptist', 1525, T('Mennonite', 1536, T('Amish', 1693), T('Old Order Mennonite', 1872)), T('Hutterite', 1528),
+        T('Brethren', 1708, T('Dunkers', 1708), T('River Brethren', 1778))),
+      T('Reformed', 1529,
+        T('Continental Reformed', 1529, T('Reformed Church in America', 1628), T('Christian Reformed', 1857), T('Schwenkfelders', 1540)),
+        T('Church of England', 1534,
+          T('Episcopal', 1789), T('Anglican Church in N. America', 2009),
+          T('Methodist', 1784, T('United Methodist', 1968), T('Wesleyan', 1843), T('Free Methodist', 1860), T('AME', 1816), T('AME Zion', 1821), T('CME', 1870),
+            T('Nazarene', 1908), T('Salvation Army', 1865),
+            T('Pentecostal', 1906, T('Assemblies of God', 1914), T('Church of God (Cleveland)', 1886), T('Church of God in Christ', 1907),
+              T('Foursquare', 1923), T('Oneness · Apostolic', 1916))),
+          T('Puritan', 1560,
+            T('Congregational', 1620, T('United Church of Christ', 1957)),
+            T('Baptist', 1609, T('Southern Baptist', 1845), T('American Baptist', 1907), T('National Baptist', 1880), T('Free Will Baptist', 1727),
+              T('Primitive Baptist', 1827), T('Landmark Baptist', 1851), T('Independent Baptist', 1920), T('Seventh Day Baptist', 1671)),
+            T('Quaker', 1650)),
+          T('Plymouth Brethren', 1830), T('Adventist', 1863)),
+        T('Church of Scotland', 1560,
+          T('Covenanters', 1690, T('Reformed Presbyterian', 1743)),
+          T('Secession', 1733,
+            T('Burgher', 1747, T('Old Light Burgher', 1799), T('New Light Burgher', 1799)),
+            T('Anti-Burgher', 1747, T('Old Light Anti-Burgher', 1806), T('New Light Anti-Burgher', 1806))),
+          T('Relief Church', 1761),
+          T('Free Church of Scotland', 1843, T('Wee Frees', 1900)),
+          T('Presbyterian (USA)', 1706, T('PCUSA', 1983), T('PCA', 1973), T('Orthodox Presbyterian', 1936), T('Cumberland Presbyterian', 1810),
+            T('Associate Reformed', 1782))),
+        T('Evangelical Free', 1884), T('Evangelical Covenant', 1885), T('Vineyard', 1982), T('Calvary Chapel', 1965), T('Non-denominational', 1970)),
+      T('Stone–Campbell', 1832,
+        T('Disciples of Christ', 1968), T('Christian Churches', 1927),
+        T('Churches of Christ', 1906, T('one cup', 1915), T('non-class', 1920), T('non-institutional', 1955), T('instrumental', 1906), T('premillennial', 1930))))))
+
+def tree_svg():
+    W, H = 2000, 1150
+    X0, X1, Y0, Y1 = 40, 1660, 40, 1130
+    def xs(y):   # time scale: 100–1500 takes the left 40%, 1500–2000 the right 60%
+        return X0 + (X1 - X0) * ((y - 100) / 1400 * .40 if y <= 1500 else .40 + (y - 1500) / 500 * .60)
+    leaves = []
+    def count(n):
+        if not n[2]: leaves.append(n); return 1
+        return sum(count(k) for k in n[2])
+    count(TREE)
+    pitch = (Y1 - Y0) / (len(leaves) - 1)
+    pos = {}
+    def place(n, fam):
+        if not n[2]:
+            y = Y0 + leaves.index(n) * pitch; pos[id(n)] = (xs(n[1]), y, fam); return y
+        ys = [place(k, fam if fam else k) for k in n[2]]
+        y = sum(ys) / len(ys); pos[id(n)] = (xs(n[1]), y, fam); return y
+    place(TREE, None)
+    fams = {id(k): c for k, c in zip(TREE[2], ['smoke', 'c3', 'c2', 'c4', 'c1'])}
+    out = []; placed = []
+    def draw(n, depth):
+        x, y, fam = pos[id(n)]
+        col = fams.get(id(fam), 'bone-dim') if fam else 'bone-dim'
+        if n[2]:
+            kys = [pos[id(k)][1] for k in n[2]]
+            kx = min(pos[id(k)][0] for k in n[2])
+            # trunk: a vertical bar at this node's x spanning the children, then elbows out to each child
+            out.append('<line class="tb" x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" style="stroke:var(--%s)"/>' % (x, min(kys), x, max(kys), col))
+            for k in n[2]:
+                kx_, ky_, kf = pos[id(k)]
+                kc = fams.get(id(kf), col) if kf else col
+                out.append('<line class="tb" x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" style="stroke:var(--%s)"/>' % (x, ky_, kx_, ky_, kc))
+                draw(k, depth + 1)
+            size = 22 if depth == 0 else (17 if depth <= 2 else 13)
+            out.append('<circle class="tn" cx="%.1f" cy="%.1f" r="%d" style="fill:var(--%s)"/>' % (x, y, 5 if depth <= 2 else 3, col))
+            label = n[0] if depth == 0 else '%s %d' % (n[0], n[1])
+            tw = len(label) * size * 0.5; anchor = 'start' if depth == 0 else 'end'
+            lx = x + 12 if depth == 0 else x - 8
+            x0_ = lx if depth == 0 else lx - tw
+            # try above, below, then further out, against labels already placed
+            for dy in (-6, size + 2, -6 - size - 4, 2 * size + 6, -6 - 2 * size - 8, 3 * size + 10):
+                ly = y + dy
+                box = (x0_, ly - size, x0_ + tw, ly + 3)
+                if not any(not (box[2] < b[0] or box[0] > b[2] or box[3] < b[1] or box[1] > b[3]) for b in placed): break
+            placed.append(box)
+            text = n[0] if depth == 0 else '%s <tspan class="yr">%d</tspan>' % (n[0], n[1])
+            out.append('<text class="tl" x="%.1f" y="%.1f" text-anchor="%s" style="font-size:%dpx">%s</text>' % (lx, ly, anchor, size, text))
+        else:
+            out.append('<line class="tb leafline" x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" style="stroke:var(--%s)"/>' % (x, y, X1 + 20, y, col))
+            cls = ' dead' if '†' in n[0] else ''
+            out.append('<text class="lf%s" x="%.1f" y="%.1f" style="font-size:12.5px">%s</text>' % (cls, X1 + 28, y + 4, n[0]))
+    draw(TREE, 0)
+    # time ticks
+    for yr in (325, 451, 1054, 1517, 1700, 1900, 2000):
+        out.append('<line class="tick" x1="%.1f" y1="%d" x2="%.1f" y2="%d"/><text class="tk" x="%.1f" y="%d" text-anchor="middle">%d</text>' % (xs(yr), Y0 - 22, xs(yr), Y1 + 10, xs(yr), Y0 - 28, yr))
+    return '<svg class="tree2" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (W, H, ''.join(out))
+
 # ---------- the states, in order ----------
 ARIAN = (U(15), 'Arian', 'smoke', True)
 EAST = (U(0), 'Church of|the East', 'c3', False)
@@ -406,8 +508,8 @@ A('<section class="slide divslide shatterslide"><h2>&hellip;and today</h2>'
   '<aside class=notes>The egg, shattered. Dozens of pieces, many of them named, the names chosen to make the room smile (four kinds of Church of Christ are in there). No click; it is simply on screen.<br>'
   '&rarr; Every one of these was somebody&rsquo;s instrument of unity.</aside></section>')
 
-A('<section class="slide flowslide"><div class="eyebrow quiet">325&ndash;1806</div>' + FLOW_SVG +
-  '<aside class=notes>The whole picture at once. One river, and every gold bar is a creed, council, oath or settlement offered as a term of unity. Widths are suggestive, not to scale. The faded stream is the Arians; the dotted lens is the Henotikon, the one breach that healed.<br>'
+A('<section class="slide treeslide2"><div class="eyebrow quiet">The tree of divisions</div>' + tree_svg() +
+  '<aside class=notes>Every branch is a church leaving another, placed at its year; time runs left to right, with the Reformation given most of the width. The leaves at the right edge are churches that still exist. Simplified and partial on purpose: the real tree does not fit on a wall.<br>'
   '&rarr; All of these, as informative and enlightening as they are, did not produce unity. They could not produce it even among those who agreed on them.</aside></section>')
 
 A('<section class="slide"><h2>What can Christians unite on?</h2>'
