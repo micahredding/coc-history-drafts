@@ -187,6 +187,96 @@ def D(title, line, pre, post, notes, heal=None, cut=False):
             '<aside class=notes>%s</aside></section>' % (
                 ' cuttable' if cut else '', title, line, split(ST[pre], ST[post], pre, post, heal), healer, notes))
 
+
+# ---------- the finale: a shattered egg, too many pieces to count ----------
+NAMES = ['Roman Catholic', 'Eastern Orthodox', 'Oriental Orthodox', 'Church of the East', 'Coptic', 'Armenian', 'Ethiopian',
+    'Syriac', 'Greek Orthodox', 'Russian Orthodox', 'Old Believers', 'Old Catholic', 'Maronite', 'Mar Thoma',
+    'Lutheran (ELCA)', 'Lutheran (LCMS)', 'Lutheran (WELS)', 'Anglican', 'Episcopal', 'Methodist', 'Wesleyan',
+    'Free Methodist', 'Nazarene', 'Southern Baptist', 'American Baptist', 'Free Will Baptist', 'Primitive Baptist',
+    'Independent Baptist', 'Presbyterian (PCUSA)', 'Presbyterian (PCA)', 'Orthodox Presbyterian', 'Cumberland Presbyterian',
+    'Reformed (RCA)', 'Christian Reformed', 'Congregational', 'United Church of Christ', 'Disciples of Christ',
+    'Christian Church', 'Church of Christ', 'Church of Christ (one cup)', 'Church of Christ (non-class)',
+    'Church of Christ (non-institutional)', 'Church of Christ (instrumental)', 'Mennonite', 'Amish', 'Hutterite',
+    'Brethren', 'Quaker', 'Moravian', 'Salvation Army', 'Assemblies of God', 'Church of God (Cleveland)',
+    'Foursquare', 'Apostolic', 'Oneness Pentecostal', 'Holiness', 'Seventh-day Adventist', 'Plymouth Brethren',
+    'Evangelical Free', 'Evangelical Covenant', 'Vineyard', 'Calvary Chapel', 'Non-denominational', 'Waldensian',
+    'Covenanters', 'Seceders', 'Relief Church', 'Free Church of Scotland', 'Wee Frees', 'Church of Scotland',
+    'Associate Reformed', 'Primitive Methodist', 'AME', 'AME Zion', 'CME', 'National Baptist', 'Progressive Baptist',
+    'Church of God in Christ', 'Reformed Baptist', 'Landmark Baptist', 'Two-Seed Baptist', 'Hard-Shell Baptist',
+    'Dunkers', 'River Brethren', 'Schwenkfelders', 'Shakers', 'Stone-ites', 'Campbellites']
+
+def _clip(poly, clip):
+    """Sutherland-Hodgman: clip polygon by a convex polygon (both lists of (x,y), ccw)."""
+    out = poly
+    for i in range(len(clip)):
+        a, b = clip[i], clip[(i + 1) % len(clip)]
+        inp = out; out = []
+        if not inp: break
+        def inside(p): return (b[0] - a[0]) * (p[1] - a[1]) - (b[1] - a[1]) * (p[0] - a[0]) >= 0
+        def inter(p, q):
+            x1, y1, x2, y2 = a[0], a[1], b[0], b[1]; x3, y3, x4, y4 = p[0], p[1], q[0], q[1]
+            den = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4) or 1e-9
+            t = ((x1 - x3) * (y3 - y4) - (y1 - y3) * (x3 - x4)) / den
+            return (x1 + t * (x2 - x1), y1 + t * (y2 - y1))
+        s_ = inp[-1]
+        for e in inp:
+            if inside(e):
+                if not inside(s_): out.append(inter(s_, e))
+                out.append(e)
+            elif inside(s_): out.append(inter(s_, e))
+            s_ = e
+    return out
+
+def shatter(seed=7, cols=15, rows=7):
+    rnd = random.Random(seed)
+    W, H, cx, cy, rx, ry = 2000, 900, 1000, 430, 930, 370
+    egg = [(cx + rx * math.cos(2 * math.pi * k / 72), cy + ry * math.sin(2 * math.pi * k / 72)) for k in range(72)]
+    # jittered grid vertices over the bounding box
+    gx = [cx - rx + (2 * rx) * i / cols for i in range(cols + 1)]
+    gy = [cy - ry + (2 * ry) * j / rows for j in range(rows + 1)]
+    V = {}
+    for i in range(cols + 1):
+        for j in range(rows + 1):
+            jx = rnd.uniform(-.42, .42) * (2 * rx / cols); jy = rnd.uniform(-.42, .42) * (2 * ry / rows)
+            V[(i, j)] = (gx[i] + jx, gy[j] + jy)
+    shards = []
+    for i in range(cols):
+        for j in range(rows):
+            poly = [V[(i, j)], V[(i + 1, j)], V[(i + 1, j + 1)], V[(i, j + 1)]]
+            # split some cells diagonally for smaller shards
+            cells = [poly] if rnd.random() < .55 else [[poly[0], poly[1], poly[2]], [poly[0], poly[2], poly[3]]]
+            for c in cells:
+                c = _clip(c, egg)
+                if len(c) < 3: continue
+                area = abs(sum(c[k][0] * c[(k + 1) % len(c)][1] - c[(k + 1) % len(c)][0] * c[k][1] for k in range(len(c)))) / 2
+                if area < 600: continue
+                shards.append((c, area))
+    names = NAMES[:]; rnd.shuffle(names)
+    out = []
+    pats = ['', '', '', 'dots', 'hatch', 'checks']
+    for c, area in sorted(shards, key=lambda t: -t[1]):
+        mx = sum(p[0] for p in c) / len(c); my = sum(p[1] for p in c) / len(c)
+        dx, dy = mx - cx, my - cy; dist = math.hypot(dx, dy) or 1
+        push = 8 + rnd.uniform(0, 14) + 18 * dist / rx
+        tx, ty = dx / dist * push + rnd.uniform(-5, 5), dy / dist * push + rnd.uniform(-5, 5)
+        rot = rnd.uniform(-5, 5)
+        col = rnd.choice(['c1', 'c2', 'c3', 'c4']); pat = rnd.choice(pats)
+        fill = 'url(#p-%s-%s)' % (pat, col) if pat else 'var(--%s)' % col
+        d = 'M' + ' L'.join('%.1f,%.1f' % p for p in c) + ' Z'
+        out.append('<g transform="translate(%.1f,%.1f) rotate(%.1f,%.1f,%.1f)"><path d="%s" style="fill:%s;stroke:var(--ground);stroke-width:4;stroke-linejoin:round"/>'
+                   % (tx, ty, rot, mx, my, d, fill))
+        # label if there is room
+        w = max(p[0] for p in c) - min(p[0] for p in c); h = max(p[1] for p in c) - min(p[1] for p in c)
+        if names and area > 3200 and w > 60 and h > 24:
+            name = names.pop()
+            fs = max(11, min(19, (w - 10) / (0.52 * len(name))))
+            if fs >= 11:
+                out.append('<text class="shardlab" x="%.1f" y="%.1f" text-anchor="middle" style="font-size:%.1fpx">%s</text>' % (mx, my + fs * .35, fs, name))
+            else:
+                names.append(name)
+        out.append('</g>')
+    return '<svg class="shards" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (W, H, ''.join(out))
+
 # ---------- the states, in order ----------
 ARIAN = (U(15), 'Arian', 'smoke', True)
 EAST = (U(0), 'Church of|the East', 'c3', False)
@@ -297,6 +387,12 @@ A(D('1747 &middot; The Burgess Oath',
 A(D('1799 &middot; 1806 &middot; Old Light, New Light',
     'May the magistrate enforce religion? Revised Testimonies, and each synod in two.',
     '1747', '1806', NOTES['1799'], cut=True))
+
+A('<section class="slide divslide shatterslide"><h2>&hellip;and today</h2>'
+  '<div class=line>Too many divisions to count.</div>'
+  '<div class="failure frag">' + shatter() + '</div>'
+  '<aside class=notes>The egg, shattered. Dozens of pieces, many of them named, the names chosen to make the room smile (four kinds of Church of Christ are in there). No click; it is simply on screen.<br>'
+  '&rarr; Every one of these was somebody&rsquo;s instrument of unity.</aside></section>')
 
 A('<section class="slide flowslide"><div class="eyebrow quiet">325&ndash;1806</div>' + FLOW_SVG +
   '<aside class=notes>The whole picture at once. One river, and every gold bar is a creed, council, oath or settlement offered as a term of unity. Widths are suggestive, not to scale. The faded stream is the Arians; the dotted lens is the Henotikon, the one breach that healed.<br>'
