@@ -81,7 +81,9 @@ PATDEFS = '<defs>' + ''.join(
 def _geom(units, key):
     """Per-slice path for this state, plus per-unit (center, width), the drawn extent, and seam paths."""
     ws = _widths(units, key)
-    B = sum(ws); rx = B / 2; ry = R
+    B = sum(ws); rx = B / 2
+    n_live = sum(1 for w in ws if w > 0)
+    ry = R + 7 * max(0, n_live - 4)     # the egg gets taller as it widens, so it stays big on screen
     joined = JOIN.get(key, set())
     # gaps: one between each pair of living units, unless joined
     order_slices = [i for u in units for i in u[0]]
@@ -161,22 +163,23 @@ def split(pre, post, k0, k1, k2=None):
         out.append('<path class="%s" d="%s" style="--d0:path(\'%s\');--d1:path(\'%s\');--d2:path(\'%s\')" vector-effect="non-scaling-stroke"/>'
                    % (cls, s0[b], s0[b], s1[b], s2[b]))
     pre_keys = {tuple(u[0]) for u in pre}; post_keys = {tuple(u[0]) for u in post}
+    RY = R + 7 * max(0, max(sum(1 for _, w in c0 if w > 0), sum(1 for _, w in c1 if w > 0)) - 4)
     def label(u, center, row, cls, w):
         idx, lab, col, dying = u
         if not lab or w <= 0: return ''
-        y = CY + R + 50 + row * 70
+        y = CY + RY + 44 + row * 60
         lines = lab.split('|')
         return '<text class="plab %s%s" x="%.0f" y="%d" text-anchor="middle">%s</text>' % (
             cls, ' dim' if dying else '', center, y,
             ''.join('<tspan x="%.0f" dy="%d">%s</tspan>' % (center, 0 if j == 0 else 32, l) for j, l in enumerate(lines)))
-    rows = lambda units: 1 if len(units) <= 2 else (2 if len(units) <= 5 else 3)
+    rows = lambda units: 1 if len(units) <= 2 else (2 if len(units) <= 8 else 3)
     r0 = rows(pre); r1 = rows(post)
     for k, (u, (cx_, w)) in enumerate(zip(pre, c0)):
         if tuple(u[0]) not in post_keys: out.append(label(u, cx_, k % r0, 'pre', w))
     for k, (u, (cx_, w)) in enumerate(zip(post, c1)):
         out.append(label(u, cx_, k % r1, 'keep' if tuple(u[0]) in pre_keys else 'post', w))
     W = max(w0, w1) + 320
-    Hv = CY + R + 50 + (max(r0, r1) - 1) * 70 + 44 + 20   # only as tall as the label rows in use, so small bodies draw big
+    Hv = CY + RY + 44 + (max(r0, r1) - 1) * 60 + 40 + 16   # only as tall as the label rows in use, so small bodies draw big
     return '<svg class="splitfig" viewBox="%.0f 0 %.0f %d" xmlns="http://www.w3.org/2000/svg">%s</svg>' % (CX - W / 2, W, Hv, ''.join(out))
 
 def D(title, line, pre, post, notes, heal=None, cut=False):
