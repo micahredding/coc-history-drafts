@@ -1,0 +1,793 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><title>Our Wild Democracy &middot; Chapter 3 &middot; The Declaration and Address</title><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"><style>
+/* ============================================================
+   THE DECLARATION AND ADDRESS — Week 3 deck
+   Engine, palette and type inherited from the Week 2 deck.
+   Started 2026-10-06 with the Christendom sequence (issue / attempt / fork).
+   ============================================================ */
+
+  /* ============================================================
+     THE CANE RIDGE COMMUNION — Week 1 deck
+     The story, set from the narration on the co-teacher site.
+     Visual world matches Week 0: night field · bone paper · candle gold
+     ============================================================ */
+  :root{
+    --ground:#100d0a; --ground-lift:#1a1510;
+    --bone:#ede4d3; --bone-dim:#b3a68e; --smoke:#7a6e5c;
+    --gold:#c89b3c; --gold-dim:#8a6d2c;
+    --brick:#a03b24; --ink-brown:#5c4a33;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{background:var(--ground);color:var(--bone);
+    font-family:'Spectral',Georgia,'Times New Roman',serif;font-weight:300;overflow:hidden}
+  ::selection{background:var(--gold-dim);color:var(--ground)}
+
+  #deck{position:fixed;inset:0}
+  .slide{position:absolute;inset:0;display:flex;flex-direction:column;
+    justify-content:center;align-items:center;padding:4vmin 6vmin 10vmin;text-align:center;
+    opacity:0;visibility:hidden;transform:translateY(1.5vmin);
+    transition:opacity .55s ease,transform .55s ease,visibility 0s .55s}
+  .slide.on{opacity:1;visibility:visible;transform:none;
+    transition:opacity .55s ease,transform .55s ease,visibility 0s 0s}
+  .frag{opacity:0;transform:translateY(.6em);transition:opacity .5s ease,transform .5s ease}
+  .frag.on{opacity:1;transform:none}
+  #bar{position:fixed;left:0;bottom:0;height:2px;background:var(--gold);width:0;
+    transition:width .4s ease;z-index:10}
+  #count{position:fixed;right:2.2vmin;bottom:1.6vmin;z-index:10;
+    font-family:'IM Fell English SC','IM Fell English',Georgia,serif;
+    font-size:clamp(12px,1.68vmin,17px);color:var(--smoke);letter-spacing:.12em}
+  #hint{position:fixed;left:2.2vmin;bottom:1.4vmin;z-index:10;
+    font-size:clamp(11px,1.57vmin,16px);color:var(--smoke);opacity:.8;transition:opacity 1s ease}
+  #hint.gone{opacity:0}
+
+  /* ---------- type roles ---------- */
+  .eyebrow{font-family:'IM Fell English SC','IM Fell English',Georgia,serif;
+    font-size:clamp(18px,2.75vmin,30px);letter-spacing:.28em;color:var(--gold);
+    margin-bottom:3vmin;max-width:60ch;line-height:1.6}
+  .eyebrow.quiet{color:var(--smoke)}
+  h1{font-family:'IM Fell English',Georgia,serif;font-weight:400;
+    font-size:clamp(52px,13.0vmin,155px);line-height:1.03;text-wrap:balance;letter-spacing:.01em}
+  h2{font-family:'IM Fell English',Georgia,serif;font-weight:400;
+    font-size:clamp(40px,8.12vmin,95px);line-height:1.12;text-wrap:balance;max-width:26ch}
+  h3{font-family:'IM Fell English',Georgia,serif;font-weight:400;
+    font-size:clamp(32px,6.25vmin,72px);line-height:1.15;text-wrap:balance;max-width:30ch}
+  .sub{font-family:'Spectral',Georgia,serif;font-style:italic;font-weight:300;
+    font-size:clamp(22px,3.69vmin,40px);color:var(--bone-dim);
+    margin-top:3vmin;max-width:44ch;line-height:1.5;text-wrap:balance}
+  .sub b{font-weight:400;font-style:normal;color:var(--gold)}
+  .body{font-size:clamp(22px,3.62vmin,39px);line-height:1.6;
+    max-width:48ch;color:var(--bone);text-wrap:balance}
+  .body+.body{margin-top:2.2vmin}
+  .body em{font-style:italic;color:var(--gold)}
+  .body b{font-weight:400;color:var(--gold)}
+  .small{font-size:clamp(18px,2.56vmin,26px);color:var(--smoke);line-height:1.6;max-width:52ch}
+
+  .table-line{width:min(52vmin,60%);height:2px;background:var(--gold);margin:4.4vmin 0;position:relative}
+  .table-line::before,.table-line::after{content:"";position:absolute;top:2px;width:2px;
+    height:2.6vmin;background:var(--gold);opacity:.65}
+  .table-line::before{left:12%}
+  .table-line::after{right:12%}
+
+  /* ---------- quotes ---------- */
+  .bigquote{font-family:'IM Fell English',Georgia,serif;font-style:normal;font-weight:400;
+    font-size:clamp(40px,8.5vmin,105px);line-height:1.18;max-width:28ch;text-wrap:balance}
+  .bigquote.long{font-size:clamp(32px,6.5vmin,78px);max-width:36ch;line-height:1.28}
+  .bigquote.xlong{font-size:clamp(23px,4.35vmin,51px);max-width:44ch;line-height:1.34}
+  .bigquote b{font-weight:400;font-style:italic;color:var(--gold)}
+  .bigquote .q{color:var(--bone)}
+  .cite{font-family:'IM Fell English SC',Georgia,serif;
+    font-size:clamp(19px,3.0vmin,34px);letter-spacing:.22em;color:var(--smoke);margin-top:3.4vmin}
+  .cite .loc{display:block;letter-spacing:.14em;font-size:.82em;opacity:.75;margin-top:.7em}
+
+  /* ---------- Patterson's tally ---------- */
+  .ledger{background:var(--ground-lift);border:1px solid var(--ink-brown);
+    padding:4.4vmin 6.4vmin;margin-top:3vmin;
+    box-shadow:0 0 0 1px rgba(0,0,0,.6),0 2.4vmin 6vmin rgba(0,0,0,.55);transform:rotate(-.6deg)}
+  .ledger .row{font-family:'IM Fell English',Georgia,serif;font-style:italic;
+    font-size:clamp(32px,6.75vmin,80px);line-height:1.35;color:var(--bone);
+    display:flex;align-items:baseline;gap:.5em;justify-content:flex-start;text-align:left}
+  .ledger .row .n{color:var(--gold);min-width:4.2ch;text-align:right;font-variant-numeric:tabular-nums}
+  .ledger-cite{margin-top:2.6vmin}
+
+  /* ---------- full-bleed plate with scrim ---------- */
+  .slide.bleed{padding:8vmin 8vmin 14vmin;justify-content:flex-end}
+  .slide.bleed .bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+  .slide.bleed .bg img{width:100%;height:100%;object-fit:cover;
+    filter:sepia(.14) saturate(.86) brightness(.8) contrast(1.02)}
+  /* the road engraving, shared by the two opening slides — one copy of the data, two uses */
+  .slide.bleed .bg .bgimg{position:absolute;inset:0;background-size:cover;background-position:center;
+    filter:sepia(.14) saturate(.86) brightness(.8) contrast(1.02)}
+  
+  /* Cane Ridge interior, HABS KY-20-8 sheet 1-4, 1934 — the room Lyle emptied.
+     Replaces sheet 1-5, which looked straight up at the roof and showed no room. */
+  /* same backdrop, but this one carries a quote in the middle — darken it evenly */
+  .slide.bleed.midbleed{justify-content:center;padding:5vmin 8vmin 9vmin}
+  /* over a picture the dimmed and small type needs more contrast than it does on black */
+  .slide.bleed .bigquote .trimto{color:#c3b295;opacity:.92;font-size:.86em}
+  .slide.bleed .cite{color:#b3a68e}
+  .slide.bleed .small{color:#bdae95}
+  .slide.bleed .eyebrow.quiet{color:#a89a82}
+  .slide.bleed .small,.slide.bleed .eyebrow{text-shadow:0 1px 4px rgba(0,0,0,.95),0 0 2vmin rgba(0,0,0,.9)}
+  .slide.bleed .cite,.slide.bleed .credit{text-shadow:0 1px 4px rgba(0,0,0,.95),0 0 2vmin rgba(0,0,0,.9)}
+  .slide.bleed.midbleed .bg::after{background:linear-gradient(to top,
+    rgba(16,13,10,.90) 0%,rgba(16,13,10,.86) 35%,rgba(16,13,10,.82) 70%,rgba(16,13,10,.76) 100%)}
+  .slide.bleed .bg::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to top,rgba(16,13,10,.97) 0%,rgba(16,13,10,.82) 22%,
+      rgba(16,13,10,.34) 52%,rgba(16,13,10,.12) 100%)}
+  .slide.bleed>*:not(.bg){position:relative;z-index:1}
+  .slide.bleed h1,.slide.bleed h2,.slide.bleed .body,.slide.bleed .sub,.slide.bleed .bigquote{
+    text-shadow:0 .2vmin 2.6vmin rgba(0,0,0,.95),0 0 6vmin rgba(0,0,0,.8)}
+  .slide.bleed .credit{position:absolute;left:2.4vmin;top:2vmin;z-index:2;
+    font-family:'IM Fell English SC',Georgia,serif;font-size:clamp(11px,1.6vmin,16px);
+    letter-spacing:.13em;color:var(--bone-dim);opacity:.72;max-width:46ch;
+    text-align:left;line-height:1.6;text-shadow:0 1px 3px rgba(0,0,0,.95),0 0 1.4vmin rgba(0,0,0,.9)}
+
+  /* ---------- framed plate (an exhibit) ---------- */
+  .slide.plateslide{padding:3vmin 3vmin 8vmin;gap:0}
+  .plate{margin:0;display:flex;flex-direction:column;align-items:center;max-width:min(150vmin,94vw)}
+  .plate img{display:block;width:auto;max-width:100%;max-height:68vh;height:auto;
+    border:1px solid var(--ink-brown);box-shadow:0 1.6vmin 5vmin rgba(0,0,0,.7);
+    filter:sepia(.1) saturate(.9) brightness(.95)}
+  .plate.short img{max-height:58vh}
+  .plate.cool img{filter:sepia(.32) saturate(.5) brightness(.88)}
+  .plate figcaption{font-family:'IM Fell English SC',Georgia,serif;
+    font-size:clamp(14px,2.12vmin,22px);letter-spacing:.16em;color:var(--smoke);
+    margin-top:1.4vmin;line-height:1.7;max-width:64ch}
+  .slide.plateslide .eyebrow{margin-bottom:2.2vmin}
+  .slide.plateslide .sub,.slide.plateslide .body,.slide.plateslide .bigquote{margin-top:2.6vmin}
+
+  /* ---------- two columns facing each other ---------- */
+  .duo{display:flex;gap:3.4vmin;align-items:center;justify-content:center;
+    flex-wrap:wrap;max-width:150vmin;margin-top:1.6vmin}
+  .duo .col{display:flex;flex-direction:column;align-items:center;gap:1.6vmin;
+    max-width:min(66vmin,42vw)}
+  .duo .col .bigquote{font-size:clamp(24px,4.0vmin,45px);max-width:26ch;line-height:1.34}
+  .duo .col .cite{margin-top:1.2vmin;font-size:clamp(12px,2.0vmin,20px)}
+  .duo .vs{font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.24em;
+    color:var(--brick);font-size:clamp(15px,2.5vmin,25px)}
+
+  /* ---------- portraits ---------- */
+  .faces{display:flex;gap:5vmin;justify-content:center;align-items:flex-start;
+    flex-wrap:wrap;margin-top:2.4vmin}
+  .face{display:flex;flex-direction:column;align-items:center;gap:1.2vmin;width:min(44vmin,26vw)}
+  .face img{width:100%;height:auto;max-height:50vh;object-fit:cover;object-position:top center;
+    border:1px solid var(--ink-brown);box-shadow:0 1.2vmin 4vmin rgba(0,0,0,.7);
+    filter:sepia(.16) saturate(.86) brightness(.94)}
+  .face .nm{font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.16em;
+    font-size:clamp(15px,2.31vmin,24px);color:var(--gold)}
+  .face .rl{font-style:italic;font-size:clamp(15px,2.25vmin,24px);color:var(--smoke);line-height:1.5}
+  .facecred{font-family:'IM Fell English SC',Georgia,serif;font-size:clamp(11px,1.62vmin,16px);
+    letter-spacing:.13em;color:var(--smoke);opacity:.6;margin-top:2.6vmin}
+
+  /* ---------- the four days ---------- */
+  .days{display:flex;flex-direction:column;gap:1.6vmin;margin-top:3.4vmin;text-align:left}
+  .days .d{display:flex;gap:1.4em;align-items:baseline;
+    font-size:clamp(17px,3.05vmin,33px);line-height:1.3}
+  .days .d .dn{font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.16em;
+    color:var(--bone-dim);min-width:9.5ch;font-size:.78em}
+  .days .d.now{color:var(--gold)}
+  .days .d.now .dn{color:var(--gold)}
+
+  /* ---------- a number and its spread ---------- */
+  .spread{display:flex;gap:6vmin;align-items:flex-start;justify-content:center;
+    flex-wrap:wrap;margin-top:3.4vmin}
+  /* the figures line up on the number, not on the bottom of a label of unknown length */
+  .spread .fig .n{min-height:1em;display:block}
+  .spread .fig .lb{margin-top:.9vmin}
+  .spread .fig{display:flex;flex-direction:column;align-items:center;gap:.6vmin}
+  .spread .fig .n{font-family:'IM Fell English',Georgia,serif;
+    font-size:clamp(42px,9.5vmin,110px);line-height:1;color:var(--gold)}
+  .spread .fig .n.dim{color:var(--bone-dim)}
+  .spread .fig .lb{font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.15em;
+    font-size:clamp(12px,2.05vmin,21px);color:var(--smoke);max-width:20ch;line-height:1.6}
+
+  /* ---------- litany ---------- */
+  .litany{display:flex;flex-direction:column;gap:1.8vmin;margin-top:3.4vmin}
+  .litany .no{font-family:'IM Fell English',Georgia,serif;
+    font-size:clamp(29px,5.75vmin,66px);line-height:1.14}
+  .litany .no b{font-weight:400;color:var(--gold)}
+  .litany .coda{font-style:italic;color:var(--bone-dim);
+    font-size:clamp(21px,3.62vmin,41px);margin-top:1.8vmin}
+
+  /* ---------- discussion ---------- */
+  .qs{display:flex;flex-direction:column;gap:3vmin;margin-top:3.4vmin;max-width:46ch}
+  .qs .q1{font-family:'IM Fell English',Georgia,serif;font-style:italic;
+    font-size:clamp(25px,4.5vmin,49px);line-height:1.3;text-wrap:balance}
+
+  /* ---------- the hard turn ---------- */
+  .slide.hard .eyebrow{color:var(--brick)}
+  .slide.hard .table-line,.slide.hard .table-line::before,.slide.hard .table-line::after{background:var(--brick)}
+  .slide.hard .bigquote .q{color:var(--bone)}
+  .slide.hard .bigquote b{color:#cf6d4a}
+
+  @media (prefers-reduced-motion:reduce){.slide,.frag{transition:none!important}}
+
+  /* ---------- trim marker: the phrase to cut to stays lit; the rest stays
+       on screen but recedes. Remove the <span class=trimto> wrappers to trim. ---------- */
+  .bigquote .trimto{color:var(--smoke);opacity:.62;font-size:.82em}
+  .slide.hard .bigquote .trimto{color:#8a5a48;opacity:.62;font-size:.82em}
+  .trimnote{font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.14em;
+    font-size:clamp(11px,1.62vmin,16px);color:var(--smoke);opacity:.5;margin-top:2vmin}
+
+  /* ---------- the breath before the reveal ---------- */
+  .slide.breath{justify-content:center}
+  .slide.breath .table-line{margin:0}
+  /* ---- the site ---- */
+  .slide.siteslide .url{font-family:'Spectral',Georgia,serif;font-weight:400;
+    font-size:clamp(25px,5.75vmin,72px);line-height:1.2;color:var(--gold);
+    letter-spacing:.005em;max-width:none;white-space:nowrap}
+  .slide.siteslide .pages{font-family:'IM Fell English SC',Georgia,serif;
+    letter-spacing:.2em;font-size:clamp(15px,2.44vmin,26px);color:var(--smoke);
+    margin-top:1.2vmin;line-height:2}
+  /* ---- section cards: quiet chapter markers ---- */
+  .slide.sect h2{font-size:clamp(48px,10.25vmin,122px);letter-spacing:.02em;color:var(--bone)}
+  .slide.sect .eyebrow{margin-bottom:2.6vmin}
+  .slide.sect .table-line{margin:3.6vmin 0 3vmin}
+  .slide.sect .sub{margin-top:0;color:var(--smoke)}
+
+  /* ---------- this-room slides: warmer, closer ---------- */
+  .slide.room .body{max-width:44ch}
+  .slide.room .body b{color:var(--gold)}
+
+  /* ---------- quote + image on one slide: everything shrinks together ---------- */
+  .slide.qplate{padding:2.5vmin 3vmin 7vmin}
+  .slide.qplate .eyebrow{margin-bottom:1.4vmin}
+  .slide.qplate .bigquote{font-size:clamp(22px,4.38vmin,50px);max-width:46ch;line-height:1.3}
+  .slide.qplate .bigquote.xlong{font-size:clamp(18px,3.29vmin,37px);max-width:54ch}
+  .slide.qplate .cite{margin-top:1.6vmin}
+  .slide.qplate .plate{margin-top:1.8vmin}
+  .slide.qplate .plate img{max-height:47vh}
+  .slide.qplate .plate figcaption{font-size:clamp(12px,1.88vmin,20px);max-width:74ch;margin-top:1vmin}
+  .slide.qplate .small,.slide.qplate .sub,.slide.qplate .trimnote{margin-top:1.6vmin}
+  .slide.qplate .sub{font-size:clamp(19px,3.12vmin,34px)}
+  .plate.wide img{max-height:66vh}
+  /* dense: eyebrow + quote + cite + plate + caption + body all on one slide */
+  .slide.qplate.dense{padding:2vmin 3vmin 6vmin}
+  .slide.qplate.dense .bigquote{font-size:clamp(20px,3.75vmin,42px)}
+  .slide.qplate.dense .plate img{max-height:36vh}
+  .slide.qplate.dense .eyebrow{margin-bottom:1vmin}
+
+  /* ---------- next-week card ---------- */
+  .nextwk{display:flex;flex-direction:column;align-items:center;gap:1.4vmin;margin-top:3.4vmin;
+    border:1px solid var(--ink-brown);padding:4vmin 6vmin;background:var(--ground-lift)}
+  .nextwk .wk{font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.28em;
+    font-size:clamp(15px,2.38vmin,24px);color:var(--smoke)}
+  .nextwk .ti{font-family:'IM Fell English',Georgia,serif;
+    font-size:clamp(32px,6.5vmin,75px);line-height:1.1;color:var(--gold);text-wrap:balance}
+
+  /* ---------- two modes: READ (framing inline, the whole story) · PRESENT (pictures + quotes; framing → notes) ---------- */
+  aside.notes{display:none}
+  body.present .nt{display:none!important}
+  #mode{position:fixed;left:50%;transform:translateX(-50%);top:1.2vmin;z-index:10;
+    font-family:'IM Fell English SC','IM Fell English',Georgia,serif;font-size:clamp(11px,1.5vmin,15px);
+    letter-spacing:.18em;color:var(--smoke);opacity:.7}
+  #strip{display:none;position:fixed;left:0;right:0;bottom:0;z-index:9;
+    background:rgba(16,13,10,.94);border-top:1px solid var(--ink-brown);
+    padding:1.4vmin 4vmin 1.6vmin;text-align:left;color:var(--bone-dim);
+    font-size:clamp(13px,1.9vmin,21px);line-height:1.45;max-height:17vh;overflow:auto}
+  #strip i{color:var(--gold);font-style:italic}
+  body.present.strip #strip{display:block}
+  body.present.strip #count{bottom:auto;top:1.2vmin}
+  body.present.strip #hint,body.present.strip #mode{display:none}
+  /* the strip takes ~7vh at the bottom: shrink plates a notch rather than pad the slide */
+  /* NOT raised with the read-mode caps: present+strip already overflows on several
+     slides at 1920x1080 (pre-existing, see dossier). Raising these made it worse. */
+  body.present.strip .slide.qplate .plate img{max-height:34vh}
+  body.present.strip .slide.qplate.dense .plate img{max-height:26vh}
+  body.present.strip .slide.plateslide:not(.qplate) .plate img{max-height:60vh}
+  body.present.strip .plate.short img{max-height:52vh}
+  body.present.strip .faces .face img{max-height:44vh}
+  /* read mode: mode label sits at the bottom, out of the eyebrow's way */
+  body:not(.present) #mode{top:auto;bottom:1.6vmin}
+  /* idea slides: heading on screen; explanation is reading-size, not display-size */
+  .slide.idea h2{font-size:clamp(35px,6.5vmin,75px)}
+  .slide.idea .body{font-size:clamp(19px,2.81vmin,31px);line-height:1.5;max-width:62ch;text-wrap:pretty}
+  .slide.idea .body b{color:var(--gold)}
+  /* presenter window (?presenter=1): number · title · notes · LIVE next-slide preview */
+  #pres{display:none;position:fixed;inset:0;padding:3.4vmin 3.6vmin;text-align:left;overflow:auto;background:var(--ground)}
+  body.presenter #pres{display:flex;gap:3.4vmin;align-items:flex-start}
+  body.presenter #deck,body.presenter #bar,body.presenter #count,body.presenter #hint,body.presenter #strip,body.presenter #mode{display:none!important}
+  #pres .pcol{flex:1 1 54%;min-width:0;max-height:100%;overflow-y:auto;overscroll-behavior:contain;
+    scrollbar-width:thin;scrollbar-color:var(--ink-brown) transparent}
+  #pres .pcol::-webkit-scrollbar{width:6px}
+  #pres .pcol::-webkit-scrollbar-thumb{background:var(--ink-brown);border-radius:3px}
+  body.presenter #pres{overflow:hidden}
+  #pres .pside{flex:0 0 min(46%,calc((100vh - 6.8vmin - 12vmin) * .889));display:flex;flex-direction:column;gap:1.1vmin;min-width:0}
+  #pres .pn{font-family:'IM Fell English SC',Georgia,serif;color:var(--gold);letter-spacing:.22em;font-size:clamp(13px,2.2vmin,24px)}
+  #pres .pt{font-family:'IM Fell English',Georgia,serif;color:var(--gold);font-size:clamp(19px,3.3vmin,38px);line-height:1.15;margin:1.2vmin 0 2.4vmin;text-wrap:balance}
+  #pres .pnotes{font-size:clamp(19px,3.5vmin,42px);line-height:1.42;color:var(--bone)}
+  #pres .pnotes i{color:var(--gold)}
+  /* the Governor slide carries a portrait, two quotes and a citation — shrink it as a set */
+  .slide.govslide{padding:2.4vmin 6vmin 7vmin}
+  .slide.govslide .face{width:min(28vmin,17vw)}
+  .slide.govslide .face img{max-height:22vh}
+  .slide.govslide .faces{margin-top:1vmin}
+  .slide.govslide .facecred{margin-top:1.2vmin}
+  .slide.govslide .sub{font-size:clamp(19px,3.12vmin,34px);margin-top:2vmin}
+  .slide.govslide .bigquote{font-size:clamp(21px,3.69vmin,41px)}
+  .slide.govslide{padding:2vmin 6vmin 6.4vmin}
+  .slide.govslide .eyebrow{margin-bottom:1.2vmin}
+  .slide.govslide .cite{margin-top:1.4vmin}
+  /* two quotes from opposite sides, each with its own citation — shrink as a set */
+  .slide.twoq{padding:2.4vmin 5vmin 7vmin}
+  .slide.twoq .eyebrow{margin-bottom:1.6vmin;max-width:60ch}
+  .slide.twoq .bigquote.long{font-size:clamp(26px,5.06vmin,58px);max-width:39ch;line-height:1.26}
+  .slide.twoq .cite{margin-top:1.6vmin;font-size:clamp(15px,2.44vmin,28px)}
+  /* the grounds plan is a dense exhibit: plate + caption + a paragraph. Shrink as a set. */
+  .slide.planslide{padding:2vmin 3vmin 6.4vmin}
+  .slide.planslide .eyebrow{margin-bottom:1.1vmin;font-size:clamp(15px,2.31vmin,25px);max-width:60ch}
+  .slide.planslide .plate img{max-height:68vh}
+  .slide.planslide .plate figcaption{margin-top:.9vmin;font-size:clamp(12px,1.77vmin,19px);max-width:88ch}
+  .slide.planslide .small{margin-top:1.4vmin;font-size:clamp(14px,2.0vmin,21px);max-width:80ch;line-height:1.5}
+  /* the token: a small object, then two blocks of text — the object must yield */
+  .slide.tokenslide{padding:2.4vmin 4vmin 6.4vmin}
+  .slide.tokenslide .eyebrow{margin-bottom:1.4vmin}
+  .slide.tokenslide .plate img{max-height:43vh}
+  .slide.tokenslide .plate figcaption{margin-top:1vmin}
+  .slide.tokenslide .body{margin-top:2.2vmin;font-size:clamp(21px,3.25vmin,36px);max-width:44ch}
+  .slide.tokenslide .small{margin-top:1.8vmin;font-size:clamp(14px,2.03vmin,21px);max-width:64ch;line-height:1.55}
+  /* a wide landscape engraving plus a long caption plus a paragraph — cap the plate */
+  .slide.engraving{padding:3vmin 4vmin 7vmin}
+  .slide.engraving .plate img{max-height:52vh}
+  .slide.engraving .plate figcaption{margin-top:1.1vmin;max-width:72ch}
+  /* plate + caption + a paragraph: measured as overflowing, so cap the plate as a set */
+  .slide.tight{padding:2.6vmin 4vmin 6.6vmin}
+  .slide.tight .eyebrow{margin-bottom:1.4vmin}
+  .slide.tight .plate img{max-height:54vh}
+  .slide.tight .plate.short img{max-height:50vh}
+  .slide.tight .plate figcaption{margin-top:1vmin;font-size:clamp(12px,1.88vmin,20px);max-width:74ch}
+  .slide.tight .sub,.slide.tight .body{margin-top:1.9vmin}
+  .slide.tight .small{margin-top:1.4vmin}
+  /* small print that now sits directly under a citation needs air */
+  .cite + .small{margin-top:2.2vmin}
+  #pres .pnotes .cast{display:block;margin-top:.7em;font-size:.47em;line-height:1.34}
+  /* WHO: re-identify every person named on this slide, so no name has to be remembered */
+  #pres .pnotes .who{display:block;margin-bottom:.6em;padding-bottom:.45em;font-size:.52em;
+    line-height:1.42;color:var(--bone-dim);border-bottom:1px solid var(--ink-brown)}
+  #pres .pnotes .who b{color:var(--gold);font-weight:400}
+  #pres .pnotes .narr{display:block;margin-top:.85em;padding-top:.7em;font-size:.80em;
+    line-height:1.5;color:#cdbfa6;border-top:1px solid var(--ink-brown)}
+  #pres .pnotes .narr b{color:var(--bone);font-weight:400}
+  #pres .pnotes .narr i{color:var(--gold);font-style:italic}
+  #strip .narr{display:block;margin-top:.4em;font-size:.86em;line-height:1.45;color:#cdbfa6}
+  #pres .pnotes .who em{color:#cf6d4a;font-style:normal}
+  #strip .who{display:block;margin-bottom:.35em;font-size:.78em;line-height:1.38;color:var(--bone-dim)}
+  #strip .who b{color:var(--gold);font-weight:400}
+  #strip .who em{color:#cf6d4a;font-style:normal}
+  #strip .cast{display:block;margin-top:.4em;font-size:.82em;line-height:1.35}
+  #pres .plabel{font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.24em;color:var(--smoke);font-size:clamp(10px,1.5vmin,15px)}
+  #pres .pwrap{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;
+    border:1px solid var(--ink-brown);background:#0b0908;box-shadow:0 1vmin 3vmin rgba(0,0,0,.6)}
+  #pres .pwrap iframe{position:absolute;top:0;left:0;width:1920px;height:1080px;border:0;transform-origin:top left}
+  #pres .pnexttitle{color:var(--bone-dim);font-style:italic;line-height:1.35;
+    font-size:clamp(12px,1.9vmin,20px);text-wrap:balance}
+  #pres .pkeys{margin-top:auto;padding-top:2vmin;color:var(--smoke);opacity:.6;
+    font-size:clamp(10px,1.4vmin,14px);font-style:italic}
+  /* the preview pane is this same file in ?preview=1 — deck only, no chrome */
+  body.preview #bar,body.preview #count,body.preview #hint,body.preview #mode,body.preview #strip,body.preview #pres{display:none!important}
+  body.preview .slide{transition:none}
+  /* ── Locating Bourbon County and Cane Ridge on the Barker plate ──
+     (the map slide in THE ROAD, and its mirror in the addendum plate gallery)
+     Overlay only: the 1793 map is untouched. Markers are positioned as
+     percentages of the image box, so they track it at every slide size.
+     Placement is georeferenced from seven towns Barker himself labelled
+     (Lexington, Georgetown, Paris, Versailles, Boonesborough, Blue Licks,
+     Washington); RMS residual ~2.5 miles, which is the 1793 survey's error,
+     not ours. Colours run dark-on-parchment, not gold, because this is the
+     one plate in the deck with a LIGHT ground. */
+  .mapwrap{position:relative;display:inline-block;line-height:0;max-width:100%;isolation:isolate}
+  .mapwrap .mk{position:absolute;pointer-events:none}
+  .mapwrap .mk-co{width:8.6%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;
+    mix-blend-mode:multiply;
+    background:radial-gradient(circle,rgba(173,118,32,.25) 0%,rgba(173,118,32,.21) 48%,
+      rgba(173,118,32,.08) 78%,rgba(173,118,32,0) 100%)}
+  /* hairline at the county edge — without it the wash reads as foxing on the
+     old paper rather than as a mark we made */
+  .mapwrap .mk-coedge{width:6.9%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;
+    border:1px solid rgba(122,82,27,.42)}
+  .mapwrap .mk-cr{width:1.35vmin;height:1.35vmin;transform:translate(-50%,-50%);border-radius:50%;
+    border:.2vmin solid rgba(146,42,24,.95);
+    box-shadow:0 0 0 .12vmin rgba(255,248,234,.75),0 0 .7vmin rgba(255,248,234,.6)}
+  .mapwrap .mklab{position:absolute;pointer-events:none;line-height:1.2;white-space:nowrap;
+    font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.2em;text-transform:uppercase;
+    text-shadow:0 0 .3vmin rgba(255,250,238,.95),0 0 .9vmin rgba(255,250,238,.8)}
+  .mapwrap .mklab-cr{font-size:clamp(11px,1.68vmin,19px);color:#8e2f1a;transform:translate(1.25vmin,-50%)}
+  .mapwrap .mklab-co{font-size:clamp(10px,1.4vmin,16px);color:#6f5423;transform:translate(-50%,0)}
+
+  /* ── The themes-and-practices map, imported from the Week 0 deck ──
+     Deliberately NOT interactive here: no reveal, no clicks, no glosses.
+     It is a static "where we are" board. Three states:
+       .key  the spine of this week      (gold, full)
+       .on   touched this week           (bone, .62)
+       (none) still ahead of us          (bone, .18) */
+  .slide.ideasmap{padding:5vmin 3vmin 9vmin}
+  .wmap{display:flex;flex-direction:column;gap:3.2vmin;align-items:center;margin-top:1vmin}
+  .wmap .r{display:flex;gap:3.8vmin;align-items:baseline;flex-wrap:wrap;justify-content:center}
+  .wmap .th{font-family:'IM Fell English SC','IM Fell English',Georgia,serif;letter-spacing:.14em;
+    color:var(--bone);opacity:.18;white-space:nowrap;position:relative}
+  .wmap .th.on{opacity:.6}
+  .wmap .th.key{opacity:1;color:var(--gold)}
+  .wmap .ms-christ .th{font-size:clamp(20px,3.75vmin,41px)}
+  .wmap .ms-pri .th{font-size:clamp(36px,7.62vmin,88px)}
+  .wmap .ms-sec .th{font-size:clamp(15px,2.5vmin,26px);letter-spacing:.1em}
+  .wmap .ms-pra .th{font-family:'IM Fell English',Georgia,serif;font-style:italic;
+    letter-spacing:.03em;font-size:clamp(20px,3.69vmin,40px)}
+  .slide.ideasmap .small{margin-top:4vmin;max-width:70ch}
+
+  /* ── The class outline, imported from the Week 0 deck ──
+     Week 0 reveals a row at a time and only shows a row's themes when it is
+     current. Here it is STATIC: every row's themes are up, and Week 1 is .cur. */
+  .slide.vtslide{padding:0}
+  .vt{position:absolute;inset:0}
+  .vt .rail{position:absolute;left:26vw;top:5vh;bottom:8vh;width:2px;background:var(--ink-brown)}
+  .vt .rail .arrowcap{position:absolute;bottom:-2px;left:-5px;width:0;height:0;
+    border-top:12px solid var(--ink-brown);border-left:6px solid transparent;border-right:6px solid transparent}
+  .vt .beyond{position:absolute;left:26vw;bottom:3.2vh;transform:translateX(-50%);white-space:nowrap;
+    font-family:'IM Fell English',Georgia,serif;font-style:italic;font-size:clamp(15px,2.24vmin,22px);color:var(--smoke)}
+  .vt .brk{position:absolute;left:calc(26vw - 4px);width:10px;height:14px;border-top:3px solid var(--ground);
+    border-bottom:3px solid var(--ground);background:var(--ground);transform:translateY(-50%) skewY(-24deg)}
+  .vt .vev{position:absolute;left:0;right:0;height:0}
+  .vt .vev .yr{position:absolute;right:calc(74vw + 2.4vw);top:0;transform:translateY(-50%);
+    font-family:'IM Fell English SC',Georgia,serif;letter-spacing:.18em;white-space:nowrap;
+    font-size:clamp(18px,2.75vmin,29px);color:var(--gold-dim)}
+  .vt .vev .tick{position:absolute;left:calc(26vw - .8vw);top:0;width:1.6vw;height:2px;
+    transform:translateY(-50%);background:var(--bone-dim)}
+  .vt .vev .dot{position:absolute;left:26vw;top:0;width:1.1vmin;height:1.1vmin;border-radius:50%;
+    background:var(--gold);box-shadow:0 0 0 .35vmin rgba(200,155,60,.28);transform:translate(-50%,-50%) scale(0)}
+  .vt .vev .nm{position:absolute;left:calc(26vw + 2.4vw);top:0;transform:translateY(-50%);white-space:nowrap;
+    font-family:'Spectral',Georgia,serif;font-weight:300;font-size:clamp(19px,3.44vmin,40px);
+    color:var(--bone);opacity:.7}
+  .vt .vev .pull{position:absolute;left:71vw;right:3vw;top:0;transform:translateY(-50%);
+    font-family:'Spectral',Georgia,serif;font-style:italic;font-weight:300;color:var(--bone-dim)}
+  .vt .vev .pull .themes{display:block;font-family:'IM Fell English SC',Georgia,serif;font-style:normal;
+    letter-spacing:.14em;font-size:clamp(11px,1.81vmin,19px);color:var(--gold-dim);line-height:1.45;opacity:.75}
+  .vt .vev .pull .wk{display:none}
+  .vt .vev.cur .yr{color:var(--gold)}
+  .vt .vev.cur .nm{color:var(--gold);opacity:1}
+  .vt .vev.cur .tick{background:var(--gold)}
+  .vt .vev.cur .dot{transform:translate(-50%,-50%) scale(1)}
+  .vt .vev.cur .pull .themes{color:var(--gold);opacity:1}
+
+  .slide.siteslide{padding:6vmin 3vmin 9vmin}
+  .siteslide h2.url{font-family:'IM Fell English SC','IM Fell English',Georgia,serif;letter-spacing:.06em;
+    font-size:clamp(28px,5.38vmin,62px);max-width:none;color:var(--gold)}
+  .shots{display:flex;gap:2.2vmin;justify-content:center;align-items:flex-start;margin-top:3.4vmin;flex-wrap:wrap}
+  .shots .shot{margin:0;width:min(40vmin,20vw)}
+  .shots .shot.frag{transform:rotate(var(--r,0deg)) translateY(.6em)}
+  .shots .shot.frag.on{transform:rotate(var(--r,0deg))}
+  .shots .shot img{display:block;width:100%;height:auto;border:1px solid var(--ink-brown);
+    box-shadow:0 1.5vmin 4vmin rgba(0,0,0,.65)}
+  .shots .shot figcaption{font-family:'IM Fell English SC',Georgia,serif;font-size:clamp(12px,1.88vmin,19px);
+    letter-spacing:.18em;color:var(--smoke);margin-top:1vmin}
+
+
+  /* ---- Week 3 type scale (inherited from Week 2) ---- */
+  #deck .slide h1{font-size:clamp(52px,11vmin,140px);line-height:1.05}
+  #deck .slide h2{font-size:clamp(36px,7vmin,90px);line-height:1.12;max-width:22ch}
+  #deck .slide.sect h2{font-size:clamp(52px,11vmin,130px)}
+  #deck .slide .sub{font-size:clamp(22px,3.6vmin,44px);max-width:34ch;line-height:1.35}
+  #deck .slide .eyebrow{font-size:clamp(16px,2.6vmin,30px)}
+  /* ---- the division slides: issue / attempt / fork ---- */
+  #deck .divslide{justify-content:flex-start;padding-top:7vmin;gap:0}
+  #deck .divslide h2{font-size:clamp(30px,5.6vmin,72px);max-width:26ch;min-height:2.3em}
+  #deck .divslide .attempt{margin-top:2.4vmin;font-family:Spectral,Georgia,serif;font-style:italic;font-size:clamp(20px,3.2vmin,40px);line-height:1.35;max-width:40ch;color:var(--bone-dim)}
+  #deck .divslide .attempt .k{display:block;font-family:"IM Fell English SC","IM Fell English",Georgia,serif;font-style:normal;letter-spacing:.24em;font-size:.62em;color:var(--gold);margin-bottom:.5vmin}
+  #deck .divslide .failure{margin-top:1.6vmin;display:flex;flex-direction:column;align-items:center;width:100%}
+  #deck .divslide .forkfig{width:min(70vmin,72vw);height:auto;display:block}
+  #deck .divslide .cap{font-family:"IM Fell English",Georgia,serif;font-size:clamp(20px,3.4vmin,42px);line-height:1.3;max-width:34ch;color:var(--bone);margin-top:.8vmin}
+  .forkfig .rib{fill:rgba(237,228,211,.13);stroke:rgba(237,228,211,.6);stroke-width:1.6;stroke-linejoin:round}
+  .forkfig .rib.dying{fill:url(#forkfade);stroke:none}
+  .forkfig .rib.heal{stroke-dasharray:5 6;stroke:var(--gold-dim)}
+  .forkfig .bar{stroke:var(--gold);stroke-width:5;stroke-linecap:round}
+  .forkfig .bar.heal{stroke:var(--gold-dim)}
+  .forkfig .rlab{font-family:"IM Fell English",Georgia,serif;font-size:30px;fill:var(--bone)}
+  .forkfig .rlab.dim{fill:var(--smoke);font-style:italic}
+  .forkfig .blab{font-family:"IM Fell English SC","IM Fell English",Georgia,serif;font-size:24px;letter-spacing:.14em;fill:var(--gold);paint-order:stroke;stroke:var(--ground);stroke-width:8px;stroke-linejoin:round}
+  .forkfig .xx{font-family:"IM Fell English",Georgia,serif;font-size:40px;fill:var(--smoke)}
+  /* ---- the full flow diagram slide ---- */
+  #deck .flowslide{padding:2vmin 3vmin 6vmin;justify-content:center}#deck .flowslide .eyebrow{margin-bottom:1vmin}
+  #deck .flowslide svg{width:min(96vw,145vh);height:auto;display:block}
+  .flowslide .rib{fill:rgba(237,228,211,.13);stroke:rgba(237,228,211,.55);stroke-width:1.2;stroke-linejoin:round}
+  .flowslide .rib.dying{fill:url(#fade);stroke:none}
+  .flowslide .breach{fill:var(--ground);stroke:var(--gold-dim);stroke-width:1.5;stroke-dasharray:4 5}
+  .flowslide .fork{stroke:var(--gold);stroke-width:2.5;stroke-linecap:round}
+  .flowslide .node{fill:var(--ground);stroke:var(--gold);stroke-width:2.5}.flowslide .node.heal{fill:var(--gold-dim);stroke:var(--gold-dim)}
+  .flowslide .fx{font-family:"IM Fell English",Georgia,serif;font-size:28px;fill:var(--smoke)}
+  .flowslide .flab{font-size:19px;fill:var(--bone-dim);paint-order:stroke;stroke:var(--ground);stroke-width:8px;stroke-linejoin:round}
+  .flowslide .flab .yr{font-family:"IM Fell English SC",Georgia,serif;font-size:21px;letter-spacing:.14em;fill:var(--gold)}
+  .flowslide .flab .ttl{font-family:"IM Fell English",Georgia,serif;font-style:italic;font-size:27px;fill:var(--bone)}
+  .flowslide .flab .fsub{font-family:Spectral,Georgia,serif;font-size:19px;fill:var(--bone-dim)}
+  .flowslide .leaf{font-family:"IM Fell English",Georgia,serif;font-size:18px;fill:var(--bone)}.flowslide .leaf.dim{fill:var(--smoke);font-style:italic;font-size:17px}
+  .flowslide .trunk{font-family:"IM Fell English SC",Georgia,serif;font-size:19px;letter-spacing:.18em;fill:var(--smoke)}
+</style></head>
+<body>
+<div id=deck>
+
+<section class="slide breath sect"><h2>Christendom&rsquo;s Search for Unity</h2><div class=table-line></div><aside class=notes>Card. Lands after the Preamble&rsquo;s despair (&ldquo;amid the diversity and rancor of party contentions&rdquo;) and before &ldquo;anywhere but in Christ.&rdquo; Eight to twelve minutes if every slide is kept; the two marked cuttable in notes are 1690 and 1799.</aside></section>
+
+<section class="slide divslide"><div class=eyebrow>325 &middot; Nicaea</div><h2>The empire is divided between Arians and non-Arians.</h2><div class="attempt frag"><span class=k>The attempt</span>Constantine calls every bishop to Nicaea. The first draft of the Nicene Creed.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">the Church</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the Nicene Creed</text><path class="rib" d="M220,170 C220,200 197,200 197,230 L197,330 L514,330 L514,230 C514,200 537,200 537,170 Z"/><text class="rlab" x="355" y="364" text-anchor="middle"><tspan x="355" dy="0">Nicene</tspan></text><path class="rib dying" d="M537,170 C537,200 560,200 560,230 L560,330 L803,330 L803,230 C803,200 780,200 780,170 Z"/><text class="rlab dim" x="681" y="364" text-anchor="middle"><tspan x="681" dy="0">Arian</tspan></text><text class="xx" x="681" y="322" text-anchor="middle">&times;</text></svg><div class=cap>Arius is condemned. The war goes on for fifty-six more years. Arian kingdoms last until about 650.</div></div><aside class=notes>Constantine had just reunited the empire (324) and found the church at war over whether the Son is God. He convened the council himself, 325. The creed condemned Arius with the word <i>homoousios</i>.<br>Failure: Constantine was baptized on his deathbed (337) by Eusebius of Nicomedia, an Arian sympathizer; his son Constantius pushed the empire Arian; Athanasius exiled five times; Jerome c. 360: &ldquo;the whole world groaned and found itself Arian.&rdquo; The creed people say today is the rewrite of 381. Goths, Vandals and Lombards stayed Arian into the 500s and 600s, then converted.<br>&rarr; Say: the first creed written to unite the church did not unite the two sides; it named them.</aside></section>
+
+<section class="slide divslide"><div class=eyebrow>431 &middot; Ephesus</div><h2>Alexandria and Antioch are divided over whether Mary bore God.</h2><div class="attempt frag"><span class=k>The attempt</span>The Council of Ephesus. And a canon: no one may ever compose another creed.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">the Church</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">Canon 7: no new creed</text><path class="rib" d="M220,170 C220,200 197,200 197,230 L197,330 L542,330 L542,230 C542,200 565,200 565,170 Z"/><text class="rlab" x="369" y="364" text-anchor="middle"><tspan x="369" dy="0">the imperial Church</tspan></text><path class="rib" d="M565,170 C565,200 588,200 588,230 L588,330 L803,330 L803,230 C803,200 780,200 780,170 Z"/><text class="rlab" x="695" y="364" text-anchor="middle"><tspan x="695" dy="0">the Church</tspan><tspan x="695" dy="30">of the East</tspan></text></svg><div class=cap>Two rival councils meet in the same city and excommunicate each other. The Church of the East walks away. It still exists.</div></div><aside class=notes>Nestorius of Constantinople objected to <i>Theotokos</i>; Cyril of Alexandria pressed the council. Cyril&rsquo;s council opened before John of Antioch arrived; John&rsquo;s party held its own council and each deposed the other&rsquo;s leader; Theodosius II arrested both Cyril and Nestorius. A Formula of Reunion patched it in 433.<br>Canon 7 of Ephesus: unlawful &ldquo;to bring forward, or to write, or to compose a different faith as a rival to that established by the holy Fathers assembled with the Holy Ghost in Nicaea.&rdquo; This is the ban the next council breaks, and the ban the East cites against the West in 1054.<br>The Church of the East (Persia, outside the empire) had adopted Nicaea on its own at Seleucia-Ctesiphon in 410; it refused Ephesus and has been separate ever since. Today: the Assyrian Church of the East.<br>&rarr; Plant the canon. &ldquo;We will come back to that.&rdquo;</aside></section>
+
+<section class="slide divslide"><div class=eyebrow>451 &middot; Chalcedon</div><h2>One nature or two? Egypt against the capital.</h2><div class="attempt frag"><span class=k>The attempt</span>The Council of Chalcedon writes a Definition, insisting it is not a new creed.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">the Church</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the Definition, &ldquo;not a new creed&rdquo;</text><path class="rib" d="M220,170 C220,200 197,200 197,230 L197,330 L517,330 L517,230 C517,200 540,200 540,170 Z"/><text class="rlab" x="357" y="364" text-anchor="middle"><tspan x="357" dy="0">Chalcedonian</tspan></text><path class="rib" d="M540,170 C540,200 563,200 563,230 L563,330 L803,330 L803,230 C803,200 780,200 780,170 Z"/><text class="rlab" x="683" y="364" text-anchor="middle"><tspan x="683" dy="0">Oriental Orthodox</tspan><tspan x="683" dy="30">Egypt &middot; Armenia &middot; Ethiopia &middot; Syria</tspan></text></svg><div class=cap>The largest split yet. Still unhealed, fifteen centuries later.</div></div><aside class=notes>Chalcedon reaffirmed Ephesus&rsquo;s ban on new creeds, then issued the Definition (&ldquo;in two natures&rdquo;) and said it was a definition, not a creed. The 381 creed is first read into the record here. Egypt, Armenia, Ethiopia, the Syriac churches refused it: the Oriental Orthodox, non-Chalcedonian to this day (Copts, Armenians, Ethiopians, Eritreans, Syriacs, Malankara).<br>&rarr; The rhyme to plant: &ldquo;not a new creed.&rdquo; The thirteen propositions will say the same words.</aside></section>
+
+<section class="slide divslide"><div class=eyebrow>482 &middot; Constantinople</div><h2>Emperor Zeno needs Egypt back.</h2><div class="attempt frag"><span class=k>The attempt</span>The Henotikon, the &ldquo;instrument of union&rdquo;: a formula of faith that does not mention Chalcedon.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 470" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">the Church</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the Henotikon</text><path class="rib" d="M220,170 C220,200 197,200 197,230 L197,330 L477,330 L477,230 C477,200 500,200 500,170 Z"/><text class="rlab" x="337" y="308" text-anchor="middle"><tspan x="337" dy="0">Rome</tspan></text><path class="rib" d="M500,170 C500,200 523,200 523,230 L523,330 L803,330 L803,230 C803,200 780,200 780,170 Z"/><text class="rlab" x="663" y="308" text-anchor="middle"><tspan x="663" dy="0">Constantinople</tspan></text><path class="rib heal" d="M197,330 C197,360 220,360 220,388 L780,388 C780,360 803,360 803,330 Z"/><line class="bar heal" x1="220" y1="388" x2="780" y2="388"/><text class="blab" x="500" y="420" text-anchor="middle">519 &middot; healed</text></svg><div class=cap>Rome excommunicates the patriarch. The Acacian schism lasts thirty-five years. The one breach that heals.</div></div><aside class=notes>Zeno&rsquo;s Henotikon (482), drafted with Patriarch Acacius, tried to reconcile Chalcedonians and non-Chalcedonians by affirming Nicaea, Ephesus and Cyril and passing over Chalcedon in silence. Pope Felix III excommunicated Acacius (484). Rome and Constantinople were out of communion until 519 (Emperor Justin, the Formula of Hormisdas). It did not win Egypt back either.<br>Later imperial compromises did the same thing twice more: 553 (Three Chapters, split the West for 150 years), 638 (Monothelitism, condemned in 680). Not on slides; say it in a sentence if you want the pattern.<br>&rarr; A document literally named &ldquo;instrument of union&rdquo; produced the first schism between Rome and Constantinople.</aside></section>
+
+<section class="slide divslide"><div class=eyebrow>1054 &middot; Constantinople</div><h2>East and West say the same creed, and the West has added a word.</h2><div class="attempt frag"><span class=k>The attempt</span>Pope Leo IX sends legates to Constantinople to settle the Filioque and the authority to add it.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">the Church</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the Filioque</text><path class="rib" d="M220,170 C220,200 197,200 197,230 L197,330 L524,330 L524,230 C524,200 547,200 547,170 Z"/><text class="rlab" x="360" y="364" text-anchor="middle"><tspan x="360" dy="0">Catholic West</tspan></text><path class="rib" d="M547,170 C547,200 570,200 570,230 L570,330 L803,330 L803,230 C803,200 780,200 780,170 Z"/><text class="rlab" x="686" y="364" text-anchor="middle"><tspan x="686" dy="0">Orthodox East</tspan></text></svg><div class=cap>The legates lay a bull of excommunication on the altar of Hagia Sophia. Still separate.</div></div><aside class=notes>The Filioque (&ldquo;and the Son&rdquo;) entered the creed in Spain (Toledo 589), spread through the Frankish church, and was adopted at Rome about 1014. The East objected to the content and to the unilateral change, citing Ephesus Canon 7. Cardinal Humbert&rsquo;s legation (1054) also contested leavened bread and papal primacy; on 16 July he laid the bull on the altar; Patriarch Cerularius anathematized the legates. The date is conventional; the estrangement was long and the 1204 sack sealed it. Mutual anathemas lifted 1965, communion not restored.<br>&rarr; How do two churches with the same creed divide over the creed? Which version, and who decides.</aside></section>
+
+<section class="slide divslide"><div class=eyebrow>1530 &middot; Augsburg</div><h2>Luther&rsquo;s protest has spread. The Western church is dividing over the gospel itself.</h2><div class="attempt frag"><span class=k>The attempt</span>The Augsburg Confession: the Protestants present their faith to the Emperor as a basis for peace. Same creed, same filioque.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">the Western Church</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the Augsburg Confession</text><path class="rib" d="M220,170 C220,200 197,200 197,230 L197,330 L520,330 L520,230 C520,200 543,200 543,170 Z"/><text class="rlab" x="359" y="364" text-anchor="middle"><tspan x="359" dy="0">Catholic</tspan></text><path class="rib" d="M543,170 C543,200 566,200 566,230 L566,330 L803,330 L803,230 C803,200 780,200 780,170 Z"/><text class="rlab" x="685" y="364" text-anchor="middle"><tspan x="685" dy="0">Protestant</tspan></text></svg><div class=cap>Rome answers with a Confutation. The Emperor orders submission. Trent closes the door.</div></div><aside class=notes>1517 the theses; 1521 Worms. The Augsburg Confession (25 June 1530, Melanchthon) was presented to Charles V at an imperial diet called to restore religious unity against the Turkish threat; its first articles affirm Nicaea. The Catholic theologians&rsquo; Confutation (3 August) rejected it; Charles gave the Protestants until April 1531 to submit. Trent (1545&ndash;63) anathematized the Protestant positions.<br>&rarr; Shared creed, shared filioque, divided anyway. The creed was never the thing holding them together.</aside></section>
+
+<section class="slide divslide"><div class=eyebrow>1527 &middot; Zurich</div><h2>Zurich&rsquo;s reformers divide over infant baptism and the sword.</h2><div class="attempt frag"><span class=k>The attempt</span>Public disputations before the city council, which rules for infant baptism. The dissenters answer with the Schleitheim Confession.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">Reformed Zurich</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the council&rsquo;s ruling</text><path class="rib" d="M220,170 C220,200 197,200 197,230 L197,330 L542,330 L542,230 C542,200 565,200 565,170 Z"/><text class="rlab" x="369" y="364" text-anchor="middle"><tspan x="369" dy="0">Reformed</tspan></text><path class="rib" d="M565,170 C565,200 588,200 588,230 L588,330 L803,330 L803,230 C803,200 780,200 780,170 Z"/><text class="rlab" x="695" y="364" text-anchor="middle"><tspan x="695" dy="0">Anabaptists</tspan></text></svg><div class=cap>Felix Manz is drowned in the Limmat, January 1527: a Protestant killed by Protestants.</div></div><aside class=notes>Disputations January and November 1525; the council ordered infants baptized and rebaptizers banished, then (March 1526) drowned. Felix Manz drowned 5 January 1527, the first Protestant executed by Protestants. Schleitheim (February 1527, Michael Sattler) set out seven articles including believer&rsquo;s baptism and separation from the sword; Sattler burned at Rottenburg that May. Zwingli wrote against Schleitheim the same year.<br>Out of order by three years with Augsburg on purpose: Augsburg is the Catholic/Protestant split, this is the first split inside Protestantism.<br>&rarr; The first Protestant unity ruling was enforced with the river.</aside></section>
+
+<section class="slide divslide"><div class=eyebrow>1529 &middot; Marburg</div><h2>Lutherans and Swiss divided over the Lord&rsquo;s Supper.</h2><div class="attempt frag"><span class=k>The attempt</span>Philip of Hesse brings Luther and Zwingli to Marburg. They agree on fourteen articles of fifteen.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">Protestants</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the Marburg Articles</text><path class="rib" d="M220,170 C220,200 197,200 197,230 L197,330 L477,330 L477,230 C477,200 500,200 500,170 Z"/><text class="rlab" x="337" y="364" text-anchor="middle"><tspan x="337" dy="0">Lutheran</tspan></text><path class="rib" d="M500,170 C500,200 523,200 523,230 L523,330 L803,330 L803,230 C803,200 780,200 780,170 Z"/><text class="rlab" x="663" y="364" text-anchor="middle"><tspan x="663" dy="0">Reformed</tspan></text></svg><div class=cap>On the Supper, Luther: &ldquo;You have a different spirit.&rdquo; The ordinance of unity divides them.</div></div><aside class=notes>Marburg Colloquy, 1&ndash;4 October 1529, called by Philip of Hesse to unite the Protestants politically and theologically. The Marburg Articles: agreement on fourteen, and on the fifteenth (the Supper) agreement on everything except whether Christ&rsquo;s body is bodily present. Luther&rsquo;s line to the Swiss: &ldquo;Ihr habt einen andern Geist.&rdquo; Lutheran and Reformed have been separate confessional families since. The Formula of Concord (1577) settled Lutheran infighting by excluding the Reformed.<br>&rarr; Thomas Campbell will call the Supper &ldquo;that great ordinance of unity and love.&rdquo; It is the one thing they could not agree on.</aside></section>
+
+<section class="slide divslide"><div class=eyebrow>1646 &middot; Westminster</div><h2>Three kingdoms, three church settlements, and a civil war.</h2><div class="attempt frag"><span class=k>The attempt</span>The Solemn League and Covenant, then the Westminster Confession: one confession for England, Scotland and Ireland.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">the Reformed churches of Britain</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the Westminster Confession</text><path class="rib" d="M220,170 C220,200 174,200 174,230 L174,330 L382,330 L382,230 C382,200 428,200 428,170 Z"/><text class="rlab" x="278" y="364" text-anchor="middle"><tspan x="278" dy="0">Church of</tspan><tspan x="278" dy="30">England</tspan></text><path class="rib" d="M428,170 C428,200 428,200 428,230 L428,330 L588,330 L588,230 C588,200 588,200 588,170 Z"/><text class="rlab" x="508" y="364" text-anchor="middle"><tspan x="508" dy="0">Independents</tspan></text><path class="rib" d="M588,170 C588,200 634,200 634,230 L634,330 L826,330 L826,230 C826,200 780,200 780,170 Z"/><text class="rlab" x="730" y="364" text-anchor="middle"><tspan x="730" dy="0">Church of</tspan><tspan x="730" dy="30">Scotland</tspan></text></svg><div class=cap>England never adopts it. The Independents dissent inside the Assembly. 1662: two thousand ministers ejected.</div></div><aside class=notes>Solemn League and Covenant (1643): Scotland&rsquo;s price for joining Parliament&rsquo;s war was a common Presbyterian settlement for all three kingdoms. The Westminster Assembly (1643&ndash;49) produced the Confession (1646) and catechisms. The Independents (the &ldquo;Dissenting Brethren&rdquo;) argued against Presbyterian government inside the Assembly. Parliament never fully established it in England; the Restoration (1660) restored bishops; the Act of Uniformity (1662) ejected about two thousand ministers, the Great Ejection. Scotland adopted the Confession in 1647 and keeps it.<br>&rarr; The confession Thomas Campbell was tried under was written to unite three kingdoms. It produced nonconformity.</aside></section>
+
+<section class="slide divslide cuttable"><div class=eyebrow>1690 &middot; Scotland</div><h2>Scotland after the Revolution: Episcopalians, Presbyterians, Covenanters.</h2><div class="attempt frag"><span class=k>The attempt</span>The Revolution Settlement re-establishes the Presbyterian Church of Scotland on the Westminster Confession.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">Church of Scotland</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the Revolution Settlement</text><path class="rib" d="M220,170 C220,200 197,200 197,230 L197,330 L542,330 L542,230 C542,200 565,200 565,170 Z"/><text class="rlab" x="369" y="364" text-anchor="middle"><tspan x="369" dy="0">Church of Scotland</tspan></text><path class="rib" d="M565,170 C565,200 588,200 588,230 L588,330 L803,330 L803,230 C803,200 780,200 780,170 Z"/><text class="rlab" x="695" y="364" text-anchor="middle"><tspan x="695" dy="0">Covenanters</tspan></text></svg><div class=cap>The Covenanters refuse a church that has not renewed the Covenants. Still separate.</div></div><aside class=notes>William and Mary&rsquo;s settlement (1690) abolished bishops and established Presbyterianism with the Westminster Confession, but without the Covenants, which the state did not renew. The Cameronians (Society People) refused to enter and became the Reformed Presbyterian Church (1743 as a presbytery). The Episcopalians went out the other side.<br>Cuttable: the Secession slide carries the Scottish story on its own.</aside></section>
+
+<section class="slide divslide"><div class=eyebrow>1733 &middot; Scotland</div><h2>Patrons appoint ministers that congregations never called.</h2><div class="attempt frag"><span class=k>The attempt</span>The General Assembly upholds patronage and rebukes Ebenezer Erskine for preaching against it.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">Church of Scotland</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the Assembly&rsquo;s rebuke</text><path class="rib" d="M220,170 C220,200 197,200 197,230 L197,330 L542,330 L542,230 C542,200 565,200 565,170 Z"/><text class="rlab" x="369" y="364" text-anchor="middle"><tspan x="369" dy="0">Church of Scotland</tspan></text><path class="rib" d="M565,170 C565,200 588,200 588,230 L588,330 L803,330 L803,230 C803,200 780,200 780,170 Z"/><text class="rlab" x="695" y="364" text-anchor="middle"><tspan x="695" dy="0">the Secession</tspan></text></svg><div class=cap>Four ministers walk out and form the Associate Presbytery. Thomas Campbell&rsquo;s tradition begins here.</div></div><aside class=notes>The Patronage Act (1712) restored lay patrons&rsquo; right to present ministers. Erskine&rsquo;s synod sermon (October 1732) attacked it; the Assembly rebuked him (1733); he and three others (Wilson, Moncrieff, Fisher) protested, were suspended, and formed the Associate Presbytery (December 1733). Deposed 1740. The Seceders renewed the Covenants; the Week 2 litany note has this.<br>&rarr; His tradition began as a protest against imposed authority.</aside></section>
+
+<section class="slide divslide"><div class=eyebrow>1747 &middot; the Burgess Oath</div><h2>Burgesses in three cities must swear to &ldquo;the true religion presently professed within this realm.&rdquo;</h2><div class="attempt frag"><span class=k>The attempt</span>The Associate Synod votes on whether a Seceder may swear it.</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">the Seceders</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the Burgess Oath</text><path class="rib" d="M220,170 C220,200 197,200 197,230 L197,330 L477,330 L477,230 C477,200 500,200 500,170 Z"/><text class="rlab" x="337" y="364" text-anchor="middle"><tspan x="337" dy="0">Burgher</tspan></text><path class="rib" d="M500,170 C500,200 523,200 523,230 L523,330 L803,330 L803,230 C803,200 780,200 780,170 Z"/><text class="rlab" x="663" y="364" text-anchor="middle"><tspan x="663" dy="0">Anti-Burgher</tspan></text></svg><div class=cap>Within two years, mutual excommunication. The oath was never required in Ireland.</div></div><aside class=notes>The oath, required of burgesses in Edinburgh, Glasgow and Perth: &ldquo;the true religion presently professed within this realm and authorized by the laws thereof.&rdquo; Burghers: it means only &ldquo;not Catholic.&rdquo; Anti-Burghers: it blesses the church we left. The synod split April 1747 (Associate Synod vs General Associate Synod); the Anti-Burghers excommunicated the Burghers (1748&ndash;49), and the two could not take communion together. Thomas Campbell was Anti-Burgher. The Week 2 litany note covers why it felt so large (the Testimony, the Covenants).<br>&rarr; This is the rule Conemaugh broke, and the room already knows it.</aside></section>
+
+<section class="slide divslide cuttable"><div class=eyebrow>1799 &middot; 1806</div><h2>May the magistrate enforce religion? Each Seceder body divides over the Confession&rsquo;s own words.</h2><div class="attempt frag"><span class=k>The attempt</span>Each synod revises its Testimony: the &ldquo;New Light.&rdquo;</div><div class="failure frag"><svg class="forkfig" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="forkfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs><path class="rib" d="M220,40 L220,170 L780,170 L780,40 Z"/><text class="rlab" x="500" y="115" text-anchor="middle">Burgher &middot; Anti-Burgher</text><line class="bar" x1="220" y1="170" x2="780" y2="170"/><text class="blab" x="500" y="158" text-anchor="middle">the revised Testimony</text><path class="rib" d="M220,170 C220,200 151,200 151,230 L151,330 L291,330 L291,230 C291,200 360,200 360,170 Z"/><text class="rlab" x="221" y="364" text-anchor="middle"><tspan x="221" dy="0">Old Light</tspan></text><path class="rib" d="M360,170 C360,200 337,200 337,230 L337,330 L477,330 L477,230 C477,200 500,200 500,170 Z"/><text class="rlab" x="407" y="364" text-anchor="middle"><tspan x="407" dy="0">New Light</tspan></text><path class="rib" d="M500,170 C500,200 523,200 523,230 L523,330 L663,330 L663,230 C663,200 640,200 640,170 Z"/><text class="rlab" x="593" y="364" text-anchor="middle"><tspan x="593" dy="0">Old Light</tspan></text><path class="rib" d="M640,170 C640,200 709,200 709,230 L709,330 L849,330 L849,230 C849,200 780,200 780,170 Z"/><text class="rlab" x="779" y="364" text-anchor="middle"><tspan x="779" dy="0">New Light</tspan></text></svg><div class=cap>Thomas Campbell&rsquo;s synod splits in 1806, the year before he sails.</div></div><aside class=notes>The Burghers split 1799 (Original Burghers, Old Light), the Anti-Burghers 1806 (Constitutional Associate Presbytery, Old Light) over whether the civil magistrate has power in religion (Westminster Confession ch. 23). Campbell sided with the Old Lights by friendship more than conviction (Foster; Week 2 note). He sailed April 1807.<br>Cuttable: the Week 2 litany already told this. Keep if the room needs the landing.</aside></section>
+
+<section class="slide flowslide"><div class="eyebrow quiet">325&ndash;1806</div><svg viewBox="0 0 2000 1300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A flow diagram: one river of the Church at the top, forking again and again from Nicaea in 325 to the Seceder splits of 1806, each fork labeled with the creed, council, or oath that caused it.">
+<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede4d3" stop-opacity=".13"/><stop offset="1" stop-color="#ede4d3" stop-opacity="0"/></linearGradient></defs>
+<path class="rib" d="M99.9,150 L99.9,230 L1569.9,230 L1569.9,150 Z"/>
+<path class="rib dying" d="M99.9,230 C99.9,258.0 70.0,258.0 70.0,286 L70.0,560 L132.6,560 L132.6,286 C132.6,258.0 162.4,258.0 162.4,230 Z"/>
+<path class="rib" d="M162.4,230 C162.4,258.0 192.3,258.0 192.3,286 L192.3,310 L1599.7,310 L1599.7,286 C1599.7,258.0 1569.9,258.0 1569.9,230 Z"/>
+<path class="rib" d="M192.3,310 C192.3,338.0 158.6,338.0 158.6,366 L158.6,1140 L221.1,1140 L221.1,366 C221.1,338.0 254.9,338.0 254.9,310 Z"/>
+<path class="rib" d="M254.9,310 C254.9,338.0 288.6,338.0 288.6,366 L288.6,390 L1633.5,390 L1633.5,366 C1633.5,338.0 1599.7,338.0 1599.7,310 Z"/>
+<path class="rib" d="M288.6,390 C288.6,418.0 247.1,418.0 247.1,446 L247.1,1140 L340.9,1140 L340.9,446 C340.9,418.0 382.4,418.0 382.4,390 Z"/>
+<path class="rib" d="M382.4,390 C382.4,418.0 423.9,418.0 423.9,446 L423.9,570 L1675.0,570 L1675.0,446 C1675.0,418.0 1633.5,418.0 1633.5,390 Z"/>
+<path class="rib" d="M423.9,570 C423.9,598.0 366.9,598.0 366.9,626 L366.9,1140 L517.1,1140 L517.1,626 C517.1,598.0 574.0,598.0 574.0,570 Z"/>
+<path class="rib" d="M574.0,570 C574.0,598.0 631.0,598.0 631.0,626 L631.0,650 L1732.0,650 L1732.0,626 C1732.0,598.0 1675.0,598.0 1675.0,570 Z"/>
+<path class="rib" d="M631.0,650 C631.0,678.0 543.1,678.0 543.1,706 L543.1,1140 L830.8,1140 L830.8,706 C830.8,678.0 918.8,678.0 918.8,650 Z"/>
+<path class="rib" d="M918.8,650 C918.8,678.0 1006.7,678.0 1006.7,706 L1006.7,715 L1819.9,715 L1819.9,706 C1819.9,678.0 1732.0,678.0 1732.0,650 Z"/>
+<path class="rib" d="M1006.7,715 C1006.7,743.0 896.6,743.0 896.6,771 L896.6,775 L1647.3,775 L1647.3,771 C1647.3,743.0 1757.4,743.0 1757.4,715 Z"/>
+<path class="rib" d="M896.6,775 C896.6,803.0 856.8,803.0 856.8,831 L856.8,1140 L956.9,1140 L956.9,831 C956.9,803.0 996.7,803.0 996.7,775 Z"/>
+<path class="rib" d="M996.7,775 C996.7,803.0 1036.5,803.0 1036.5,831 L1036.5,860 L1687.1,860 L1687.1,831 C1687.1,803.0 1647.3,803.0 1647.3,775 Z"/>
+<path class="rib" d="M1036.5,860 C1036.5,888.0 982.9,888.0 982.9,916 L982.9,1140 L1083.0,1140 L1083.0,916 C1083.0,888.0 1136.6,888.0 1136.6,860 Z"/>
+<path class="rib" d="M1136.6,860 C1136.6,888.0 1109.0,888.0 1109.0,916 L1109.0,1140 L1171.5,1140 L1171.5,916 C1171.5,888.0 1199.2,888.0 1199.2,860 Z"/>
+<path class="rib" d="M1199.2,860 C1199.2,888.0 1197.5,888.0 1197.5,916 L1197.5,1140 L1291.4,1140 L1291.4,916 C1291.4,888.0 1293.0,888.0 1293.0,860 Z"/>
+<path class="rib" d="M1293.0,860 C1293.0,888.0 1346.6,888.0 1346.6,916 L1346.6,920 L1740.7,920 L1740.7,916 C1740.7,888.0 1687.1,888.0 1687.1,860 Z"/>
+<path class="rib" d="M1346.6,920 C1346.6,948.0 1317.4,948.0 1317.4,976 L1317.4,1140 L1379.9,1140 L1379.9,976 C1379.9,948.0 1409.2,948.0 1409.2,920 Z"/>
+<path class="rib" d="M1409.2,920 C1409.2,948.0 1438.4,948.0 1438.4,976 L1438.4,975 L1769.9,975 L1769.9,976 C1769.9,948.0 1740.7,948.0 1740.7,920 Z"/>
+<path class="rib" d="M1438.4,975 C1438.4,1003.0 1405.9,1003.0 1405.9,1031 L1405.9,1140 L1487.2,1140 L1487.2,1031 C1487.2,1003.0 1519.7,1003.0 1519.7,975 Z"/>
+<path class="rib" d="M1519.7,975 C1519.7,1003.0 1552.2,1003.0 1552.2,1031 L1552.2,1030 L1802.4,1030 L1802.4,1031 C1802.4,1003.0 1769.9,1003.0 1769.9,975 Z"/>
+<path class="rib" d="M1552.2,1030 C1552.2,1058.0 1526.2,1058.0 1526.2,1086 L1526.2,1080 L1651.3,1080 L1651.3,1086 C1651.3,1058.0 1677.3,1058.0 1677.3,1030 Z"/>
+<path class="rib" d="M1526.2,1080 C1526.2,1108.0 1513.2,1108.0 1513.2,1136 L1513.2,1140 L1575.8,1140 L1575.8,1136 C1575.8,1108.0 1588.8,1108.0 1588.8,1080 Z"/>
+<path class="rib" d="M1588.8,1080 C1588.8,1108.0 1601.8,1108.0 1601.8,1136 L1601.8,1140 L1664.3,1140 L1664.3,1136 C1664.3,1108.0 1651.3,1108.0 1651.3,1080 Z"/>
+<path class="rib" d="M1677.3,1030 C1677.3,1058.0 1703.3,1058.0 1703.3,1086 L1703.3,1095 L1828.4,1095 L1828.4,1086 C1828.4,1058.0 1802.4,1058.0 1802.4,1030 Z"/>
+<path class="rib" d="M1703.3,1095 C1703.3,1123.0 1690.3,1123.0 1690.3,1151 L1690.3,1140 L1752.9,1140 L1752.9,1151 C1752.9,1123.0 1765.9,1123.0 1765.9,1095 Z"/>
+<path class="rib" d="M1765.9,1095 C1765.9,1123.0 1778.9,1123.0 1778.9,1151 L1778.9,1140 L1841.4,1140 L1841.4,1151 C1841.4,1123.0 1828.4,1123.0 1828.4,1095 Z"/>
+<path class="rib" d="M1757.4,715 C1757.4,743.0 1867.4,743.0 1867.4,771 L1867.4,1140 L1930.0,1140 L1930.0,771 C1930.0,743.0 1819.9,743.0 1819.9,715 Z"/>
+<path class="breach" d="M1049.4,445 C1324.7,463 1324.7,482 1049.4,500 C774.2,482 774.2,463 1049.4,445 Z"/>
+<circle class="node heal" cx="1049.4" cy="445" r="5"/><circle class="node heal" cx="1049.4" cy="500" r="5"/>
+<text class="flab" x="758.2" y="459" text-anchor="end"><tspan class="yr">482</tspan> <tspan class="ttl">the Henotikon · “instrument of union”</tspan><tspan class="fsub" x="758.2" dy="20">Rome and Constantinople out of communion 484–519 · healed</tspan></text>
+<line class="fork" x1="99.9" y1="230" x2="1569.9" y2="230"/>
+<text class="flab" x="834.9" y="216" text-anchor="middle"><tspan class="yr">325</tspan> <tspan class="ttl">Nicaea · the Nicene Creed</tspan><tspan class="fsub" x="834.9" dy="20">the Arians go · war for 56 more years</tspan></text>
+<line class="fork" x1="192.3" y1="310" x2="1599.7" y2="310"/>
+<text class="flab" x="896.0" y="296" text-anchor="middle"><tspan class="yr">431</tspan> <tspan class="ttl">Ephesus · Canon 7, no new creed, ever</tspan><tspan class="fsub" x="896.0" dy="20">the Church of the East goes</tspan></text>
+<line class="fork" x1="288.6" y1="390" x2="1633.5" y2="390"/>
+<text class="flab" x="961.0" y="376" text-anchor="middle"><tspan class="yr">451</tspan> <tspan class="ttl">Chalcedon · the Definition, “not a new creed”</tspan><tspan class="fsub" x="961.0" dy="20">Egypt, Armenia, Ethiopia, Syria go</tspan></text>
+<line class="fork" x1="423.9" y1="570" x2="1675.0" y2="570"/>
+<text class="flab" x="1049.4" y="556" text-anchor="middle"><tspan class="yr">1054</tspan> <tspan class="ttl">the Filioque · the creed itself</tspan><tspan class="fsub" x="1049.4" dy="20">East and West: which wording, who decides</tspan></text>
+<line class="fork" x1="631.0" y1="650" x2="1732.0" y2="650"/>
+<text class="flab" x="1181.5" y="636" text-anchor="middle"><tspan class="yr">1517</tspan> <tspan class="ttl">the Reformation</tspan><tspan class="fsub" x="1181.5" dy="20">same creed, same filioque</tspan></text>
+<line class="fork" x1="1006.7" y1="715" x2="1819.9" y2="715"/>
+<text class="flab" x="1413.3" y="701" text-anchor="middle"><tspan class="yr">1527</tspan> <tspan class="ttl">Zurich · Felix Manz drowned</tspan><tspan class="fsub" x="1413.3" dy="20">the Anabaptists go</tspan></text>
+<line class="fork" x1="896.6" y1="775" x2="1647.3" y2="775"/>
+<text class="flab" x="1271.9" y="761" text-anchor="middle"><tspan class="yr">1529</tspan> <tspan class="ttl">Marburg · agreed on 14 articles, not the Supper</tspan><tspan class="fsub" x="1271.9" dy="20">“you have a different spirit”</tspan></text>
+<line class="fork" x1="1036.5" y1="860" x2="1687.1" y2="860"/>
+<text class="flab" x="1361.8" y="846" text-anchor="middle"><tspan class="yr">1646</tspan> <tspan class="ttl">Westminster · one confession for three kingdoms</tspan><tspan class="fsub" x="1361.8" dy="20">England never adopts it · 1662, two thousand ejected</tspan></text>
+<line class="fork" x1="1346.6" y1="920" x2="1740.7" y2="920"/>
+<text class="flab" x="1543.7" y="906" text-anchor="middle"><tspan class="yr">1690</tspan> <tspan class="ttl">the Revolution Settlement</tspan><tspan class="fsub" x="1543.7" dy="20">the Covenanters go</tspan></text>
+<line class="fork" x1="1438.4" y1="975" x2="1769.9" y2="975"/>
+<text class="flab" x="1604.2" y="961" text-anchor="middle"><tspan class="yr">1733</tspan> <tspan class="ttl">the Secession · Erskine</tspan><tspan class="fsub" x="1604.2" dy="20">over patronage</tspan></text>
+<line class="fork" x1="1552.2" y1="1030" x2="1802.4" y2="1030"/>
+<text class="flab" x="1677.3" y="1016" text-anchor="middle"><tspan class="yr">1747</tspan> <tspan class="ttl">the Burgess Oath</tspan><tspan class="fsub" x="1677.3" dy="20">Burgher and Anti-Burgher</tspan></text>
+<line class="fork" x1="1526.2" y1="1080" x2="1651.3" y2="1080"/>
+<text class="flab" x="1512.2" y="1068" text-anchor="end"><tspan class="yr">1799</tspan> <tspan class="ttl">Old Light · New Light, 1799 and 1806</tspan><tspan class="fsub" x="1512.2" dy="20">each Seceder body splits again · Thomas Campbell’s synod, the year before he sailed</tspan></text>
+<line class="fork" x1="1703.3" y1="1095" x2="1828.4" y2="1095"/>
+<text class="fx" x="101.3" y="586" text-anchor="middle">×</text>
+<text class="leaf dim" x="101.3" y="608" text-anchor="middle"><tspan x="101.3">Arians</tspan><tspan x="101.3" dy="17">gone by c. 650</tspan></text>
+<text class="leaf" x="189.8" y="1188" text-anchor="middle"><tspan x="189.8" dy="0">Church of</tspan><tspan x="189.8" dy="17">the East</tspan></text>
+<text class="leaf" x="294.0" y="1168" text-anchor="middle"><tspan x="294.0" dy="0">Oriental</tspan><tspan x="294.0" dy="17">Orthodox</tspan></text>
+<text class="leaf" x="442.0" y="1188" text-anchor="middle"><tspan x="442.0" dy="0">Eastern</tspan><tspan x="442.0" dy="17">Orthodox</tspan></text>
+<text class="leaf" x="686.9" y="1168" text-anchor="middle"><tspan x="686.9" dy="0">Roman</tspan><tspan x="686.9" dy="17">Catholic</tspan></text>
+<text class="leaf" x="906.9" y="1188" text-anchor="middle"><tspan x="906.9" dy="0">Lutheran</tspan></text>
+<text class="leaf" x="1032.9" y="1168" text-anchor="middle"><tspan x="1032.9" dy="0">Church of</tspan><tspan x="1032.9" dy="17">England</tspan></text>
+<text class="leaf" x="1140.3" y="1188" text-anchor="middle"><tspan x="1140.3" dy="0">Independents</tspan></text>
+<text class="leaf" x="1244.4" y="1168" text-anchor="middle"><tspan x="1244.4" dy="0">Continental</tspan><tspan x="1244.4" dy="17">Reformed</tspan></text>
+<text class="leaf" x="1348.6" y="1188" text-anchor="middle"><tspan x="1348.6" dy="0">Covenanters</tspan></text>
+<text class="leaf" x="1446.6" y="1168" text-anchor="middle"><tspan x="1446.6" dy="0">Church of</tspan><tspan x="1446.6" dy="17">Scotland</tspan></text>
+<text class="leaf" x="1544.5" y="1188" text-anchor="middle"><tspan x="1544.5" dy="0">Burgher</tspan><tspan x="1544.5" dy="17">Old Light</tspan></text>
+<text class="leaf" x="1633.1" y="1168" text-anchor="middle"><tspan x="1633.1" dy="0">Burgher</tspan><tspan x="1633.1" dy="17">New Light</tspan></text>
+<text class="leaf" x="1721.6" y="1188" text-anchor="middle"><tspan x="1721.6" dy="0">Anti-Burgher</tspan><tspan x="1721.6" dy="17">Old Light</tspan></text>
+<text class="leaf" x="1810.2" y="1168" text-anchor="middle"><tspan x="1810.2" dy="0">Anti-Burgher</tspan><tspan x="1810.2" dy="17">New Light</tspan></text>
+<text class="leaf" x="1898.7" y="1188" text-anchor="middle"><tspan x="1898.7" dy="0">Anabaptists</tspan></text>
+<text class="trunk" x="834.9" y="134" text-anchor="middle">the one Church</text>
+</svg><aside class=notes>The whole picture at once. One river, and every gold bar is a creed, council, oath or settlement offered as a term of unity. Widths are suggestive, not to scale. The faded stream is the Arians; the dotted lens is the Henotikon, the one breach that healed.<br>&rarr; All of these, as informative and enlightening as they are, did not produce unity. They could not produce it even among those who agreed on them.</aside></section>
+
+<section class="slide"><h2>What can Christians unite on?</h2><div class="sub frag">He prayed that they would be one. So it must be possible.</div><aside class=notes>John 17:21, a prayer, not a command. Then back to the Preamble: &ldquo;nor, indeed, can we reasonably expect to find it anywhere but in Christ and his simple word.&rdquo;<br>&rarr; Your close is yours. The slide stops at the question.</aside></section>
+
+<section class="slide"><aside class=notes>Black. Then the Preamble&rsquo;s last sentence.</aside></section>
+
+</div>
+<div id=bar></div><div id=count></div><div id=hint>&rarr; / space / click &middot; f fullscreen &middot; n read/present &middot; p presenter window &middot; s notes on THIS screen</div><div id=mode></div><div id=strip></div><div id=pres></div>
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  /* The addendum's plate gallery shows the SAME figures as the telling.
+     Cloning the node keeps ONE copy of each base64 payload in the file — duplicating the
+     markup would have added ~930 KB to a deck people open on a phone. */
+  [].slice.call(document.querySelectorAll('[data-mirror]')).forEach(function(ph){
+    var src=document.getElementById(ph.getAttribute('data-mirror'));
+    if(!src){return}
+    var c=src.cloneNode(true);
+    c.removeAttribute('id');
+    [].slice.call(c.querySelectorAll('[id]')).forEach(function(e){e.removeAttribute('id')});
+    ph.parentNode.replaceChild(c,ph);
+  });
+  var bar=document.getElementById('bar'),count=document.getElementById('count'),hint=document.getElementById('hint');
+  var strip=document.getElementById('strip'),modeEl=document.getElementById('mode'),pres=document.getElementById('pres');
+  var q=new URLSearchParams(location.search);
+  var LS={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+  var isPrev=q.has('preview'),isPres=q.has('presenter');
+  if(isPrev||isPres)LS.set=function(){};  /* only the main window owns the shared state */
+  var cur=0,interacted=false;
+  function isPresent(){return document.body.classList.contains('present')}
+  function fragsOf(i){var a=[].slice.call(slides[i].querySelectorAll('.frag')).filter(function(f){return !f.classList.contains('wp')&&!(isPresent()&&f.classList.contains('nt'))});a.sort(function(x,y){return (+(x.getAttribute('data-o')||0))-(+(y.getAttribute('data-o')||0))});return a}
+  /* a .wp element (an attribution) is never its own step — it reveals with the frag above it */
+  function syncWP(i){[].slice.call(slides[i].querySelectorAll('.wp')).forEach(function(w){
+    var p=w.previousElementSibling,t=null;
+    while(p){if(p.classList.contains('frag')&&!p.classList.contains('wp')&&!(isPresent()&&p.classList.contains('nt'))){t=p;break}p=p.previousElementSibling}
+    w.classList.toggle('on',t?t.classList.contains('on'):true)})}
+  function totalSteps(){return slides.reduce(function(t,s,i){return t+1+fragsOf(i).length},0)}
+  function stepsBefore(i){var t=0;for(var k=0;k<i;k++)t+=1+fragsOf(k).length;return t}
+  function shownFrags(i){return fragsOf(i).filter(function(f){return f.classList.contains('on')}).length}
+  function notesOf(i){var a=slides[i].querySelector('aside.notes');return a?a.innerHTML:''}
+  function titleOf(i){var e=slides[i].querySelector('h1,h2,h3,.eyebrow');return e?e.textContent.replace(/\s+/g,' ').trim():'—'}
+  function render(){
+    syncWP(cur);
+    slides.forEach(function(s,i){s.classList.toggle('on',i===cur)});
+    count.textContent=(cur+1)+' / '+slides.length;
+    bar.style.width=((stepsBefore(cur)+1+shownFrags(cur))/totalSteps()*100)+'%';
+    strip.innerHTML='<i>'+(cur+1)+'</i> &nbsp; '+notesOf(cur);
+    LS.set('w3cur',String(cur));
+    try{history.replaceState(null,'',location.search+'#'+(cur+1))}catch(e){}
+  }
+  function setMode(m){
+    document.body.classList.toggle('present',m==='present');LS.set('w3mode',m);
+    modeEl.textContent=(m==='present')?'present':'read';render();
+  }
+  function setStrip(on){document.body.classList.toggle('strip',!!on);LS.set('w3strip',on?'1':'0')}
+  function next(){
+    interacted||fadeHint();
+    var fr=fragsOf(cur);
+    for(var i=0;i<fr.length;i++){if(!fr[i].classList.contains('on')){fr[i].classList.add('on');render();return}}
+    if(cur<slides.length-1){cur++;fragsOf(cur).forEach(function(f){f.classList.remove('on')});render()}
+  }
+  function prev(){
+    interacted||fadeHint();
+    var fr=fragsOf(cur);
+    for(var i=fr.length-1;i>=0;i--){if(fr[i].classList.contains('on')){fr[i].classList.remove('on');render();return}}
+    if(cur>0){cur--;fragsOf(cur).forEach(function(f){f.classList.add('on')});render()}
+  }
+  function goto(i,built){
+    cur=Math.max(0,Math.min(slides.length-1,i));
+    fragsOf(cur).forEach(function(f){f.classList.toggle('on',!!built)});render();
+  }
+  function fadeHint(){interacted=true;hint.classList.add('gone')}
+  function openPresenter(){
+    var base=location.href.split(/[?#]/)[0];
+    window.open(base+'?presenter=1','w3presenter','width=960,height=640');
+  }
+  function sharedCur(){var c=parseInt(LS.get('w3cur')||'0',10);if(isNaN(c))c=0;return Math.max(0,Math.min(slides.length-1,c))}
+  /* ---- preview pane (?preview=1): renders the NEXT slide, follows the main window ---- */
+  if(isPrev){
+    document.body.classList.add('preview');
+    var pvS=-1,pvM='',pvPushed=false;
+    function pvApply(c,m){
+      var off=parseInt(q.get('off')||'1',10);if(isNaN(off))off=1;
+      var n=Math.min(slides.length-1,Math.max(0,c)+off);
+      if(n!==pvS||m!==pvM){pvS=n;pvM=m;
+        document.body.classList.toggle('present',m==='present');goto(n,true)}
+    }
+    /* the presenter window pushes state in: an embedded frame cannot rely on shared
+       storage (Chrome partitions it for embedded documents), so this is the real channel */
+    window.addEventListener('message',function(e){
+      var d=e.data;if(d&&d.w1){pvPushed=true;pvApply(d.cur,d.mode||'present')}
+    });
+    function pvTick(){if(!pvPushed)pvApply(sharedCur(),LS.get('w3mode')||'present')}
+    pvTick();setInterval(pvTick,200);window.addEventListener('storage',pvTick);
+    return;
+  }
+  /* ---- presenter window (?presenter=1): notes + a live picture of the next slide ---- */
+  if(isPres){
+    document.body.classList.add('presenter');
+    var pbase=location.href.split(/[?#]/)[0];
+    pres.innerHTML='<div class=pcol><div class=pn id=ppn></div><div class=pt id=ppt></div>'+
+      '<div class=pnotes id=ppnotes></div></div>'+
+      '<div class=pside><div class=plabel>NOW &middot; fully built</div>'+
+      '<div class=pwrap id=ppwrap0><iframe id=ppif0 src="'+pbase+'?preview=1&off=0"></iframe></div>'+
+      '<div class=plabel id=pplabel>NEXT</div>'+
+      '<div class=pwrap id=ppwrap><iframe id=ppif src="'+pbase+'?preview=1&off=1"></iframe></div>'+
+      '<div class=pnexttitle id=ppnt></div>'+
+      '<div class=pkeys>arrows / space advance the deck from here too</div></div>';
+    var ppif=document.getElementById('ppif'),ppwrap=document.getElementById('ppwrap');
+    var ppif0=document.getElementById('ppif0'),ppwrap0=document.getElementById('ppwrap0');
+    function pfit(){ppif.style.transform='scale('+(ppwrap.clientWidth/1920)+')';
+      ppif0.style.transform='scale('+(ppwrap0.clientWidth/1920)+')'}
+    pfit();window.addEventListener('resize',pfit);setTimeout(pfit,300);
+    function ppush(){var m={w1:1,cur:sharedCur(),mode:LS.get('w3mode')||'read'};
+      [ppif,ppif0].forEach(function(f){try{f.contentWindow&&f.contentWindow.postMessage(m,'*')}catch(e){}})}
+    ppif.addEventListener('load',ppush);ppif0.addEventListener('load',ppush);
+    var last=-1;
+    function tick(){
+      var c=sharedCur();ppush();
+      if(c!==last){last=c;
+        var end=(c+1>=slides.length);
+        document.getElementById('ppn').textContent=(c+1)+' / '+slides.length;
+        document.getElementById('ppt').textContent=titleOf(c);
+        document.getElementById('ppnotes').innerHTML=notesOf(c);
+        document.getElementById('pplabel').textContent=end?'END OF DECK':'NEXT';
+        ppwrap.style.visibility=end?'hidden':'visible';
+        document.getElementById('ppnt').textContent=end?'':((c+2)+' · '+titleOf(c+1));
+      }
+    }
+    tick();setInterval(tick,200);window.addEventListener('storage',tick);
+    var seq=0;
+    function cmd(d){seq++;try{localStorage.setItem('w1cmd',Date.now()+':'+seq+':'+d)}catch(e){}}
+    document.addEventListener('keydown',function(e){
+      if(e.metaKey||e.ctrlKey||e.altKey)return;
+      switch(e.key){
+        case 'ArrowRight':case 'ArrowDown':case ' ':case 'PageDown':e.preventDefault();cmd(1);break;
+        case 'ArrowLeft':case 'ArrowUp':case 'Backspace':case 'PageUp':e.preventDefault();cmd(-1);break;
+        case 'f':case 'F':
+          if(document.fullscreenElement)document.exitFullscreen&&document.exitFullscreen();
+          else document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();
+          break;
+      }
+    });
+    return;
+  }
+  document.addEventListener('keydown',function(e){
+    if(e.metaKey||e.ctrlKey||e.altKey)return;
+    switch(e.key){
+      case 'ArrowRight':case 'ArrowDown':case ' ':case 'PageDown':e.preventDefault();next();break;
+      case 'ArrowLeft':case 'ArrowUp':case 'Backspace':case 'PageUp':e.preventDefault();prev();break;
+      case 'Home':goto(0,false);break;
+      case 'End':goto(slides.length-1,true);break;
+      case 'n':case 'N':setMode(isPresent()?'read':'present');break;
+      case 's':case 'S':setStrip(!document.body.classList.contains('strip'));break;
+      case 'p':case 'P':openPresenter();break;
+      case 'f':case 'F':
+        if(document.fullscreenElement)document.exitFullscreen&&document.exitFullscreen();
+        else document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();
+        break;
+    }
+  });
+  document.addEventListener('click',function(e){if(e.target.closest('#strip'))return;(e.clientX<innerWidth/5)?prev():next()});
+  var tx=null;
+  document.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){
+    if(tx==null)return;var dx=e.changedTouches[0].clientX-tx;tx=null;
+    if(dx<-40)next();else if(dx>40)prev();
+  },{passive:true});
+  var h=parseInt((location.hash||'').replace('#',''),10);
+  if(h>=1&&h<=slides.length)cur=h-1;
+  var lastCmd=LS.get('w1cmd')||'';
+  setInterval(function(){
+    var v=LS.get('w1cmd')||'';
+    if(v&&v!==lastCmd){lastCmd=v;(v.slice(-2)==='-1')?prev():next()}
+  },200);
+  setStrip((LS.get('w3strip')||'0')==='1');
+  setMode(q.get('mode')||LS.get('w3mode')||'present');
+  fragsOf(cur).forEach(function(f){f.classList.remove('on')});render();
+  setTimeout(fadeHint,8000);
+})();
+</script>
+</body></html>
+</html>
