@@ -185,11 +185,12 @@ def split(pre, post, k0, k1, k2=None):
 def D(title, line, pre, post, notes, heal=None, cut=False):
     """pre/post/heal are state keys into ST. Headline + line at once; click = the split; a second click = heal."""
     healer = '<div class="frag healer"></div>' if heal else ''
-    return ('<section class="slide divslide%s"><h2>%s</h2>'
+    wide = ' wide' if len(ST[post]) >= 11 else ''     # late, wide eggs bleed up under the title for more room
+    return ('<section class="slide divslide%s%s"><h2>%s</h2>'
             '<div class=line>%s</div>'
             '<div class="failure frag">%s</div>%s'
             '<aside class=notes>%s</aside></section>' % (
-                ' cuttable' if cut else '', title, line, split(ST[pre], ST[post], pre, post, heal), healer, notes))
+                ' cuttable' if cut else '', wide, title, line, split(ST[pre], ST[post], pre, post, heal), healer, notes))
 
 
 # ---------- the finale: a shattered egg, too many pieces to count ----------
