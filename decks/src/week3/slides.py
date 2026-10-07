@@ -229,7 +229,7 @@ def _clip(poly, clip):
 
 def shatter(seed=7, cols=15, rows=7):
     rnd = random.Random(seed)
-    W, H, cx, cy, rx, ry = 2200, 1000, 1100, 490, 930, 370
+    W, H, cx, cy, rx, ry = 2500, 1100, 1250, 540, 930, 370
     egg = [(cx + rx * math.cos(2 * math.pi * k / 72), cy + ry * math.sin(2 * math.pi * k / 72)) for k in range(72)]
     # jittered grid vertices over the bounding box
     gx = [cx - rx + (2 * rx) * i / cols for i in range(cols + 1)]
@@ -258,19 +258,21 @@ def shatter(seed=7, cols=15, rows=7):
         mx = sum(p[0] for p in c) / len(c); my = sum(p[1] for p in c) / len(c)
         dx, dy = mx - cx, my - cy; dist = math.hypot(dx, dy) or 1
         # spread: scale every shard's position out from the center, plus a little random push and tilt
-        tx, ty = dx * 0.16 + dx / dist * rnd.uniform(4, 12) + rnd.uniform(-4, 4), dy * 0.16 + dy / dist * rnd.uniform(4, 12) + rnd.uniform(-4, 4)
+        tx, ty = dx * 0.30 + dx / dist * rnd.uniform(6, 16) + rnd.uniform(-5, 5), dy * 0.30 + dy / dist * rnd.uniform(6, 16) + rnd.uniform(-5, 5)
         rot = rnd.uniform(-5, 5)
         col = rnd.choice(['c1', 'c2', 'c3', 'c4']); pat = rnd.choice(pats)
         fill = 'url(#p-%s-%s)' % (pat, col) if pat else 'var(--%s)' % col
         jag = []
+        zig = rnd.random() < .4          # this shard's edges: regular Easter-egg teeth, or torn
         for k in range(len(c)):
             a_, b_ = c[k], c[(k + 1) % len(c)]
             ex, ey = b_[0] - a_[0], b_[1] - a_[1]; L = math.hypot(ex, ey) or 1
             nx, ny = -ey / L, ex / L
-            segs = max(2, int(L / 22))
+            segs = max(2, int(L / (14 if zig else 22)))
             jag.append(a_)
             for q in range(1, segs):
-                t = q / segs; amp = rnd.uniform(-1, 1) * min(7, L * .08)
+                t = q / segs
+                amp = (7 if q % 2 else -7) if zig else rnd.uniform(-1, 1) * min(7, L * .08)
                 jag.append((a_[0] + ex * t + nx * amp, a_[1] + ey * t + ny * amp))
         d = 'M' + ' L'.join('%.1f,%.1f' % p for p in jag) + ' Z'
         out.append('<g transform="translate(%.1f,%.1f) rotate(%.1f,%.1f,%.1f)"><path d="%s" style="fill:%s;stroke:var(--ground);stroke-width:4;stroke-linejoin:round"/>'
