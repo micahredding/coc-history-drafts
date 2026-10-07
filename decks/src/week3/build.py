@@ -1,6 +1,6 @@
 import re, sys
 sys.path.insert(0,'decks/src/week3')
-from slides import S
+from slides import S, PATDEFS
 
 body='\n\n'.join(S)
 css=open('decks/src/week3/engine.css').read()
@@ -19,10 +19,10 @@ css+= ('\n  /* ---- Week 3 type scale (inherited from Week 2) ---- */\n'
        '  #deck .divslide .splitfig{height:min(54vh,60vmin);width:auto;max-width:94vw;display:block}\n'
        '  /* the figure is on screen before the click as the before-state; the click moves it to the after-state */\n'
        '  #deck .divslide .failure.frag{opacity:1;transform:none}\n'
-       '  .splitfig .piece path{d:var(--d0);fill:var(--k0);stroke:var(--k0);stroke-width:1.5;transition:d .9s cubic-bezier(.6,0,.3,1),fill .7s ease .25s,stroke .3s ease,opacity .7s ease .25s}\n'
+       '  .splitfig .piece path{d:var(--d0);fill:var(--k0);stroke:var(--s0);stroke-width:1.5;transition:d .9s cubic-bezier(.6,0,.3,1),fill .7s ease .25s,stroke .3s ease,opacity .7s ease .25s}\n'
        '  .splitfig .piece.gone0 path{opacity:0}.failure.on .piece.gone1 path{opacity:0!important}\n'
        '  .splitfig .piece.dying0 path{opacity:.35}.failure.on .piece path{opacity:1}.failure.on .piece.dying1 path{opacity:.35}\n'
-       '  .failure.on .piece path{d:var(--d1);fill:var(--k1);stroke:var(--k1)}\n'
+       '  .failure.on .piece path{d:var(--d1);fill:var(--k1);stroke:var(--s1)}\n'
        '  .splitfig .seam{d:var(--d0);fill:none;stroke:var(--ground);stroke-width:5;stroke-linejoin:round;opacity:0;transition:d .9s cubic-bezier(.6,0,.3,1),opacity .5s ease}\n'
        '  .splitfig .seam.on0{opacity:1}.failure.on .seam{d:var(--d1);opacity:0}.failure.on .seam.on1{opacity:1}\n'
        '  #deck .divslide:has(.healer.on) .failure.on .seam{d:var(--d2);opacity:0}#deck .divslide:has(.healer.on) .failure.on .seam.on2{opacity:1}\n'
@@ -69,7 +69,7 @@ html=('<!doctype html><html><head><meta charset=utf8>'
  '   Engine, palette and type inherited from the Week 2 deck.\n'
  '   Started 2026-10-06 with the Christendom sequence (issue / attempt / fork).\n'
  '   ============================================================ */\n'
- + css + '</style></head>\n<body>\n<div id=deck>\n\n' + body +
+ + css + '</style></head>\n<body>\n<svg width=0 height=0 style="position:absolute;visibility:visible" aria-hidden=true>' + PATDEFS + '</svg>\n<div id=deck>\n\n' + body +
  '\n\n</div>\n<div id=bar></div><div id=count></div>'
  '<div id=hint>&rarr; / space / click &middot; f fullscreen &middot; n read/present &middot; p presenter window &middot; s notes on THIS screen</div>'
  '<div id=mode></div><div id=strip></div><div id=pres></div>\n' + js + '</html>')

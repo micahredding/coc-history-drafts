@@ -38,13 +38,45 @@ def _widths(units, key):
     return ws
 
 ORDER = ['0', '325', '431', '451', '482', '519', '1054', '1530', '1527', '1529', '1646', '1690', '1733', '1747', '1806']
-JAG = {2: '1054', 3: '1530'}     # boundary after slice b is jagged from this state on (an Easter-egg zigzag)
+# boundary after slice b tears in this style from this state on. Styles: zig (Easter egg), wave, step
+# (battlements), crack (Humpty Dumpty). By 1806 every boundary still straight cracks too.
+JAG = {2: ('1054', 'zig'), 3: ('1530', 'zig'), 13: ('1527', 'wave'), 4: ('1529', 'step'),
+       5: ('1646', 'crack'), 6: ('1646', 'crack'), 7: ('1646', 'crack'), 8: ('1690', 'wave'),
+       9: ('1733', 'step'), 11: ('1747', 'crack'), 10: ('1806', 'zig'), 12: ('1806', 'zig'),
+       0: ('1806', 'crack'), 1: ('1806', 'crack')}
 JOIN = {'519': {2}}              # boundaries with no gap in this state: the Henotikon's awkward join, seam showing
-AMP, K = 9, 10                   # zigzag amplitude and segments per edge
-
+K = 16                           # segments per edge (every edge carries the points; amplitude 0 = straight)
+import random
+_cr = {}
+def _shape(style, b):
+    """per-k offset multipliers for an edge, k = 1..K-1"""
+    if style == 'zig':   return [1 if (k // 2) % 2 == 0 else -1 for k in range(1, K)], 9
+    if style == 'wave':  return [math.sin(2 * math.pi * 2 * k / K) for k in range(1, K)], 11
+    if style == 'step':  return [1 if (k // 4) % 2 == 0 else -1 for k in range(1, K)], 7
+    if style == 'crack':
+        if b not in _cr:
+            rnd = random.Random(1000 + b); _cr[b] = [rnd.uniform(-1, 1) for _ in range(1, K)]
+        return _cr[b], 10
+    return [0] * (K - 1), 0
 def _amp(key, b):
     st = JAG.get(b)
-    return AMP if st and ORDER.index(key) >= ORDER.index(st) else 0
+    if not st or ORDER.index(key) < ORDER.index(st[0]): return [0] * (K - 1)
+    mult, a = _shape(st[1], b)
+    return [m * a for m in mult]
+# pattern fills: unit key -> (state from which, style). Dots, hatching, checks: other kinds of separation.
+PAT = {(14,): ('1527', 'dots'), (6,): ('1646', 'hatch'), (8,): ('1690', 'dots'), (9,): ('1733', 'checks'),
+       (10, 11): ('1747', 'hatch'), (10,): ('1806', 'hatch'), (11,): ('1806', 'dots'),
+       (12,): ('1806', 'checks'), (13,): ('1806', 'dots')}
+def _fill(key, unit, col):
+    pt = PAT.get(unit)
+    if pt and ORDER.index(key) >= ORDER.index(pt[0]) and col in ('c1', 'c2', 'c3', 'c4'):
+        return 'url(#p-%s-%s)' % (pt[1], col)
+    return 'var(--%s)' % ('bone-dim' if col == 'bone' else col)
+PATDEFS = '<defs>' + ''.join(
+    '<pattern id="p-dots-%s" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" style="fill:var(--%s)"/><circle cx="7" cy="7" r="2.6" style="fill:var(--bone);opacity:.6"/></pattern>'
+    '<pattern id="p-hatch-%s" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" style="fill:var(--%s)"/><rect width="4" height="12" style="fill:var(--bone);opacity:.4"/></pattern>'
+    '<pattern id="p-checks-%s" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" style="fill:var(--%s)"/><rect width="8" height="8" style="fill:var(--bone);opacity:.3"/><rect x="8" y="8" width="8" height="8" style="fill:var(--bone);opacity:.3"/></pattern>'
+    % (c, c, c, c, c, c) for c in ('c1', 'c2', 'c3', 'c4')) + '</defs>'
 
 def _geom(units, key):
     """Per-slice path for this state, plus per-unit (center, width), the drawn extent, and seam paths."""
@@ -77,14 +109,14 @@ def _geom(units, key):
         for i in idx: shift[i] = sh
         last_living = idx[-1]
     for i in shift: shift[i] -= total_gaps / 2
-    def edge(xx, y0, y1, amp, k_from_top):
-        """interior points of a vertical edge from y0 to y1 (K segments), zigzagging by amp."""
+    def edge(xx, y0, y1, amps, k_from_top):
+        """interior points of a vertical edge from y0 to y1 (K segments), offset by amps[k-1] (indexed from the top)."""
         pts = []
         for k in range(1, K):
             t = k / K
             y = y0 + (y1 - y0) * t
             kk = k if k_from_top else K - k
-            pts.append((xx + amp * (1 if kk % 2 else -1), y))
+            pts.append((xx + amps[kk - 1], y))
         return pts
     for i in range(N):
         sa, sb = ext[i]; sa += shift[i]; sb += shift[i]
@@ -110,17 +142,18 @@ def split(pre, post, k0, k1, k2=None):
     p0, c0, w0, s0 = _geom(pre, k0); p1, c1, w1, s1 = _geom(post, k1)
     p2, s2 = (_geom(post, k2)[0], _geom(post, k2)[3]) if k2 else (p1, s1)
     col0 = {}; col1 = {}; dy0 = {}; dy1 = {}; unit0 = {}; unit1 = {}; wid0 = {}; wid1 = {}
+    base = lambda c: 'var(--%s)' % ('bone-dim' if c == 'bone' else c)
+    st0 = {}; st1 = {}
     for u, (cx_, w) in zip(pre, c0):
-        for i in u[0]: col0[i] = u[2]; unit0[i] = tuple(u[0]); dy0[i] = u[3]; wid0[i] = w
+        for i in u[0]: col0[i] = _fill(k0, tuple(u[0]), u[2]); st0[i] = col0[i]; unit0[i] = tuple(u[0]); dy0[i] = u[3]; wid0[i] = w
     for u, (cx_, w) in zip(post, c1):
-        for i in u[0]: col1[i] = u[2]; unit1[i] = tuple(u[0]); dy1[i] = u[3]; wid1[i] = w
+        for i in u[0]: col1[i] = _fill(k1, tuple(u[0]), u[2]); st1[i] = col1[i]; unit1[i] = tuple(u[0]); dy1[i] = u[3]; wid1[i] = w
     out = []
     for i in range(N):
-        k0c = 'bone-dim' if col0[i] == 'bone' else col0[i]; k1c = 'bone-dim' if col1[i] == 'bone' else col1[i]
         cls = 'piece' + (' dying0' if dy0[i] else '') + (' dying1' if dy1[i] else '') + \
               (' gone0' if wid0[i] <= 0 else '') + (' gone1' if wid1[i] <= 0 else '')
-        out.append('<g class="%s" style="--d0:path(\'%s\');--d1:path(\'%s\');--d2:path(\'%s\');--k0:var(--%s);--k1:var(--%s)"><path d="%s" vector-effect="non-scaling-stroke"/></g>'
-                   % (cls, p0[i], p1[i], p2[i], k0c, k1c, p0[i]))
+        out.append('<g class="%s" style="--d0:path(\'%s\');--d1:path(\'%s\');--d2:path(\'%s\');--k0:%s;--k1:%s;--s0:%s;--s1:%s"><path d="%s" vector-effect="non-scaling-stroke"/></g>'
+                   % (cls, p0[i], p1[i], p2[i], col0[i], col1[i], st0[i], st1[i], p0[i]))
     # seams: visible in a state where the boundary is joined
     j0 = JOIN.get(k0, set()); j1 = JOIN.get(k1, set()); j2 = JOIN.get(k2, set()) if k2 else set()
     for b in JAG:
