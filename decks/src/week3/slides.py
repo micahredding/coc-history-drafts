@@ -202,7 +202,21 @@ A('<section class="slide"><div class=eyebrow>The reception</div>'
   '<div class="no frag">May 1811 &middot; the Society that was &ldquo;by no means a Church&rdquo; <b>becomes one.</b></div>'
   '<div class="no frag">Thirteen propositions offered &ldquo;not as a new creed&rdquo; are, by the heirs, <b>treated as one.</b></div>'
   '</div>' +
-  N('Candor beat, three clicks. A unity plea addressed to every party and joined, in the event, by almost no one; the synod&rsquo;s refusal is Week 5&rsquo;s opening. The second line is Brush Run, two weeks from now. The third is the long fuse: the document warned against its own later use, and its heirs did it anyway. That detonates in Chapter 12.', '&rarr; Chalcedon said &ldquo;not a new creed&rdquo; too. Then the heirs handed this document the same job only Christ can do. Honoring it means keeping it a plea, not a pattern.'))
+  N('Candor beat, three clicks. A unity plea addressed to every party and joined, in the event, by almost no one; the synod&rsquo;s refusal is Week 5&rsquo;s opening. The second line is Brush Run, two weeks from now. The third is the long fuse: the document warned against its own later use, and its heirs did it anyway. That detonates in Chapter 12.', '&rarr; Chalcedon said &ldquo;not a new creed&rdquo; too. Then the heirs handed this document the same job only Christ can do. Honoring it means keeping it a plea, not a pattern.', '&rarr; And we know what happened next.'))
+
+A('<section class="slide room"><div class=eyebrow>The Churches of Christ</div>'
+  '<h2>We have kept dividing.</h2>'
+  '<div class="sub frag">We have all lived it.</div>'
+  '<div class="sub frag" style="max-width:none;color:var(--gold)">Does that mean Thomas Campbell was wrong?</div>'
+  '<aside class=notes>Two clicks. Let the first one sit: everyone in the room has a story of a split, a congregation, a family. Look back at the tree: one cup, non-class, non-institutional, instrumental, premillennial. Then ask the question and let them answer before the next slide.</aside></section>')
+
+A('<section class="slide breath"><h2 style="max-width:none">No. It means he was right.</h2>'
+  '<div class="sub frag" style="max-width:none">Every division since has come from someone<br>offering another answer than Christ.</div>'
+  '<div class="sub frag" style="max-width:none;color:var(--gold)">There is no other answer. There never will be.</div>'
+  '<aside class=notes>Two clicks. Campbell diagnosed the problem correctly; the divisions are what it looks like when his point is not taken as deeply as it merits. Cups, classes, institutions, instruments, the millennium: every one was made a term of communion, asked to do the job only Christ can do. It did what every instrument on the egg did.</aside></section>')
+
+A('<section class="slide breath"><h2 style="max-width:none">Make anything else a term of communion,<br><span style="color:var(--gold)">and it will not make us one.<br>It will divide us again.</span></h2>'
+  '<aside class=notes>The thesis card, brought home: the egg was not only their history. It is ours. Proposition 3 was the remedy: nothing required as terms of communion &ldquo;but what is expressly taught and enjoined upon them in the word of God.&rdquo;</aside></section>')
 
 # ---------- 9 THE PROOF-SHEETS ----------
 A('<section class="slide"><div class=eyebrow>October 1809</div>'
