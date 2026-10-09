@@ -147,8 +147,18 @@ A('<section class="slide"><h2>What can Christians unite on?</h2>'
 A(Q('&ldquo;&hellip;nor, indeed, can we reasonably expect to find it anywhere but in <b>Christ and his simple word</b>, which is the same yesterday, to-day, and forever.&rdquo;', DA, 'Preamble, continued') +
   N('The clause you stopped before. Now it has fifteen hundred years behind it.', '&rarr; Thomas Campbell saw only one answer: given a people called to follow their conscience, given that no council could forever bind it, the only thing Christians could unite on was Christ himself.'))
 
-A('<section class="slide breath"><h2 style="max-width:none">Not a better creed.<br><span style="color:var(--gold)">A person.</span></h2>'
-  '<aside class=notes>Fifteen centuries of documents, and the answer is not a better document. Hold the irony for the end of the hour: this one is a document too, and its heirs will treat it as one.</aside></section>')
+A('<section class="slide breath"><h2 style="max-width:none">There is nothing wrong with a creed.</h2>'
+  '<div class="sub frag" style="max-width:none">But a creed cannot make us one.</div>'
+  '<div class="sub frag" style="max-width:none;color:var(--gold)">Only Christ can do that.</div>'
+  '<aside class=notes>Two clicks. Not anti-creed: Nicaea is true, and the room says it. The fault on the egg was never the creed; it was the job the creed was given.</aside></section>')
+
+A(Q('&ldquo;&hellip;doctrinal exhibitions of the great system of Divine truths&hellip; <b>be highly expedient, and the more full and explicit they be for those purposes, the better</b>; yet&hellip; they ought not to be made terms of Christian communion&hellip;&rdquo;', DA, 'Proposition 7') +
+  N('Campbell says it himself: write the fullest confession you can. Just do not make it the door. Elided: &ldquo;and defensive testimonies in opposition to prevailing errors&rdquo;; &ldquo;as these must be in a great measure the effect of human reasoning, and of course must contain many inferential truths.&rdquo;',
+    'The sentence ends: &ldquo;the Church from the beginning did, and ever will, consist of little children and young men, as well as fathers.&rdquo;'))
+
+A('<section class="slide breath"><h2 style="max-width:32ch">Every time we hand a creed, a council, or a magistrate<br><span style="color:var(--gold)">a job only Christ can do</span>, it fails.</h2>'
+  '<aside class=notes>The chapter&rsquo;s thesis. Point back at the egg: every one of those was a good instrument given the wrong job. Campbell names the job in the Address: creeds were &ldquo;designed and embraced for the purpose of promoting and securing that desirable unity and purity which the Bible alone, without those helps, would be insufficient to maintain and secure.&rdquo; That is the job description, and no document can do it.<br>'
+  '&rarr; So what does make us one?</aside></section>')
 
 A(Q('&ldquo;&hellip;the first and foundation truth of our Christianity is <b>union with him</b>, and the very next to it in order, <b>union with each other in him</b>.&rdquo;', DA, 'The Address') +
   N('Same sentence, just before: the &ldquo;bewildered Church has, for hundreds of years past, been rending and dividing herself into factions, for Christ&rsquo;s sake, and for the truth&rsquo;s sake.&rdquo; That is the egg in his words.', 'Order matters: union with each other is not built beside union with Christ; it follows from it. That is proposition 1 in a sentence: given, not constructed.'))
@@ -192,7 +202,7 @@ A('<section class="slide"><div class=eyebrow>The reception</div>'
   '<div class="no frag">May 1811 &middot; the Society that was &ldquo;by no means a Church&rdquo; <b>becomes one.</b></div>'
   '<div class="no frag">Thirteen propositions offered &ldquo;not as a new creed&rdquo; are, by the heirs, <b>treated as one.</b></div>'
   '</div>' +
-  N('Candor beat, three clicks. A unity plea addressed to every party and joined, in the event, by almost no one; the synod&rsquo;s refusal is Week 5&rsquo;s opening. The second line is Brush Run, two weeks from now. The third is the long fuse: the document warned against its own later use, and its heirs did it anyway. That detonates in Chapter 12.', '&rarr; Chalcedon said &ldquo;not a new creed&rdquo; too. Honoring this document means keeping it a plea, not a pattern.'))
+  N('Candor beat, three clicks. A unity plea addressed to every party and joined, in the event, by almost no one; the synod&rsquo;s refusal is Week 5&rsquo;s opening. The second line is Brush Run, two weeks from now. The third is the long fuse: the document warned against its own later use, and its heirs did it anyway. That detonates in Chapter 12.', '&rarr; Chalcedon said &ldquo;not a new creed&rdquo; too. Then the heirs handed this document the same job only Christ can do. Honoring it means keeping it a plea, not a pattern.'))
 
 # ---------- 9 THE PROOF-SHEETS ----------
 A('<section class="slide"><div class=eyebrow>October 1809</div>'
