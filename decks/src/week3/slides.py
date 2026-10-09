@@ -30,7 +30,7 @@ _D = __file__.rsplit('/', 1)[0]
 A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Chapter 3</div>'
   '<h1>The Declaration<br>and Address</h1><div class=table-line></div>'
   '<div class=sub>Washington, Pennsylvania &middot; 1809</div>'
-  '<aside class=notes>Title up. Then the Design of Religion. The hour: Design 4 &middot; Evils 5 &middot; Christendom 10 &middot; Preamble 3 &middot; the issue, conscience 5 &middot; the solution 2 &middot; Propositions 10 &middot; our table 8 &middot; reception and proof-sheets 5.</aside></section>')
+  '<aside class=notes>Title up. &rarr; &ldquo;Last week we ended on one sentence: the church of Christ upon earth is essentially, intentionally, and constitutionally one. Today: why anyone would need to write it.&rdquo; Then the Design of Religion. The hour: Design 4 &middot; Evils and proposition 10 6 &middot; Christendom 10 &middot; the sword 2 &middot; Preamble 3 &middot; conscience 6 &middot; the solution 3 &middot; Propositions 10 &middot; our table 8 &middot; reception and proof-sheets 5.</aside></section>')
 
 # ---------- 1 THE DESIGN OF RELIGION ----------
 A('<section class="slide breath sect"><div class=eyebrow>The Address</div><h2>The Design of Religion</h2><div class=table-line></div>'
@@ -60,10 +60,36 @@ A('<section class="slide"><div class=eyebrow>&ldquo;What awful and distressing e
   '<aside class=notes>Five clicks. All verbatim from the Evils of Division. The Supper line ties to the Table arc of the whole class. The last two land hardest in 2026: members who can leave for the church down the road, and the mouths of infidels. (Dropped from the list: &ldquo;Several&hellip; who live at the door of a preached Gospel, dare not in conscience go to hear it&rdquo;: people within reach of preaching, but of another party, whose scruples keep them from it, so they are as cut off as if among heathens. Restore if useful.)</aside></section>')
 
 A(Q('&ldquo;Say, dear brethren, <b>are not these things so?</b>&rdquo;', DA, 'The Evils of Division') +
-  N('His own question, to the room. Let them answer.', '&rarr; Then: it was not for want of trying. Here is fifteen hundred years of trying.'))
+  N('His own question, to the room. Let them answer.', '&rarr; Then his verdict on all of it.'))
+
+A('<section class="slide"><div class=eyebrow>Proposition 10</div>'
+  '<h2>&ldquo;Division among the Christians is a horrid evil, fraught with many evils.&rdquo;</h2>'
+  '<div class=litany>'
+  '<div class="no frag">&ldquo;It is <b>antichristian</b>, as it destroys the visible unity of the body of Christ; as if he were divided against himself&hellip;&rdquo;</div>'
+  '<div class="no frag">&ldquo;It is <b>antiscriptural</b>, as being strictly prohibited by his sovereign authority&hellip;&rdquo;</div>'
+  '<div class="no frag">&ldquo;It is <b>antinatural</b>, as it excites Christians to contemn, to hate, and oppose one another, who are bound&hellip; to love each other as brethren&hellip;&rdquo;</div>'
+  '</div><div class=cite>' + DA + '</div>'
+  '<aside class=notes>Three clicks, verbatim. The Evils list was what division costs; this is what division <i>is</i>. Against Christ, against Scripture, against nature: a body excommunicating part of itself. Elided from the first: &ldquo;excluding and excommunicating a part of himself.&rdquo; From the second: &ldquo;a direct violation of his express command.&rdquo; Last clause: &ldquo;In a word, it is productive of confusion and of every evil work.&rdquo;<br>'
+  '&rarr; Then: it was not for want of trying. Here is fifteen hundred years of trying.</aside></section>')
 
 # ---------- 4 CHRISTENDOM'S SEARCH FOR UNITY (the egg) ----------
 S += christendom_slides()
+
+# ---------- 4b THE SWORD BEHIND THEM, AND THIS COUNTRY ----------
+A('<section class="slide"><div class=eyebrow>What every one of them had in common</div>'
+  '<h2>Every one had a sword behind it.</h2>'
+  '<div class=litany>'
+  '<div class="no frag">Constantine &middot; Theodosius &middot; Marcian &middot; Zeno &middot; the papal legates</div>'
+  '<div class="no frag">Charles V &middot; the council of Zurich &middot; Philip of Hesse &middot; Parliament &middot; William and Mary</div>'
+  '<div class="no frag">the patrons &middot; the burgess oath &middot; <b>the magistrate</b></div>'
+  '</div>'
+  '<aside class=notes>Three clicks, back across the egg: who stood behind each instrument. Emperors convened Nicaea (Constantine), Ephesus (Theodosius II) and Chalcedon (Marcian), and issued the Henotikon (Zeno); legates carried Rome&rsquo;s bull in 1054; Charles V received Augsburg; Zurich&rsquo;s council ruled and drowned; Philip of Hesse called Marburg; Parliament imposed Westminster; the crown settled 1690; Parliament&rsquo;s Patronage Act made the Secession; a civic oath made the Burgher split; and the last split was over whether the magistrate may enforce religion at all.<br>'
+  '&rarr; Every instrument of unity on that egg could be enforced. Not one held even the people who signed it.</aside></section>')
+
+A(Q('&ldquo;What dreary effects of those accursed divisions are to be seen, even in this highly favored country, <b>where the sword of the civil magistrate has not as yet learned to serve at the altar</b>.&rdquo;', DA, 'The Address &middot; why 1809, why here') +
+  N('From the Evils of Division paragraph, just before &ldquo;congregations broken to pieces.&rdquo; The Address says it outright later: &ldquo;A country happily exempted from the baneful influence of a civil establishment of any peculiar form of Christianity.&rdquo;',
+    'The First Amendment was eighteen years old; Pennsylvania had never had an established church. For the first time in the story, nobody could enforce a creed. So unity could not be imposed here. It would have to be found.',
+    '&rarr; A few decades after one Declaration of Independence, another. Then: the people of the grove, and what they wanted.'))
 
 
 # ---------- 5 THE PREAMBLE: REST, AND DESPAIR ----------
@@ -79,35 +105,53 @@ A(Q('&ldquo;This desirable rest, however, <b>we utterly despair</b> either to fi
 
 
 # ---------- 6 THE ISSUE: FREEDOM OF CONSCIENCE ----------
-A(C('Why can&rsquo;t Christians unite?', 'Card. The problem, stated as a question, after fifteen hundred years of trying and a document that despairs of the old way. The next slide names the issue underneath.'))
+A(C('Why did every instrument fail?', 'Card. Fifteen hundred years of creeds, councils and swords, and a document that despairs of the old way. The next slide names the reason underneath.'))
 
 A('<section class="slide bleed"><div class=bg><div class="bgimg lutherbg"></div></div>'
   '<div class=credit>Anton von Werner, <i>Luther at the Diet of Worms</i>, 1877 &middot; public domain</div>'
-  '<div class=eyebrow>What&rsquo;s the issue?</div>'
-  '<h2>Freedom of conscience.</h2>'
-  '<div class="sub frag">If conscience cannot be compelled, then unity cannot be compelled either.</div>'
-  '<aside class=notes>Worms, April 1521. Asked to recant, Luther: &ldquo;my conscience is captive to the Word of God. I cannot and will not recant anything, since it is neither safe nor right to go against conscience.&rdquo; (&ldquo;Here I stand, I can do no other&rdquo; is the famous form; the earliest printed accounts add it, the transcript does not. Say &ldquo;as the story goes.&rdquo;) Protestantism begins with that sentence, and it is the reason none of the instruments on the egg could work: a creed can name who agrees, but it cannot make anyone believe. Click for the consequence.</aside></section>')
+  '<div class=eyebrow>Worms, 1521</div>'
+  '<h2>Conscience cannot be compelled.</h2>'
+  '<div class="sub frag">So unity cannot be compelled either.</div>'
+  '<aside class=notes>Worms, April 1521. Asked to recant, Luther: &ldquo;my conscience is captive to the Word of God. I cannot and will not recant anything, since it is neither safe nor right to go against conscience.&rdquo; (&ldquo;Here I stand, I can do no other&rdquo; is the famous form; the earliest printed accounts add it, the transcript does not. Say &ldquo;as the story goes.&rdquo;) Protestantism begins with that sentence, and it is the reason none of the instruments on the egg could work: a creed can name who agrees, and a sword can make people say it, but neither can make anyone believe. Click for the consequence.</aside></section>')
 
 A(Q('&ldquo;&hellip;my conscience is captive to the Word of God. I cannot and will not recant anything, since <b>it is neither safe nor right to go against conscience</b>.&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Here I stand') +
-  N('The documented words. The Declaration opens by saying the same thing, three centuries later, in Pennsylvania.'))
+  N('The documented words. Hold them; the next slide is the same man eight years later.'))
+
+A('<section class="slide"><div class=eyebrow>Marburg, 1529 &middot; Luther to the Swiss</div>'
+  '<p class=bigquote><span class=q>&ldquo;You have a <b>different spirit</b>.&rdquo;</span></p>'
+  '<div class="sub frag">He claimed conscience for himself. He would not grant it to his brother.</div>'
+  '<div class=cite>&ldquo;Ihr habt einen andern Geist&rdquo; &middot; the Marburg Colloquy, October 1529</div>'
+  '<aside class=notes>Back to the 1529 slide on the egg: fourteen articles agreed, and on the fifteenth everything but the bodily presence. As the accounts have it, Zwingli offered his hand at the end and Luther would not take it as a brother&rsquo;s. Not a villain: the man of Worms, sincere both times. That is the point: conscience claimed for yourself is only half a sentence.<br>&rarr; Campbell finishes it.</aside></section>')
 
 A(Q('&ldquo;&hellip;it is high time for us not only to think, but also to <b>act, for ourselves</b>; to see with our own eyes, and to take all our measures directly and immediately from the Divine standard&hellip;&rdquo;', DA, 'Preamble') +
-  N('The Preamble&rsquo;s first sentence. The first word of the movement is a verb.'))
+  N('The Preamble&rsquo;s first sentence: the half Luther said at Worms. The first word of the movement is a verb.'))
 
 A(Q('&ldquo;&hellip;as no man can be judged for his brother, so <b>no man can judge for his brother</b>; every man must be allowed to judge for himself, as every man must bear his own judgment&mdash;must give account of himself to God.&rdquo;', DA, 'Preamble') +
-  N('Its second sentence. Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying.'))
+  N('Its second sentence: the half Luther could not say at Marburg. Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying.'))
+
+A('<section class="slide breath"><h2 style="max-width:none">Luther claimed conscience for himself.<br><span style="color:var(--gold)">Campbell claimed it for his brother.</span></h2>'
+  '<aside class=notes>Say it once and stop. This is the chapter in one line.</aside></section>')
+
+A(Q('&ldquo;&hellip;no man has a right to judge his brother, except in so far as he manifestly violates the express letter of the law. That every such judgment is an express violation of the law of Christ, <b>a daring usurpation of his throne</b>, and a gross intrusion upon the rights and liberties of his subjects.&rdquo;', DA, 'Preamble') +
+  N('The very next sentences. Every instrument on the egg had a throne behind it; Campbell says that whoever judges his brother&rsquo;s conscience is sitting on Christ&rsquo;s.'))
 
 A(Q('&ldquo;It is not the voice of the multitude, but the voice of truth, that has power with the conscience; that can produce rational conviction and acceptable obedience. <b>A conscience that awaits the decision of the multitude</b>&hellip;&rdquo;', DA, 'The Address') +
-  N('The Address says it of a General Council by name. Every council on the egg was a multitude deciding for a conscience.', '&rarr; So: given a people who must follow their conscience, given that no council can forever bind it, what is left to unite on?'))
+  N('The Address says it of a General Council by name. Every council on the egg was a multitude deciding for a conscience. The sentence ends: &ldquo;that hangs in suspense for the casting vote of the majority, is a fit subject for the man of sin.&rdquo; Cuttable if time is short.'))
 
 A('<section class="slide"><h2>What can Christians unite on?</h2>'
-  '<div class="sub frag">He prayed that they would be one. So it must be possible.</div>'
-  '<aside class=notes>John 17:21, a prayer, not a command. The question, now that the issue is named. Pause on it before the answer.</aside></section>')
+  '<div class="sub frag">&ldquo;That they all may be one&hellip; that the world may believe that thou hast sent me.&rdquo;<br><span style="font-size:.7em;color:var(--bone-dim)">John 17:21</span></div>'
+  '<aside class=notes>The question, now that the reason is named. Then the prayer: a prayer, not a command, and for the sake of the world&rsquo;s belief. Pause on it before the answer.</aside></section>')
 
 # ---------- 7 THE SOLUTION ----------
 
 A(Q('&ldquo;&hellip;nor, indeed, can we reasonably expect to find it anywhere but in <b>Christ and his simple word</b>, which is the same yesterday, to-day, and forever.&rdquo;', DA, 'Preamble, continued') +
   N('The clause you stopped before. Now it has fifteen hundred years behind it.', '&rarr; Thomas Campbell saw only one answer: given a people called to follow their conscience, given that no council could forever bind it, the only thing Christians could unite on was Christ himself.'))
+
+A('<section class="slide breath"><h2 style="max-width:none">Not a better creed.<br><span style="color:var(--gold)">A person.</span></h2>'
+  '<aside class=notes>Fifteen centuries of documents, and the answer is not a better document. Hold the irony for the end of the hour: this one is a document too, and its heirs will treat it as one.</aside></section>')
+
+A(Q('&ldquo;&hellip;the first and foundation truth of our Christianity is <b>union with him</b>, and the very next to it in order, <b>union with each other in him</b>.&rdquo;', DA, 'The Address') +
+  N('Same sentence, just before: the &ldquo;bewildered Church has, for hundreds of years past, been rending and dividing herself into factions, for Christ&rsquo;s sake, and for the truth&rsquo;s sake.&rdquo; That is the egg in his words.', 'Order matters: union with each other is not built beside union with Christ; it follows from it. That is proposition 1 in a sentence: given, not constructed.'))
 
 A(Q('&ldquo;&hellip;taking the Divine word alone for our rule; the Holy Spirit for our teacher and guide, to lead us into all truth; and <b>Christ alone, as exhibited in the word</b>, for our salvation&hellip;&rdquo;', DA, 'Preamble, continued') +
   N('Guard: it is not creedless. &ldquo;Christ alone, <i>as exhibited in the word</i>.&rdquo; The fence is what Scripture expressly says, and nothing else. The propositions say how.'))
