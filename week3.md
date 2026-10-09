@@ -2,7 +2,7 @@
 
 [← All chapters](.)
 
-**Slides:** [Oct 11 deck: Alexander and the Declaration, part 1](decks/week3-declaration-part1.html) (draft, cliffhanger not yet chosen)
+**Slides:** [Chapter 3 deck: The Declaration and Address](decks/week3-declaration-address.html) (for Oct 11; Chapter 2 ended on Oct 4 at Proposition 1)
 
 **The Story:** A few decades after the American Declaration of Independence, Thomas Campbell pens a declaration of Christian unity. The body of Christ is already one, and ought not be divided by the arrogance of human opinions. 
 
