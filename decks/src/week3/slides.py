@@ -133,7 +133,7 @@ A('<section class="slide breath"><h2 style="max-width:none">Captive to the Word 
   '<div class="no frag">Not to the pope&rsquo;s reading of it.</div>'
   '<div class="no frag">Not to a council&rsquo;s.</div>'
   '<div class="no frag">Not even to his own.</div>'
-  '<div class="no frag" style="color:var(--gold)">To the Word itself, and to God, for how he reads it.</div>'
+  '<div class="no frag" style="color:var(--gold)">To the Word itself, and to God.</div>'
   '</div>'
   '<aside class=notes>Four clicks; slow down on the third. Luther is not committed to an interpretation, not even his own. He is committed to the Word, and his conscience is where he answers to God for how faithfully he reads it. That is why no council can do it for him: interpreting Scripture as best he can is part of the obligation, and an obligation cannot be handed to someone else.<br>&rarr; Which means every other Christian carries the same obligation, before the same Word. Eight years later, Luther forgets that.</aside></section>')
 
@@ -149,8 +149,23 @@ A(Q('&ldquo;&hellip;it is high time for us not only to think, but also to <b>act
 A(Q('&ldquo;&hellip;as no man can be judged for his brother, so <b>no man can judge for his brother</b>; every man must be allowed to judge for himself, as every man must bear his own judgment&mdash;must give account of himself to God.&rdquo;', DA, 'Preamble') +
   N('Its second sentence: the half Luther could not say at Marburg. Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying.'))
 
+A('<section class="slide"><div class=eyebrow>Worms, 1521 &middot; Washington, Pennsylvania, 1809</div>'
+  '<div class=litany style="display:grid;grid-template-columns:1fr 1fr;column-gap:5vmin;row-gap:2.4vmin;text-align:left;max-width:92vw">'
+  '<div class=eyebrow style="margin:0">Luther</div><div class=eyebrow style="margin:0">The Declaration and Address</div>'
+  '<div class="no frag">&ldquo;my conscience is <b>captive to the Word of God</b>&rdquo;</div><div class="no frag">&ldquo;to this alone we feel ourselves <b>Divinely bound</b>&rdquo;</div>'
+  '<div class="no frag">&ldquo;I do not trust either in the pope or <b>in councils alone</b>&rdquo;</div><div class="no frag">&ldquo;not <b>the voice of the multitude</b>, but the voice of truth&rdquo;</div>'
+  '<div class="no frag">&ldquo;<b>unless I am convinced</b> by the testimony of the Scriptures or by clear reason&rdquo;</div><div class="no frag">&ldquo;not formally binding&hellip; <b>farther than they perceive the connection</b>&rdquo;</div>'
+  '<div class="no frag">&ldquo;neither safe nor right <b>to go against conscience</b>&rdquo;</div><div class="no frag">&ldquo;<b>no man can judge for his brother</b>&rdquo;</div>'
+  '</div>'
+  '<aside class=notes>Eight clicks, left then right on each row. Every line on the right is already on the left. The right column: the Preamble; the Address on a General Council; proposition 6; the Preamble again. Only the last row moves: Luther says <i>I</i> may not go against my conscience; Campbell says <i>no one</i> may go against his brother&rsquo;s.</aside></section>')
+
+A('<section class="slide breath"><h2 style="max-width:none">The Campbells are not the precedent.<br><span style="color:var(--gold)">Luther is.</span></h2>'
+  '<div class="sub frag" style="max-width:none">They took Worms more seriously than Luther&rsquo;s heirs did,</div>'
+  '<div class="sub frag" style="max-width:none">and more seriously than Luther did, at Marburg.</div>'
+  '<aside class=notes>Two clicks. Make it emphatic: nothing the Declaration says about conscience is new. The whole picture is in one sentence at Worms; Campbell is drawing out what it implies. Luther&rsquo;s heirs: the Formula of Concord (1577) settled the Lutheran quarrels by drawing the line against the Reformed, and confessional Lutheran churches have kept a closed table since. Luther himself: Marburg, the hand not taken.<br>&rarr; So the one difference fits in a sentence.</aside></section>')
+
 A('<section class="slide breath"><h2 style="max-width:none">Luther claimed conscience for himself.<br><span style="color:var(--gold)">Campbell claimed it for his brother.</span></h2>'
-  '<aside class=notes>Say it once and stop. This is the chapter in one line.</aside></section>')
+  '<aside class=notes>Say it once and stop. Not a new principle: the same principle, extended to the brother. This is the chapter in one line.</aside></section>')
 
 A(Q('&ldquo;&hellip;no man has a right to judge his brother, except in so far as he manifestly violates the express letter of the law. That every such judgment is an express violation of the law of Christ, <b>a daring usurpation of his throne</b>, and a gross intrusion upon the rights and liberties of his subjects.&rdquo;', DA, 'Preamble') +
   N('The very next sentences. Every instrument on the egg had a throne behind it; Campbell says that whoever judges his brother&rsquo;s conscience is sitting on Christ&rsquo;s.'))
