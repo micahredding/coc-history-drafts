@@ -132,11 +132,16 @@ A('<section class="slide breath"><h2 style="max-width:none">Captive to the Word 
   '<div class="no frag">Not to the pope&rsquo;s reading of it.</div>'
   '<div class="no frag">Not to a council&rsquo;s.</div>'
   '<div class="no frag">Not even to his own.</div>'
-  '<div class="no frag" style="color:var(--gold)">Not to what he thinks it says. To what it says.</div>'
+  '<div class="no frag">Not to what he thinks it says.</div>'
+  '<div class="no frag" style="color:var(--gold)">To the Word of God itself.</div>'
   '</div>'
-  '<aside class=notes>Four clicks; slow down on the third. The proof is the first clause of the sentence: &ldquo;Unless I am convinced by the testimony of the Scriptures or by clear reason.&rdquo; He can still be corrected by the Word, so he is not treating his own reading as the Word. What binds him is the Word itself, and his conscience is where he answers to God for how faithfully he reads it. That is why no council can do it for him: an obligation cannot be handed to someone else.</aside></section>')
+  '<aside class=notes>Five clicks; slow down on &ldquo;not even to his own.&rdquo; The proof is the first clause of the sentence: &ldquo;Unless I am convinced by the testimony of the Scriptures or by clear reason.&rdquo; He can still be corrected by the Word, so he is not treating his own reading as the Word. What binds him is the Word itself, and his conscience is where he answers to God for how faithfully he reads it. That is why no council can do it for him: an obligation cannot be handed to someone else.</aside></section>')
 
-A(Q('&ldquo;&hellip;whoever comes out of the water of baptism can boast that he is already <b>a consecrated priest, bishop, and pope</b>, although of course it is not seemly that just anybody should exercise such office.&rdquo;', 'Martin Luther, <i>To the Christian Nobility of the German Nation</i>, 1520 &middot; <i>Luther&rsquo;s Works</i> 44', 'Why it binds &middot; the priesthood of all believers', sub='<div class="sub frag" style="max-width:none">No one can stand before God in your place.<br>So no one can read the Word in your place.</div>') +
+A('<section class="slide breath sect"><h2>Priesthood of all believers</h2><div class=table-line></div>'
+  '<div class="sub frag">Every believer: the Spirit within, united with Christ, answering to God directly.</div>'
+  '<aside class=notes>Card, one click. The ground under Worms: why conscience is an obligation and not a preference. No one can stand before God in your place, so no one can read the Word in your place either. Then Luther&rsquo;s own line, a year before Worms.</aside></section>')
+
+A(Q('&ldquo;&hellip;whoever comes out of the water of baptism can boast that he is already <b>a consecrated priest, bishop, and pope</b>, although of course it is not seemly that just anybody should exercise such office.&rdquo;', 'Martin Luther, <i>To the Christian Nobility of the German Nation</i>, 1520 &middot; <i>Luther&rsquo;s Works</i> 44', 'Luther, a year before Worms', sub='<div class="sub frag" style="max-width:none">No one can stand before God in your place.<br>So no one can read the Word in your place.</div>') +
   N('One click. Why conscience is an obligation and not a preference. A year before Worms: &ldquo;we are all consecrated priests through baptism, as St. Peter says in I Peter 2[:9].&rdquo; Every baptized Christian has the Spirit within, is united with Christ, and stands before God directly.', 'Older translation (C. M. Jacobs, 1915): &ldquo;For whoever comes out of the water of baptism can boast that he is already consecrated priest, bishop and pope, though it is not seemly that every one should exercise the office.&rdquo;'))
 
 A('<section class="slide breath"><h2 style="max-width:none">Luther did not invent this.<br>It was always true.</h2>'
