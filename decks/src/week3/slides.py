@@ -111,41 +111,48 @@ A('<section class="slide bleed"><div class=bg><div class="bgimg lutherbg"></div>
   '<div class=credit>Anton von Werner, <i>Luther at the Diet of Worms</i>, 1877 &middot; public domain</div>'
   '<div class=eyebrow>Worms, 1521</div>'
   '<h2>Conscience cannot be compelled.</h2>'
-  '<div class="sub frag">So unity cannot be compelled either.</div>'
-  '<aside class=notes>Worms, April 1521. Asked to recant, Luther: &ldquo;my conscience is captive to the Word of God. I cannot and will not recant anything, since it is neither safe nor right to go against conscience.&rdquo; (&ldquo;Here I stand, I can do no other&rdquo; is the famous form; the earliest printed accounts add it, the transcript does not. Say &ldquo;as the story goes.&rdquo;) Protestantism begins with that sentence, and it is the reason none of the instruments on the egg could work: a creed can name who agrees, and a sword can make people say it, but neither can make anyone believe. Click for the consequence.</aside></section>')
+  '<aside class=notes>Worms, April 1521. Asked to recant, Luther: &ldquo;my conscience is captive to the Word of God. I cannot and will not recant anything, since it is neither safe nor right to go against conscience.&rdquo; (&ldquo;Here I stand, I can do no other&rdquo; is the famous form; the earliest printed accounts add it, the transcript does not. Say &ldquo;as the story goes.&rdquo;) Protestantism begins with that sentence, and it is the reason none of the instruments on the egg could work: a creed can name who agrees, and a sword can make people say it, but neither can make anyone believe. The consequence comes a few slides on.</aside></section>')
 
 A(Q('&ldquo;<b>Unless I am convinced</b> by the testimony of the Scriptures or by clear reason (for I do not trust either in the pope or in councils alone, since it is well known that they have often erred and contradicted themselves), I am bound by the Scriptures I have quoted and my conscience is captive to the Word of God.&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Worms, 18 April 1521') +
-  N('The sentence the famous line ends. Look at how it starts: &ldquo;Unless I am convinced.&rdquo; He holds his own reading open. Show him from Scripture or clear reason that he is wrong, and he must change. That is the opposite of &ldquo;I can do what I want.&rdquo;', 'Translations vary (&ldquo;testimonies of the Holy Scriptures or evident reason&rdquo;); this is the common English form.'))
-
-A(Q('&ldquo;&hellip;my conscience is captive to the Word of God. I cannot and will not recant anything, since <b>it is neither safe nor right to go against conscience</b>.&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Here I stand') +
-  N('The end of that sentence, and the line everyone remembers. Say it slowly.', '&rarr; Then: what he means by conscience.'))
+  N('The sentence the famous line ends. Look at how it starts: &ldquo;Unless I am convinced.&rdquo; He holds his own reading open. Show him from Scripture or clear reason that he is wrong, and he must change. That is the opposite of &ldquo;I can do what I want.&rdquo;', 'Translations vary (&ldquo;testimonies of the Holy Scriptures or evident reason&rdquo;); this is the common English form.', 'It ends with the line everyone remembers: &ldquo;I cannot and will not recant anything, since it is neither safe nor right to go against conscience.&rdquo; (&ldquo;Here I stand, I can do no other&rdquo; is the later printed form.)'))
 
 A('<section class="slide breath"><h2 style="max-width:none">Conscience is not &ldquo;I can do what I want.&rdquo;</h2>'
-  '<div class="sub frag" style="max-width:none">It is &ldquo;I must.&rdquo;</div>'
-  '<div class="sub frag" style="max-width:none;color:var(--gold)">Captive to the Word of God.</div>'
-  '<aside class=notes>Two clicks. His word is <i>captive</i>: bound, not free. Conscience here is a divine obligation, not a preference. Its ground is the priesthood of all believers: every Christian indwelt by the Spirit, united with Christ, answerable to God directly, and so no one can answer for him.</aside></section>')
+  '<div class="sub frag punch">It is &ldquo;I must.&rdquo;</div>'
+  '<aside class=notes>One click. His word is <i>captive</i>: bound, not free. Conscience here is not a preference but an obligation before God. &ldquo;Neither safe nor right to go against conscience&rdquo;: not safe, because he must answer to God for it.</aside></section>')
 
 A('<section class="slide breath"><h2 style="max-width:none">Captive to the Word of God.</h2>'
   '<div class=litany style="align-items:center">'
   '<div class="no frag">Not to the pope&rsquo;s reading of it.</div>'
   '<div class="no frag">Not to a council&rsquo;s.</div>'
   '<div class="no frag">Not even to his own.</div>'
-  '<div class="no frag" style="color:var(--gold)">To the Word itself, and to God.</div>'
+  '<div class="no frag" style="color:var(--gold)">Not to what he thinks it says. To what it says.</div>'
   '</div>'
-  '<aside class=notes>Four clicks; slow down on the third. Luther is not committed to an interpretation, not even his own. He is committed to the Word, and his conscience is where he answers to God for how faithfully he reads it. That is why no council can do it for him: interpreting Scripture as best he can is part of the obligation, and an obligation cannot be handed to someone else.<br>&rarr; Which means every other Christian carries the same obligation, before the same Word. Hold that; Campbell will make it the point.</aside></section>')
+  '<aside class=notes>Four clicks; slow down on the third. The proof is the first clause of the sentence: &ldquo;Unless I am convinced by the testimony of the Scriptures or by clear reason.&rdquo; He can still be corrected by the Word, so he is not treating his own reading as the Word. What binds him is the Word itself, and his conscience is where he answers to God for how faithfully he reads it. That is why no council can do it for him: an obligation cannot be handed to someone else.</aside></section>')
 
-A('<section class="slide breath sect"><h2>Priesthood of all believers</h2><div class=table-line></div>'
-  '<div class="sub frag">Every believer: the Spirit within, united with Christ, answering to God directly.</div>'
-  '<aside class=notes>Card, one click. The ground under Worms: why conscience is an obligation and not a preference. No one can stand before God in your place, so no one can read the Word in your place either. Then Luther&rsquo;s own line, a year before Worms.</aside></section>')
+A(Q('&ldquo;&hellip;whoever comes out of the water of baptism can boast that he is already <b>a consecrated priest, bishop, and pope</b>, although of course it is not seemly that just anybody should exercise such office.&rdquo;', 'Martin Luther, <i>To the Christian Nobility of the German Nation</i>, 1520 &middot; <i>Luther&rsquo;s Works</i> 44', 'Why it binds &middot; the priesthood of all believers', sub='<div class="sub frag" style="max-width:none">No one can stand before God in your place.<br>So no one can read the Word in your place.</div>') +
+  N('One click. Why conscience is an obligation and not a preference. A year before Worms: &ldquo;we are all consecrated priests through baptism, as St. Peter says in I Peter 2[:9].&rdquo; Every baptized Christian has the Spirit within, is united with Christ, and stands before God directly.', 'Older translation (C. M. Jacobs, 1915): &ldquo;For whoever comes out of the water of baptism can boast that he is already consecrated priest, bishop and pope, though it is not seemly that every one should exercise the office.&rdquo;'))
 
-A(Q('&ldquo;&hellip;whoever comes out of the water of baptism can boast that he is already <b>a consecrated priest, bishop, and pope</b>, although of course it is not seemly that just anybody should exercise such office.&rdquo;', 'Martin Luther, <i>To the Christian Nobility of the German Nation</i>, 1520 &middot; <i>Luther&rsquo;s Works</i> 44', 'A year before Worms') +
-  N('Why conscience is an obligation and not a preference: the priesthood of all believers. Just before this, Luther: &ldquo;we are all consecrated priests through baptism, as St. Peter says in I Peter 2[:9].&rdquo; Every baptized Christian has the Spirit, is united with Christ, and stands before God directly. No one else can stand there for you.', 'Older translation (C. M. Jacobs, 1915): &ldquo;For whoever comes out of the water of baptism can boast that he is already consecrated priest, bishop and pope, though it is not seemly that every one should exercise the office.&rdquo;'))
+A('<section class="slide breath"><h2 style="max-width:none">Luther did not invent this.<br>It was always true.</h2>'
+  '<div class="sub frag punch">A council can make you say it. It cannot make you believe it.</div>'
+  '<aside class=notes>One click. Point back at the egg: every council on it found this out. Nicaea named the Arians; it did not convert them. The settlement of 1662 ejected two thousand ministers; it did not persuade them. Luther only said out loud what had been true since the first council. Campbell, on a General Council: &ldquo;It is not the voice of the multitude, but the voice of truth, that has power with the conscience&rdquo;; &ldquo;a conscience that awaits the decision of the multitude, that hangs in suspense for the casting vote of the majority, is a fit subject for the man of sin.&rdquo;</aside></section>')
 
-A(Q('&ldquo;&hellip;it is high time for us not only to think, but also to <b>act, for ourselves</b>; to see with our own eyes, and to take all our measures directly and immediately from the Divine standard; to this alone we feel ourselves <b>Divinely bound</b> to be conformed, as by this alone, we must be judged.&rdquo;', DA, 'Preamble') +
-  N('The Preamble&rsquo;s first sentence: the half Luther said at Worms. The first word of the movement is a verb. And it is not &ldquo;we may&rdquo;: &ldquo;Divinely bound,&rdquo; &ldquo;by this alone, we must be judged.&rdquo; Captive to the Word, in Pennsylvania.'))
+A('<section class="slide breath"><h2 style="max-width:none">So unity cannot be compelled.</h2>'
+  '<div class="sub frag punch" style="color:var(--bone)">You can compel conformity.</div>'
+  '<div class="sub frag punch">You cannot compel communion.</div>'
+  '<aside class=notes>Two clicks. Why: the unity of the church is not everyone saying the same words. It is a communion of believers, each standing before God and joined to the others in Christ. Compel the words and you get conformity: the same sentence in divided hearts, which comes apart the moment a conscience stands up. That is the egg, every time.</aside></section>')
+
+A('<section class="slide bleed"><div class=bg><div class="bgimg marburgbg"></div></div>'
+  '<div class=credit>August Noack, <i>Religionsgespr&auml;ch zu Marburg 1529</i> (detail), 1867&ndash;69 &middot; public domain</div>'
+  '<div class=eyebrow>Marburg &middot; October 1529</div>'
+  '<h2>Luther and Zwingli.</h2>'
+  '<div class="sub frag">He could not share the Lord&rsquo;s table with a brother who read the Lord&rsquo;s table differently.</div>'
+  '<aside class=notes>The painting (detail): Luther, left in the fur collar, holds Zwingli off with both hands; Zwingli points upward. In the full canvas Luther&rsquo;s other hand is on the word <i>est</i> chalked on the table (&ldquo;this <i>is</i> my body&rdquo;). Fourteen articles agreed, and on the fifteenth agreement on everything but the bodily presence. Luther to the Swiss: &ldquo;You have a different spirit.&rdquo; As the accounts have it, Zwingli offered his hand at the end and Luther would not take it as a brother&rsquo;s.<br>&rarr; Two men, both captive to the same Word, reading it as faithfully as they could. Only one of them would grant the other that.</aside></section>')
+
+A('<section class="slide breath"><h2 style="max-width:none">Luther claimed conscience for himself.<br><span style="color:var(--gold)">Campbell claimed it for his brother.</span></h2>'
+  '<aside class=notes>Say it once and stop. Not a new principle: the same principle, extended to the brother. Luther is not the villain here: the man of Worms and the man of Marburg were equally sincere. That is the point: conscience claimed for yourself is only half a sentence, and Campbell finishes it. This is the chapter in one line.</aside></section>')
 
 A(Q('&ldquo;&hellip;as no man can be judged for his brother, so <b>no man can judge for his brother</b>; every man must be allowed to judge for himself, as every man must bear his own judgment&mdash;must give account of himself to God.&rdquo;', DA, 'Preamble') +
-  N('Its second sentence: the half Luther could not say at Marburg. Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying.'))
+  N('The Preamble&rsquo;s second sentence: the half Luther could not say at Marburg. Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying. The first sentence, just before it: &ldquo;it is high time for us not only to think, but also to act, for ourselves&hellip; to this alone we feel ourselves Divinely bound to be conformed, as by this alone, we must be judged.&rdquo;'))
 
 A('<section class="slide"><div class=eyebrow>Worms, 1521 &middot; Washington, Pennsylvania, 1809</div>'
   '<div class=litany style="display:grid;grid-template-columns:1fr 1fr;column-gap:5vmin;row-gap:2.4vmin;text-align:left;max-width:92vw">'
@@ -162,20 +169,10 @@ A('<section class="slide breath"><h2 style="max-width:none">The Campbells are no
   '<div class="sub frag" style="max-width:none">and more seriously than Luther did, at Marburg.</div>'
   '<aside class=notes>Two clicks. Make it emphatic: nothing the Declaration says about conscience is new. The whole picture is in one sentence at Worms; Campbell is drawing out what it implies. Luther&rsquo;s heirs: the Formula of Concord (1577) settled the Lutheran quarrels by drawing the line against the Reformed, and confessional Lutheran churches have kept a closed table since. Luther himself: Marburg, &ldquo;You have a different spirit,&rdquo; the hand not taken. If conscience is an obligation to the Word, Zwingli was under the same obligation, reading the same Word as faithfully as he could. Luther claimed conscience for himself and would not grant it to his brother.<br>&rarr; So the one difference fits in a sentence.</aside></section>')
 
-A('<section class="slide bleed"><div class=bg><div class="bgimg marburgbg"></div></div>'
-  '<div class=credit>August Noack, <i>Religionsgespr&auml;ch zu Marburg 1529</i> (detail), 1867&ndash;69 &middot; public domain</div>'
-  '<div class=eyebrow>Marburg &middot; October 1529</div>'
-  '<h2>Luther and Zwingli.</h2>'
-  '<aside class=notes>The painting (detail): Luther, left in the fur collar, holds Zwingli off with both hands; Zwingli points upward. In the full canvas Luther&rsquo;s other hand is on the word <i>est</i> chalked on the table (&ldquo;this <i>is</i> my body&rdquo;). Fourteen articles agreed, and on the fifteenth agreement on everything but the bodily presence. Luther to the Swiss: &ldquo;You have a different spirit.&rdquo; As the accounts have it, Zwingli offered his hand at the end and Luther would not take it as a brother&rsquo;s.<br>&rarr; Two men, both captive to the same Word, reading it as faithfully as they could. Only one of them would grant the other that.</aside></section>')
-
-A('<section class="slide breath"><h2 style="max-width:none">Luther claimed conscience for himself.<br><span style="color:var(--gold)">Campbell claimed it for his brother.</span></h2>'
-  '<aside class=notes>Say it once and stop. Not a new principle: the same principle, extended to the brother. Luther is not the villain here: the man of Worms and the man of Marburg were equally sincere. That is the point: conscience claimed for yourself is only half a sentence, and Campbell finishes it. This is the chapter in one line.</aside></section>')
-
-A(Q('&ldquo;&hellip;no man has a right to judge his brother, except in so far as he manifestly violates the express letter of the law. That every such judgment is an express violation of the law of Christ, <b>a daring usurpation of his throne</b>, and a gross intrusion upon the rights and liberties of his subjects.&rdquo;', DA, 'Preamble') +
-  N('The very next sentences. Every instrument on the egg had a throne behind it; Campbell says that whoever judges his brother&rsquo;s conscience is sitting on Christ&rsquo;s.'))
-
-A(Q('&ldquo;It is not the voice of the multitude, but the voice of truth, that has power with the conscience; that can produce rational conviction and acceptable obedience. <b>A conscience that awaits the decision of the multitude</b>&hellip;&rdquo;', DA, 'The Address') +
-  N('The Address says it of a General Council by name. Every council on the egg was a multitude deciding for a conscience. The sentence ends: &ldquo;that hangs in suspense for the casting vote of the majority, is a fit subject for the man of sin.&rdquo; Cuttable if time is short.'))
+A('<section class="slide breath"><h2 style="max-width:none">If my brother is as bound to the Word as I am,</h2>'
+  '<div class="sub frag punch" style="color:var(--bone)">my reading cannot be his door to the table.</div>'
+  '<div class="sub frag punch">The table has to be open.</div>'
+  '<aside class=notes>Two clicks. Three things in one line: freedom of conscience, why unity cannot be compelled, and the open table. This is Chapter 2 from the inside: Campbell was tried for opening the table to Presbyterians who read differently. Proposition 6 will make it rule: inferences are &ldquo;not formally binding upon the consciences of Christians farther than they perceive the connection.&rdquo; The Preamble&rsquo;s word for the opposite: to judge your brother is &ldquo;a daring usurpation of his throne, and a gross intrusion upon the rights and liberties of his subjects.&rdquo;</aside></section>')
 
 A('<section class="slide"><h2>What can Christians unite on?</h2>'
   '<div class="sub frag">&ldquo;That they all may be one&hellip; that the world may believe that thou hast sent me.&rdquo;<br><span style="font-size:.7em;color:var(--bone-dim)">John 17:21</span></div>'
@@ -188,7 +185,7 @@ A(Q('&ldquo;&hellip;nor, indeed, can we reasonably expect to find it anywhere bu
 
 A('<section class="slide breath"><h2 style="max-width:none">There is nothing wrong with a creed.</h2>'
   '<div class="sub frag" style="max-width:none">But a creed cannot make us one.</div>'
-  '<div class="sub frag" style="max-width:none;color:var(--gold)">Only Christ can do that.</div>'
+  '<div class="sub frag punch">Only Christ can do that.</div>'
   '<aside class=notes>Two clicks. Not anti-creed: Nicaea is true, and the room says it. The fault on the egg was never the creed; it was the job the creed was given.</aside></section>')
 
 A(Q('&ldquo;&hellip;doctrinal exhibitions of the great system of Divine truths&hellip; <b>be highly expedient, and the more full and explicit they be for those purposes, the better</b>; yet&hellip; they ought not to be made terms of Christian communion&hellip;&rdquo;', DA, 'Proposition 7') +
@@ -244,12 +241,12 @@ A('<section class="slide"><div class=eyebrow>The reception</div>'
 A('<section class="slide room"><div class=eyebrow>The Churches of Christ</div>'
   '<h2>We have kept dividing.</h2>'
   '<div class="sub frag">We have all lived it.</div>'
-  '<div class="sub frag" style="max-width:none;color:var(--gold)">Does that mean Thomas Campbell was wrong?</div>'
+  '<div class="sub frag punch">Does that mean Thomas Campbell was wrong?</div>'
   '<aside class=notes>Two clicks. Let the first one sit: everyone in the room has a story of a split, a congregation, a family. Look back at the tree: one cup, non-class, non-institutional, instrumental, premillennial. Then ask the question and let them answer before the next slide.</aside></section>')
 
 A('<section class="slide breath"><h2 style="max-width:none">No. It means he was right.</h2>'
   '<div class="sub frag" style="max-width:none">Every division since has come from someone<br>offering another answer than Christ.</div>'
-  '<div class="sub frag" style="max-width:none;color:var(--gold)">There is no other answer. There never will be.</div>'
+  '<div class="sub frag punch">There is no other answer. There never will be.</div>'
   '<aside class=notes>Two clicks. Campbell diagnosed the problem correctly; the divisions are what it looks like when his point is not taken as deeply as it merits. Cups, classes, institutions, instruments, the millennium: every one was made a term of communion, asked to do the job only Christ can do. It did what every instrument on the egg did.</aside></section>')
 
 A('<section class="slide breath"><h2 style="max-width:none">Make anything else a term of communion,<br><span style="color:var(--gold)">and it will not make us one.<br>It will divide us again.</span></h2>'
