@@ -43,7 +43,8 @@ css += '\n  .bgimg.lutherbg{background-image:url("%s");background-position:cente
 css += '  .slide.bleed .frag.sub{color:var(--bone)}\n'
 import os
 if os.path.exists('decks/src/week3/marburg.jpg'):
-    css += '  .bgimg.marburgbg{background-image:url("%s");background-position:center 35%%}\n' % b64('decks/src/week3/marburg.jpg')
+    css += '  .bgimg.marburgbg{background-image:url("%s");background-position:center 20%%}\n' % b64('decks/src/week3/marburg.jpg')
+    css += '  #deck .slide:has(.marburgbg) .credit{background:rgba(14,11,9,.72);padding:.35em .6em;border-radius:.3em}\n'
 else:
     css += '  #deck .slide:has(.marburgbg) .credit{display:none}\n'
     print('note: decks/src/week3/marburg.jpg missing; the Marburg slide builds without its painting')
