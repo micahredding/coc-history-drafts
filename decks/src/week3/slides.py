@@ -17,7 +17,8 @@ def Q(quote, cite='', eyebrow='', cls='slide', sub=''):   # a quotation alone
     c = '<div class=cite>%s</div>' % cite if cite else ''
     n = len(re.sub(r'<[^>]+>|&[a-z]+;', 'x', quote))
     size = ' xlong' if n > 260 else ' long' if n > 150 else ''
-    return '<section class="%s">%s<p class="bigquote%s"><span class=q>%s</span></p>%s%s' % (cls, e, size, quote, sub, c)
+    bg = '<div class=bg><div class="bgimg lutherbg"></div></div>' if 'dimbg' in cls else ''
+    return '<section class="%s">%s%s<p class="bigquote%s"><span class=q>%s</span></p>%s%s' % (cls, bg, e, size, quote, sub, c)
 def N(*bul):
     return '<aside class=notes>' + '<br>'.join('&bull; ' + x for x in bul) + '</aside></section>'
 DA = 'Declaration and Address, 1809'
@@ -117,10 +118,10 @@ A('<section class="slide bleed" style="padding-bottom:5vmin"><div class=bg><div 
   '<h2 style="font-size:clamp(56px,13vmin,170px);line-height:1.02;max-width:none">Conscience cannot<br>be compelled.</h2>'
   '<aside class=notes>Worms, April 1521. Asked to recant, Luther: &ldquo;my conscience is captive to the Word of God. I cannot and will not recant anything, since it is neither safe nor right to go against conscience.&rdquo; (&ldquo;Here I stand, I can do no other&rdquo; is the famous form; the earliest printed accounts add it, the transcript does not. Say &ldquo;as the story goes.&rdquo;) Protestantism begins with that sentence, and it is the reason none of the instruments on the egg could work: a creed can name who agrees, and a sword can make people say it, but neither can make anyone believe. The consequence comes a few slides on.</aside></section>')
 
-A(Q('&ldquo;&hellip;my conscience is captive to the Word of God. I cannot and will not recant anything, since <b>it is neither safe nor right to go against conscience</b>.&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Here I stand') +
+A(Q('&ldquo;&hellip;my conscience is captive to the Word of God. I cannot and will not recant anything, since <b>it is neither safe nor right to go against conscience</b>.&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Here I stand', 'slide bleed midbleed dimbg') +
   N('The line everyone remembers. Say it slowly. (&ldquo;Here I stand, I can do no other&rdquo; is the famous form; the earliest printed accounts add it, the transcript does not.)', '&rarr; Then the whole sentence it ends.'))
 
-A(Q('&ldquo;<b style="font-size:1.18em">Unless I am convinced by the testimony of the Scriptures or by clear reason</b><span style="font-size:.78em">&hellip; I am bound by the Scriptures I have quoted and my conscience is captive to the Word of God. I cannot and will not recant anything, since <b>it is neither safe nor right to go against conscience</b>. May God help me. Amen.</span>&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Worms, 18 April 1521', 'slide wormsfull') +
+A(Q('&ldquo;<b style="font-size:1.18em">Unless I am convinced by the testimony of the Scriptures or by clear reason</b><span style="font-size:.78em">&hellip; I am bound by the Scriptures I have quoted and my conscience is captive to the Word of God. I cannot and will not recant anything, since <b>it is neither safe nor right to go against conscience</b>. May God help me. Amen.</span>&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Worms, 18 April 1521', 'slide wormsfull bleed midbleed dimbg') +
   N('The sentence, with its parenthesis trimmed on screen: &ldquo;(for I do not trust either in the pope or in councils alone, since it is well known that they have often erred and contradicted themselves)&rdquo;. Councils have erred: the egg, in his words. Look at how it starts: &ldquo;Unless I am convinced.&rdquo; He holds his own reading open. Show him from Scripture or clear reason that he is wrong, and he must change. That is the opposite of &ldquo;I can do what I want.&rdquo;', 'Translations vary (&ldquo;testimonies of the Holy Scriptures or evident reason&rdquo;); this is the common English form.'))
 
 A('<section class="slide breath"><h2 style="max-width:none">Conscience is not &ldquo;I can do what I want.&rdquo;</h2>'
