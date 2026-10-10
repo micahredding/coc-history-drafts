@@ -26,6 +26,12 @@ S = []
 A = S.append
 _D = __file__.rsplit('/', 1)[0]
 
+# ---------- CLASS TITLE (as in the Chapter 2 deck) ----------
+A('<section class="slide" style="padding-bottom:10vmin"><div class="eyebrow quiet" style="font-size:clamp(16px,3vmin,36px)">Otter Creek &middot; Fall 2026</div>'
+  '<h1 style="font-size:min(19vmin,11.5vw);line-height:1.02;max-width:none">Our Wild<br>Democracy</h1>'
+  '<p class=sub style="font-size:min(5vmin,3.6vw);max-width:none;margin-top:2vmin">The Story, Promise, and Future<br>of the Churches of Christ</p>'
+  '<aside class=notes>The class title, as every week. Then the chapter.</aside></section>')
+
 # ---------- TITLE ----------
 A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Chapter 3</div>'
   '<h1>The Declaration<br>and Address</h1><div class=table-line></div>'
