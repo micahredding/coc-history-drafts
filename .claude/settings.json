@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch origin main)",
+      "Bash(git fetch -q origin main)",
+      "Bash(git checkout -q main)",
+      "Bash(git checkout -q claude/*)",
+      "Bash(git merge --ff-only -q claude/*)",
+      "Bash(git merge --ff-only claude/*)",
+      "Bash(git push origin main)"
+    ]
+  }
+}
