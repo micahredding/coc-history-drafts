@@ -167,7 +167,7 @@ A(Q('&ldquo;&hellip;as no man can be judged for his brother, so <b>no man can ju
   N('The Preamble&rsquo;s second sentence: the half Luther could not say at Marburg. Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying. The first sentence, just before it: &ldquo;it is high time for us not only to think, but also to act, for ourselves&hellip; to this alone we feel ourselves Divinely bound to be conformed, as by this alone, we must be judged.&rdquo;'))
 
 # ---------- WHY CAMPBELL COULD GO FURTHER: THE SWORD, AND THIS COUNTRY ----------
-A('<section class="slide"><h2 style="font-size:clamp(60px,14vmin,180px);line-height:1.02;max-width:none">What can<br>Christians<br>unite on?</h2>'
+A('<section class="slide"><h2 style="font-size:clamp(60px,14vmin,180px);line-height:1.02;max-width:none">What can<br>unite<br>Christians?</h2>'
   '<div class="sub frag">&ldquo;That they all may be one&hellip; that the world may believe that thou hast sent me.&rdquo;<br><span style="font-size:.7em;color:var(--bone-dim)">John 17:21</span></div>'
   '<aside class=notes>The question, now that the reason is named. Then the prayer: a prayer, not a command, and for the sake of the world&rsquo;s belief. Pause on it before the answer.</aside></section>')
 
