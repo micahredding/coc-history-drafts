@@ -43,6 +43,7 @@ def b64(p):
     with open(p,'rb') as f: return 'data:image/jpeg;base64,'+base64.b64encode(f.read()).decode()
 css += '\n  .bgimg.lutherbg{background-image:url("%s");background-position:center 30%%}\n' % b64('decks/src/week3/luther.jpg')
 css += '  .slide.bleed .frag.sub{color:var(--bone)}\n'
+css += '  #deck .wormsfull .bigquote{line-height:1.22}\n'
 css += '  #deck .slide .sub.punch{font-family:"IM Fell English",Georgia,serif;font-style:normal;font-size:clamp(30px,5.4vmin,68px);line-height:1.2;color:var(--gold);max-width:none;margin-top:2.4vmin}\n'
 import os
 if os.path.exists('decks/src/week3/marburg.jpg'):
