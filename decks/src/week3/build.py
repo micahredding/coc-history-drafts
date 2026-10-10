@@ -41,6 +41,12 @@ def b64(p):
     with open(p,'rb') as f: return 'data:image/jpeg;base64,'+base64.b64encode(f.read()).decode()
 css += '\n  .bgimg.lutherbg{background-image:url("%s");background-position:center 30%%}\n' % b64('decks/src/week3/luther.jpg')
 css += '  .slide.bleed .frag.sub{color:var(--bone)}\n'
+import os
+if os.path.exists('decks/src/week3/marburg.jpg'):
+    css += '  .bgimg.marburgbg{background-image:url("%s");background-position:center 35%%}\n' % b64('decks/src/week3/marburg.jpg')
+else:
+    css += '  #deck .slide:has(.marburgbg) .credit{display:none}\n'
+    print('note: decks/src/week3/marburg.jpg missing; the Marburg slide builds without its painting')
 
 js=open('decks/src/week3/engine.js').read()
 js=js.replace("'w1cur'","'w3cur'").replace("'w1mode'","'w3mode'").replace("'w1strip'","'w3strip'")
