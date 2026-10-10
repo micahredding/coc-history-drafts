@@ -115,16 +115,27 @@ A('<section class="slide bleed"><div class=bg><div class="bgimg lutherbg"></div>
   '<aside class=notes>Worms, April 1521. Asked to recant, Luther: &ldquo;my conscience is captive to the Word of God. I cannot and will not recant anything, since it is neither safe nor right to go against conscience.&rdquo; (&ldquo;Here I stand, I can do no other&rdquo; is the famous form; the earliest printed accounts add it, the transcript does not. Say &ldquo;as the story goes.&rdquo;) Protestantism begins with that sentence, and it is the reason none of the instruments on the egg could work: a creed can name who agrees, and a sword can make people say it, but neither can make anyone believe. Click for the consequence.</aside></section>')
 
 A(Q('&ldquo;&hellip;my conscience is captive to the Word of God. I cannot and will not recant anything, since <b>it is neither safe nor right to go against conscience</b>.&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Here I stand') +
-  N('The documented words. The full sentence begins: &ldquo;Unless I am convinced by the testimony of the Scriptures or by clear reason (for I do not trust either in the pope or in councils alone, since it is well known that they have often erred and contradicted themselves), I am bound by the Scriptures I have quoted and my conscience is captive to the Word of God.&rdquo; Councils have erred: the egg, in his words.', '&rarr; Then: what he means by conscience.'))
+  N('The documented words, the end of a longer sentence; the whole of it is three slides on.', '&rarr; Then: what he means by conscience.'))
 
 A('<section class="slide breath"><h2 style="max-width:none">Conscience is not &ldquo;I can do what I want.&rdquo;</h2>'
   '<div class="sub frag" style="max-width:none">It is &ldquo;I must.&rdquo;</div>'
   '<div class="sub frag" style="max-width:none;color:var(--gold)">Captive to the Word of God.</div>'
-  '<aside class=notes>Two clicks. His word is <i>captive</i>: bound, not free. Conscience here is a divine obligation, not a preference. Its ground is the priesthood of all believers: every Christian indwelt by the Spirit, united with Christ, answerable to God directly, and so no one can answer for him. Luther a year earlier, <i>To the Christian Nobility</i> (1520): whoever comes out of the water of baptism &ldquo;can boast that he is already a consecrated priest, bishop and pope.&rdquo;</aside></section>')
+  '<aside class=notes>Two clicks. His word is <i>captive</i>: bound, not free. Conscience here is a divine obligation, not a preference. Its ground is the priesthood of all believers: every Christian indwelt by the Spirit, united with Christ, answerable to God directly, and so no one can answer for him.</aside></section>')
 
-A('<section class="slide breath"><h2 style="max-width:none">Captive to the Word of God.<br><span style="color:var(--gold)">Not to anyone&rsquo;s reading of it.</span></h2>'
-  '<div class="sub frag" style="max-width:32ch">Reading Scripture as faithfully as he can is itself the obligation.</div>'
-  '<aside class=notes>One click. Luther is not bound to an interpretation, not even his own; he asks to be shown wrong &ldquo;by the testimony of the Scriptures or by clear reason.&rdquo; What binds him is the Word itself, and the duty to read it as best he can before God. That is why no council can do it for him: interpreting is part of the obligation, and an obligation cannot be delegated.<br>&rarr; Which means every other Christian carries the same obligation. Eight years later, Luther forgets that.</aside></section>')
+A(Q('&ldquo;&hellip;whoever comes out of the water of baptism can boast that he is already <b>a consecrated priest, bishop, and pope</b>, although of course it is not seemly that just anybody should exercise such office.&rdquo;', 'Martin Luther, <i>To the Christian Nobility of the German Nation</i>, 1520 &middot; <i>Luther&rsquo;s Works</i> 44', 'A year before Worms') +
+  N('Why conscience is an obligation and not a preference: the priesthood of all believers. Just before this, Luther: &ldquo;we are all consecrated priests through baptism, as St. Peter says in I Peter 2[:9].&rdquo; Every baptized Christian has the Spirit, is united with Christ, and stands before God directly. No one else can stand there for you.', 'Older translation (C. M. Jacobs, 1915): &ldquo;For whoever comes out of the water of baptism can boast that he is already consecrated priest, bishop and pope, though it is not seemly that every one should exercise the office.&rdquo;'))
+
+A(Q('&ldquo;<b>Unless I am convinced</b> by the testimony of the Scriptures or by clear reason (for I do not trust either in the pope or in councils alone, since it is well known that they have often erred and contradicted themselves), I am bound by the Scriptures I have quoted and my conscience is captive to the Word of God.&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'The whole sentence') +
+  N('The sentence the famous line ends. Look at how it starts: &ldquo;Unless I am convinced.&rdquo; He holds his own reading open. Show him from Scripture or clear reason that he is wrong, and he must change. That is the opposite of &ldquo;I can do what I want.&rdquo;', 'Translations vary (&ldquo;testimonies of the Holy Scriptures or evident reason&rdquo;); this is the common English form.'))
+
+A('<section class="slide breath"><h2 style="max-width:none">Captive to the Word of God.</h2>'
+  '<div class=litany style="align-items:center">'
+  '<div class="no frag">Not to the pope&rsquo;s reading of it.</div>'
+  '<div class="no frag">Not to a council&rsquo;s.</div>'
+  '<div class="no frag">Not even to his own.</div>'
+  '<div class="no frag" style="color:var(--gold)">To the Word itself, and to God, for how he reads it.</div>'
+  '</div>'
+  '<aside class=notes>Four clicks; slow down on the third. Luther is not committed to an interpretation, not even his own. He is committed to the Word, and his conscience is where he answers to God for how faithfully he reads it. That is why no council can do it for him: interpreting Scripture as best he can is part of the obligation, and an obligation cannot be handed to someone else.<br>&rarr; Which means every other Christian carries the same obligation, before the same Word. Eight years later, Luther forgets that.</aside></section>')
 
 A('<section class="slide"><div class=eyebrow>Marburg, 1529 &middot; Luther to the Swiss</div>'
   '<p class=bigquote><span class=q>&ldquo;You have a <b>different spirit</b>.&rdquo;</span></p>'
@@ -203,15 +214,13 @@ A('<section class="slide room"><div class=eyebrow>Our table</div>'
 
 # ---------- 8 THE RECEPTION ----------
 A(Q('&ldquo;That this Society <b>by no means considers itself a Church</b>, nor does at all assume to itself the powers peculiar to such a society&hellip; but merely as voluntary advocates for Church reformation&hellip;&rdquo;', DA, 'Resolution IV') +
-  N('The one resolution to keep. It is the fuse.'))
+  N('The one resolution to keep: voluntary advocates for reform, not a new church.'))
 
 A('<section class="slide"><div class=eyebrow>The reception</div>'
   '<div class=litany>'
   '<div class="no frag">October 1810 &middot; the Synod of Pittsburgh refuses Christian and ministerial communion. <b>Nobody joins.</b></div>'
-  '<div class="no frag">May 1811 &middot; the Society that was &ldquo;by no means a Church&rdquo; <b>becomes one.</b></div>'
-  '<div class="no frag">Thirteen propositions offered &ldquo;not as a new creed&rdquo; are, by the heirs, <b>treated as one.</b></div>'
   '</div>' +
-  N('Candor beat, three clicks. A unity plea addressed to every party and joined, in the event, by almost no one; the synod&rsquo;s refusal is Week 5&rsquo;s opening. The second line is Brush Run, two weeks from now. The third is the long fuse: the document warned against its own later use, and its heirs did it anyway. That detonates in Chapter 12.', '&rarr; Chalcedon said &ldquo;not a new creed&rdquo; too. Then the heirs handed this document the same job only Christ can do. Honoring it means keeping it a plea, not a pattern.', '&rarr; And we know what happened next.'))
+  N('Candor beat, one click. A unity plea addressed to every party and joined, in the event, by almost no one; the synod&rsquo;s refusal is Week 5&rsquo;s opening.', '&rarr; And the movement it started? We know what happened next.'))
 
 A('<section class="slide room"><div class=eyebrow>The Churches of Christ</div>'
   '<h2>We have kept dividing.</h2>'
