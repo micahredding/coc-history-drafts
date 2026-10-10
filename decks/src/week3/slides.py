@@ -32,6 +32,17 @@ A('<section class="slide" style="padding-bottom:10vmin"><div class="eyebrow quie
   '<p class=sub style="font-size:min(5vmin,3.6vw);max-width:none;margin-top:2vmin">The Story, Promise, and Future<br>of the Churches of Christ</p>'
   '<aside class=notes>The class title, as every week. Then the chapter.</aside></section>')
 
+# ---------- RECAP: Chapter 2 in pictures (images from decks/src/week2) ----------
+A('<section class="slide recapslide"><div class="eyebrow quiet">Last week &middot; Thomas Campbell&rsquo;s Heresy Trial</div>'
+  '<div class=shots style="gap:3vmin">'
+  '<figure class="shot frag" style="--r:-1.5deg"><img src="IMG_TCAMPBELL" alt="" style="width:100%;height:30vh;object-fit:cover;border-radius:.4vmin"><figcaption style="font-family:Spectral,Georgia,serif;font-variant:normal;text-transform:none;letter-spacing:0;font-size:clamp(15px,2.4vmin,28px);line-height:1.35;margin-top:1.2vmin;color:var(--bone)"><b>Ireland.</b> Twice he works to unite the Seceders; twice his church courts shut it down.</figcaption></figure>'
+  '<figure class="shot frag" style="--r:1.2deg"><img src="IMG_SHIP" alt="" style="width:100%;height:30vh;object-fit:cover;border-radius:.4vmin"><figcaption style="font-family:Spectral,Georgia,serif;font-variant:normal;text-transform:none;letter-spacing:0;font-size:clamp(15px,2.4vmin,28px);line-height:1.35;margin-top:1.2vmin;color:var(--bone)"><b>April 1807.</b> He sails for America.</figcaption></figure>'
+  '<figure class="shot frag" style="--r:-1deg"><img src="IMG_MAP" alt="" style="width:100%;height:30vh;object-fit:cover;border-radius:.4vmin"><figcaption style="font-family:Spectral,Georgia,serif;font-variant:normal;text-transform:none;letter-spacing:0;font-size:clamp(15px,2.4vmin,28px);line-height:1.35;margin-top:1.2vmin;color:var(--bone)"><b>Western Pennsylvania.</b> Presbyterians who had not received communion in years.</figcaption></figure>'
+  '<figure class="shot frag" style="--r:1.8deg"><img src="IMG_TOKEN" alt="" style="width:100%;height:30vh;object-fit:cover;border-radius:.4vmin"><figcaption style="font-family:Spectral,Georgia,serif;font-variant:normal;text-transform:none;letter-spacing:0;font-size:clamp(15px,2.4vmin,28px);line-height:1.35;margin-top:1.2vmin;color:var(--bone)"><b>Conemaugh, August 1807.</b> He opens the table. He is tried and censured for it.</figcaption></figure>'
+  '</div>'
+  '<div class="sub frag" style="max-width:none;margin-top:3vmin">Put out, he preaches in a grove. That autumn they ask him to write down what they stand for.</div>'
+  '<aside class=notes>Five clicks, about two minutes: the story so far in four pictures. Thomas Campbell (portrait); the ship (Robert Salmon, 1809, a ship of the kind, not the <i>Brutus</i>); Howell&rsquo;s 1792 map of Pennsylvania; a Scottish communion token, 1750, the fence at the table. Last week ended on the first sentence of what he wrote: the church of Christ upon earth is essentially, intentionally, and constitutionally one.</aside></section>')
+
 # ---------- TITLE ----------
 A('<section class="slide"><div class=eyebrow>Our Wild Democracy &middot; Chapter 3</div>'
   '<h1>The Declaration<br>and Address</h1><div class=table-line></div>'
@@ -45,8 +56,11 @@ A('<section class="slide breath sect"><div class=eyebrow>The Address</div><h2>Th
 A(Q('&ldquo;That it is the grand design and native tendency of our holy religion <b>to reconcile and unite men to God, and to each other, in truth and love</b>, to the glory of God, and their own present and eternal good&hellip;&rdquo;', DA, 'The Design of Religion') +
   N('Stop before &ldquo;will not, we presume, be denied.&rdquo; Stand one, asked lightly: is unity what Christianity is <i>for</i>? If yes, every century of division is the religion failing its own purpose.', '&ldquo;In truth and love&rdquo;: both sides, from the first sentence. The motto later is &ldquo;Union in Truth.&rdquo;'))
 
+A(Q('&ldquo;&hellip;the first and foundation truth of our Christianity is <b>union with him</b>, and the very next to it in order, <b>union with each other in him</b>.&rdquo;', DA, 'The Design of Religion') +
+  N('The design sentence again, in its own order: unite men &ldquo;to God, and to each other&rdquo; becomes union with him first, and union with each other in him next. Unity is not a project beside the faith; it follows from it. From later in the Address, the same sentence, just before: the &ldquo;bewildered Church has, for hundreds of years past, been rending and dividing herself into factions, for Christ&rsquo;s sake, and for the truth&rsquo;s sake.&rdquo; That is the egg in his words.', 'Order matters: union with each other is not built beside union with Christ; it follows from it. That is proposition 1 in a sentence: given, not constructed.'))
+
 A(Q('&ldquo;The nativity of its Divine author was announced from heaven, by a host of angels, with high acclamations of <b>&lsquo;Glory to God in the highest, and on earth peace and good-will toward men.&rsquo;</b>&rdquo;', DA, 'The Design of Religion') +
-  N('Same paragraph. The proof he offers is Luke 2: the religion was announced as peace.'))
+  N('Back to the first paragraph. The proof he offers is Luke 2: the religion was announced as peace.'))
 
 A(Q('&ldquo;In so far, then, as this holy unity and unanimity in faith and love is attained, <b>just in the same degree</b> is the glory of God and the happiness of men promoted and secured.&rdquo;', DA, 'The Design of Religion') +
   N('&ldquo;Just in the same degree.&rdquo; Unity is not a bonus on top of the religion; it is the measure of it. Then: what does division cost?'))
@@ -200,10 +214,7 @@ A(Q('&ldquo;&hellip;doctrinal exhibitions of the great system of Divine truths&h
 
 A('<section class="slide breath"><h2 style="max-width:32ch">Every time we hand a creed, a council, or a magistrate<br><span style="color:var(--gold)">a job only Christ can do</span>, it fails.</h2>'
   '<aside class=notes>The chapter&rsquo;s thesis. Point back at the egg: every one of those was a good instrument given the wrong job. Campbell names the job in the Address: creeds were &ldquo;designed and embraced for the purpose of promoting and securing that desirable unity and purity which the Bible alone, without those helps, would be insufficient to maintain and secure.&rdquo; That is the job description, and no document can do it.<br>'
-  '&rarr; So what does make us one?</aside></section>')
-
-A(Q('&ldquo;&hellip;the first and foundation truth of our Christianity is <b>union with him</b>, and the very next to it in order, <b>union with each other in him</b>.&rdquo;', DA, 'The Address') +
-  N('Same sentence, just before: the &ldquo;bewildered Church has, for hundreds of years past, been rending and dividing herself into factions, for Christ&rsquo;s sake, and for the truth&rsquo;s sake.&rdquo; That is the egg in his words.', 'Order matters: union with each other is not built beside union with Christ; it follows from it. That is proposition 1 in a sentence: given, not constructed.'))
+  '&rarr; So what does make us one? Back to the Design of Religion: union with him first, and with each other in him.</aside></section>')
 
 A(Q('&ldquo;&hellip;taking the Divine word alone for our rule; the Holy Spirit for our teacher and guide, to lead us into all truth; and <b>Christ alone, as exhibited in the word</b>, for our salvation&hellip;&rdquo;', DA, 'Preamble, continued') +
   N('Guard: it is not creedless. &ldquo;Christ alone, <i>as exhibited in the word</i>.&rdquo; The fence is what Scripture expressly says, and nothing else. The propositions say how.'))
