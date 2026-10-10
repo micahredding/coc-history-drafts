@@ -111,16 +111,16 @@ A(Q('&ldquo;This desirable rest, however, <b>we utterly despair</b> either to fi
 # ---------- 6 THE ISSUE: FREEDOM OF CONSCIENCE ----------
 A(C('Why did every instrument fail?', 'Card. Fifteen hundred years of creeds, councils and swords, and a document that despairs of the old way. The next slide names the reason underneath.'))
 
-A('<section class="slide bleed"><div class=bg><div class="bgimg lutherbg"></div></div>'
+A('<section class="slide bleed" style="padding-bottom:5vmin"><div class=bg><div class="bgimg lutherbg"></div></div>'
   '<div class=credit>Anton von Werner, <i>Luther at the Diet of Worms</i>, 1877 &middot; public domain</div>'
   '<div class=eyebrow>Worms, 1521</div>'
-  '<h2>Conscience cannot be compelled.</h2>'
+  '<h2 style="font-size:clamp(56px,13vmin,170px);line-height:1.02;max-width:none">Conscience cannot<br>be compelled.</h2>'
   '<aside class=notes>Worms, April 1521. Asked to recant, Luther: &ldquo;my conscience is captive to the Word of God. I cannot and will not recant anything, since it is neither safe nor right to go against conscience.&rdquo; (&ldquo;Here I stand, I can do no other&rdquo; is the famous form; the earliest printed accounts add it, the transcript does not. Say &ldquo;as the story goes.&rdquo;) Protestantism begins with that sentence, and it is the reason none of the instruments on the egg could work: a creed can name who agrees, and a sword can make people say it, but neither can make anyone believe. The consequence comes a few slides on.</aside></section>')
 
 A(Q('&ldquo;&hellip;my conscience is captive to the Word of God. I cannot and will not recant anything, since <b>it is neither safe nor right to go against conscience</b>.&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Here I stand') +
   N('The line everyone remembers. Say it slowly. (&ldquo;Here I stand, I can do no other&rdquo; is the famous form; the earliest printed accounts add it, the transcript does not.)', '&rarr; Then the whole sentence it ends.'))
 
-A(Q('&ldquo;<b>Unless I am convinced</b> by the testimony of the Scriptures or by clear reason (for I do not trust either in the pope or in councils alone, since it is well known that they have often erred and contradicted themselves), I am bound by the Scriptures I have quoted and my conscience is captive to the Word of God. I cannot and will not recant anything, since it is neither safe nor right to go against conscience. May God help me. Amen.&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Worms, 18 April 1521') +
+A(Q('&ldquo;<b>Unless I am convinced by the testimony of the Scriptures or by clear reason</b><span style="color:var(--bone-dim)"> (for I do not trust either in the pope or in councils alone, since it is well known that they have often erred and contradicted themselves), I am bound by the Scriptures I have quoted and my conscience is captive to the Word of God. I cannot and will not recant anything, since it is neither safe nor right to go against conscience. May God help me. Amen.</span>&rdquo;', 'Martin Luther at Worms, 18 April 1521', 'Worms, 18 April 1521') +
   N('The whole sentence, start to finish. Look at how it starts: &ldquo;Unless I am convinced.&rdquo; He holds his own reading open. Show him from Scripture or clear reason that he is wrong, and he must change. That is the opposite of &ldquo;I can do what I want.&rdquo;', 'Translations vary (&ldquo;testimonies of the Holy Scriptures or evident reason&rdquo;); this is the common English form.'))
 
 A('<section class="slide breath"><h2 style="max-width:none">Conscience is not &ldquo;I can do what I want.&rdquo;</h2>'
