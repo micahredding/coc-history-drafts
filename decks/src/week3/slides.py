@@ -95,22 +95,6 @@ A('<section class="slide"><div class=eyebrow>Proposition 10</div>'
 # ---------- 4 CHRISTENDOM'S SEARCH FOR UNITY (the egg) ----------
 S += christendom_slides()
 
-# ---------- 4b THE SWORD BEHIND THEM, AND THIS COUNTRY ----------
-A('<section class="slide"><div class=eyebrow>What every one of them had in common</div>'
-  '<h2>Every one had a sword behind it.</h2>'
-  '<div class=litany>'
-  '<div class="no frag">Constantine &middot; Theodosius &middot; Marcian &middot; Zeno &middot; the papal legates</div>'
-  '<div class="no frag">Charles V &middot; the council of Zurich &middot; Philip of Hesse &middot; Parliament &middot; William and Mary</div>'
-  '<div class="no frag">the patrons &middot; the burgess oath &middot; <b>the magistrate</b></div>'
-  '</div>'
-  '<aside class=notes>Three clicks, back across the egg: who stood behind each instrument. Emperors convened Nicaea (Constantine), Ephesus (Theodosius II) and Chalcedon (Marcian), and issued the Henotikon (Zeno); legates carried Rome&rsquo;s bull in 1054; Charles V received Augsburg; Zurich&rsquo;s council ruled and drowned; Philip of Hesse called Marburg; Parliament imposed Westminster; the crown settled 1690; Parliament&rsquo;s Patronage Act made the Secession; a civic oath made the Burgher split; and the last split was over whether the magistrate may enforce religion at all.<br>'
-  '&rarr; Every instrument of unity on that egg could be enforced. Not one held even the people who signed it.</aside></section>')
-
-A(Q('&ldquo;What dreary effects of those accursed divisions are to be seen, even in this highly favored country, <b>where the sword of the civil magistrate has not as yet learned to serve at the altar</b>.&rdquo;', DA, 'The Address &middot; why 1809, why here') +
-  N('From the Evils of Division paragraph, just before &ldquo;congregations broken to pieces.&rdquo; The Address says it outright later: &ldquo;A country happily exempted from the baneful influence of a civil establishment of any peculiar form of Christianity.&rdquo;',
-    'The First Amendment was eighteen years old; Pennsylvania had never had an established church. For the first time in the story, nobody could enforce a creed. So unity could not be imposed here. It would have to be found.',
-    '&rarr; A few decades after one Declaration of Independence, another. Then: the people of the grove, and what they wanted.'))
-
 
 # ---------- 5 THE PREAMBLE: REST, AND DESPAIR ----------
 A('<section class="slide breath sect"><div class=eyebrow>The Declaration</div><h2>Preamble</h2><div class=table-line></div>'
@@ -183,6 +167,22 @@ A('<section class="slide"><div class=eyebrow>Worms, 1521 &middot; Washington, Pe
   '<div class="no frag">&ldquo;neither safe nor right <b>to go against conscience</b>&rdquo;</div><div class="no frag">&ldquo;<b>no man can judge for his brother</b>&rdquo;</div>'
   '</div>'
   '<aside class=notes>Eight clicks, left then right on each row. Every line on the right is already on the left. The right column: the Preamble; the Address on a General Council; proposition 6; the Preamble again. Only the last row moves: Luther says <i>I</i> may not go against my conscience; Campbell says <i>no one</i> may go against his brother&rsquo;s.<br>That last row is exactly where Luther stopped. Marburg, October 1529 (the 1529 slide on the egg): fourteen articles agreed, and on the fifteenth agreement on everything but the bodily presence. Luther to the Swiss: &ldquo;Ihr habt einen andern Geist&rdquo; &mdash; &ldquo;You have a different spirit.&rdquo; As the accounts have it, Zwingli offered his hand at the end and Luther would not take it as a brother&rsquo;s.</aside></section>')
+
+# ---------- WHY CAMPBELL COULD GO FURTHER: THE SWORD, AND THIS COUNTRY ----------
+A('<section class="slide"><div class=eyebrow>What every one of them had in common</div>'
+  '<h2>Every one had a sword behind it.</h2>'
+  '<div class=litany>'
+  '<div class="no frag">Constantine &middot; Theodosius &middot; Marcian &middot; Zeno &middot; the papal legates</div>'
+  '<div class="no frag">Charles V &middot; the council of Zurich &middot; Philip of Hesse &middot; Parliament &middot; William and Mary</div>'
+  '<div class="no frag">the patrons &middot; the burgess oath &middot; <b>the magistrate</b></div>'
+  '</div>'
+  '<aside class=notes>Three clicks, back across the egg: who stood behind each instrument. Emperors convened Nicaea (Constantine), Ephesus (Theodosius II) and Chalcedon (Marcian), and issued the Henotikon (Zeno); legates carried Rome&rsquo;s bull in 1054; Charles V received Augsburg; Zurich&rsquo;s council ruled and drowned; Philip of Hesse called Marburg; Parliament imposed Westminster; the crown settled 1690; Parliament&rsquo;s Patronage Act made the Secession; a civic oath made the Burgher split; and the last split was over whether the magistrate may enforce religion at all.<br>'
+  '&rarr; Back to the egg for a moment: every instrument on it could be enforced. Luther lived under the same swords: Charles V at Worms, Philip of Hesse calling Marburg. Campbell did not.</aside></section>')
+
+A(Q('&ldquo;What dreary effects of those accursed divisions are to be seen, even in this highly favored country, <b>where the sword of the civil magistrate has not as yet learned to serve at the altar</b>.&rdquo;', DA, 'The Address &middot; why 1809, why here') +
+  N('From the Evils of Division paragraph, just before &ldquo;congregations broken to pieces.&rdquo; The Address says it outright later: &ldquo;A country happily exempted from the baneful influence of a civil establishment of any peculiar form of Christianity.&rdquo;',
+    'The First Amendment was eighteen years old; Pennsylvania had never had an established church. For the first time in the story, nobody could enforce a creed. So unity could not be imposed here. It would have to be found.',
+    '&rarr; So he could do what Luther could not: take Worms all the way. A few decades after one Declaration of Independence, another.'))
 
 A('<section class="slide breath"><h2 style="max-width:none">The Campbells are not the precedent.<br><span style="color:var(--gold)">Luther is.</span></h2>'
   '<div class="sub frag" style="max-width:none">They took Worms more seriously than Luther&rsquo;s heirs did,</div>'
