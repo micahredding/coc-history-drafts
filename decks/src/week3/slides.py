@@ -69,6 +69,16 @@ A(Q('&ldquo;In so far, then, as this holy unity and unanimity in faith and love 
 A('<section class="slide breath sect"><div class=eyebrow>The Address</div><h2>The Evils of Division</h2><div class=table-line></div>'
   '<aside class=notes>What division costs. Practical, not doctrinal. Build the list one line at a time and let the room map each one onto now.</aside></section>')
 
+A('<section class="slide"><div class=eyebrow>Proposition 10</div>'
+  '<h2>&ldquo;Division among the Christians is a horrid evil, fraught with many evils.&rdquo;</h2>'
+  '<div class=litany>'
+  '<div class="no frag">&ldquo;It is <b>antichristian</b>, as it destroys the visible unity of the body of Christ; as if he were divided against himself&hellip;&rdquo;</div>'
+  '<div class="no frag">&ldquo;It is <b>antiscriptural</b>, as being strictly prohibited by his sovereign authority&hellip;&rdquo;</div>'
+  '<div class="no frag">&ldquo;It is <b>antinatural</b>, as it excites Christians to contemn, to hate, and oppose one another, who are bound&hellip; to love each other as brethren&hellip;&rdquo;</div>'
+  '</div><div class=cite>' + DA + '</div>'
+  '<aside class=notes>Three clicks, verbatim. First what division <i>is</i>; the Evils list that follows is what it costs. Against Christ, against Scripture, against nature: a body excommunicating part of itself. Elided from the first: &ldquo;excluding and excommunicating a part of himself.&rdquo; From the second: &ldquo;a direct violation of his express command.&rdquo; Last clause: &ldquo;In a word, it is productive of confusion and of every evil work.&rdquo;<br>'
+  '&rarr; Then what it costs.</aside></section>')
+
 A('<section class="slide"><div class=eyebrow>&ldquo;What awful and distressing effects have those sad divisions produced!&rdquo;</div>'
   '<div class=litany>'
   '<div class="no frag">&ldquo;congregations <b>broken to pieces</b>&rdquo;</div>'
@@ -80,17 +90,7 @@ A('<section class="slide"><div class=eyebrow>&ldquo;What awful and distressing e
   '<aside class=notes>Five clicks. All verbatim from the Evils of Division. The Supper line ties to the Table arc of the whole class. The last two land hardest in 2026: members who can leave for the church down the road, and the mouths of infidels. (Dropped from the list: &ldquo;Several&hellip; who live at the door of a preached Gospel, dare not in conscience go to hear it&rdquo;: people within reach of preaching, but of another party, whose scruples keep them from it, so they are as cut off as if among heathens. Restore if useful.)</aside></section>')
 
 A(Q('&ldquo;Say, dear brethren, <b>are not these things so?</b>&rdquo;', DA, 'The Evils of Division') +
-  N('His own question, to the room. Let them answer.', '&rarr; Then his verdict on all of it.'))
-
-A('<section class="slide"><div class=eyebrow>Proposition 10</div>'
-  '<h2>&ldquo;Division among the Christians is a horrid evil, fraught with many evils.&rdquo;</h2>'
-  '<div class=litany>'
-  '<div class="no frag">&ldquo;It is <b>antichristian</b>, as it destroys the visible unity of the body of Christ; as if he were divided against himself&hellip;&rdquo;</div>'
-  '<div class="no frag">&ldquo;It is <b>antiscriptural</b>, as being strictly prohibited by his sovereign authority&hellip;&rdquo;</div>'
-  '<div class="no frag">&ldquo;It is <b>antinatural</b>, as it excites Christians to contemn, to hate, and oppose one another, who are bound&hellip; to love each other as brethren&hellip;&rdquo;</div>'
-  '</div><div class=cite>' + DA + '</div>'
-  '<aside class=notes>Three clicks, verbatim. The Evils list was what division costs; this is what division <i>is</i>. Against Christ, against Scripture, against nature: a body excommunicating part of itself. Elided from the first: &ldquo;excluding and excommunicating a part of himself.&rdquo; From the second: &ldquo;a direct violation of his express command.&rdquo; Last clause: &ldquo;In a word, it is productive of confusion and of every evil work.&rdquo;<br>'
-  '&rarr; Then: it was not for want of trying. Here is fifteen hundred years of trying.</aside></section>')
+  N('His own question, to the room. Let them answer.', '&rarr; Then: it was not for want of trying. Here is fifteen hundred years of trying.'))
 
 # ---------- 4 CHRISTENDOM'S SEARCH FOR UNITY (the egg) ----------
 S += christendom_slides()
@@ -167,14 +167,12 @@ A(Q('&ldquo;&hellip;as no man can be judged for his brother, so <b>no man can ju
   N('The Preamble&rsquo;s second sentence: the half Luther could not say at Marburg. Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying. The first sentence, just before it: &ldquo;it is high time for us not only to think, but also to act, for ourselves&hellip; to this alone we feel ourselves Divinely bound to be conformed, as by this alone, we must be judged.&rdquo;'))
 
 # ---------- WHY CAMPBELL COULD GO FURTHER: THE SWORD, AND THIS COUNTRY ----------
-A('<section class="slide breath"><h2 style="max-width:none">If my brother is as bound to the Word as I am,</h2>'
-  '<div class="sub frag punch" style="color:var(--bone)">my reading cannot be his door to the table.</div>'
-  '<div class="sub frag punch">The table has to be open.</div>'
-  '<aside class=notes>Two clicks. Three things in one line: freedom of conscience, why unity cannot be compelled, and the open table. This is Chapter 2 from the inside: Campbell was tried for opening the table to Presbyterians who read differently. Proposition 6 will make it rule: inferences are &ldquo;not formally binding upon the consciences of Christians farther than they perceive the connection.&rdquo; The Preamble&rsquo;s word for the opposite: to judge your brother is &ldquo;a daring usurpation of his throne, and a gross intrusion upon the rights and liberties of his subjects.&rdquo;</aside></section>')
-
-A('<section class="slide"><h2>What can Christians unite on?</h2>'
+A('<section class="slide"><h2 style="font-size:clamp(60px,14vmin,180px);line-height:1.02;max-width:none">What can<br>Christians<br>unite on?</h2>'
   '<div class="sub frag">&ldquo;That they all may be one&hellip; that the world may believe that thou hast sent me.&rdquo;<br><span style="font-size:.7em;color:var(--bone-dim)">John 17:21</span></div>'
   '<aside class=notes>The question, now that the reason is named. Then the prayer: a prayer, not a command, and for the sake of the world&rsquo;s belief. Pause on it before the answer.</aside></section>')
+
+A('<section class="slide breath"><h2 style="font-size:clamp(80px,22vmin,280px);line-height:1;max-width:none;color:var(--gold)">Christ alone</h2>'
+  '<aside class=notes>Let it sit. Then the Preamble says it in his words.</aside></section>')
 
 # ---------- 7 THE SOLUTION ----------
 
@@ -224,15 +222,6 @@ A('<section class="slide room"><div class=eyebrow>Our table</div>'
   '<aside class=notes>Discussion, eight minutes. Have them list what we actually require. Then proposition 8 against the list: which of these is a profession more extensive than their knowledge? Every room has its Munro item; ours is not infant baptism. Leave it open. Set it against the Evils list: division already costs that; what would unity cost?</aside></section>')
 
 # ---------- 8 THE RECEPTION ----------
-A(Q('&ldquo;That this Society <b>by no means considers itself a Church</b>, nor does at all assume to itself the powers peculiar to such a society&hellip; but merely as voluntary advocates for Church reformation&hellip;&rdquo;', DA, 'Resolution IV') +
-  N('The one resolution to keep: voluntary advocates for reform, not a new church.'))
-
-A('<section class="slide"><div class=eyebrow>The reception</div>'
-  '<div class=litany>'
-  '<div class="no frag">October 1810 &middot; the Synod of Pittsburgh refuses Christian and ministerial communion. <b>Nobody joins.</b></div>'
-  '</div>' +
-  N('Candor beat, one click. A unity plea addressed to every party and joined, in the event, by almost no one; the synod&rsquo;s refusal is Week 5&rsquo;s opening.', '&rarr; And the movement it started? We know what happened next.'))
-
 A('<section class="slide room"><div class=eyebrow>The Churches of Christ</div>'
   '<h2>We have kept dividing.</h2>'
   '<div class="sub frag">We have all lived it.</div>'
@@ -288,3 +277,12 @@ A(Q('&ldquo;What dreary effects of those accursed divisions are to be seen, even
   N('From the Evils of Division paragraph, just before &ldquo;congregations broken to pieces.&rdquo; The Address says it outright later: &ldquo;A country happily exempted from the baneful influence of a civil establishment of any peculiar form of Christianity.&rdquo;',
     'The First Amendment was eighteen years old; Pennsylvania had never had an established church. For the first time in the story, nobody could enforce a creed. So unity could not be imposed here. It would have to be found.',
     'A few decades after one Declaration of Independence, another.'))
+
+A(Q('&ldquo;That this Society <b>by no means considers itself a Church</b>, nor does at all assume to itself the powers peculiar to such a society&hellip; but merely as voluntary advocates for Church reformation&hellip;&rdquo;', DA, 'Resolution IV') +
+  N('The one resolution to keep: voluntary advocates for reform, not a new church.'))
+
+A('<section class="slide"><div class=eyebrow>The reception</div>'
+  '<div class=litany>'
+  '<div class="no frag">October 1810 &middot; the Synod of Pittsburgh refuses Christian and ministerial communion. <b>Nobody joins.</b></div>'
+  '</div>' +
+  N('Candor beat, one click. A unity plea addressed to every party and joined, in the event, by almost no one; the synod&rsquo;s refusal is Week 5&rsquo;s opening.', '&rarr; And the movement it started? We know what happened next.'))
