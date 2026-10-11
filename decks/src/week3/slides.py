@@ -167,6 +167,15 @@ A('<section class="slide breath"><h2 style="max-width:none">Luther claimed consc
 A(Q('&ldquo;&hellip;as no man can be judged for his brother, so <b>no man can judge for his brother</b>; every man must be allowed to judge for himself, as every man must bear his own judgment&mdash;must give account of himself to God.&rdquo;', DA, 'Preamble') +
   N('The Preamble&rsquo;s second sentence: the half Luther could not say at Marburg. Not a right claimed but an impossibility stated: you cannot believe for someone else. Zurich and 1806 on the egg were the magistrate trying. The first sentence, just before it: &ldquo;it is high time for us not only to think, but also to act, for ourselves&hellip; to this alone we feel ourselves Divinely bound to be conformed, as by this alone, we must be judged.&rdquo;'))
 
+A(Q('&ldquo;That every such judgment is an express violation of the law of Christ, <b>a daring usurpation of his throne</b>, and a gross intrusion upon the rights and liberties of his subjects.&rdquo;', DA, 'Preamble') +
+  N('The very next sentence. &ldquo;Such judgment&rdquo; is the one just before it: &ldquo;no man has a right to judge his brother, except in so far as he manifestly violates the express letter of the law.&rdquo; Whoever judges his brother&rsquo;s conscience is sitting on Christ&rsquo;s throne.'))
+
+A(Q('&ldquo;&hellip;<b>judging and rejecting each other in matters wherein the Lord hath not judged</b>, in a flat contradiction to his expressly revealed will.&rdquo;', DA, 'The Appendix') +
+  N('The Appendix names this as one of two great evils provoking the Lord against the churches; the other is &ldquo;the taking and giving of unjust offenses.&rdquo; He then quotes James 4:12: &ldquo;There is one Lawgiver, who is able to save and to destroy: who art thou that judgest another?&rdquo; And: &ldquo;we judge him, not for his opinions, but for his presumption.&rdquo;'))
+
+A(Q('&ldquo;We dare not, therefore, patronize <b>the rejection of God&rsquo;s dear children</b>, because they may not be able to see alike in matters of human inference&mdash;of private opinion.&rdquo;', DA, 'The Appendix') +
+  N('Say &ldquo;God&rsquo;s dear children&rdquo; slowly. The sentence continues: &ldquo;and such we esteem all things not expressly revealed and enjoined in the word of God. If otherwise, we know not what private opinion means.&rdquo;'))
+
 # ---------- WHY CAMPBELL COULD GO FURTHER: THE SWORD, AND THIS COUNTRY ----------
 A('<section class="slide"><h2 style="font-size:clamp(60px,14vmin,180px);line-height:1.02;max-width:none">What can<br>unite<br>Christians?</h2>'
   '<div class="sub frag">&ldquo;That they all may be one&hellip; that the world may believe that thou hast sent me.&rdquo;<br><span style="font-size:.7em;color:var(--bone-dim)">John 17:21</span></div>'
