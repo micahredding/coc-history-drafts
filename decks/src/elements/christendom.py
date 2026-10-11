@@ -6,7 +6,7 @@ Arian remnant thinning away, the Henotikon's awkward join, zigzag / wave / battl
 pattern fills, a finale of the egg in dozens of shards, and a time-scaled tree of divisions.
 
 Use:   from christendom import christendom_slides, PATDEFS, CHRISTENDOM_CSS
-       S += christendom_slides()        # 16 sections: card, 13 divisions, shards, tree
+       S += christendom_slides()        # 17 sections: card, 14 divisions, shards, tree
 The build must put PATDEFS once in the page outside any slide (hidden slides blank pattern defs),
 and append CHRISTENDOM_CSS to the engine stylesheet. Engine: the Week 1/2 deck engine (engine.css/js).
 """
@@ -29,22 +29,22 @@ LEAVES = [('east', 1), ('oriental', 1), ('orthodox', 1), ('catholic', 1), ('luth
           ('a_old', 1), ('a_new', 1), ('anabaptists', 1), ('arian', 1)]
 def U(a, b=None): return list(range(a, (b if b is not None else a) + 1))
 ARIAN_KEY = (15,)
-SHRINK = {'482': 58, '519': 58, '1054': 40}          # the Arian remnant after 451; absent from 1530 on = gone
+SHRINK = {'381': 104, '431': 86, '451': 72, '482': 58, '519': 58, '1054': 40}   # the Arian remnant, outlawed in 381; absent from 1530 on = gone
 
 def _widths(units, key):
-    living = [u for u in units if tuple(u[0]) != ARIAN_KEY or key in ('0', '325', '431', '451') or key in SHRINK]
-    n_equal = sum(1 for u in units if tuple(u[0]) != ARIAN_KEY or key in ('0', '325', '431', '451'))
+    living = [u for u in units if tuple(u[0]) != ARIAN_KEY or key in ('0', '325') or key in SHRINK]
+    n_equal = sum(1 for u in units if tuple(u[0]) != ARIAN_KEY or key in ('0', '325'))
     w_eq = max(MINW, 2 * R / max(n_equal, 1))
     ws = []
     for u in units:
         k = tuple(u[0])
-        if k == ARIAN_KEY and key not in ('0', '325', '431', '451'):
+        if k == ARIAN_KEY and key not in ('0', '325'):
             ws.append(SHRINK.get(key, 0))
         else:
             ws.append(w_eq)
     return ws
 
-ORDER = ['0', '325', '431', '451', '482', '519', '1054', '1530', '1527', '1529', '1646', '1690', '1733', '1747', '1806']
+ORDER = ['0', '325', '381', '431', '451', '482', '519', '1054', '1530', '1527', '1529', '1646', '1690', '1733', '1747', '1806']
 # boundary after slice b tears in this style from this state on. Styles: zig (Easter egg), wave, step
 # (battlements), crack (Humpty Dumpty). By 1806 every boundary still straight cracks too.
 JAG = {2: ('1054', 'zig'), 3: ('1530', 'zig'), 13: ('1527', 'wave'), 4: ('1529', 'step'),
@@ -419,6 +419,7 @@ ANABAP = (U(14), 'Anabaptists', 'c4', False)
 ST = {}
 ST['0']    = [(U(0, 15), '', 'bone', False)]
 ST['325']  = [(U(0, 14), 'Nicene', 'c1', False), ARIAN]
+ST['381']  = [(U(0, 14), 'Nicene', 'c1', False), (U(15), 'Arian|Goths', 'smoke', True)]
 ST['431']  = [EAST, (U(1, 14), 'the imperial|Church', 'c1', False), ARIAN]
 ST['451']  = [EAST, ORIENTAL, (U(2, 14), 'Chalcedonian', 'c1', False), ARIAN]
 ST['482']  = [EAST, ORIENTAL, (U(2), 'Constantinople', 'c4', False), (U(3, 14), 'Rome', 'c1', False), ARIAN]
@@ -444,6 +445,7 @@ FLOW_SVG = re.search(r'<svg.*?</svg>', open(_D + '/../../elements/christendom-di
 FLOW_SVG = FLOW_SVG.replace('class="sub"', 'class="fsub"').replace('class="lab"', 'class="flab"').replace('class="x"', 'class="fx"')
 NOTES = {
 "325": "Constantine had just reunited the empire (324) and found the church at war over whether the Son is God. He convened the council himself, 325. The creed condemned Arius with the word <i>homoousios</i>.<br>'\n    'Failure: Constantine was baptized on his deathbed (337) by Eusebius of Nicomedia, an Arian sympathizer; his son Constantius pushed the empire Arian; Athanasius exiled five times; Jerome c. 360: &ldquo;the whole world groaned and found itself Arian.&rdquo; The creed people say today is the rewrite of 381. Goths, Vandals and Lombards stayed Arian into the 500s and 600s, then converted.<br>'\n    '&rarr; Say: the first creed written to unite the church did not unite the two sides; it named them.',",
+"381": "Theodosius made the Nicene faith the law of the empire by edict (<i>Cunctos populos</i>, 380) and called the council at Constantinople (381). It confirmed Nicaea and expanded the creed (the Spirit &ldquo;the Lord, the Giver of life&rdquo;): this is the Nicene Creed churches say today. Thirty-six Macedonian bishops (the Pneumatomachi, who denied the Spirit&rsquo;s full divinity) refused and walked out (Socrates, <i>Church History</i> 5.8). Theodosius&rsquo;s laws then took the churches from the Arians inside the empire.<br>Failure: Arianism did not die; it left. Ulfilas had already taken it to the Goths, and the Goths, Vandals, Burgundians and Lombards who took the West kept it into the 500s and 600s (Visigoths to 589). Canon 3 also ranked Constantinople second after Rome, &ldquo;because it is New Rome&rdquo;: the seed of 1054.<br>&rarr; The council finished the creed. The emperor made it law. The church that refused it moved across the border.",
 "431": "Nestorius of Constantinople objected to <i>Theotokos</i>; Cyril of Alexandria pressed the council. Cyril&rsquo;s council opened before John of Antioch arrived; John&rsquo;s party held its own council and each deposed the other&rsquo;s leader; Theodosius II arrested both Cyril and Nestorius. A Formula of Reunion patched it in 433.<br>'\n    'Canon 7 of Ephesus: unlawful &ldquo;to bring forward, or to write, or to compose a different faith as a rival to that established by the holy Fathers assembled with the Holy Ghost in Nicaea.&rdquo; This is the ban the next council breaks, and the ban the East cites against the West in 1054.<br>'\n    'The Church of the East (Persia, outside the empire) had adopted Nicaea on its own at Seleucia-Ctesiphon in 410; it refused Ephesus and has been separate ever since. Today: the Assyrian Church of the East.<br>'\n    '&rarr; Plant the canon. &ldquo;We will come back to that.&rdquo;',",
 "451": "Chalcedon reaffirmed Ephesus&rsquo;s ban on new creeds, then issued the Definition (&ldquo;in two natures&rdquo;) and said it was a definition, not a creed. The 381 creed is first read into the record here. Egypt, Armenia, Ethiopia, the Syriac churches refused it: the Oriental Orthodox, non-Chalcedonian to this day (Copts, Armenians, Ethiopians, Eritreans, Syriacs, Malankara).<br>'\n    '&rarr; The rhyme to plant: &ldquo;not a new creed.&rdquo; The thirteen propositions will say the same words.',",
 "482": "Zeno&rsquo;s Henotikon (482), drafted with Patriarch Acacius, tried to reconcile Chalcedonians and non-Chalcedonians by affirming Nicaea, Ephesus and Cyril and passing over Chalcedon in silence. Pope Felix III excommunicated Acacius (484). Rome and Constantinople were out of communion until 519 (Emperor Justin, the Formula of Hormisdas). It did not win Egypt back either.<br>'\n    'Later imperial compromises did the same thing twice more: 553 (Three Chapters, split the West for 150 years), 638 (Monothelitism, condemned in 680). Not on slides; say it in a sentence if you want the pattern.<br>'\n    '&rarr; A document literally named &ldquo;instrument of union&rdquo; produced the first schism between Rome and Constantinople.',",
@@ -469,16 +471,20 @@ def christendom_slides():
         'Arians against non-Arians. A creed, and fifty-six more years of war.',
         '0', '325', NOTES['325']))
 
+    A(D('381 &middot; Council of Constantinople',
+        'Is the Spirit God too? The creed we still say, the Arians outlawed, and the Goths still Arian.',
+        '325', '381', NOTES['381']))
+
     A(D('431 &middot; Council of Ephesus',
         'Does Mary bear God? A canon forbidding new creeds, and the Church of the East gone.',
-        '325', '431', NOTES['431']))
+        '381', '431', NOTES['431']))
 
     A(D('451 &middot; Council of Chalcedon',
         'One nature or two? A Definition, &ldquo;not a new creed,&rdquo; and Egypt gone.',
         '431', '451', NOTES['451']))
 
-    A(D('482 &middot; The Henotikon',
-        'Zeno needs Egypt back. An &ldquo;instrument of union,&rdquo; and thirty-five years of schism with Rome.',
+    A(D('482 &middot; Instrument of Union',
+        'Zeno needs Egypt back. The Henotikon, and thirty-five years of schism with Rome.',
         '451', '482', NOTES['482'], heal='519'))
 
     A(D('1054 &middot; The Filioque',
